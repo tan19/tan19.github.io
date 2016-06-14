@@ -1,0 +1,14 @@
+\contentsline {part}{I\hspace {1em}Introduction}{5}{part.1}
+\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}Some Distinctions}{7}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Machine Learning v.s. Statistical Learning}{7}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Parametric v.s. Non-parametric Models}{7}{subsection.1.1.2}
+\contentsline {chapter}{\numberline {2}A Brief History of Machine Learning}{9}{chapter.2}
+\contentsline {chapter}{\numberline {3}A Brief History of Machine Learning}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}1950s-1960s: the Perceptron Model}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}1970s-1980s: the Expert Systems}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}mid 1980s: Multi-layer Neural Networks}{11}{section.3.3}
+\contentsline {section}{\numberline {3.4}1995: SVM}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}2000s: Logistic Regression Rediscovered}{11}{section.3.5}
+\contentsline {part}{II\hspace {1em}Supervised Learning}{13}{part.2}
+\contentsline {part}{III\hspace {1em}Unsupervised Learning}{15}{part.3}

@@ -1,0 +1,57 @@
+\usepackage{amssymb,amsmath}
+\usepackage[]{algorithm2e}
+
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+
+\usepackage{color}		% enable color characters
+\usepackage{graphicx} 	% insert image files
+\usepackage{enumerate} 	% enumerate items
+\usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in]{geometry}
+\setlength{\marginparwidth}{1.2in}
+\newcommand{\smallmarginpar}[1]{\marginpar[#1]{\small{#1}}}
+
+
+%%
+%% enable margin note
+%%
+\usepackage{marginnote}
+\renewcommand*{\marginfont}{\footnotesize}
+\usepackage{manfnt}
+
+%%
+%% define bold font for the alphabet
+%%
+\usepackage{pgffor}
+\foreach \letter in {a,...,z}{ % bold font for a..z
+\expandafter\xdef\csname \letter \endcsname{\noexpand\ensuremath{\noexpand\mathbf{\letter}}}
+}
+\foreach \letter in {A,...,Z}{ % bold font for A..Z
+\expandafter\xdef\csname \letter \endcsname{\noexpand\ensuremath{\noexpand\mathbf{\letter}}}
+}
+\foreach \letter in {A,...,Z}{ % `field' font for AA..ZZ
+\expandafter\xdef\csname \letter\letter \endcsname{\noexpand\ensuremath{\noexpand\mathbb{\letter}}}
+}
+\newcommand{\bmu}{{\boldsymbol{\mu}}}
+\newcommand{\btheta}{{\boldsymbol{\theta}}}
+\newcommand{\bSigma}{{\boldsymbol{\Sigma}}}
+\newcommand{\bdeta}{{\boldsymbol{\eta}}}
+\newcommand{\nN}{{\mathcal{N}}}
+
+%%
+%% add definitions and theorems
+%%
+\usepackage[thmmarks,amsmath]{ntheorem}
+\theorembodyfont{\normalfont}
+\newtheorem{deff}{Definition}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{rmk}{Remark}[section]
+\newtheorem{ex}{Example}[section]
+\newtheorem{ques}{Question}[section]
+\newtheorem*{prof}{Proof}[section]

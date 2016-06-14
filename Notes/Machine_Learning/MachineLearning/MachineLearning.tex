@@ -1,0 +1,100 @@
+\documentclass{book}
+\usepackage{amssymb,amsmath}
+
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+\usepackage[verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in]{geometry}
+
+
+%%
+%% enable margin note
+%%
+\usepackage{marginnote}
+\usepackage{manfnt}
+
+%%
+%% define bold font for the alphabet
+%%
+\usepackage{pgffor}
+\foreach \letter in {a,...,z}{ % bold font for a..z
+\expandafter\xdef\csname \letter \endcsname{\noexpand\ensuremath{\noexpand\mathbf{\letter}}}
+}
+\foreach \letter in {A,...,Z}{ % bold font for A..Z
+\expandafter\xdef\csname \letter \endcsname{\noexpand\ensuremath{\noexpand\mathbf{\letter}}}
+}
+
+%%
+%% add definitions and theorems
+%%
+\usepackage[thmmarks,amsmath]{ntheorem}
+\theorembodyfont{\normalfont}
+\newtheorem{deff}{Definition}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{rmk}{Remark}[section]
+\newtheorem{ex}{Example}[section]
+\newtheorem*{prof}{Proof}[section]
+
+
+
+\title{Notes on Machine Learning}
+\author{Xi Tan (tan19@purdue.edu)}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\part{Introduction}
+\chapter{Introduction}
+There are two main types of Machine Learning problems: the {\bf{predictive}} or {\bf{supervised learning}}, and the {\bf{descriptive}} or {\bf{unsupervised learning}} \footnote{It is also called {\bf{Knowledge Discovery}} in the Data Mining literature}.
+
+For supervised learning, there are two subtypes: the {\bf{classification}} problem, where the response variable is categorical (either ordinal or nomial); and the {\bf{regression}} problem, where the response variable is numerical (either discrete or continuous).
+
+For unsupervised learning, it is also called {\bf{density estimation}} in Statistics literature. Essentially we want to build models of the form $p(\x_i|\theta)$, and supervised learning can be seen as to build models of the form $p(y_i|\x_i,\theta)$, which is a problem of conditional density estimation. \footnote{We see from the formulation that, unsupervised learning usually involves multivariate probability models while supervised learning usually involves univariate probability models.}
+
+
+\section{Some Distinctions}
+\subsection{Machine Learning v.s. Statistical Learning}
+{\bf{Machine Learning}} focuses more on high dimension low noise situations, and performance and efficiency are the main concerns. {\bf{Statistical Learning}} focuses more on low dimension high noise situations, interpretation and statistical inference are the main concerns.
+\subsection{Parametric v.s. Non-parametric Models}
+A parametric model has a fixed {\em{finite}} number of parameters, while the number of parameters in a non-parametric model grows with the amount of training data. A model with infinite number of parameters is usually non-parametric.
+
+\chapter{A Brief History of Machine Learning}
+The perceptron model was invented in 1957, and it generated over optimistic view for AI during 1960s. After Marvin Minsky pointed out the limitation of this model in expressing complex functions, researchers stopped pursuing this model for the next decade.
+
+In 1970s, the machine learning field was dormant, when expert systems became the mainstream approach in AI.  The revival of machine learning came in mid-1980s, when the decision tree model was invented and distributed as software. It is also in mid 1980s multi-layer neural networks were invented, With enough hidden layers, a neural network can express any function, thus overcoming the limitation of perceptron. We see a revival of the neural network study.
+
+Around 1995, SVM was proposed and have become quickly adopted.
+
+After year 2000, Logistic regression was rediscovered and re-designed for large scale machine learning problems . In the ten years following 2003, logistic regression has attracted a lot of research work.
+
+We discussed the development of 4 major machine learning methods. There are other method developed in parallel, but see declining use today in the machine field: Naive Bayes, Bayesian networks, and Maximum Entropy classifier (most used in natural language processing). 
+
+In addition to the individual methods, we have seen the invention of ensemble learning, where several classifiers are used together, and its wide adoption today. 
+
+
+\url{http://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence}
+
+\chapter{A Brief History of Machine Learning}
+\section{1950s-1960s: the Perceptron Model}
+\section{1970s-1980s: the Expert Systems}
+\section{mid 1980s: Multi-layer Neural Networks}
+\section{1995: SVM}
+\section{2000s: Logistic Regression Rediscovered}
+
+\part{Supervised Learning}
+\part{Unsupervised Learning}
+
+\end{document} 
+
+
+
+
+
+

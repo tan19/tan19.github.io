@@ -1,0 +1,48 @@
+\BOOKMARK [-1][-]{part.1}{I STAT598G Topics}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Basic Computer Knowledge}{part.1}% 2
+\BOOKMARK [1][-]{section.1.1}{Computer Organization, File Systems, Process Management, I/O Devices, Basic Linux Commands}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Programming Languages, Interpreters and Compilers}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{C \046 R Programming Languages}{part.1}% 5
+\BOOKMARK [1][-]{section.2.1}{Basic Variable Types and Scope}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Control Flows: if-else, for/while Loops}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Functions}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{I/O Access}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.5}{Pointers and Dynamic Memory allocation in C}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.6}{Underflow and Overflow}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.7}{Vector, Matrix and Distributions in R}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.8}{Graphics in R; Calling C from R}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Algorithm and Data Structures}{part.1}% 14
+\BOOKMARK [1][-]{section.3.1}{Big-O, Small-o, Theta Notations; Time Complexity Analysis}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Recursion and Divide \046 Conquer}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Dynamic Programming}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Searching \(Linear, Binary\) and Sorting \(Insertion Sort, Bubble Sort, Merge Sort\)}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{Arrays, Linked Lists, Trees, Hash Tables and Related Operations}{chapter.3}% 19
+\BOOKMARK [0][-]{chapter.4}{Statistical applications}{part.1}% 20
+\BOOKMARK [1][-]{section.4.1}{Nonlinear Optimization : Gradient Descent, Coordinate Descent, Newton's Method, Line Search}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.2}{Sampling: Generating Uniform Random Numbers, Transformation Method, Importance Sampling, Acceptance Sampling}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.3}{Hidden Markov Models: Basic Definitions, Viterby Algorithm and Computing Forward and Backward Probabilities}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.4}{Markov Random Fields, the Hammersley-Clifford Theorem, the Elimination Algorithm}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.5}{Bootstrap}{chapter.4}% 25
+\BOOKMARK [-1][-]{part.2}{II STAT598D Topics}{}% 26
+\BOOKMARK [0][-]{chapter.5}{Optimization}{part.2}% 27
+\BOOKMARK [1][-]{section.5.1}{Unconstrained Optimization}{chapter.5}% 28
+\BOOKMARK [2][-]{subsection.5.1.1}{Univariate Problems \(Bisection, Newton\)}{section.5.1}% 29
+\BOOKMARK [1][-]{section.5.2}{Quasi-Newton Methods}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.3}{Simulated annealing}{chapter.5}% 31
+\BOOKMARK [0][-]{chapter.6}{The EM-type Algorithms}{part.2}% 32
+\BOOKMARK [1][-]{section.6.1}{The EM algorithm}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.2}{The ECM and ECME algorithms}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.3}{The PX-EM algorithm}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.4}{Computing observed Fisher information matrix}{chapter.6}% 36
+\BOOKMARK [0][-]{chapter.7}{Integration}{part.2}% 37
+\BOOKMARK [1][-]{section.7.1}{Numerical integration}{chapter.7}% 38
+\BOOKMARK [1][-]{section.7.2}{Random number generation}{chapter.7}% 39
+\BOOKMARK [1][-]{section.7.3}{Simulation}{chapter.7}% 40
+\BOOKMARK [1][-]{section.7.4}{Monte Carlo integration}{chapter.7}% 41
+\BOOKMARK [0][-]{chapter.8}{Markov chain Monte Carlo \(MCMC\) methods}{part.2}% 42
+\BOOKMARK [1][-]{section.8.1}{The Data Augmentation algorithm}{chapter.8}% 43
+\BOOKMARK [1][-]{section.8.2}{The Gibbs sampler}{chapter.8}% 44
+\BOOKMARK [1][-]{section.8.3}{The Metropolis-Hastings algorithm}{chapter.8}% 45
+\BOOKMARK [1][-]{section.8.4}{Data Fusion and Particle Filter \(Sequential MCMC\)}{chapter.8}% 46
+\BOOKMARK [1][-]{section.8.5}{Reversible jump MCMC}{chapter.8}% 47
+\BOOKMARK [1][-]{section.8.6}{Convergence Diagnostics}{chapter.8}% 48

@@ -1,0 +1,87 @@
+\chapter{The Riemann-Stieltjes Integral}
+\section{Definition and Existence of the Integral}
+\subsection{Definitions}
+\deff{
+	We say that the partition $P*$ is a {\cem{refinement}} of $P$ if $P* \supset P$ (that is, if every point of $P$ is a point of $P*$). Given two partitions, $P_1$ and $P_2$, we say that $P*$ is their {\cem{common refinement}} if $P* = P_1 \cup P_2$.
+}
+\subsection{Theorems}
+\theo{
+	If $P^*$ is a refinement of $P$, then $$L(P,f,\alpha) \le L(P^*,f,\alpha)$$ and $$U(P^*,f,\alpha) \le U(P,f,\alpha).$$
+}
+
+\theo{
+	$\underline{\int_{a}^{b}} f d\alpha \le \overline{\int_{a}^{b}} f d\alpha$
+}
+
+\theo{
+	$f \in \R(\alpha)$ on $[a,b]$ if and only if for every $\epsilon > 0$ there exists a partition $P$ such that $$U(P,f,\alpha) - L(P,f,\alpha) < \epsilon.$$
+}\label{theo: integrable}
+
+\theo{
+	~
+	\begin{enumerate}[(a)]
+		\item If Theorem~\ref{theo: integrable} holds for some $P$ and some $\epsilon$, then Theorem~\ref{theo: integrable} holds (with the same $\epsilon$) for every refinement of $P$.
+		\item If Theorem~\ref{theo: integrable} holds for $P = \{x_0,\cdots,x_n\}$ and if $s_i,t_i$ are arbitrary points in $[x_{i-1},x_i]$, then $$\sum_{i=1}^n |f(s_i)-f(t_i)| \Delta\alpha_i < \epsilon.$$
+		\item If $f \in \R(\alpha)$ and the hypotheses of (b) hold, then $$|\sum_{i=1}^n |f(s_i)-f(t_i)| \Delta\alpha_i - \int_a^b f d\alpha| < \epsilon.$$
+	\end{enumerate}
+}
+
+\theo{
+	If $f$ is continuous on $[a,b]$ then $f \in \R(\alpha)$ on $[a,b]$.
+}
+
+\theo{
+	If $f$ is monotonic on $[a,b]$, and if $\alpha$ is continuous on $[a,b]$, then $f \in \R(\alpha)$. (We still assume, of course, that $\alpha$ is monotonic.)
+}
+
+\theo{
+	Suppose $f$ is bonded on $[a,b]$, $f$ has only finitely many points of discontinuity on $[a,b]$, and $\alpha$ is continuous at every point at which $f$ is discontinuous. Then $f \in \R(\alpha)$.
+}
+
+\theo{
+	Suppose $f \in \R(\alpha)$ on $[a,b]$, $m \le f \le M$, $\phi$ is continuous on $[m,M]$, and $h(x) = \phi(f(x))$ on $[a,b]$. Then $h \in \R(\alpha)$ on $[a,b]$.
+}
+
+\section{Properties of the Integral}
+\subsection{Definitions}
+\deff{
+	The {\cem{unit step function}} $I$ is defined by $$I(x) = \begin{cases}0 ~ ~ (x \le 0)\\1 ~ ~ (x > 0)\end{cases}$$
+}
+
+\subsection{Theorems}
+\theo{
+	If $f \in \R(\alpha)$ and $g \in \R(\alpha)$ on $[a,b]$, then
+	\begin{enumerate}[(a)]
+		\item $fg \in \R(\alpha)$;
+		\item $|f| \in \R(\alpha)$ and $\left|\int_a^b f d\alpha\right| \le \int_a^b |f| d\alpha$.
+	\end{enumerate}
+}
+
+\theo{
+	If $a < s < b$, $f$ is bounded on $[a,b]$, $f$ is continuous at $s$, and $\alpha(x) = I(x-s)$, then $$\int_a^b f d\alpha = f(s).$$
+}
+
+\theo{
+	Suppose $c_n \ge 0$ for $1,2,3,\cdots$, $\sum c_n$ converges, $\{s_n\}$ is a sequence of distinct points in $(a,b)$, and $$\alpha(x) = \sum_{n=1}^\infty c_n I(x-s_n).$$ Let $f$ be continuous on $[a,b]$. Then $$\int_a^b f d\alpha = \sum_{n=1}^\infty c_n f(s_n).$$
+}
+
+\theo{
+	Assume $\alpha$ increases monotonically and $\alpha' \in \R$ on $[a,b]$. Let $f$ be a bounded real function on $[a,b]$. Then $f \in \R(\alpha)$ if and only if $f\alpha' \in \R$. In that case, $$\int_a^b f d\alpha = \int_a^b f(x) \alpha'(x) dx.$$
+}
+
+\theo{
+	Suppose $\phi$ is a strictly increasing continuous function that maps an interval $[A,B]$ onto $[a,b]$. Suppose $\alpha$ is monotonnically increasing on $[a,b]$ and $f \in \R(\alpha)$ on $[a,b]$. Define $\beta$ and $g$ on $[A,B]$ by $$\beta(y) = \alpha(\phi(y)), ~ g(y) = f(\phi(y)).$$ Then $g \in \R(\beta)$ and $$\int_A^B g d\beta = \int_a^b f d\alpha.$$
+}
+
+\section{Integration and Differentiation}
+\subsection{Theorems}
+\theo{
+	Let $f \in \R$ on $[a,b]$. For $a \le x \le b$, put $$F(x) = \int_a^x f(t) dt.$$ Then $F$ is continuous on $[a,b]$; furthermore, if $f$ is continuous at a point $x_0$ of $[a,b]$, then $F$ is differentiable at $x_0$, and $$F'(x_0) = f(x_0).$$
+}
+\theo{
+	If $f \in \R$ on $[a,b]$ and if there is a differentiable function $F$ on $[a,b]$ such that $F'=f$, then $$\int_a^b f(x) dx = F(b) - F(a).$$
+}
+\theo{
+	Suppose $F$ and $G$ are differentiable functions on $[a,b]$, $F' = f \in \R$, and $G' = g \in \R$. Then $$\int_a^b F(x)g(x) dx = F(b)G(b) - F(a)G(a) - \int_a^b f(x) G(x) dx.$$
+}
+

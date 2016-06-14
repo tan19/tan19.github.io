@@ -1,0 +1,62 @@
+\contentsline {part}{I\hspace {1em}Theory}{7}{part.1}
+\contentsline {chapter}{\numberline {1}Preliminaries}{9}{chapter.1}
+\contentsline {chapter}{\numberline {2}Vector Calculus}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Vector Algebra}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Dot Product}{11}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Cross Product}{11}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Scalar Triple Product}{11}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Vector Triple Product}{11}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Line, Surface, and Volume Integrals}{11}{section.2.2}
+\contentsline {chapter}{\numberline {3}Vector Spaces}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vector Space}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Subspaces}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Four Important Subspaces: the row, column, null, and left null space}{14}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Bases and Dimension}{14}{section.3.3}
+\contentsline {section}{\numberline {3.4}Coordinates}{14}{section.3.4}
+\contentsline {chapter}{\numberline {4}Vector and Matrix Calculus}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Functions of Vectors}{15}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Inner Product}{15}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Outer Product}{15}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Cross Product}{15}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Functions of Matrices}{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Matrix Determinant}{15}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Matrix Exponential}{15}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Functions of Vectors and Matrices}{15}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Linear Forms: One Vector as Argument}{15}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Bilinear and Quadratic Forms: Two Vectors as Argument}{15}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Derivatives of Vectors and Matrices}{15}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Derivatives of a Vector or Matrix with Respect to a Scalar}{15}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Integration of Vectors and Matrices}{16}{section.4.5}
+\contentsline {chapter}{\numberline {5}Some Intuitive Explanations}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Eigenvalues and Singular Values}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}SVD, PCA, and Change of Basis}{17}{section.5.2}
+\contentsline {part}{II\hspace {1em}Techniques}{19}{part.2}
+\contentsline {chapter}{\numberline {6}Schur Complement and LU Decomposition}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Preliminaries}{21}{section.6.1}
+\contentsline {section}{\numberline {6.2}Schur Complement and LU Decomposition}{21}{section.6.2}
+\contentsline {chapter}{\numberline {7}The $\ensuremath {\mathbf {A}}\ensuremath {\mathbf {x}}=\ensuremath {\mathbf {b}}$ Problem}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Solving a Linear System of Equations}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}The Vector Spaces of a Matrix}{23}{section.7.2}
+\contentsline {section}{\numberline {7.3}Matrix Inverse: {\color {red}{Binomial inverse theorem, Schur Complement, Blockwise Inversion}}}{24}{section.7.3}
+\contentsline {chapter}{\numberline {8}The $\ensuremath {\mathbf {A}}\ensuremath {\mathbf {x}}=\lambda \ensuremath {\mathbf {x}}$ Problem}{25}{chapter.8}
+\contentsline {chapter}{\numberline {9}Special Square Matrices}{27}{chapter.9}
+\contentsline {section}{\numberline {9.1}Elementary Matrices}{27}{section.9.1}
+\contentsline {section}{\numberline {9.2}Permutation Matrices}{27}{section.9.2}
+\contentsline {section}{\numberline {9.3}Projection Matrices}{27}{section.9.3}
+\contentsline {section}{\numberline {9.4}Orthogonal Matrices}{27}{section.9.4}
+\contentsline {section}{\numberline {9.5}Positive Definite Matrices}{28}{section.9.5}
+\contentsline {chapter}{\numberline {10}Matrix Decomposition}{29}{chapter.10}
+\contentsline {section}{\numberline {10.1}LU Decomposition}{29}{section.10.1}
+\contentsline {section}{\numberline {10.2}QR Decomposition}{29}{section.10.2}
+\contentsline {section}{\numberline {10.3}Cholesky Decomposition}{29}{section.10.3}
+\contentsline {section}{\numberline {10.4}Symmetric Positive Definite (s.p.d.) Matrices}{29}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}Cholesky Decomposition}{29}{subsection.10.4.1}
+\contentsline {subsection}{\numberline {10.4.2}Cholesky Decomposition}{30}{subsection.10.4.2}
+\contentsline {section}{\numberline {10.5}Singular Value Decomposition (SVD)}{30}{section.10.5}
+\contentsline {section}{\numberline {10.6}Eigendecomposition}{30}{section.10.6}
+\contentsline {section}{\numberline {10.7}Jordan Decomposition}{30}{section.10.7}
+\contentsline {section}{\numberline {10.8}Schur Decomposition}{30}{section.10.8}
+\contentsline {part}{III\hspace {1em}Topics}{31}{part.3}
+\contentsline {chapter}{\numberline {11}Minors and Cofactors}{33}{chapter.11}
+\contentsline {section}{\numberline {11.1}Definition}{33}{section.11.1}
+\contentsline {section}{\numberline {11.2}The Cramer's Rule and the Adjugate Matrix}{34}{section.11.2}

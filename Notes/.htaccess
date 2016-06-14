@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted access"
+AuthUserFile /home/campus/tan19/www/Notes/.htpasswd
+require valid-user

@@ -1,0 +1,79 @@
+\part{STAT519 Topics}
+
+\chapter{Combinatorial Analysis}
+
+\chapter{Axioms of Probability}
+\section{Law of Total Probability}
+Suppose $B_n (n=1,2,3,\cdots$ is a finite or countably infinity partition of the sample space, then for an event $A$
+\begin{align}
+	Pr(A) = \sum_n Pr(A,B_n)
+\end{align}
+or,
+\begin{align}\label{eq:Law of Total Probability}
+	Pr(A) = \sum_n Pr(A|B_n) Pr(B_n)
+\end{align}
+It can also be stated for conditional probabilities. Suppose $X$ is an event in the same sample space, we have
+\begin{align}
+	Pr(A|X) = \sum_n Pr(A|B_n,X)Pr(B_n|X)
+\end{align}
+One application of Eq~\ref{eq:Law of Total Probability} is when calculating $Pr(A)$ is difficult, we can introduce an ``auxiliary variable'' $B$, in the hope that the conditional probability $Pr(A|B_n)$ is easier to compute.
+
+\chapter{Discrete Random Variables}
+\section{Binomial}
+\section{Hypergeometric}
+\section{Geometric}
+\section{Negative Binomial}
+\section{Poisson}
+
+\chapter{Continuous Random Variables}
+\section{Uniform}
+\section{Exponential}
+\section{Gamma}
+\section{Beta}
+\section{Normal}
+\section{Laplace}
+\section{Chi-Square}
+\section{Gaussian and Its Multivariate Version}
+
+\chapter{Descriptive Quantities of Random Variables}
+\section{Expectation}
+\section{Variance}
+\section{Covariance}
+\section{Correlation}
+
+\chapter{Interactions Between Random Variables}
+\section{Joint Distribution}
+\section{Conditional Distribution}
+\section{Independence}
+\section{Transformations}
+
+\chapter{Special Topics}
+\section{Limit Theorems}
+\subsection{Markov and Chebyshev Inequalities}
+\begin{theorem}
+	{\underline{Markov's Inequality}}. If $X$ is a random variable that takes only nonnegative values, then for any value $a > 0$, $$P\{X \ge a\} \le \frac{E[X]}{a}$$
+\end{theorem}
+
+\begin{theorem}
+	{\underline{Chebyshev's Inequality}}. If $X$ is a random variable with finite mean $\mu$ and variance $\sigma^2$, then, for any value $k > 0$, $$P\{|X-\mu| \ge k\} \le \frac{\sigma^2}{k^2}$$
+\end{theorem}
+
+\subsection{Weak Law of Large Numbers}
+\begin{theorem}
+	{\underline{The Weak Law of Large Numbers}}. Let $X_1, X_2, \cdots$ be a sequence of i.i.d. random variables, each having finite mean $E[X_i] = \mu$. Then, for any $\epsilon > 0$, $$P\left\{\left|\frac{X_1+\cdots+X_n}{n} - \mu\right| \ge \epsilon \right\} \to 0 \mbox{ as } n \to \infty$$
+\end{theorem}
+
+\subsection{Central Limit Theorem}
+\begin{theorem}
+	{\underline{Central Limit Theorem}}. Let $X_1, X_2, \cdots$ be a sequence of independent and identically distributed random variables, each having mean $\mu$ and variance $\sigma^2$. Then the distribution of $$\frac{\frac{X_1+\cdots+X_n}{n}-\mu}{\sqrt{\sigma^2/n}} = \frac{X_1+\cdots+X_n - n\mu}{\sigma \sqrt{n}}$$ tends to the standard normal as $n \to \infty$.
+\end{theorem}
+
+
+\section{Some Special Functions}
+\subsection{Moment and Cumulant}
+\subsection{Moment Generating Function and Characteristic Function}
+
+\section{Ad Hoc Topics}
+\subsection{Order Statistics}
+\subsection{Indicator Variables}
+\subsection{The Reflection Principle}

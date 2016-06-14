@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{amssymb,amsmath}
+\usepackage[thmmarks,amsmath]{ntheorem}
+
+\usepackage{graphicx}
+\usepackage{color}
+
+\usepackage{hyperref}
+
+
+\input{emacscomm.tex}
+\newcommand{\GP}{Gaussian process\xspace}
+\newcommand{\GPs}{Gaussian processes\xspace}
+\newcommand{\astar}{\alpha^{\star}}
+\newcommand{\alphas}{{\alpha^{\star}}}
+\newcommand{\betas}{\beta^{\star}}
+
+\newcommand{\rBeta}{{\rm B}}
+
+
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\XX}{\mathcal{X}}
+\newcommand{\YY}{\mathcal{Y}}
+\newcommand{\HH}{\mathcal{H}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\DD}{\mathcal{D}}
+\newcommand{\RR}{\mathbb{R}}
+
+\theorembodyfont{\normalfont}
+\newtheorem{problem}{Problem}[section]
+\newtheorem{definition}{Definition}[section]
+
+\setlength{\marginparwidth}{1.2in}
+\newcommand{\smallmarginpar}[1]{\marginpar[#1]{\small{#1}}}
+
+\newcommand{\notion}[1]{{\em{#1}}}
+
+
+\title{Dirichlet Distribution and Its Applications}
+\author{Xi Tan (tan19@purdue.edu)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section {Gamma Function and Beta Function}
+The \notion{gamma function} is defined for all complex numbers except the non-positive integers. For complex numbers with a positive real part, it is defined via an improper integral that converges:
+\begin{equation}
+	\Gamma(z) = \int_0^\infty e^{-t} t^{z-1} dt
+\end{equation}
+For all positive numbers $z$,
+\begin{equation}
+	\Gamma(z) = (z-1)\Gamma(z-1)
+\end{equation}
+and in particular, if $n$ is a positive integer:
+\begin{equation}
+	\Gamma(n) = (n-1)!
+\end{equation}
+Note, the gamma function shifts the normal definition of factorial by 1.
+
+The \notion{beta function} is defined by
+\begin{equation}
+	\rBeta(x,y) = \int_0^1 t^{x-1} (1-t)^{y-1} dt
+\end{equation}
+for $Re(x), Re(y) > 0$.
+
+It can also be written as
+\begin{equation}
+	\rBeta(x,y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y)}
+\end{equation}
+
+
+
+\section {Introduction}
+The Dirichlet distribution of order $K \ge 2$ with parameters $\alpha_1, \dots, \alpha_K > 0$ has a probability density function with respect to Lebesgue measure on the Euclidean space \smallmarginpar{I'm not quite sure about this "Lebesque measure on the Euclidean space" thing.} $\RR^{K-1}$ given by
+\begin{equation}
+	f(x_1, \dots, x_{K-1}; \alpha_1, \dots, \alpha_K) = \frac{1}{B(\balpha)} \prod^K_{i=1} x_i^{\alpha_i-1}
+\end{equation}
+for all $x_1, \dots, x_K > 0$ and $x_1 + \dots + x_K = 1$. The density is zero outside this open \smallmarginpar{``Open'' here means none of the $x_i$'s can be 1, actually $x_i \in (0,1)$.} $(K-1)$-dimensional simplex.
+
+The normalizing constant is the multinomial beta function, which can be expressed in terms of the gamma function:
+\begin{equation}
+	B(\balpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma(\sum_{i=1}^K \alpha_i)}, \mbox{ where } \balpha=(\alpha_1, \dots, \alpha_K)
+\end{equation}
+
+\end{document} 
+
+
+
+
+
+
