@@ -1,7 +1,0 @@
-\contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {section}{\numberline {2}Simple Linear Regression}{4}
-\contentsline {subsection}{\numberline {2.1}Model}{4}
-\contentsline {subsection}{\numberline {2.2}Estimators}{4}
-\contentsline {subsection}{\numberline {2.3}Properties of Residuals}{4}
-\contentsline {subsection}{\numberline {2.4}Properties of $b_1$ and $b_0$}{4}
-\contentsline {subsection}{\numberline {2.5}Confidence Interval of $b_1$ and $b_0$}{5}
