@@ -5,23 +5,14 @@
 
 <PRE>
 
-In general, machine learning models can be categorized according to their strategies for generating features:
-1) fixed basis function models - basis functions are pre-designed;
-2) adaptive basis function models (CART, Neural Networks) - form or parameters of basis functions learned from data;
-3) kernel models (SVM, GP) - basis functions are implicitly defined, dimension of which is essentially infinite;
-4) latent variable models / dimension reduction (HMMs, Sate Space Models; PCA, ICA).
+Some good free video lectures:
+- CMU ML (10-701): <a href="http://alex.smola.org/teaching/cmu2013-10-701/">F13</a>
+- CMU ML (10-702): <a href="http://www.stat.cmu.edu/~larry/=sml/">S16</a>
+- CMU PGM (10-708): <a href="http://www.cs.cmu.edu/~epxing/Class/10708/lecture.html">S14</a>
+- CMU Optimization (10-725): <a href="https://www.cs.cmu.edu/~ggordon/10725-F12/schedule.html">F12</a>
+- Stanford CNN (cs231n): <a href="http://cs231n.stanford.edu/">S16</a>
+- UCL Reinforcement Learning: <a href="http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html">RL</a>
 
-As to machine learning inference methods, they can be classified into three categories:
-1) exact inference / direct inference (conjugacy, convex optimization, numerical optimization);
-2) deterministic approximation inference (Variational Bayes and Expectation Propagation);
-3) stochastic approximation inference (MCMC).
-
-Ask the following questions, in the listed order, for each machine learning problem:
-1) task: regression / classification / clustering
-2) data: supervised learning / unsupervised learning
-3) feature generation: fixed / adaptive / kernel / latent
-4) model: parametric / nonparametric
-5) inference: exact / variational / MCMC
 
 == PRML ==
 1. Introduction (9/15/2016)
@@ -214,7 +205,7 @@ Ask the following questions, in the listed order, for each machine learning prob
 - CMU                     : Andrew Moore, Tom Mitchell, Alex Smola (Kernel), John Lafferty
 - MIT                     : Leslie Kaelbling, Tommi Jaakkola, Bill Freeman, Alex Pentland, Josh Tenenbaum
 - Georgia Tech            : Aaron Bobick, Le Song (<i><u>Kernel</i></u>), Irfan Essa, Charles Isbell
-- Princeton               : David Blei (<i><u>LDA</i></u>), Rob Schapire
+- Princeton               : David Blei (<i><u>Topic Models</i></u>), Rob Schapire
 - Cornell                 : Thorsten Joachims, Rich Caruana
 - Columbia                : Tony Jebara, Michael Collins, Rocco Servedio, Peter Orbanz
 
@@ -300,6 +291,25 @@ $$ Variational Methods $$
 - Q: Unbiased v.s. consistent estimators
 - A: Roughly speaking, "unbiased" is related to repeated experiments with the same number of samples while "consistent" is related to increased number of samples.
      Unbiased is "vertical", and consistent is "horizontal". There are examples that are biased but consistent, and unbiased but not consistent.
+
+- Q: How can I categorize machine learning models and methods?
+- A: In general, machine learning models can be categorized according to their strategies for generating features:
+1) fixed basis function models - basis functions are pre-designed;
+2) adaptive basis function models (CART, Neural Networks) - form or parameters of basis functions learned from data;
+3) kernel models (SVM, GP) - basis functions are implicitly defined, dimension of which is essentially infinite;
+4) latent variable models / dimension reduction (HMMs, Sate Space Models; PCA, ICA).
+
+As to machine learning inference methods, they can be classified into three categories:
+1) exact inference / direct inference (conjugacy, convex optimization, numerical optimization);
+2) deterministic approximation inference (Variational Bayes and Expectation Propagation);
+3) stochastic approximation inference (MCMC).
+
+Ask the following questions, in the listed order, for each machine learning problem:
+1) task: regression / classification / clustering
+2) data: supervised learning / unsupervised learning
+3) feature generation: fixed / adaptive / kernel / latent
+4) model: parametric / nonparametric
+5) inference: exact / variational / MCMC
 
 
 
