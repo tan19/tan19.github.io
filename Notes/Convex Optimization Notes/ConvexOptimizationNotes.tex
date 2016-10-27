@@ -1,0 +1,37 @@
+\documentclass{article}
+\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
+
+\title{Convex Optimization Notes}
+\author{Xi Tan (tan19@purdue.edu)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\deff{
+	\begin{align}	
+		\liminf\limits_n A_n &= \cup_{n=1}^\infty \cap_{i=n}^\infty A_i = \{x ~|~ x \in A_i ~\text{eventually}\}
+	\end{align}
+}
+
+The meaning of $\liminf$ can be seen by re-writing the above definition as: $x \in \liminf\limits_n A_n$ if $\exists n \in \NNN$, s.t. $\forall i \ge n$ and $i \in \NNN$, $x \in A_i$. Hence the elements in $\liminf\limits_n A_n$ are in all but (the first) finitely many sets\footnote{Note, the number of ``first finitely many sets'' may be different for different elements in $\liminf$.}.
+
+\deff{
+	\begin{align}
+		\limsup\limits_n A_n &= \cap_{n=1}^\infty \cup_{i=n}^\infty A_i = \{x ~|~ x \in A_i ~\text{for infinitely many}~ i\}		
+	\end{align}
+}
+
+$\limsup$ can be best seen by examining its complement, according to the De Morgan's laws:
+
+\prop{
+	\begin{align}
+		(\limsup\limits_n A_n)^c &= \liminf\limits_n A_n^c
+	\end{align}
+}
+
+Recall the definition of $\liminf$, the right hand side of the above can be re-wriiten as: $x \in \liminf\limits_n A_n^c$ if $\exists n \in \NNN$, s.t. $\forall i \ge n$ and $i \in \NNN$, $x \notin A_i$. Hence the elements in $\liminf\limits_n A_n^c$ are only in some of the first finitely many sets, and the elements in $\limsup\limits_n A_n$ are therefore those elements in infinitely many sets.
+
+
+
+\end{document}
