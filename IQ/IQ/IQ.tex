@@ -1,0 +1,68 @@
+\documentclass{article}
+\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
+
+\title{IQ Notes}
+\author{Xi Tan (tan19@purdue.edu)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\Q: You and I each flip 3 fair coins, if we got same heads I pay you \$2, if different you pay me \$1. Will you play this game?
+
+\A: Naive Way: 
+\begin{align}
+	P(A=B=0) &= \left[{{3}\choose{0}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}\\
+	P(A=B=1) &= \left[{{3}\choose{1}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
+	P(A=B=2) &= \left[{{3}\choose{2}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
+	P(A=B=3) &= \left[{{3}\choose{3}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}	
+\end{align}
+So
+\begin{align}
+	P(A=B) &= \frac{1}{64} + \frac{9}{64} + \frac{9}{64} + \frac{1}{64} = \frac{5}{16}
+\end{align}
+Don't forget the case when both had no head (A=B=0).
+
+Clever Way: Let both do their tossing and then let B turn over each of her coins. Then the event you are looking for is that exactly three out of six coins show heads. Since B's "trick" doesn't destroy any randomness or independency, the answer is
+\begin{align}
+	P(A=B) &= {{6}\choose{3}} \left(\frac{1}{2}\right)^3 = \frac{5}{16}
+\end{align}
+
+\Q: Stock price is \$50 for the moment. Using B-S model we calculated the call option price \$5 using volatility 30\%. What would be the price if the volatility is actually 35\%?
+
+\Q: In a hospital there were 3 boys and some girls. A woman gave birth to a child in the hospital. A nurse picked up a child at random and was a boy. What is the probability that that woman gave birth to a boy?
+
+\A: Naive Way:
+\begin{align}
+	P(\text{Boy} ~|~ \text{Picked a Boy}) &= \frac{P(\text{Picked a Boy} ~|~ \text{Boy})P(\text{Boy})}{P(\text{Picked a Boy})}\\
+	 &= \frac{P(\text{Picked a Boy} ~|~ \text{Boy})P(\text{Boy})}{P(\text{Picked a Boy} ~|~ \text{Boy})P(\text{Boy}) + P(\text{Picked a Boy} ~|~ \text{Girl})P(\text{Girl})}\\
+	 &= \frac{\frac{4}{3+N+1} \cdot \frac{1}{2}}{\frac{4}{3+N+1} \cdot \frac{1}{2} + \frac{3}{3+N+1} \cdot \frac{1}{2}}\\
+	 &= \frac{4}{4+3} = \frac{4}{7}
+\end{align}
+
+\Q: A cup of water. You drink half, and I drink half of the rest, and you drink half of the rest, and let this process continue until the cup is empty. How much water did you drink?
+
+\A: Naive Way: 
+\begin{align}
+	\frac{1}{2} + \frac{1}{2^3} + \frac{1}{2^5} + \cdots = \frac{\frac{1}{2}}{1-\frac{1}{4}} = \frac{2}{3}
+\end{align}
+Clever Way: The ratio is alway 2:1, so you had $\frac{2}{3}$.
+
+\Q: Dice With Increasing Number. Throw a fair dice three times, what is the probability that we obtain three numbers in strictly increasing order?
+
+\A: There are 6x5x4 ways to pick three different numbers (for strictly increasing order), and in total there are (6x6x6)x3! ways to pick arbitrary three numbers. So the probability is [6x5x4]/[(6x6x6)x3!] = 5/54.
+
+\Q: Airplane Seating Problem. 100 passengers are boarding an airplane with 100 seats. Everyone has a ticket with his seat number. These 100 passengers boards the airplane in order. However, the first passenger lost his ticket so he just take a random seat. For any subsequent passenger, he either sits on his own seat or, if the seat is taken, he takes a random empty seat. What's the probability that the last passenger would sit on his own seat? There is a very simple explanation for the result.
+
+\Q: The Balance. You have a balance and need to weigh objects. The weight of each object will be between 1 and 40 pounds inclusive and will be a round number. What’s the fewest number of weights that you need to be able to balance any of these objects?
+
+\Q: Burning Sticks. A stick burns out in one hour from one end to the other. How do you measure 45 minutes using two such sticks? Note that sticks are made of different material and the burning
+speed along different sections are different so you can't use the length of the burnt section to estimate time.
+
+\Q: 3 3 8 8 Puzzle. Using the four numbers 3, 3, 8, and 8, and the usual four arithmetic operations (addition, subtraction, multiplication and division), can you make the number 24?
+
+\A: $8 \div (3- 8 \div 3)$.
+
+
+
+\end{document}
