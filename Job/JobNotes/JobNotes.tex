@@ -1,0 +1,275 @@
+\documentclass{article}
+\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
+
+\title{Job Notes}
+\author{Xi Tan (tan19@purdue.edu)}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Brain Teasers}
+\ques{Separate any quadrilateral into two equal areas from one of its vertices. \url{http://activity.ntsec.gov.tw/activity/race-1/48/high/030414.pdf}}
+
+\ques{1000 (with one bad) bottles of wine and 10 rats. How about 2 bad bottles? ({\bf{Goldman Sachs Strat}})}
+\ans{Binary coding.}
+
+\section{Differential Equations}
+\ques{Solve $f' = f$ and $g''=g$. ({\bf{Goldman Sachs Strat}})}
+\ans{
+	\begin{align}
+		f(x) &= Ce^x\\
+		g(x) &= Ce^x + De^{-x}
+	\end{align}
+}
+
+\section{Calculus}
+\ques{Expand $e^x$ using Talyor expansion. When does $\sum_{i=1}^\infty \frac{x^n}{n!}$ converge? ({\bf{Goldman Sachs Strat}})}
+
+\section{Linear Algebra}
+
+\ques{Prove if $\A^T\A = \A^2$, then $\A$ is real symmetric ($\A = \A^T$).}
+
+\ans{
+Hint: to prove $\B = \bf{0}$, only need to show $\tr(\B^T\B) = \bf{0}$. Hence,
+\begin{align}
+	\tr((\A-\A^T)^T(\A-\A^T)) &= \tr(\A^T\A - \A^T\A^T - \A\A + \A\A^T)\\
+	&= \tr(\A^2 - (\A^T)^2 - \A^2 + \A\A^T)\\
+	&= \tr(-(\A^T)^2 + (\A^2)^T)\\
+	&= \bf{0}
+\end{align}
+}
+
+\section{Probability and Statistics}
+
+\ques{
+	Toss a coin, with probabiliy $p$ the outcome is head (H), and $q = 1 - p$ a tail (T). What is the smallest expected number of tosses to obtain a patter $P_n$ of length $n$? How about the $k^{th}$ smallest?
+}
+\ans{
+	For the first occurrence: shift the pattern $P_n$ one at a time and collect all overlapping sub-patterns with $P_n$, then add the corresponding conditional expected numbers. Hence the more overlaps you have, the bigger the expected number of obtaining that pattern. For the follow-up occurrences, further add the marginal expected number of $P_n$.
+
+	{\em{Example 1:}} For pattern ``HTHHTHH'', the expected number of first occurrence is:
+	\begin{align}
+		E(HTHHTHH) &= E(HTHH) + p^{-5}q^{-2}\\
+		&= E(H) + p^{-3}q^{-1} + p^{-5}q^{-2}\\
+		&= p^{-1} + p^{-3}q^{-1} + p^{-5}q^{-2}
+	\end{align}
+	The expcted number of the $k^{th} (k \ge 2)$ occrences is
+	\begin{align}
+		E((HTHHTHH)_k) &= E(HTHHTHH) + (k-1)p^{-5}q^{-2}\\
+		&= (p^{-1} + p^{-3}q^{-1} + p^{-5}q^{-2}) + (k-1)p^{-5}q^{-2}
+	\end{align}
+
+	{\em{Example 2:}} For a fair coin ($p=1/2$), the expected number of the first occurrence: $E(HH)=E(TT)=6$, $E(HT)=E(TH)=4$, $E(HHT)=E(THH)=8$, $E(HTH)=E(THT)=10$, $E(HHH)=E(TTT)=14$, and etc.
+}
+
+
+\ques{
+	What is the expected number of (fair) coin tosses you need to have two heads in a row? ({\bf{Barclays}})
+}
+\ans{
+	six, by Recursive function.	
+}
+
+\ques{
+	$\lim\limits_{x \to 0} \left[\frac{a^x+b^x}{2}\right]^{\frac{1}{x}} ({\bf{Barclays}})$
+}
+\ans{
+	\begin{align}
+		f(x) &= \left[\frac{a^x+b^x}{2}\right]^{\frac{1}{x}}\\
+		g(x) &= ln(f(x)) = \frac{\ln{\frac{a^x+b^x}{2}}}{x}\\
+		\lim\limits_{x \to 0}g(x) &= \lim\limits_{x \to 0}\frac{\ln{\frac{a^x+b^x}{2}}}{x}\\
+		&= \lim\limits_{x \to 0}\frac{\frac{1}{\frac{a^x+b^x}{2}}\frac{(a^x\ln a + b^x\ln b)}{2}}{1}\\
+		&= \lim\limits_{x \to 0} \frac{(a^x\ln a + b^x\ln b)}{a^x+b^x}\\
+		&= \frac{(\ln a + \ln b)}{2}\\
+		\lim\limits_{x \to 0}f(x) &= \exp(\lim\limits_{x \to 0}g(x)) = \exp{\frac{(\ln a + \ln b)}{2}} = \sqrt{ab}
+	\end{align}
+}
+
+\ques{
+	Secretary problem.
+}
+\ques{
+	Describe the Central Limit Theorem. ({\bf{Goldman Sachs Strat}})
+}
+\ques{
+	What is $P(X=0.5), if X \sim U[0,1]?$ Give an example of a combination of discrete and continuous random variable. ({\bf{Goldman Sachs Strat}})
+}
+\ans{
+	$P(X=0.5) = 0$. Toss a coin, if it's head, draw from a discrete distribution; otherwise if it's tail, draw from a continuous distribution.
+}
+
+\ques{
+	How to generate uniform distribution of [0,100] using one fair coin? How about using a biased coin? ({\bf{Goldman Sachs Strat}})
+}
+\ans{
+	Since $2^7 = 128 > 100$, we can throw a fair coin $7$ times and discard (any) $28$ outcomes then use the remaining $100$ outcomes to represent $[0,100]$. Notice that regardless of $p$, $HT$ and $TH$ always have the same probability. So for a biased coin, we throw a coin twice but ignore $HH$ and $TT$, and let say $HT$ represent a $head$ of a fair coin and $TH$ a $tail$ of a fair coin. Then this problem reduces to the fair coin version.
+}
+
+\ques{Consider the following game. The player tosses a die once only. The payoff is $1$ dollar for each dot on the upturned face. Assuming a fair die, at what level should you set the ticket price of this game? ({\bf{The Blue Book}})}
+
+\ques{Suppose we play a game. I roll a die up to three times. Each time I roll, you can either take the number showing as dollars, or roll again. What is your expected winnings? ({\bf{The Blue Book}})}
+
+\ques{Let's play a game. There are four sealed boxes. There is $100$ pounds in one box and the others are empty. A player can pay $X$ to open a box and take the contents as many times as they like. Assuming this is a fair game, what is the value of X? ({\bf{The Blue Book}})}
+
+
+\ques{We play a game: I pick a number n from 1 to 100. If you guess correctly, I pay you $\$n$ and zero otherwise. How much would you pay to play this game? ({\bf{The Blue Book}})}
+\ques{Suppose you have a fair coin. You start with a dollar, and if you toss a $H$, your position doubles, if you toss a $T$, your position halves. What is the expected value of the money you have if you toss the coin infinitely? ({\bf{The Blue Book}})}
+\ques{Suppose we toss a fair coin, and let $N$ denote the number of tosses until we get a head (including the final toss). What is $E(N)$ and $Var(N)$? ({\bf{The Blue Book}})}
+\ques{We play a game, with a fair coin. The game stops when either two heads (H) or tails (T) appear consecutively. What is the expected time until the game stops? ({\bf{The Blue Book}})}
+\ques{For a fair coin, what is the expected number of tosses to get three heads in a row? ({\bf{The Blue Book}})}
+\ques{You toss a biased coin. What is the expected length of time until a head is tossed? For two consecutive heads? ({\bf{The Blue Book}})}
+\ques{I have a bag containing nine ordinary coins and one double-headed one. I remove a coin and flip it three times. It comes up heads each time. What is the probability that it is the double-header? ({\bf{The Blue Book}})}
+\ques{I take an ordinary-looking coin out of my pocket and flip it three times. Each time it is a head. What do you think is the probability that the next flip is also a head? What if I had flipped the coin $100$ times and each flip was a head? ({\bf{The Blue Book}})}
+\ques{You throw a fair coin one million times. What is the expected number of strings of $6$ heads followed by $6$ tails? ({\bf{The Blue Book}})}
+\ques{Suppose you are throwing a dart at a circular board. What is your expected distance from the center? Make any necessary assumptions. Suppose you win a dollar if you hit $10$ times in a row inside a radius of $R/2$, where $R$ is the radius of the board. You have to pay 10 cents for every try. If you try $100$ times, how much money would you have lost/made in expectation? Does your answer change if you are a professional and your probability of hitting inside R/2 is double of hitting outside $R/2$? ({\bf{The Blue Book}})}
+
+
+
+\ques{If $Y$ and $Z$ are independent standard normal random variables, and $X = aY + bZ$, what are the expectation and variance of $X|Y$? ({\bf{Barclays}})}
+
+\A: $E(X|Y) = aY$, $Var(X|Y) = b^2$.
+
+\ques{You and I each flip 3 fair coins, if we got same heads I pay you \$2, if different you pay me \$1. Will you play this game? ({\bf{SIG}})}
+\ans{
+Naive Way: 
+\begin{align}
+	P(A=B=0) &= \left[{{3}\choose{0}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}\\
+	P(A=B=1) &= \left[{{3}\choose{1}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
+	P(A=B=2) &= \left[{{3}\choose{2}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
+	P(A=B=3) &= \left[{{3}\choose{3}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}	
+\end{align}
+So
+\begin{align}
+	P(A=B) &= \frac{1}{64} + \frac{9}{64} + \frac{9}{64} + \frac{1}{64} = \frac{5}{16}
+\end{align}
+Don't forget the case when both had no head (A=B=0).
+
+Clever Way: Let both do their tossing and then let B turn over each of her coins. Then the event you are looking for is that exactly three out of six coins show heads. Since B's "trick" doesn't destroy any randomness or independency, the answer is
+\begin{align}
+	P(A=B) &= {{6}\choose{3}} \left(\frac{1}{2}\right)^3 = \frac{5}{16}
+\end{align}
+}
+
+\ques{In a hospital there were 3 boys and some girls. A woman gave birth to a child in the hospital. A nurse picked up a child at random and was a boy. What is the probability that that woman gave birth to a boy? ({\bf{SIG}})}
+\ans{
+Naive Way:
+\begin{align}
+	P(\text{Boy} ~|~ \text{Picked a Boy}) &= \frac{P(\text{Picked a Boy} ~|~ \text{Boy})P(\text{Boy})}{P(\text{Picked a Boy})}\\
+	 &= \frac{P(\text{Picked a Boy} ~|~ \text{Boy})P(\text{Boy})}{P(\text{Picked a Boy} ~|~ \text{Boy})P(\text{Boy}) + P(\text{Picked a Boy} ~|~ \text{Girl})P(\text{Girl})}\\
+	 &= \frac{\frac{4}{3+N+1} \cdot \frac{1}{2}}{\frac{4}{3+N+1} \cdot \frac{1}{2} + \frac{3}{3+N+1} \cdot \frac{1}{2}}\\
+	 &= \frac{4}{4+3} = \frac{4}{7}
+\end{align}
+}
+
+\ques{A cup of water. You drink half, and I drink half of the rest, and you drink half of the rest, and let this process continue until the cup is empty. How much water did you drink? ({\bf{LinkedIn}})}
+\ans{
+Naive Way: 
+\begin{align}
+	\frac{1}{2} + \frac{1}{2^3} + \frac{1}{2^5} + \cdots = \frac{\frac{1}{2}}{1-\frac{1}{4}} = \frac{2}{3}
+\end{align}
+Clever Way: The ratio is alway 2:1, so you had $\frac{2}{3}$.
+}
+
+\ques{Dice With Increasing Number. Throw a fair dice three times, what is the probability that we obtain three numbers in strictly increasing order?}
+\ans{
+There are $6 \times 5 \times 4$ ways to pick three different numbers (for strictly increasing order), and in total there are $(6 \times 6 \times 6) \times 3!$ ways to pick arbitrary three numbers. So the probability is $\frac{6 \times 5 \times 4}{(6 \times 6 \times 6) \times 3!} = \frac{5}{54}$.
+}
+
+\ques{Airplane Seating Problem. 100 passengers are boarding an airplane with 100 seats. Everyone has a ticket with his seat number. These 100 passengers boards the airplane in order. However, the first passenger lost his ticket so he just take a random seat. For any subsequent passenger, he either sits on his own seat or, if the seat is taken, he takes a random empty seat. What's the probability that the last passenger would sit on his own seat? There is a very simple explanation for the result.}
+
+\ques{The Balance. You have a balance and need to weigh objects. The weight of each object will be between 1 and 40 pounds inclusive and will be a round number. What’s the fewest number of weights that you need to be able to balance any of these objects?}
+
+\ques{Burning Sticks. A stick burns out in one hour from one end to the other. How do you measure 45 minutes using two such sticks? Note that sticks are made of different material and the burning speed along different sections are different so you can't use the length of the burnt section to estimate time.}
+
+\ques{3 3 8 8 Puzzle. Using the four numbers 3, 3, 8, and 8, and the usual four arithmetic operations (addition, subtraction, multiplication and division), can you make the number 24?}
+\ans{$8 \div (3- 8 \div 3)$.}
+
+
+\section{Financial Mathematics}
+\ques{Compute $E(B_t^3|B_s), ~ t > s$ ({\bf{Barclays}})}
+
+\ques{If $W_t$ denotes a Brownian motion, what is $dW_t^n$, where $W_t^n$ is the $n^{th}$ power of $W_t$? ({\bf{Barclays}})}
+
+\ans{use Ito's lemma.}
+
+\ques{If $m = \int_0^1 W_t dt$, what is $m^2$? ({\bf{Barclays}})}
+
+\ans{1/3.}
+
+\section{Option Pricing}
+\subsection{Black-Scholes}
+\ques{Describe Ito's lemma. Derive the Black-Scholes equation. Solve
+\begin{align}
+	dr_t = a(b-r_t)dt + \sigma dW_t
+\end{align}
+But this is not a good model, since the interest rate $r_t$ must not be negative. How to fix it? Add a $\sqrt{r_t}$ term. This is called the CIR model:
+\begin{align}
+	dr_t = a(b-r_t)dt + \sigma \sqrt{r_t}dW_t
+\end{align}
+Find the first and second moment of the CIR model. What is the distribution of $r_t$? In general, how would you find a distribution? Hint: the distribution of $\sqrt{r_t}$ is easy. ({\bf{Goldman Sachs Strat}})}
+
+\ques{Derive the Black-Scholes equation for a stock, $S$. What boundary conditions are satisfied at $S=0$ and $S=\infty$? ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Derive the Black-Scholes equation so that an undergrad can understand it. ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Explain the Black-Scholes equation. ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Suppose two assets in a Black-Scholes world have the same volatility but different drifts. How will the price of call options on them compare? Now suppose one of the assets undergoes downward jumps at random times. How will this affect option prices? ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Suppose an asset has a deterministic time dependent volatility. How would I price an option on it using the Black-Scholes theory? How would I hedge it? ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{In the Black-Scholes world, price a European option with a payoff of $\max(S_T^2-K,0)$ at time $T$. ({\bf{The Blue Book}})
+\ans{TBD}
+
+\ques{Develop a formula for the price of a derivative paying $\max(S_T(S_T-K),0)$ in the Black-Scholes model. ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Give me the price of a derivative which pays $\log(S_T)S_T$, you can assume that the Black-Scholes model is valid. How can we get the price more efficiently? ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Prove that the implied volatility of a put and the implied volatility of a call (with the same strike) are the same. ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Why drifts are not in the Black Scholes formula?}
+\ans{TBD}
+
+\subsection{Option price properties}
+\ques{Stock price is \$50 for the moment. Using B-S model we calculated the call option price \$5 using volatility 30\%. What would be the price if the volatility is actually 35\%? ({\bf{SIG}})}
+\ans{TBD}
+
+\ques{Sketch the value of a vanilla call option as a function of spot. How will it evolve with time? ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Is it ever optimal to early exercise an American call option? What about a put option? ({\bf{The Blue Book}})} \label{American call/put option}
+\ans{TBD}
+
+\ques{In FX markets an option can be expressed as either a call or a put, explain. Related your answer to \ref{American call/put option}. ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Approximately how much would a one-month call option at-the-money with a million dollar notional and spot $1$ be worth? ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{Suppose a call option only pays off if spot never passes below a barrier $B$. Sketch the value as a function of spot. Now suppose the option only pays off if spot passes below $B$ instead. Sketch the value of the option again. Relate the two graphs. ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{What is meant by put-call parity? ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\ques{What happens to the price of a vanilla call option as volatility tends to infinity? ({\bf{The Blue Book}})}
+\ans{TBD}
+
+\section{Machine Learning}
+
+\section{Programming}
+
+\section{Algorithms}
+
+
+\end{document}
