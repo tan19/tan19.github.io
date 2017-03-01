@@ -9,7 +9,13 @@
 \maketitle
 \tableofcontents
 
+\section{Preliminaries}
+Radius of convergence
+
+
 \section{Brain Teasers}
+\ques{What is $\sqrt{2016} - \sqrt{2015}$?}
+
 \ques{Separate any quadrilateral into two equal areas from one of its vertices. \url{http://activity.ntsec.gov.tw/activity/race-1/48/high/030414.pdf}}
 
 \ques{1000 (with one bad) bottles of wine and 10 rats. How about 2 bad bottles? ({\bf{Goldman Sachs Strat}})}
@@ -23,9 +29,26 @@
 		g(x) &= Ce^x + De^{-x}
 	\end{align}
 }
+\ques{Solve $y'(x) + ay(x) = f(x)$ with $f(0)=x_0$. ({\bf{Barclays}})
+
 
 \section{Calculus}
-\ques{Expand $e^x$ using Talyor expansion. When does $\sum_{i=1}^\infty \frac{x^n}{n!}$ converge? ({\bf{Goldman Sachs Strat}})}
+\ques{Expand $e^x$ using Taylor expansion. When does $\sum_{i=1}^\infty \frac{x^n}{n!}$ converge? ({\bf{Goldman Sachs Strat}})}
+
+\ques{
+	$\lim\limits_{x \to 0} \left[\frac{a^x+b^x}{2}\right]^{\frac{1}{x}} ({\bf{Barclays}})$
+}
+\ans{
+	\begin{align}
+		f(x) &= \left[\frac{a^x+b^x}{2}\right]^{\frac{1}{x}}\\
+		g(x) &= ln(f(x)) = \frac{\ln{\frac{a^x+b^x}{2}}}{x}\\
+		\lim\limits_{x \to 0}g(x) &= \lim\limits_{x \to 0}\frac{\ln{\frac{a^x+b^x}{2}}}{x}\\
+		&= \lim\limits_{x \to 0}\frac{\frac{1}{\frac{a^x+b^x}{2}}\frac{(a^x\ln a + b^x\ln b)}{2}}{1}\\
+		&= \lim\limits_{x \to 0} \frac{(a^x\ln a + b^x\ln b)}{a^x+b^x}\\
+		&= \frac{(\ln a + \ln b)}{2}\\
+		\lim\limits_{x \to 0}f(x) &= \exp(\lim\limits_{x \to 0}g(x)) = \exp{\frac{(\ln a + \ln b)}{2}} = \sqrt{ab}
+	\end{align}
+}
 
 \section{Linear Algebra}
 
@@ -42,6 +65,27 @@ Hint: to prove $\B = \bf{0}$, only need to show $\tr(\B^T\B) = \bf{0}$. Hence,
 }
 
 \section{Probability and Statistics}
+\ques{
+	Two people take turns to flip a coin until it shows an ``HT'', and the one who flipped the ``T'' wins the game. What's the probability of winning if flip first? First, is this probability smaller or equal or bigger than $50\%$? ({\bf{Barclays}})
+}
+\ans{
+	The probability is smaller than $50\%$ since you need an ``H'' first. Use recursion. ({\bf{Barclays}})
+}
+
+\ques{
+	Generate two random variables $X$ and $Y$, $Corr(X,Y) = \rho$, from two independent random variable $Z_1, Z2$ (Cholesky Decomposition). ({\bf{Barclays}})
+}
+
+\ques{
+	Toss a dice 12000 times, denote $X$ as the number of times when get 6. $P(1800<X<2100)$? Central limit theorem. ({\bf{Barclays}})
+}
+
+\ques{
+	Roll a dice, you get the dollar amount equal to the number shown on the dice. You can stop anytime or roll again up to three times. What is your expected return? ({\bf{Barclays}})
+}
+\ans{
+	Work backwards as a DP problem.
+}
 
 \ques{
 	Toss a coin, with probabiliy $p$ the outcome is head (H), and $q = 1 - p$ a tail (T). What is the smallest expected number of tosses to obtain a patter $P_n$ of length $n$? How about the $k^{th}$ smallest?
@@ -70,21 +114,6 @@ Hint: to prove $\B = \bf{0}$, only need to show $\tr(\B^T\B) = \bf{0}$. Hence,
 }
 \ans{
 	six, by Recursive function.	
-}
-
-\ques{
-	$\lim\limits_{x \to 0} \left[\frac{a^x+b^x}{2}\right]^{\frac{1}{x}} ({\bf{Barclays}})$
-}
-\ans{
-	\begin{align}
-		f(x) &= \left[\frac{a^x+b^x}{2}\right]^{\frac{1}{x}}\\
-		g(x) &= ln(f(x)) = \frac{\ln{\frac{a^x+b^x}{2}}}{x}\\
-		\lim\limits_{x \to 0}g(x) &= \lim\limits_{x \to 0}\frac{\ln{\frac{a^x+b^x}{2}}}{x}\\
-		&= \lim\limits_{x \to 0}\frac{\frac{1}{\frac{a^x+b^x}{2}}\frac{(a^x\ln a + b^x\ln b)}{2}}{1}\\
-		&= \lim\limits_{x \to 0} \frac{(a^x\ln a + b^x\ln b)}{a^x+b^x}\\
-		&= \frac{(\ln a + \ln b)}{2}\\
-		\lim\limits_{x \to 0}f(x) &= \exp(\lim\limits_{x \to 0}g(x)) = \exp{\frac{(\ln a + \ln b)}{2}} = \sqrt{ab}
-	\end{align}
 }
 
 \ques{
@@ -187,7 +216,52 @@ There are $6 \times 5 \times 4$ ways to pick three different numbers (for strict
 \ans{$8 \div (3- 8 \div 3)$.}
 
 
+\section{Finance}
+\ques{
+	What is implied volatility? ({\bf{Barclays}})
+}
+
+\ques{
+	Why you don't excise an American call option early? How about American put? ({\bf{Barclays}})
+}
+
+\ques{
+	Portfolio optimization. Say the client has 20 stocks, what information you need from the client to do optimization, what information you need to collect from Bloomberg (consider time horizon, the client's expected return), who to calculate variance-covariance matrix. Write down the minimized function and its constraint. ({\bf{Barclays}})
+}
+
+
 \section{Financial Mathematics}
+
+\ques{
+	GARCH model. ({\bf{Barclays}})
+}
+
+\ques{
+	What is the distribution of $\int W_t dW_t$? ({\bf{Barclays}})
+}
+
+\ques{
+	Is $Z_t = W_t^3 + 3tW_t$ a Martingale? ({\bf{Barclays}})
+}
+
+\ques{Describe Ito's lemma. Derive the Black-Scholes equation. Solve
+\begin{align}
+	dr_t = a(b-r_t)dt + \sigma dW_t
+\end{align}
+But this is not a good model, since the interest rate $r_t$ must not be negative. How to fix it? Add a $\sqrt{r_t}$ term. This is called the CIR modelCIR:
+\begin{align}
+	dr_t = a(b-r_t)dt + \sigma \sqrt{r_t}dW_t
+\end{align}
+Find the first and second moment of the CIR model. What is the distribution of $r_t$? In general, how would you find a distribution? Hint: the distribution of $\sqrt{r_t}$ is easy. ({\bf{Goldman Sachs Strat}})}
+
+\ans{
+	The CIR model bounces back to $r_t = b$. That is, if it's high, the drift term drives it down; if it's low, the volatility part drives it up.
+}
+
+\ques{
+	CIR process, what is the expectation of $X$ and its second moment. ({\bf{Barclays}})
+}
+
 \ques{Compute $E(B_t^3|B_s), ~ t > s$ ({\bf{Barclays}})}
 
 \ques{If $W_t$ denotes a Brownian motion, what is $dW_t^n$, where $W_t^n$ is the $n^{th}$ power of $W_t$? ({\bf{Barclays}})}
@@ -200,16 +274,6 @@ There are $6 \times 5 \times 4$ ways to pick three different numbers (for strict
 
 \section{Option Pricing}
 \subsection{Black-Scholes}
-\ques{Describe Ito's lemma. Derive the Black-Scholes equation. Solve
-\begin{align}
-	dr_t = a(b-r_t)dt + \sigma dW_t
-\end{align}
-But this is not a good model, since the interest rate $r_t$ must not be negative. How to fix it? Add a $\sqrt{r_t}$ term. This is called the CIR model:
-\begin{align}
-	dr_t = a(b-r_t)dt + \sigma \sqrt{r_t}dW_t
-\end{align}
-Find the first and second moment of the CIR model. What is the distribution of $r_t$? In general, how would you find a distribution? Hint: the distribution of $\sqrt{r_t}$ is easy. ({\bf{Goldman Sachs Strat}})}
-
 \ques{Derive the Black-Scholes equation for a stock, $S$. What boundary conditions are satisfied at $S=0$ and $S=\infty$? ({\bf{The Blue Book}})}
 \ans{TBD}
 
@@ -267,9 +331,38 @@ Find the first and second moment of the CIR model. What is the distribution of $
 
 \section{Machine Learning}
 
-\section{Programming}
+\section{Optimization}
+\ques{
+	What is Newton's method? ({\bf{Barclays}})
+}
 
-\section{Algorithms}
+\ques{
+	Numerical method to find the square root of a number. Newton's method and its convergence, how to set the start point, how to do the test, consider the situation when the input is 0. ({\bf{Barclays}})
+}
+
+\section{Programming}
+\ques{
+	In C++, what is a virtual function?
+}
+
+\section{Algorithms and Data Structures}
+\ques{
+	Approximation of $cot(x)$, use Taylor expansion to expand the numerator and denominator separately. Draw the graph, what is the difference between the approximation and the ``real'' curve. How to modify it. ({\bf{Barclays}})
+}
+\ques{
+	Construct a phone-book using hash table, how to deal with collision (chaining, probing), how to check whether the manipulation is to insert a new value or to update the old value. ({\bf{Barclays}})
+}
+\ques{
+	Write a program to do matrix multiplication, given the matrix class (consider the extreme situation, throw exception). ({\bf{Barclays}})
+}
+
+\ques{
+	Give a list of coordinates $\{(x_1,y_1),\cdots,(x_n,y_n)\}$, sorted by $x$, write a program to interpolate $y$ given $x$. Consider robostness (corner cases) and efficiency $O(\log n)$. ({\bf{Barclays}})
+}
+
+\ques{
+	Which data structure is not good for searching: binary-search tree, B-tree, heap, hash? ({\bf{Barclays}})
+}
 
 
 \end{document}

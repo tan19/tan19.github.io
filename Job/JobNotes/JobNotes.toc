@@ -1,12 +1,15 @@
-\contentsline {section}{\numberline {1}Brain Teasers}{1}{section.1}
-\contentsline {section}{\numberline {2}Differential Equations}{1}{section.2}
-\contentsline {section}{\numberline {3}Calculus}{2}{section.3}
-\contentsline {section}{\numberline {4}Linear Algebra}{2}{section.4}
-\contentsline {section}{\numberline {5}Probability and Statistics}{2}{section.5}
-\contentsline {section}{\numberline {6}Financial Mathematics}{5}{section.6}
-\contentsline {section}{\numberline {7}Option Pricing}{6}{section.7}
-\contentsline {subsection}{\numberline {7.1}Black-Scholes}{6}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Option price properties}{7}{subsection.7.2}
-\contentsline {section}{\numberline {8}Machine Learning}{7}{section.8}
-\contentsline {section}{\numberline {9}Programming}{7}{section.9}
-\contentsline {section}{\numberline {10}Algorithms}{7}{section.10}
+\contentsline {section}{\numberline {1}Preliminaries}{1}{section.1}
+\contentsline {section}{\numberline {2}Brain Teasers}{1}{section.2}
+\contentsline {section}{\numberline {3}Differential Equations}{2}{section.3}
+\contentsline {section}{\numberline {4}Calculus}{2}{section.4}
+\contentsline {section}{\numberline {5}Linear Algebra}{2}{section.5}
+\contentsline {section}{\numberline {6}Probability and Statistics}{3}{section.6}
+\contentsline {section}{\numberline {7}Finance}{6}{section.7}
+\contentsline {section}{\numberline {8}Financial Mathematics}{6}{section.8}
+\contentsline {section}{\numberline {9}Option Pricing}{7}{section.9}
+\contentsline {subsection}{\numberline {9.1}Black-Scholes}{7}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Option price properties}{8}{subsection.9.2}
+\contentsline {section}{\numberline {10}Machine Learning}{8}{section.10}
+\contentsline {section}{\numberline {11}Optimization}{8}{section.11}
+\contentsline {section}{\numberline {12}Programming}{8}{section.12}
+\contentsline {section}{\numberline {13}Algorithms and Data Structures}{9}{section.13}
