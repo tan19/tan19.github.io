@@ -24,6 +24,14 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
@@ -41,8 +49,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.st
 INPUT /usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
@@ -59,6 +65,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/esint/esint.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/esint/esint.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -183,6 +191,11 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/esint/uesint.fd
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/esint/uesint.fd
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT JobNotes.toc
@@ -199,6 +212,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/esint/esint10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/esint/esint10.tfm
 OUTPUT JobNotes.toc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -225,3 +241,4 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb
