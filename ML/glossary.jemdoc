@@ -1,0 +1,8 @@
+# jemdoc: menu{ML/MENU_ML}{glossary.html}
+= Glossary
+
+[http://alumni.media.mit.edu/~tpminka/statlearn/glossary/ Glossary]
+
+
+- Model Evidence: Model evidence, or marginal likelihood function, is a likelihood function in which some parameter variables have been marginalized, usually denoted by P(D|M).
+                  For example, in polynomial regression, M may denotes the degree of the regression function, and parameter variables are the coefficients for any given M.

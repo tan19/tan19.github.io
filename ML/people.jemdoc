@@ -1,0 +1,49 @@
+# jemdoc: menu{ML/MENU_ML}{people.html}
+= People
+
+= Canada
+- U. of Montreal          : Yoshua Bengio (Deep Learning)
+- U. of Toronto           : Geoffrey Hinton (Deep Learning), Radford Neal (MCMC)
+
+= Europe
+- U. of Cambridge         : Zoubin Ghahramani, David MacKay ([http://videolectures.net/course_information_theory_pattern_recognition/ video]), Carl Rasmussen
+- UCL                     : John Shawe-Taylor (SVM, Kernel), Vladimir Vapnik (SVM)
+- ETH                     : Joachim Buhman
+- Max Planck Institute    : Bernhard Schoelkopf, Michael Black
+- Hebrew U. of Jerusalem  : Nir Friedman, Yair Weiss
+- Microsoft Research (UK) : Christopher Bishop, Tom Minka (EP), Andrew Blake
+
+= USA
+== East
+- CMU                     : Andrew Moore, Tom Mitchell, Alex Smola (Kernel), John Lafferty
+- MIT                     : Leslie Kaelbling, Tommi Jaakkola, Bill Freeman, Alex Pentland, Josh Tenenbaum
+- UMD                     : Lise Getoor
+- Brown                   : Thomas Hoffman, Michael Littman
+- Rutgers                 : Tong Zhang, Vladimir Pavlovic
+- UMass                   : Andrew McCallum
+- U. of Penn              : Michael Kearns, Jianbo Shi
+- NYU                     : Yann LeCun (Deep Learning), Sam Roweis, Mehryar Mohri
+- Harvard                 : Ryan Adams, Avi Pfeffer
+- Duke                    : Sayan Mukherjee
+- Georgia Tech            : Aaron Bobick, Le Song (Kernel), Irfan Essa, Charles Isbell
+- Princeton               : David Blei (Topic Models), Rob Schapire
+- Cornell                 : Thorsten Joachims, Rich Caruana
+- Columbia                : Tony Jebara, Michael Collins, Rocco Servedio, Peter Orbanz
+
+== West
+- UC-Berkeley             : Michael Jordan (PGM), Peter Bartlett, Leo Breiman, Martin Wainwright
+- Microsoft Research (US) : David Heckerman, Eric Horovitz, Nebojsa Jojic, Phil Long, Chris Meek, John Platt, Léon Bottou
+- Google Research         : Kevin Murphy, Yoram Singer, Samy Bengio, Corinna Cortes, Fernando Perreira
+- Stanford                : Andrew Ng (Deep Learning), Daphne Koller (PGM)
+- UW-Seattle              : Marina Meila, Jeff Bilmes, Dieter Fox, Raj Rao
+- UCLA                    : Judea Pearl (PGM/Causal)
+- UCI                     : Padhraic Smyth
+- UCSC                    : Manfred Warmuth
+- UCSD                    : Yoav Freund, Lawrence Saul
+- Oregon State U.         : Tom Dietterich
+
+== North & South
+- Wisconsin               : Xiaojin Zhu
+- U. of Chicago           : Partha Niyogi
+- UIUC                    : David Forsyth
+- U. of Texas             : Adam Klivans

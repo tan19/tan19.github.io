@@ -1,0 +1,28 @@
+# jemdoc: menu{ML/MENU_ML}{FAQ.html}
+= FAQ
+### FAQ ###
+- Q: Why is the name "statistical" machine learning / data mining / pattern recognition?
+- A: It means the data is in vector form and not in, for example, strings, where it will be called "syntactical/structural" pattern recognition.
+
+- Q: Unbiased v.s. consistent estimators
+- A: Roughly speaking, "unbiased" is related to repeated experiments with the same number of samples while "consistent" is related to increased number of samples.
+     Unbiased is "vertical", and consistent is "horizontal". There are examples that are biased but consistent, and unbiased but not consistent.
+
+- Q: How can I categorize machine learning models and methods?
+- A: In general, machine learning models can be categorized according to their strategies for generating features:
+1) fixed basis function models - basis functions are pre-designed;
+2) adaptive basis function models (CART, Neural Networks) - form or parameters of basis functions learned from data;
+3) kernel models (SVM, GP) - basis functions are implicitly defined, dimension of which is essentially infinite;
+4) latent variable models / dimension reduction (HMMs, Sate Space Models; PCA, ICA).
+
+As to machine learning inference methods, they can be classified into three categories:
+1) exact inference / direct inference (conjugacy, convex optimization, numerical optimization);
+2) deterministic approximation inference (Variational Bayes and Expectation Propagation);
+3) stochastic approximation inference (MCMC).
+
+Ask the following questions, in the listed order, for each machine learning problem:
+1) task: regression / classification / clustering
+2) data: supervised learning / unsupervised learning
+3) feature generation: fixed / adaptive / kernel / latent
+4) model: parametric / nonparametric
+5) inference: exact / variational / MCMC

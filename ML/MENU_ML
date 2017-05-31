@@ -1,0 +1,35 @@
+Xi Tan
+    About       	    [../index.html]
+    
+Machine Learning
+	Homepage				[index.html]
+	People					[people.html]
+	Good Readings			[good_readings.html]
+	Glossary				[glossary.html]
+	FAQ						[FAQ.html]
+
+Models
+	Logistic Regression						[.html]
+	Naive Bayes								[.html]
+	Gaussian Proceeses (GP)					[.html]
+	Support Vector Machines (SVM)  			[.html]
+	Random Forest							[.html]	
+	Decision Trees							[.html]
+	Gradient Boosting Machines (GBM) 		[.html]
+	Graphical Models						[.html]
+	Independent Component Analysis (ICA)	[.html]
+	Principle Component Analysis (PCA) 		[.html]
+
+Algorithms
+	Sampling Methods		[.html]
+	Approximate Methods		[.html]
+
+Theories
+	Learning Theory			[.html]
+
+Tools
+	GPU						[.html]
+	xgboost					[.html]	
+	LightGBM				[.html]
+	Tensorflow				[.html]
+	Theano					[.html]

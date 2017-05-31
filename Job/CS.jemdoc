@@ -1,0 +1,18 @@
+# jemdoc: menu{Job/MENU_JOB}{CS.html}
+== CS
+
+- C/C++ and Python: 《C++ Primer》、IKM C++ test
+- Data Structure
+  -- Linear DS: arrays, linked list, stack, queue, heap
+  -- Nonlinear DS: trees, graphs
+  -- [https://en.wikipedia.org/wiki/List_of_data_structures list of DS]
+- Algorithms
+  -- Sorting: bubble sort, heap sort, merge sort
+- LeetCode
+
+- Cracking the Coding Interview
+- Elements of Programming Interviews
+- Data Structures and Algorithms Made Easy
+- LeetCode
+
+- SQL

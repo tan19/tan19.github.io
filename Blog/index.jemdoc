@@ -1,0 +1,24 @@
+# jemdoc: menu{Blog/MENU_BLOG}{index.html}
+== Blog
+
+Test. 5\/31\/2017
+
+Inline equation $\int_0^\infty e^x dx$.
+
+中文
+
+Multi-line Equation
+\(
+\begin{align}
+	x &= 2 \\
+	y &= \int_0^\infty \log(x) dx \\
+\end{align}
+\)
+
+Tables
+~~~
+{}{table}{TABLENAME}
+first entry  | another entry ||
+as many rows | as you like   ||
+bottom row   | last entry
+~~~

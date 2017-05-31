@@ -1,0 +1,5 @@
+# jemdoc: menu{Statistics/MENU_STATISTICS}{FAQ.html}
+== FAQ
+
+- Q: How do you prove the existence of a stochastic process, e.g., Brownian motion, Gaussian processes?
+- A: Kolmogorov extension theorem.

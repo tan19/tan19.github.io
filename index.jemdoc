@@ -1,0 +1,37 @@
+# jemdoc: menu{MENU_MAIN}{index.html}
+== Welcome to Xi Tan's Homepage
+
+~~~
+{}{img_left}{me.png}{}{225}{225}{}
+
+*Xi Tan* ([CV.pdf CV])
+
+Research Interests: Machine Learning and Computational Finance
+
+- Ph.D in Computer Science (Machine Learning), Purdue University, 2017.
+  -- M.S. in Mathematics (Computational Finance), 2017.
+  -- M.S. in Statistics (Mathematical Statistics), 2014. /Passed Ph.D qual exams in Statistics./
+- M.Phil in Computer Science, Trinity College, University of Cambridge (UK), 2008
+- B.S. in Computer Science, Northwestern Polytechnical University (P.R.China), 2007
+
+E-mail: tan19 at purdue dot edu
+~~~
+
+{{Navy Pier, Chicago (Spring, 2012)}}
+
+
+I have been studying and working mainly in four highly-related subjects: *Computer Science, Machine Learning & Optimization, Statistics & Mathematics, and Finance*. Finance raises questions, Statistics & Mathematics provide with models, Machine Learning & Optimization design algorithms, and finally Computer Science help implement ideas. My academic journey started with two fundamental formulas: the Bayes' Theorem
+
+~~~
+\(
+p(\theta|D) = \frac{\pi(\theta)p(D|\theta)}{\int_\Theta \pi(\theta)p(D|\theta) d\theta}
+\)
+~~~
+
+and the Ito's Lemma:
+~~~
+\(df(t,X_t) =\left(\frac{\partial f}{\partial t} + \mu_t \frac{\partial f}{\partial x} + \frac{\sigma_t^2}{2}\frac{\partial^2f}{\partial x^2}\right)dt+ \sigma_t \frac{\partial f}{\partial x}\,dB_t
+\)
+~~~
+
+I also have broad interests in {Music, Painting, Literature}, {Politics, History, Philosophy}, {Western & Eastern Religions}, and Self-improvement.

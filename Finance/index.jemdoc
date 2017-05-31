@@ -1,0 +1,16 @@
+# jemdoc: menu{Finance/MENU_FINANCE}{index.html}
+= Finance
+
+== Topics ==
+- Financial Mathematics
+- Economics
+- [../Finance/CFA.html CFA], FRM
+
+
+-  [http://ocw.mit.edu/courses/economics/14-01sc-principles-of-microeconomics-fall-2011/ MIT Microeconomics (online course)]
+
+== Miscellaneous ==
+
+- [http://www.economicprinciples.org/wp-content/uploads/ray_dalio__how_the_economic_machine_works__leveragings_and_deleveragings.pdf How the Economic Machine Works]
+- [http://www.quantstart.com/articles/What-are-the-Different-Types-of-Quantitative-Analysts Types of Quants]
+- [http://www.garp.org/media/585808/feb%2041-44_quantclassroom.pdf P v.s. Q]

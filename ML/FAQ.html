@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>FAQ</title>
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Xi Tan</div>
+<div class="menu-item"><a href="../index.html">About</a></div>
+<div class="menu-category">Machine Learning</div>
+<div class="menu-item"><a href="index.html">Homepage</a></div>
+<div class="menu-item"><a href="people.html">People</a></div>
+<div class="menu-item"><a href="good_readings.html">Good&nbsp;Readings</a></div>
+<div class="menu-item"><a href="glossary.html">Glossary</a></div>
+<div class="menu-item"><a href="FAQ.html" class="current">FAQ</a></div>
+<div class="menu-category">Models</div>
+<div class="menu-item"><a href=".html">Logistic&nbsp;Regression</a></div>
+<div class="menu-item"><a href=".html">Naive&nbsp;Bayes</a></div>
+<div class="menu-item"><a href=".html">Gaussian&nbsp;Proceeses&nbsp;(GP)</a></div>
+<div class="menu-item"><a href=".html">Support&nbsp;Vector&nbsp;Machines&nbsp;(SVM)</a></div>
+<div class="menu-item"><a href=".html">Random&nbsp;Forest</a></div>
+<div class="menu-item"><a href=".html">Decision&nbsp;Trees</a></div>
+<div class="menu-item"><a href=".html">Gradient&nbsp;Boosting&nbsp;Machines&nbsp;(GBM)</a></div>
+<div class="menu-item"><a href=".html">Graphical&nbsp;Models</a></div>
+<div class="menu-item"><a href=".html">Independent&nbsp;Component&nbsp;Analysis&nbsp;(ICA)</a></div>
+<div class="menu-item"><a href=".html">Principle&nbsp;Component&nbsp;Analysis&nbsp;(PCA)</a></div>
+<div class="menu-category">Algorithms</div>
+<div class="menu-item"><a href=".html">Sampling&nbsp;Methods</a></div>
+<div class="menu-item"><a href=".html">Approximate&nbsp;Methods</a></div>
+<div class="menu-category">Theories</div>
+<div class="menu-item"><a href=".html">Learning&nbsp;Theory</a></div>
+<div class="menu-category">Tools</div>
+<div class="menu-item"><a href=".html">GPU</a></div>
+<div class="menu-item"><a href=".html">xgboost</a></div>
+<div class="menu-item"><a href=".html">LightGBM</a></div>
+<div class="menu-item"><a href=".html">Tensorflow</a></div>
+<div class="menu-item"><a href=".html">Theano</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>FAQ</h1>
+<div id="subtitle"></div>
+</div>
+<ul>
+<li><p>Q: Why is the name &ldquo;statistical&rdquo; machine learning <i> data mining </i> pattern recognition?</p>
+</li>
+<li><p>A: It means the data is in vector form and not in, for example, strings, where it will be called &ldquo;syntactical/structural&rdquo; pattern recognition.</p>
+</li>
+</ul>
+<ul>
+<li><p>Q: Unbiased v.s. consistent estimators</p>
+</li>
+<li><p>A: Roughly speaking, &ldquo;unbiased&rdquo; is related to repeated experiments with the same number of samples while &ldquo;consistent&rdquo; is related to increased number of samples.
+Unbiased is &ldquo;vertical&rdquo;, and consistent is &ldquo;horizontal&rdquo;. There are examples that are biased but consistent, and unbiased but not consistent.</p>
+</li>
+</ul>
+<ul>
+<li><p>Q: How can I categorize machine learning models and methods?</p>
+</li>
+<li><p>A: In general, machine learning models can be categorized according to their strategies for generating features:
+1) fixed basis function models - basis functions are pre-designed;
+2) adaptive basis function models (CART, Neural Networks) - form or parameters of basis functions learned from data;
+3) kernel models (SVM, GP) - basis functions are implicitly defined, dimension of which is essentially infinite;
+4) latent variable models / dimension reduction (HMMs, Sate Space Models; PCA, ICA).</p>
+</li>
+</ul>
+<p>As to machine learning inference methods, they can be classified into three categories:
+1) exact inference / direct inference (conjugacy, convex optimization, numerical optimization);
+2) deterministic approximation inference (Variational Bayes and Expectation Propagation);
+3) stochastic approximation inference (MCMC).</p>
+<p>Ask the following questions, in the listed order, for each machine learning problem:
+1) task: regression <i> classification </i> clustering
+2) data: supervised learning <i> unsupervised learning
+3) feature generation: fixed </i> adaptive <i> kernel </i> latent
+4) model: parametric <i> nonparametric
+5) inference: exact </i> variational / MCM</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2017-05-31 18:07:22 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
