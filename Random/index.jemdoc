@@ -1,0 +1,83 @@
+# jemdoc: menu{Random/MENU_RANDOM}{index.html}
+= Random Page
+
+
+物、化、生、地
+
+默写世界地图和中国地图
+
+Perfume, Food, Wine, and Tea
+
+园林
+
+-- Ph.D Life: [http://phdcomics.com/ Ph.D Comics], [http://www.pgbovine.net/PhD-memoir.htm The Ph.D Grind], [http://www.cs.unc.edu/~azuma/hitch4.html So Long, and Thanks for the Ph.D], [http://cseweb.ucsd.edu/users/mihir/phd.html The PhD experience] | [http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/giving-a-talk.htm How to do research], [http://cs.brown.edu/~sk/Memos/Grad-School-Recos/ How to write a good recommendation letter], [http://users.ecs.soton.ac.uk/hcd/reviewing.html How to review a paper]
+
+
+>>> My Favorite Introductory Reading List <<<
+
+- Finance (Economics; Derivatives; Pricing Tools)
+-- Microeconomic Theory, by Andreu Mas-Colell, Michael D. Whinston, Jerry R. Green.
+-- Lectures on Macroeconomics, by Olivier Blanchard, Stanley Fischer.
+-- Options, Futures, and Other Derivatives, by John C Hull.
+-- Arbitrage Theory in Continuous Time, by Tomas Bjork.
+-- Stochastic Calculus for Finance I & II, by Steven Shreve.
+
+- Mathematics (Analysis; Algebra; Geometry; Differential Equations)
+-- Calculus, by James Stewart.
+-- Principles of Mathematical Analysis, by Walter Rudin.
+-- Real Variables, by Alberto Torchinsky.
+-- Visual Complex Analysis, by Tristan Needham.
+-- Introductory Functional Analysis with Applications, by Erwin Kreyszig.
+-- Linear Algebra and Its Applications, by Gilbert Strang.
+-- Linear Algebra, by Kenneth M Hoffman, Ray Kunze.
+-- Algebra, by Michael Artin.
+-- Differential Geometry, by Erwin Kreyszig.
+-- Topology Without Tears, by Sidney A. Morris.
+-- Ordinary Differential Equations, by Morris Tenenbaum and Harry Pollard.
+-- Partial Differential Equations, by Lawrence C. Evans.
+
+- Statistics (Random Variables; Stochastic Processes; Models; Theory; Machine Learning)
+-- A First Course in Probability, by Sheldon Ross.
+-- Stochastic Processes, by Sheldon Ross.
+-- Applied Linear Statistical Models, by Michael H. Kutner, John Neter, Christopher J. Nachtsheim, William Li.
+-- Generalized Linear Models, by P. McCullagh and John A. Nelder.
+-- Probability: Theory and Examples, by Rick Durrett
+-- Statistical Inference, by George Casella and Roger L. Berger.
+-- Pattern Recognition and Machine Learning, by Christopher Bishop.
+
+- Optimization (Linear; Nonlinear; Convex)
+-- Introduction to Linear Optimization, by Dimitris Bertsimas, John N. Tsitsiklis.
+-- Nonlinear Programming, by Dimitri Bertsekas.
+-- Linear and Nonlinear Optimization, by David G. Luenberger and Yinyu Ye.
+-- Numerical Optimization, by Jorge Nocedal, Stephen Wright.
+-- Introductory Lectures on Convex Optimization: A Basic Course, by Y. Nesterov.
+-- Convex Optimization, by Stephen Boyd, Lieven Vandenberghe.
+
+- Computer Science (System, OS, Network; Algorithms; Coding)
+-- Computer Systems: A Programmer's Perspective, by Randal E. Bryant, David R. O'Hallaron.
+-- Operating System Concepts, by Abraham Silberschatz, Peter B. Galvin, Greg Gagne.
+-- Computer Networking: A Top-Down Approach, by James F. Kurose and Keith W. Ross.
+-- Introduction to Algorithms, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein.
+-- C++ Primer, by Stanley B. Lippman, Josée Lajoie, Barbara E. Moo.
+-- Thinking in Java, by Bruce Eckel.
+
+
+
+
+~~~
+人最理想的状态是“温和” —— 即是“气”的收敛和中和。“气”主要来源于三个方面：读书、走路，和对话。读书又分阴阳：政史哲是“骨髓”，音美文是“血肉”，中西学古籍是“魂魄”。比如：钢琴\+小提琴（音）、书法\+绘画（美）、外语\+写作（文）、围棋（气）。除此之外，人应该懂一点知识，比如：计算机、统计、数学、金融。
+
+\-- 2017年1月6日，于West Lafaytte, IN.
+~~~
+
+~~~
+Ph.D = Passion \+ Hardworking \+ Discpline
+
+\-- 9\/15\/2016, West Lafayette, IN
+~~~
+
+~~~
+如果对形势的分析过于理想和乐观，列出来的计划就容易不切实际。如果执行计划的时候过于任性，不能够按照轻重缓急的原则去安排，计划就会乱套。如果做一件事情的时候不能够专注，反而虎头蛇尾、三天打鱼两天晒网，事情就会完成得不好。解决以上问题的办法有六个字：务实、克己、专注。另外，要作息规律、生活节制、经常运动、积极乐观。这是一切的前提。
+
+\-- 2014年7月21日，于Jersey City, NJ.
+~~~

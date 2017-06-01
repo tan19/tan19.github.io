@@ -1,0 +1,47 @@
+# jemdoc: menu{CS/MENU_CS}{good_readings.html}
+= Good Readings
+
+>> Operating System
+- Operating System Concepts, by Abraham Silberschatz, Peter B. Galvin, Greg Gagne
+
+>> Network
+- Computer Networking: A Top-Down Approach, by James F. Kurose and Keith W. Ross
+- UNIX Network Programming (Vol 1 & 2), by W. Richard Stevens
+
+>> Programming
+- Programming Languages
+  - Pierce, Benjamin. [http://www.amazon.com/Types-Programming-Languages-Benjamin-Pierce/dp/0262162091 Types and programming languages]. The MIT Press, 2002.
+  - Pierce, Benjamin & etc. [http://www.cis.upenn.edu/~bcpierce/sf/current/index.html Software Foundations]. Online Book, 2014.
+- C
+  - The C Programming Language
+  - Pointers on C
+  - C Traps and Pitfalls
+  - Expert C Programming
+- C++
+  - The C++ Programming Language
+  - C++ Primer
+  - Accelerated C++
+  - Effective STL
+  - C++ Templates
+  - Effective C++, More Effective C++, Exceptional C++, More Exceptional C++  
+  - C++ Coding Standards
+  - Exceptional C++ Style
+- Java
+- Python
+
+>> Data Structures and Algorithms
+- Steven S Skiena. [https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693 The Algorithm Design Manual].
+- Robert Sedgewick, Kevin Wayne. [https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X Algorithms].
+- Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein. [https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844 Introduction to Algorithms].
+- Mark A. Weiss. [https://www.amazon.com/Data-Structures-Algorithm-Analysis-2nd/dp/0201498405 Data Structures and Algorithm Analysis in C].
+
+>> Linux and Utilities
+- Stevens, W. Richard & Rago, Stephen A.. [http://www.amazon.com/Programming-Environment-Addison-Wesley-Professional-Computing/dp/0321637739 Advanced Programming in the UNIX Environment (3rd ed.)]. Addison-Wesley, 2013.
+- Rochkind, Marc J.. [http://www.amazon.com/Advanced-UNIX-Programming-2nd-Edition/dp/0131411543 Advanced UNIX Programming (2nd ed.)]. Addison-Wesley, 2004.
+- Kerrisk, Michael. [http://www.amazon.com/The-Linux-Programming-Interface-Handbook/dp/1593272200 The Linux Programming Interface: A Linux and UNIX System Programming Handbook]. No Starch Press, 2010.
+- Love, Robert. [http://www.amazon.com/Linux-System-Programming-Talking-Directly/dp/1449339530 Linux System Programming: Talking Directly to the Kernel and C Library (2nd ed.)]. O'Reilly, 2013
+- AEleen Frisch. [https://www.amazon.com/Essential-System-Administration-Tools-Techniques/dp/0596003439 Essential System Administration].
+- Jerry Peek, Shelley Powers, Tim O'Reilly, Mike Loukides. [https://www.amazon.com/Power-Tools-Third-Shelley-Powers/dp/0596003307 Unix Power Tools].
+
+
+

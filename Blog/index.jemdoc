@@ -1,13 +1,11 @@
 # jemdoc: menu{Blog/MENU_BLOG}{index.html}
 == Blog
 
-Test. 5\/31\/2017
+~~~
+6\/1\/2017 星期四 多云
+~~~
 
-Inline equation $\int_0^\infty e^x dx$.
-
-中文
-
-Multi-line Equation
+终于把网站搭好了（jemdoc \+ MathJax \+ pdf2htmlEX）。网站的结构比之前清晰了很多，而且还支持$\LaTeX$。比如：Inline equation $\int_0^\infty e^x dx$。又比如：Multi-line Equation
 \(
 \begin{align}
 	x &= 2 \\
@@ -15,10 +13,13 @@ Multi-line Equation
 \end{align}
 \)
 
-Tables
+再比如：Table
 ~~~
-{}{table}{TABLENAME}
+{}{table}{TABLE}
 first entry  | another entry ||
 as many rows | as you like   ||
 bottom row   | last entry
 ~~~
+
+{{<p></p>}}
+过一阵子我看能不能弄个留言板。

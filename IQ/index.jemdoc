@@ -1,0 +1,25 @@
+# jemdoc: menu{IQ/MENU_IQ}{index.html}
+= IQ
+
+
+ 智育 （记忆、逻辑推理、速读、速算; 围棋）
+
+
+- Cognitive Psychology
+  - Memory
+  - Mental Calculation
+    - Addition
+    - Subtraction
+    - Multiplication:      
+      - the 100x100 table;
+      - squares of 1 to 100 ($16^2=256, 17^2=289, 18^2=324, 19^2=361, 21^2=441, 22^2=484, 23^2=529, 24^2=576$);
+    - Division
+    - Primes and prime factorization
+
+- 围棋([http://www.101weiqi.com/ 101围棋网], http://www.weiqiok.com)
+
+[https://projecteuler.net Project Euler]
+
+[http://www.websudoku.com/ websudoku]
+
+[http://www.cut-the-knot.org/ cut-the-knot]
