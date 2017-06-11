@@ -2,10 +2,36 @@
 == Blog
 
 ~~~
-6\/1\/2017 星期四 多云
+6\/1\/2017 07:00 星期四 多云
 ~~~
 
-终于把网站搭好了（jemdoc \+ MathJax \+ pdf2htmlEX）。网站的结构比之前清晰了很多，而且还支持$\LaTeX$。比如：Inline equation $\int_0^\infty e^x dx$。又比如：Multi-line Equation
+再写个双线性函数和二次型？
+
+{{
+<iframe src="Meeting.html" width="1200" height="500" frameborder="0" scrolling="yes"></iframe>
+}}
+
+
+~~~
+6\/1\/2017 06:30 星期四 多云
+~~~
+
+试一下$LaTeX$.
+
+*Definition:* Rectangular matrices $A_{m \times n}$ and $B_{m \times n}$ are said to be /*equivalent*/ if there exist two invertible matrices $P$ and $Q$ such that $B = PAQ$.
+
+*Definition:* Square matrices $A_{n \times n}$ and $B_{n \times n}$ are said to be /*congruent*/ if there exist an invertible matrix $P$ such that $B = P^TAP$.
+
+
+*Definition:* Square matrices $A_{n \times n}$ and $B_{n \times n}$ are said to be /*similar*/ if there exists an invertible matrix $P$ such that $B = P^{-1}AP$.
+
+Equivalent $\implies$ Congruent $\implies$ Similar
+
+~~~
+6\/1\/2017 05:30 星期四 多云
+~~~
+
+终于把网站搭好了（jemdoc \+ MathJax \+ pdf2htmlEX）。网站的结构比之前好了很多，而且还支持$\LaTeX$。比如：Inline equation $\int_0^\infty e^x dx$。又比如：Multi-line Equation
 \(
 \begin{align}
 	x &= 2 \\
@@ -21,5 +47,7 @@ as many rows | as you like   ||
 bottom row   | last entry
 ~~~
 
-{{<p></p>}}
-过一阵子我看能不能弄个留言板。
+{{
+<p></p>
+<strike>过一阵子我看能不能弄个留言板</strike>。
+}}

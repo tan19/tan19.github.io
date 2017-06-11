@@ -1,6 +1,39 @@
 # jemdoc: menu{Finance/MENU_FINANCE}{index.html}
 = Finance
 
+There exist two separate branches of finance that require advanced quantitative techniques: derivatives pricing, and risk and portfolio management. One of the main differences is that they use different probabilities, namely the risk-neutral probability (or arbitrage-pricing probability), denoted by "Q", and the actual (or actuarial) probability, denoted by "P". (from wikipedia, article on Mathematical Finance)
+
+
+=== The Q world (Derivatives Pricing)
+The goal of derivatives pricing is to determine the fair price of a given security in terms of more liquid securities whose price is determined by the law of supply and demand.
+~~~
+{}{table}{Q}
+Goal  | "extrapolate the present" ||
+Environment | risk-neutral probability Q   ||
+Processes   | continuous-time martingales ||
+Dimension | low ||
+Tools | Ito calculus, PDEs ||
+Challenges | calibration ||
+Business | sell-side
+~~~
+
+- A martingale does not reward risk, hence the name "risk-neutral".
+- Securities are priced individually, and thus the problems in the Q world are low-dimensional in nature.
+
+=== The P world (Risk and Portfolio Management)
+Based on the P distribution, the buy-side community takes decisions on which securities to purchase in order to improve the prospective profit-and-loss profile of their positions considered as a portfolio.
+~~~
+{}{table}{Q}
+Goal  | "model the future" ||
+Environment | real-world probability P   ||
+Processes   | discrete-time series ||
+Dimension | large ||
+Tools | multivariate statistics ||
+Challenges | estimation ||
+Business | buy-side
+~~~
+
+
 == Topics ==
 - Financial Mathematics
 - Economics

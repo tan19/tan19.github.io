@@ -1,6 +1,8 @@
 # jemdoc: menu{ML/MENU_ML}{index.html}
 = Machine Learning
 
+[https://github.com/kailashahirwar/cheatsheets-ai Machine Learning Cheat Sheet]
+
 Some good free video lectures:
 - CMU ML (10-701): [http://alex.smola.org/teaching/cmu2013-10-701/ F13]
 - CMU ML (10-702): [http://www.stat.cmu.edu/~larry/=sml/ S16]
