@@ -1,0 +1,7 @@
+# jemdoc: menu{Finance/MENU_FINANCE}{FF.html}
+= Forwards and Futures
+
+Forwards and futures have two main uses, in speculation (risk-taking) and in hedging (risk-averse). 
+
+
+Because you settle the change in value on a daily basis, the value of a futures contract at any time during its life is zero.

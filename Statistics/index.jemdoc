@@ -2,5 +2,13 @@
 == Statistics
 
 
-- A good review of probability: <a href="http://www.math.uah.edu/stat/index.html">Link</a>
-- Cambridge past papers: <a href="http://www.maths.cam.ac.uk/postgrad/mphil/st-pastpapers/">Link</a>
+Suppose $\phi(x)$ is the pdf of a standard normal, then the derivatives follow: $x\Phi(x) + \phi(x) \to \Phi(x) \to \phi(x) \to -x\phi(x)$.
+
+The moment generating function of a normal random variable with mean $\mu$ and variance $\sigma^2$ is $e^{\mu + \frac 12 \sigma^2t^2}$.
+
+If a normal random variable $X$ has mean $\mu$ and variance $\sigma^2$, then the lognormal random variable $\exp(X)$ has mean $\exp(\mu + \frac 12 \sigma^2)$.
+
+
+
+- [http://www.math.uah.edu/stat/index.html A good review of probability]
+- [http://www.maths.cam.ac.uk/postgrad/mphil/st-pastpapers/ Cambridge past papers]
