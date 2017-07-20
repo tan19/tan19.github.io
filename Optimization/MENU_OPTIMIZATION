@@ -12,6 +12,8 @@ Linear Optimization
 
 Nonlinear Optimization
 	Nonlinear Optimization	[nonlinear.html]
+	Newton's Method			[*.html]
+	BFGS and L-BFGS			[*.html]
 
 Convex Optimization
 	Convex Optimization		[convex.html]	
