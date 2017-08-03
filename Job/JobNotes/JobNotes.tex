@@ -69,6 +69,69 @@ Hint: to prove $\B = \bf{0}$, only need to show $\tr(\B^T\B) = \bf{0}$. Hence,
 
 \section{Probability and Statistics}
 \ques{
+	What is $\EEE_X[\Phi(aX+b)]$? $X$ is a normal with expectation $\mu$ and variance $\sigma^2$. $\Phi$ is the standard normal CDF.
+}
+\ans{$\Phi\left(\frac{a\mu + b}{\sqrt{1 + a^2\sigma^2}}\right)$.
+}
+
+\ques{
+	What are: 1) derivatives of $\phi(x)$, 2) integration of $\Phi(x)$?
+}
+\ans{$\phi'(x) = -x\phi(x)$, and $\int \Phi(x) = x\Phi(x) + \phi(x)$.
+}
+
+\ques{
+	What are the mean and variance of a log-normal distribution?
+}
+\ans{See book.
+}
+
+\ques{
+	Tell me all you know about the Gamma distribution.
+}
+\ans{See book.
+}
+
+\ques{
+	Two random variables $X, Y$, not sure if they are correlated. Find the minimum square error (MSE) estimator of $X|Y$ ({\bf{Cubist / Point72}}).
+}
+\ans{
+	\begin{align}
+		\EEE[(\hat X - X)^2 | Y] = \hat X^2 - 2 \hat X \EEE(X) | Y
+	\end{align}
+	So the minimum square error estimator is $\hat X = \EEE(X | Y)$.
+}
+
+\ques{
+	Explain Cram\'er-Rao lower bound (CRLB) Theorem ({\bf{Cubist / Point72}})?
+}
+\ans{See book.
+}
+
+
+
+\ques{
+$N$ data points, 
+\begin{align}
+	y_i = C + x_i
+\end{align}
+$E(N_i) = 0, Var(x_i) = \sigma_i^2$. Given $y_i$, what is the unbiased minimum variance linear estimator of $C$ ({\bf{Cubist / Point72}})?
+}
+\ans{
+\begin{align}
+	\hat C = \sum_{i=1}^N \beta_i y_i
+\end{align}
+Unbiasedness says $E(\hat C) = \sum_{i=1}^N \beta_i y_i = \sum_{i=1}^N \beta_i C = C$, or $\sum_{i=1}^N \beta_i = 1$. Minimum variance is to minimize the following objective function (Lagrange multiplier method):
+\begin{align}
+	\sum_{i=1}^N \beta_i^2 \sigma_i^2 + \lambda \left( \sum_{i=1}^N \beta_i - 1 \right)
+\end{align}
+which gives
+\begin{align}
+	\hat \beta_i = \frac{1 / \sigma_i^2}{\sum_{i=1}^N \frac{1}{\sigma_i^2}}
+\end{align}
+}
+
+\ques{
 	Two players roll a die. The first player wins if he gets a 1, otherwise the second player wins if he gets a 2, otherwise the game restarts. What is the probability that the first player wins ({\bf{Sameer}})?
 }
 \ans{
@@ -245,6 +308,19 @@ There are $6 \times 5 \times 4$ ways to pick three different numbers (for strict
 
 
 \section{Financial Mathematics}
+
+\ques{
+	What is the distribution of the minimum of a Brownian motion in a given time frame $[0,t]$, i.e., $\min_{[0,t]} W(s), s \in [0,t]$?
+}
+\ans{Use passage time density of a Brownian motion.
+}
+
+\ques{
+	What is $\EEE[\int_0^t f(s) \dd W_1(s) \int_0^t g(s) \dd W_2(s)]$, where $\dd W_1 \dd W_2 = \rho \dd t$?
+}
+\ans{$\rho \int_0^t f(s)g(s) \dd t$.
+}
+
 
 \ques{
 	GARCH model. ({\bf{Barclays}})
