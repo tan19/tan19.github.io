@@ -20,18 +20,18 @@ E-mail: tan19 at purdue dot edu
 /Navy Pier, Chicago (Spring, 2012)/
 
 
-My academic interests are mainly in four highly-related subjects: *Computer Science, Machine Learning & Optimization, Statistics & Mathematics, and Finance*. Finance raises questions, Statistics & Mathematics provide with models, Machine Learning & Optimization design algorithms, and finally Computer Science help implement ideas. My academic journey started with two fundamental formulas: the Bayes' Theorem
+My Intellectual curiosity lies in both Sciences and Humanities -- Quantitative Finance and Cultural Anthropology, in particular.
+
+For Quantitative Finance, my endeavor has been to build a pyramid: *Finance* raises questions, *Statistics & Mathematics & Physics* provide with models, *Machine Learning & Algorithms & Optimization* propose solutions, and *Computer Science* focuses on efficient implementation.
+
+For Cultural Anthropology, I am interested in understanding the impact of {Politics, History, Philosophy} and {Music, Painting, Languages} on human activities.
+
+The journey starts from the Bayes' Theorem and the Ito's Lemma:
 
 ~~~
 \(
 p(\theta|D) = \frac{\pi(\theta)p(D|\theta)}{\int_\Theta \pi(\theta)p(D|\theta) d\theta}
 \)
-~~~
-
-and the Ito's Lemma:
-~~~
 \(df(t,X_t) =\left(\frac{\partial f}{\partial t} + \mu_t \frac{\partial f}{\partial x} + \frac{\sigma_t^2}{2}\frac{\partial^2f}{\partial x^2}\right)dt+ \sigma_t \frac{\partial f}{\partial x}\,dB_t
 \)
 ~~~
-
-I also have broad interests in {Music, Painting, Literature}, {Politics, History, Philosophy}, {Western & Eastern Religions}, and Self-improvement.
