@@ -13,19 +13,6 @@ System
 	Operating Systems						[OS.html]
 	Network									[network.html]
 
-Data Structures
-	Linked List								[*.html]
-	Array									[*.html]
-	Tree									[*.html]
-	Graph									[*.html]
-
-Algorithms
-	Sorting Algorithms						[*.html]
-	Selection Algorithms					[*.html]
-	Search Algorithms						[*.html]
-	Breadth First Search (BFS)				[*.html]
-	Depth First Search (DFS)				[*.html]	
-
 Programming	Languages
 	C/C\+\+									[C.html]
 	Java									[Java.html]
