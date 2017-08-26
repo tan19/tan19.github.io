@@ -1,6 +1,8 @@
 # jemdoc: menu{ML/MENU_ML}{index.html}
 = Machine Learning
 
+In general, Machine Learning tries to model $Y = f(X)$, where $X$ are the input variables and $Y$ the output.
+
 [https://github.com/kailashahirwar/cheatsheets-ai Machine Learning Cheat Sheet]
 
 Some good free video lectures:
@@ -26,7 +28,7 @@ Some good free video lectures:
                        |-- NN                      : [https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH Hugo Larochelle's tutorial], [https://class.coursera.org/neuralnets-2012-001 Geoffrey Hinton's course], [ftp://ftp.sas.com/pub/neural/FAQ.html FAQ], [http://www.inference.phy.cam.ac.uk/mackay/Bayes_FAQ.html Bayesian NN FAQ], [http://karpathy.github.io/neuralnets/
  NN Guide], [http://neuralnetworksanddeeplearning.com/index.html NN Guide2]
                        |-- PGM                     : [http://www.bayesnets.com/ BNs Repository]
-[[ Machine Learning ]] |-- DL                      : [http://www.iro.umontreal.ca/~bengioy/dlbook/ book]
+ Machine Learning  |-- DL                      : [http://www.iro.umontreal.ca/~bengioy/dlbook/ book]
                        |
                        |-- GP                      : [Code/GP_example.m code], [http://mlg.eng.cam.ac.uk/duvenaud/cookbook/index.html covariance function], [http://www.carlboettiger.info/2012/10/17/basic-regression-in-gaussian-processes GP regression tutorial], [http://www.inference.eng.cam.ac.uk/mng10/GP/ resources]                                          
                        |-- CRP                     : [Code/CRP.m code]                       
