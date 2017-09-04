@@ -295,6 +295,20 @@ There are $6 \times 5 \times 4$ ways to pick three different numbers (for strict
 
 \section{Finance}
 \ques{
+	What is the definition of forward price?
+}
+\ans{
+	Forward price is the strike price of an European call such that the premium is $0$, viz.,
+	\begin{align}
+		\EEE[e^{-\int_0^T r(s)\dd s}(S_T - F)] = 0
+	\end{align}
+	or
+	\begin{align}
+		F := \frac{\EEE[e^{-\int_0^T r(s)\dd s}S_T]}{\EEE[e^{-\int_0^T r(s) \dd s}]}
+	\end{align}
+}
+
+\ques{
 	What is implied volatility? ({\bf{Barclays}})
 }
 

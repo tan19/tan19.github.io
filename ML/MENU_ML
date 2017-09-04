@@ -67,8 +67,9 @@ Dense f: Ensemble Learning
 
 Inference
 	Expectation-Maximization (EM)				[EM.html]
-	Monte Carlo									[MC.html]
-	Approximate Methods							[.html]
+	Belief propagation (BP) 					[BP.html]
+	Variational Bayes (VB) 						[VB.html]
+	Monte Carlo	Methods							[MC.html]
 
 Theory
 	Learning Theory			[.html]

@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {9}Option Pricing}{8}{section.9}
 \contentsline {subsection}{\numberline {9.1}Black-Scholes}{8}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Option price properties}{9}{subsection.9.2}
-\contentsline {section}{\numberline {10}Machine Learning}{9}{section.10}
-\contentsline {section}{\numberline {11}Optimization}{9}{section.11}
-\contentsline {section}{\numberline {12}Programming}{9}{section.12}
+\contentsline {section}{\numberline {10}Machine Learning}{10}{section.10}
+\contentsline {section}{\numberline {11}Optimization}{10}{section.11}
+\contentsline {section}{\numberline {12}Programming}{10}{section.12}
 \contentsline {section}{\numberline {13}Algorithms and Data Structures}{10}{section.13}

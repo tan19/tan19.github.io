@@ -1,6 +1,11 @@
 # jemdoc: menu{Job/MENU_JOB}{index.html}
 == Job
 
+
+CFA
+FRM
+
+
 - Convex Optimization
 - Python on Kaggle & LeetCode
 - Interview Books
