@@ -1,7 +1,7 @@
 # jemdoc: menu{Statistics/MENU_STATISTICS}{index.html}
 == Statistics
 
-
+[https://normaldeviate.wordpress.com/ Normal Deviate]
 Suppose $\phi(x)$ is the pdf of a standard normal, then the derivatives follow: $x\Phi(x) + \phi(x) \to \Phi(x) \to \phi(x) \to -x\phi(x)$.
 
 The moment generating function of a normal random variable with mean $\mu$ and variance $\sigma^2$ is $e^{\mu + \frac 12 \sigma^2t^2}$.
