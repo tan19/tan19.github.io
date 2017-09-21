@@ -10,6 +10,7 @@ Machine Learning
 
 Naive Models
 	Logistic Regression	and Soft-max			[.html]
+	Poisson Regression							[.html]
 	Linear Regression       					[.html]	
 	Naive Bayes									[.html]	
 	Fisher's Linear Discriminant 				[.html]
@@ -44,6 +45,7 @@ Structured f (1/2): Tree Models
 	Association Rule and Apriori Algorithm 		[.html]
 
 Structured f (2/2): Neural Network
+	Deep Learning 								[.html]
 	Perceptron 									[.html]
 	Feed-forward Neural Network 				[.html]
 	Multilayer Perceptron 						[.html]
@@ -80,4 +82,5 @@ Tools
 	LightGBM				[.html]
 	Tensorflow				[.html]
 	Theano					[.html]
+	scikit-learn			[.html]
 

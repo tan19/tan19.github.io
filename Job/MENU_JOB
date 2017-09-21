@@ -4,14 +4,36 @@ Xi Tan
 Job
 	Homepage			[index.html]
 
-ML & Optimization	
-	Homepage		[ml.html]
+Machine Learning
+	Homepage	[ML.html]
+	PRML		[PRML.html]
+	MLAPP		[MLAPP.html]
+	DP		[DP.html]
 
-Computer Science					
-	Homepage		[cs.html]
+Algorithms	
+	Homepage	[Algorithms.html]				
+	黄宝书		[CS_yeallow.html]
+	绿宝书 		[CS_green.html]
+	蓝宝书 		[CS_blue.html]	
 
-Finance				
-	Homepage		[finance.html]
+Finance
+	Homepage	[Finance.html]			
+	红宝书		[Fin_red.html]
+	绿宝书 		[Fin_green.html]
+	蓝宝书 		[Fin_blue.html]
 
 Brain Teasers		
 	Homepage		[bt.html]
+
+Online Tests
+	Kaggle 			[Kaggle.html]
+	LeetCode		[LeetCode.html]
+
+Languages and Libraries
+	Python			[Python.html]
+	R 			[R.html]
+	Tensorflow		[Tensorflow.html]
+	Theano			[Theano.html]
+	scikit-learn		[scikit-learn.html]
+Job Notes
+	Notes		[JobNotes/JobNotes.pdf]

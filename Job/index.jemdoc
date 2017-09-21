@@ -1,129 +1,141 @@
 # jemdoc: menu{Job/MENU_JOB}{index.html}
 == Job
 
-
-
-- Convex Optimization | Vol with Hawkes processes
-- Python on Kaggle & LeetCode
-- Interview Books
-
-[JobNotes/JobNotes.pdf Job Notes]
+[https://rpubs.com/JDAHAN/172473 Interview Questions]
 
 [http://www.streetofwalls.com/ Street of Walls]
 
-[http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000 Python教程]
+== List of Firms
 
-CFA
-FRM
+~~~
+=== Hedge Funds
+- [http://www.vaticlabs.com/careers/ Vatic Labs]
+- [https://www.point72.com/ Point72/Cubist]
+- AQR Capital Management
+- Aviva Investors
+- Bogle Investment Management
+- Bridgewater
+- Citadel Group
+- Clinton Group
+- D.E.Shaw
+- DFG Investment Advisers
+- First Quadrant
+- GBAR
+- Glenwood Capital Investment
+- Houlihan Lokey Howard & Zukin
+- Infinum Capital Management
+- Investec
+- Knight Capital Group
+- M&G Investments
+- Mitsubishi UFJ Securities International
+- Numeric Investors
+- Nuveen Investment
+- Optiver
+- QVT Financial
+- SIG Susquehanna
+- State Street
+- Tower Research Capital
+- Two Sigma Investments
+~~~
 
-== List of Firms ==
+~~~
+=== Investment Banks
+
+- Bank of America Merrill Lynch
+- Barclays Capital
+- BNP Paribas
+- Citigroup
+- Credit Suisse
+- Deutsche Bank
+- Goldman Sachs
+- J.P.Morgan
+- Morgan Stanley
+- Nomura
+- Societe Generale
+- UBS
+
+~~~
 
 
-INVESTMENT BANKS
-Bank of America Merrill Lynch
-Barclays Capital
-BNP Paribas
-Citigroup
-Credit Suisse
-Deutsche Bank
-Goldman Sachs
-J.P.Morgan
-Morgan Stanley
-Nomura
-Societe Generale
-UBS
+~~~
+=== Asset Management
+- Bank of New York Mellon
+- BlackRock
+- Oxam
+- PIMCO
+- TD Securities
+- Wellington Management
+- Putnam Investments
+~~~
 
-ASSET MANAGEMENT
-Bank of New York Mellon
-BlackRock
-Oxam
-PIMCO
-TD Securities
-Wellington Management
-Putnam Investments
+~~~
+=== Commercial Banks
+- Commerzbank
+- HSBC
+- ING
+- Royal Bank of Canada
+- Royal Bank of Scotland
+- Standard Chartered Bank
+- Wells Fargo
+~~~
 
-COMMERCIAL BANKS
-Commerzbank
-HSBC
-ING
-Royal Bank of Canada
-Royal Bank of Scotland
-Standard Chartered Bank
-Wells Fargo
 
-HEDGE FUNDS
-AQR Capital Management
-Aviva Investors
-Bogle Investment Management
-Bridgewater
-Citadel Group
-Clinton Group
-DEShaw
-DFG Investment Advisers
-First Quadrant
-GBAR
-Glenwood Capital Investment
-Houlihan Lokey Howard & Zukin
-Infinum Capital Management
-Investec
-Knight Capital Group
-M&G Investments
-Mitsubishi UFJ Securities International
-Numeric Investors
-Nuveen Investment
-Optiver
-QVT Financial
-SIG Susquehanna
-State Street
-Tower Research Capital
-Two Sigma Investments
+~~~
+=== Insurance Companies
+- American International Group (AIG)
+- Aflac
+- Ameriprise Financial
+- Genworth Financial
+- Lincoln Financial Group
+- MassMutual Life
+- MetLife
+- Nationwide Financial Services
+- Pacific Life
+- Principal Financial Group
+- Prudential Financial
+~~~
 
-INSURANCE COMPANIES
-American International Group (AIG)
-Aflac
-Ameriprise Financial
-Genworth Financial
-Lincoln Financial Group
-MassMutual Life
-MetLife
-Nationwide Financial Services
-Pacific Life
-Principal Financial Group
-Prudential Financial
+~~~
+=== Prop Trading
+- Chicago Trading Company
+- Chopper Trading
+- DRW Trading Group
+- GETCO
+- Jane Street
+- Jump Trading
+- Nico Trading
+- Quantres
+- RSJ
+- Spot Trading
+- TransMarket Group
+- Walleye Trading
+- Wolverine Trading
+~~~
 
-PROP TRADING
-Chicago Trading Company
-Chopper Trading
-DRW Trading Group
-GETCO
-Jane Street
-Jump Trading
-Nico Trading
-Quantres
-RSJ
-Spot Trading
-TransMarket Group
-Walleye Trading
-Wolverine Trading
+~~~
+=== Rating Agencies
+- Fitch Rating
+- Moody’s
+- Standard & Poor’s
+~~~
 
-RATING AGENCIES
-Fitch Rating
-Moody’s
-Standard & Poor’s
+~~~
+=== Accounting
+- Deloitte
+- Ernst & Young
+- KPMG
+- PwC
+~~~
 
-ACCOUNTING
-Deloitte
-Ernst & Young
-KPMG
-PwC
-
-FINANCIAL SERVICES
-Bloomberg Financials
-FINCAD
-Gloucester Research
-Interactive Brokers
-Numerix
-Opera Solutions
-Quantifi Solutions
-R² Financial Technologies
-Thomson Reuters
+~~~
+=== Financial Services
+- Bloomberg Financials
+- FINCAD
+- Gloucester Research
+- Interactive Brokers
+- Numerix
+- Opera Solutions
+- Quantifi Solutions
+- R² Financial Technologies
+- Thomson Reuters
+~~~

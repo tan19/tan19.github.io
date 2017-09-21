@@ -1,0 +1,9 @@
+# jemdoc: menu{Job/MENU_JOB}{Algorithms.html}
+== Algorithms
+- Data Structure
+  -- Linear DS: arrays, linked list, stack, queue, heap
+  -- Nonlinear DS: trees, graphs
+  -- [https://en.wikipedia.org/wiki/List_of_data_structures list of DS]
+- Algorithms
+  -- Sorting: bubble sort, heap sort, merge sort
+
