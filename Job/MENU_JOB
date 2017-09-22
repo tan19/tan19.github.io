@@ -10,11 +10,33 @@ Machine Learning
 	MLAPP		[MLAPP.html]
 	DP		[DP.html]
 
-Algorithms	
-	Homepage	[Algorithms.html]				
-	黄宝书		[CS_yeallow.html]
-	绿宝书 		[CS_green.html]
-	蓝宝书 		[CS_blue.html]	
+Data Structures
+	Homepage				[DataStructures.html]		
+	Array					[*.html]
+	Hash Table				[*.html]	
+	Linked List				[*.html]
+	Graph 					[*.html]
+	Stack					[*.html]
+	Queue					[*.html]
+	Heap 					[*.html]
+	String 					[*.html]
+	Tree 					[*.html]	
+	Segment Tree 			[*.html]
+	Binary Search Tree 		[*.html]
+	Trie 					[*.html]
+
+Algorithms
+	Homepage				[Algorithms.html]
+	Bit Manipulation		[*.html]
+	Recursion 				[*.html]
+	Sorting					[*.html]
+	Searching				[*.html]
+	Greedy 					[*.html]
+	Binary Search 			[*.html]
+	DFS 					[*.html]
+	BFS						[*.html]
+	Divide and Conquer		[*.html]
+	Dynamic Programming		[*.html]
 
 Finance
 	Homepage	[Finance.html]			

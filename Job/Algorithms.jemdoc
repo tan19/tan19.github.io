@@ -1,9 +1,20 @@
 # jemdoc: menu{Job/MENU_JOB}{Algorithms.html}
 == Algorithms
-- Data Structure
-  -- Linear DS: arrays, linked list, stack, queue, heap
-  -- Nonlinear DS: trees, graphs
-  -- [https://en.wikipedia.org/wiki/List_of_data_structures list of DS]
+[https://www.topcoder.com/]
+[http://www.geeksforgeeks.org/]
+[https://www.interviewbit.com/]
+[http://ravindrababuravula.com/]
+[http://freevideolectures.com/]
+[https://leetcode.com/]
+
+[http://www.cppreference.com/]
+[http://www.cpp4u.com/]
+
+- Algorithm Tricks: Reservoir Sampling
+
+[http://visualgo.net Visual Algorithms]
+
+
 - Algorithms
   -- Sorting: bubble sort, heap sort, merge sort
 
