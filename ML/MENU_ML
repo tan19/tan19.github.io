@@ -7,7 +7,7 @@ Machine Learning
 	Good Readings			[good_readings.html]
 	Glossary				[glossary.html]
 	FAQ						[FAQ.html]
-	Hawkes Processes 		[HP.html]
+	Hawkes Processes		[HP/index.html]
 
 Naive Models
 	Logistic Regression	and Soft-max			[.html]
@@ -69,10 +69,13 @@ Dense f: Ensemble Learning
 	Random Forest 								[.html]
 
 Inference
-	Expectation-Maximization (EM)				[EM.html]
-	Belief propagation (BP) 					[BP.html]
-	Variational Bayes (VB) 						[VB.html]
-	Monte Carlo	Methods							[MC.html]
+	Expectation-Maximization (EM)						[EM.html]
+	Belief propagation (BP) 							[BP.html]
+	Variational Bayes (VB) 								[VB.html]
+	Expectation Propagation (EP) 						[EP.html]
+	Monte Carlo	Methods									[MC.html]
+	Sequential Minimal Optimization (SMO) 				[SMO.html]
+	Alternating Direction Method of Multipliers (ADMM) 	[ADMM.html]
 
 Theory
 	Learning Theory			[.html]

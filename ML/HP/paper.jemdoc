@@ -1,0 +1,35 @@
+# jemdoc: menu{ML/HP/MENU_HP}{conf.html}
+= Conference Papers
+
+~~~
+{}{table}{People}
+*Year* | *Conference\/Journal* | *Title* | *Authors* | *Notes* ||
+2017 | NIPS | Online Learning for Multivariate Hawkes Processes | Yingxiang Yang, Jalal Etesami, Niao He, Negar Kiyavash | NA ||
+2017 | NIPS | A Dirichlet Mixture Model of Hawkes Processes for Event Sequence Clustering | Hongteng Xu, Hongyuan Zha | NA ||
+2017 | NIPS | The Neural Hawkes Process: A Neurally Self-Modulating Multivariate Point Process | Hongyuan Mei, Jason Eisner | NA ||
+2017 | ICML | Learning Hawkes Processes from Short Doubly-Censored Event Sequences | Hongteng Xu, Dixin Luo, Hongyuan Zha | NA ||
+2017  | ICML | Uncovering Causality from Multivariate Hawkes Integrated Cumulants | Massil Achab, Emmanuel Bacry, Stéphane Gaïffas, Iacopo Mastromatteo, Jean-François Muzy | NA ||
+2017 | WWW | Modeling the Dynamics of Learning Activity on the Web | Charalampos Mavroforakis, Isabel Valera, Manuel Gomez-Rodriguez | NA ||
+2016 | UAI | Content-based Modeling of Reciprocal Relationships using Hawkes and Gaussian Processes | Xi Tan, Syed Naqvi, Yuan (Alan) Qi, Katherine Heller, Vinayak Rao| NA ||
+2016 | ICML | Hawkes Processes with Stochastic Excitations | Young Lee NICTA, Kar Wai Lim ANU, Cheng Soon Ong NICTA | NA ||
+2016 | ICML | Learning Granger Causality for Hawkes Processes | Hongteng Xu, Mehrdad Farajtabar, Hongyuan Zha | NA ||
+2016 | ICML | Isotonic Hawkes Processes | Yichen Wang, Bo Xie, Nan Du, Le Song | NA ||
+2016 | UAI | Learning Network of Multivariate Hawkes Processes: A Time Series Approach | Jalal Etesami, Negar Kiyavash, Kun Zhang, Kushagra Singhal | NA ||
+2016 | ICDM | Hnp3: A hierarchical nonparametric point process for modeling content diffusion over social media | Hosseini, Seyed Abbas, Ali Khodadadi, Ali Arabzadeh, and Hamid R. Rabiee. | NA ||
+2015 | ICML | HawkesTopic: A Joint Model for Network Inference and Topic Modeling from Text-Based Cascades | Xinran He, Theodoros Rekatsinas, James Foulds, Lise Getoor, Yan Liu | NA ||
+2015 | NIPS | COEVOLVE: A Joint Point Process Model for Information Diffusion and Network Co­evolution | Farajtaba, Wang, Gomez­Rodriguez, Li, Zha, and Song | NA ||
+2015 | ICDM | Netcodec: Community detection from individual activities | Tran, Long, Mehrdad Farajtabar, Le Song, and Hongyuan Zha | NA ||
+2015 | KDD | Dirichlet-Hawkes Processes with Applications to Clustering Continuous-Time Document Streams | Nan Du, Mehrdad Farajtabar, Amr Ahmed, Alexander J.,Smola, Le,Song | NA ||
+2015 | ICJAI | [https://www.ijcai.org/Proceedings/15/Papers/518.pdf Multi-Task Multi-Dimensional Hawkes Processes
+for Modeling Event Sequences] | Hongteng Xu, Dixin Luo, Yi Zhen, Xia Ning, Hongyuan Zha | NA ||
+2014 | ICML | Discovering Latent Network Structure in Point Process Data | Linderman and Adams | NA ||
+2012 | NIPS | Modelling Reciprocating Relationships with Hawkes Processes | Charles Blundell, Jeff Beck, Katherine A. Heller | NA
+~~~
+
+
+
+
+
+
+
+

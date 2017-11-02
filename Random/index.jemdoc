@@ -1,6 +1,9 @@
 # jemdoc: menu{Random/MENU_RANDOM}{index.html}
 = Random Page
 
+
+[https://arxiv.org/ arXiv], [https://www.ssrn.com/ SSRN]
+
 [http://cmd.to/fm]
 [http://www.matrix67.com]
 [http://www.wanmen.org]
@@ -49,6 +52,7 @@ Perfume, Food, Wine, and Tea
 -- Probability: Theory and Examples, by Rick Durrett
 -- Statistical Inference, by George Casella and Roger L. Berger.
 -- Pattern Recognition and Machine Learning, by Christopher Bishop.
+-- Machine Learing, by Kevin Murphy.
 
 - Optimization (Linear; Nonlinear; Convex)
 -- Introduction to Linear Optimization, by Dimitris Bertsimas, John N. Tsitsiklis.
