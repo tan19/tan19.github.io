@@ -21,20 +21,21 @@
 - Brown                   : Thomas Hoffman, Michael Littman
 - Rutgers                 : Tong Zhang, Vladimir Pavlovic
 - UMass                   : Andrew McCallum
-- U. of Penn              : Michael Kearns, Jianbo Shi
+- U. of Penn              : Michael Kearns, Jianbo Shi, Mitchell P. Marcus (NLP)
+- JHU					  : Jason Eisner (NLP), David Yarowsky (NLP)
 - NYU                     : Yann LeCun (Deep Learning), Sam Roweis, Mehryar Mohri
 - Harvard                 : Ryan Adams, Avi Pfeffer
 - Duke                    : Sayan Mukherjee
 - Georgia Tech            : Aaron Bobick, Le Song (Kernel), Irfan Essa, Charles Isbell
 - Princeton               : David Blei (Topic Models), Rob Schapire
 - Cornell                 : Thorsten Joachims, Rich Caruana
-- Columbia                : Tony Jebara, Michael Collins, Rocco Servedio, Peter Orbanz
+- Columbia                : Tony Jebara, Michael Collins (NLP), Rocco Servedio, Peter Orbanz
 
 == West
 - UC-Berkeley             : Michael Jordan (PGM), Peter Bartlett, Leo Breiman, Martin Wainwright
 - Microsoft Research (US) : David Heckerman, Eric Horovitz, Nebojsa Jojic, Phil Long, Chris Meek, John Platt, Léon Bottou
 - Google Research         : Kevin Murphy, Yoram Singer, Samy Bengio, Corinna Cortes, Fernando Perreira
-- Stanford                : Andrew Ng (Deep Learning), Daphne Koller (PGM)
+- Stanford                : Andrew Ng (Deep Learning), Daphne Koller (PGM), Chris Manning (NLP), Dan Jurafsky (NLP), Percy Liang (NLP)
 - UW-Seattle              : Marina Meila, Jeff Bilmes, Dieter Fox, Raj Rao
 - UCLA                    : Judea Pearl (PGM/Causal)
 - UCI                     : Padhraic Smyth
