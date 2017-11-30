@@ -2,8 +2,22 @@
 == Blog
 
 ~~~
+11\/26\/2017 2345 Sunday Sunny
+~~~
+
+Traditional parametric models using a fixed and finite number of parameters can suffer from over- or under-fitting of data when there is a misfit between the complexity of the model (often expressed in terms of the number of parameters) and the amount of data available. As a result, model selection, or the choice of a model with the right complexity, is often an important issue in parametric modeling. Unfortunately, model selection is an operation that is fraught with difficulties, whether we use cross validation or marginal probabilities as the basis for selection.
+
+The Bayesian nonparametric approach is an alternative to parametric modeling and selection. By using a model with an unbounded complexity, underfitting is mitigated, while the Bayesian approach of computing or approximating the full posterior over parameters mitigates over-fitting.
+
+[https://www.stats.ox.ac.uk/~teh/research/npbayes/Teh2010a.pdf]
+
+To sum up, in parametric models, model selection is performed through cross-validation or model evidence (aka marginal likelihood); in non-parametric models, it is through Bayesian priors, which is equivalent to a penalization term.
+
+
+~~~
 6\/23\/2017 19：45 星期五 阴
 ~~~
+
 古希腊建筑
 古罗马建筑
 拜占庭建筑

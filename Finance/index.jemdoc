@@ -1,18 +1,20 @@
 # jemdoc: menu{Finance/MENU_FINANCE}{index.html}
 = Finance
 
-Finance
-1.	Journal of Financial Economics
-2.	The Journal of Finance
-3.	The Review of Financial Studies
+~
+== Top Journals in Economics and Finance
+=== Finance
+- The Journal of Finance (JF)
+- Journal of Financial Economics (JFE)
+- The Review of Financial Studies (RFS)
 
-Economics
-1.	The American Economic Review
-2.	The Quarterly Journal of Economics
-3.	Econometrica
-4.	The Review of Economic Studies
-5.	Journal of Political Economy
-
+=== Economics
+- The American Economic Review (AER)
+- The Quarterly Journal of Economics (QJE)
+- Econometrica
+- The Review of Economic Studies
+- Journal of Political Economy (JPE)
+~
 
 There exist two separate branches of finance that require advanced quantitative techniques: derivatives pricing, and risk and portfolio management. One of the main differences is that they use different probabilities, namely the risk-neutral probability (or arbitrage-pricing probability), denoted by "Q", and the actual (or actuarial) probability, denoted by "P". (from wikipedia, article on Mathematical Finance)
 

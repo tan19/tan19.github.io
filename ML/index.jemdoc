@@ -1,6 +1,18 @@
 # jemdoc: menu{ML/MENU_ML}{index.html}
 = Machine Learning
 
+~
+== Top Journal in Mcahine Learning
+- JMLR
+
+== Top Conferences in Mcahine Learning
+- Neural Information processing systems (NIPS)
+- International conference on machine learning (ICML)
+- UAI
+- AISTATS
+- Others: KDD, AAAI, ACL, CVPR, ICLR
+~
+
 In general, Machine Learning tries to model $Y = f(X)$, where $X$ are the input variables and $Y$ the output.
 
 [https://github.com/kailashahirwar/cheatsheets-ai Machine Learning Cheat Sheet]

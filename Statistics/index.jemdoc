@@ -1,6 +1,17 @@
 # jemdoc: menu{Statistics/MENU_STATISTICS}{index.html}
 == Statistics
 
+
+~
+== Top Journals in Statistics
+- Journal of the American Statistical Association (JASA)
+- Journal of the Royal Statistical Society, Series B (JRSSB)
+- Annals of Statistics (Annals)
+~
+
+
+
+
 [https://normaldeviate.wordpress.com/ Normal Deviate]
 Suppose $\phi(x)$ is the pdf of a standard normal, then the derivatives follow: $x\Phi(x) + \phi(x) \to \Phi(x) \to \phi(x) \to -x\phi(x)$.
 
