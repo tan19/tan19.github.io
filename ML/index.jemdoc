@@ -3,7 +3,9 @@
 
 ~
 == Top Journal in Mcahine Learning
-- JMLR
+- Journal of Machine Learning Research (JMLR)
+- Conference On Learning Theory (COLT)
+- Machine Learning Journal (MLJ)
 
 == Top Conferences in Mcahine Learning
 - Neural Information processing systems (NIPS)
@@ -11,6 +13,10 @@
 - UAI
 - AISTATS
 - Others: KDD, AAAI, ACL, CVPR, ICLR
+~
+
+~
+{}{img_left}{ML_FiveTribes.png}{}{800}{800}{}
 ~
 
 In general, Machine Learning tries to model $Y = f(X)$, where $X$ are the input variables and $Y$ the output.
