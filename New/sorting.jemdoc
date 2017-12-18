@@ -1,4 +1,4 @@
-# jemdoc: menu{Job/MENU_JOB}{sorting.html}
+# jemdoc: menu{New/MENU_NEW}{sorting.html}
 = Sorting Algorithms
 
 Quicksort

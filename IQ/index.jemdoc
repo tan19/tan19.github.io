@@ -2,7 +2,17 @@
 = IQ
 
 
- 智育 （记忆、逻辑推理、速读、速算; 围棋）
+智育 （记忆、逻辑推理、速读、速算; 围棋）
+
+~
+*Rule of 72*
+
+The rule number (e.g., 72) is divided by the interest percentage per period (usually years) to obtain the approximate number of periods required for doubling.
+
+For example, if the annual /compounding/ interst rate is 10\%, then it takes $\frac{72}{10} = 7.2$ years to double the principle.
+~
+
+[https://en.wikipedia.org/wiki/Mental_calculation Mental Calculation]
 
 
 - Cognitive Psychology

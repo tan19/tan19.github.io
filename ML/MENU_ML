@@ -9,7 +9,7 @@ Machine Learning
 	FAQ						[FAQ.html]
 	Hawkes Processes		[HP/index.html]
 
-Naive Models
+Model :: Naive Models
 	Logistic Regression	and Soft-max			[.html]
 	Poisson Regression							[.html]
 	Linear Regression       					[.html]	
@@ -17,14 +17,6 @@ Naive Models
 	Fisher's Linear Discriminant 				[.html]
 	K-Means 									[.html]
 	K-Nearest Neighbors (KNN) 					[.html]
-
-Structured X: Graphical Models
-	Markov Network 								[.html]
-	Bayesian Network (BN) 						[.html]
-	Hidden Markov Models (HMM) 					[.html]
-	Conditional Random Field (CRF) 				[.html]
-
-Sparse X: Latent Models
 	Canonical Correlation Analysis (CCA) 		[.html]
 	Factor Analysis 							[.html]
 	Independent Component Analysis (ICA)		[.html]
@@ -34,19 +26,18 @@ Sparse X: Latent Models
 	Principle Component Analysis (PCA) 			[.html]
 	Projection Pursuit 							[.html]
 
-Dense X: Kernel and Non-parametric
-	Support Vector Machines (SVM)  				[.html]
+Model :: Bayesians: Graphical Models
+	Markov Network 								[.html]
+	Bayesian Network (BN) 						[.html]
+	Hidden Markov Models (HMM) 					[.html]
+	Conditional Random Field (CRF) 				[.html]	
 	Gaussian Processes (GP)						[.html]
 	Dirichlet Processes (DP) 					[.html]
+	Indian Buffet Process (IBP)					[.html]
+	Chinese Restaurant Process (CRP) 			[.html]
+	Latent Dirichlet Allocation (LDA)			[.html]	
 
-Structured f (1/2): Tree Models
-	Classification and Regression Tree (CART)	[.html]
-	Decision Trees								[.html]
-	Hierarchical Clustering 					[.html]
-	Association Rule and Apriori Algorithm 		[.html]
-
-Structured f (2/2): Neural Network
-	Deep Learning 								[.html]
+Model :: Evolutionaries: Neural Networks	
 	Perceptron 									[.html]
 	Feed-forward Neural Network 				[.html]
 	Multilayer Perceptron 						[.html]
@@ -58,22 +49,38 @@ Structured f (2/2): Neural Network
 	Convolutional Neural Network (CNN) 			[.html]
 	Recurrent Neural Network (RNN) 				[.html]
 
-Sparse f: Regularization Methods
+Model :: Analogizers: Kernel Models
+	Support Vector Machines (SVM)  				[.html]	
+
+Model :: Symbolists: Tree Models
+	Decision Trees								[.html]
+	Classification and Regression Tree (CART)	[.html]	
+	Hierarchical Clustering 					[.html]
+	Association Rule and Apriori Algorithm 		[.html]	
+
+Go Mild: Regularization Methods
 	LASSO 										[.html]
 	Elastic Net 								[.html]
 
-Dense f: Ensemble Learning
+Go Wild: Ensemble Learning
 	Boosting, Bagging, Blending 				[.html]
 	Gradient Boosting Machine (GBM) 			[.html]
 	Gradient Boosted Decision Tree (GBRT)		[.html]
 	Random Forest 								[.html]
 
-Inference
+Inference :: Approximate
 	Expectation-Maximization (EM)						[EM.html]
 	Belief propagation (BP) 							[BP.html]
 	Variational Bayes (VB) 								[VB.html]
 	Expectation Propagation (EP) 						[EP.html]
+
+Inference :: Exact: Sampling Methods	
 	Monte Carlo	Methods									[MC.html]
+	Metropolis-Hastings Algorithm (M-H)					[MH.html]
+	Gibbs Sampling										[Gibbs.html]
+	Sequential Monte Carlo (SMC)						[SMC.html]
+
+Inference :: Others
 	Sequential Minimal Optimization (SMO) 				[SMO.html]
 	Alternating Direction Method of Multipliers (ADMM) 	[ADMM.html]
 

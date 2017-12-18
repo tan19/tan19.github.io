@@ -10,14 +10,18 @@
 ~
 
 
+~
+- It is incorrect to simply say: "Linear combination of normals are norml." The important premise is they need to be joint normal first.
 
+- Suppose $\phi(x)$ is the pdf of a standard normal, then the derivatives follow: $x\Phi(x) + \phi(x) \to \Phi(x) \to \phi(x) \to -x\phi(x)$.
+
+- The moment generating function of a normal random variable with mean $\mu$ and variance $\sigma^2$ is $e^{\mu + \frac 12 \sigma^2t^2}$.
+
+- If a normal random variable $X$ has mean $\mu$ and variance $\sigma^2$, then the lognormal random variable $\exp(X)$ has mean $\exp(\mu + \frac 12 \sigma^2)$.
+
+~
 
 [https://normaldeviate.wordpress.com/ Normal Deviate]
-Suppose $\phi(x)$ is the pdf of a standard normal, then the derivatives follow: $x\Phi(x) + \phi(x) \to \Phi(x) \to \phi(x) \to -x\phi(x)$.
-
-The moment generating function of a normal random variable with mean $\mu$ and variance $\sigma^2$ is $e^{\mu + \frac 12 \sigma^2t^2}$.
-
-If a normal random variable $X$ has mean $\mu$ and variance $\sigma^2$, then the lognormal random variable $\exp(X)$ has mean $\exp(\mu + \frac 12 \sigma^2)$.
 
 
 

@@ -19,8 +19,6 @@
 {}{img_left}{ML_FiveTribes.png}{}{800}{800}{}
 ~
 
-In general, Machine Learning tries to model $Y = f(X)$, where $X$ are the input variables and $Y$ the output.
-
 [https://github.com/kailashahirwar/cheatsheets-ai Machine Learning Cheat Sheet]
 
 Some good free video lectures:

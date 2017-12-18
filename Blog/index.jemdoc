@@ -1,6 +1,14 @@
 # jemdoc: menu{Blog/MENU_BLOG}{index.html}
 == Blog
 
+~~~
+12\/10\/2017 0600 Sunday Sunny
+~~~
+
+看了几节菲赫金哥尔茨的《微积分学教程》。戴德金分割（Dedekind Cut）定义无理数。
+
+{Calculus $\implies$ Advanced Calculus $\implies$ Real Analysis | Complex Analysis $\implies$ Functional Analysis} + {Linear Algebra | Abstract Algebra} $\implies$ Optimization $\implies$ Machine Learning
+
 
 ~~~
 11\/26\/2017 2345 Sunday Sunny
