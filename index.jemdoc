@@ -6,26 +6,25 @@
 
 *Xi Tan* ([CV.pdf CV])
 
-Research Interests: Machine Learning and Computational Finance
-
+My education background is Computer Science, Statistics, Mathematics, and Finance.
 - Ph.D in Computer Science (Machine Learning), Purdue University, 2018.
   -- M.S. in Mathematics (Computational Finance), 2018.
   -- M.S. in Statistics (Mathematical Statistics), 2014.
 - M.Phil in Computer Science, Trinity College, University of Cambridge (UK), 2008
 - B.S. in Computer Science, Northwestern Polytechnical University (P.R.China), 2007
 
-E-mail: tan19 at purdue dot edu
+E-mail: /xtan3.1415926 at gmail dot com/
 ~~~
 
 /Navy Pier, Chicago (Spring, 2012)/
 
-
-The Bayes' Theorem and the Ito's Lemma:
-
 ~~~
+
+I am interested in *Bayesian Deep Learning* and its applications in *Quantitative Finance*.
 \(
-p(\theta|D) = \frac{\pi(\theta)p(D|\theta)}{\int_\Theta \pi(\theta)p(D|\theta) d\theta}
-\)
-\(df(t,X_t) =\left(\frac{\partial f}{\partial t} + \mu_t \frac{\partial f}{\partial x} + \frac{\sigma_t^2}{2}\frac{\partial^2f}{\partial x^2}\right)dt+ \sigma_t \frac{\partial f}{\partial x}\,dB_t
+\begin{array}{lll}
+	{\text{Bayes' Theorem }}&:& p(\theta|D) = \frac{\pi(\theta)p(D|\theta)}{\int_\Theta \pi(\theta)p(D|\theta) d\theta}\\
+	{\text{Ito's Lemma }}&:& df(t,X_t) = \left(\frac{\partial f}{\partial t} + \mu_t \frac{\partial f}{\partial x} + \frac{\sigma_t^2}{2}\frac{\partial^2f}{\partial x^2}\right)dt+ \sigma_t \frac{\partial f}{\partial x}\,dB_t
+\end{array}
 \)
 ~~~
