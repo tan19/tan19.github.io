@@ -6,7 +6,8 @@
 
 *Xi Tan* ([CV.pdf CV])
 
-My education background is Computer Science, Statistics, Mathematics, and Finance.
+My educational background is in Computer Science, Statistics, Mathematics, and Finance; in particular, *Machine Learning* and its applications in *Quantitative Finance*.
+
 - Ph.D in Computer Science (Machine Learning), Purdue University, 2018.
   -- M.S. in Mathematics (Computational Finance), 2018.
   -- M.S. in Statistics (Mathematical Statistics), 2014.
@@ -19,12 +20,11 @@ E-mail: /xtan3.1415926 at gmail dot com/
 /Navy Pier, Chicago (Spring, 2012)/
 
 ~~~
-
-I am interested in *Bayesian Deep Learning* and its applications in *Quantitative Finance*.
 \(
 \begin{array}{lll}
 	{\text{Bayes' Theorem }}&:& p(\theta|D) = \frac{\pi(\theta)p(D|\theta)}{\int_\Theta \pi(\theta)p(D|\theta) d\theta}\\
 	{\text{Ito's Lemma }}&:& df(t,X_t) = \left(\frac{\partial f}{\partial t} + \mu_t \frac{\partial f}{\partial x} + \frac{\sigma_t^2}{2}\frac{\partial^2f}{\partial x^2}\right)dt+ \sigma_t \frac{\partial f}{\partial x}\,dB_t
 \end{array}
 \)
+
 ~~~
