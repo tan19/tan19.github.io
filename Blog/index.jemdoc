@@ -2,6 +2,77 @@
 == Blog
 
 ~~~
+1\/10\/2018 0515 Wednesday Sunny
+~~~
+
+*How to type French accents*
+
+Ref: http://french.about.com/od/writing/ss/typeaccents_8.htm
+
+______________
+
+To type accents on an Apple with the option key, hold down the option key while pressing the key(s) in bold in this list. For example, to type ê, hold the option key while typing i, then release both and type e. To type î, hold option, type i, release and type i again.
+
+Note: In these instructions, "and" means to keep holding the option key and the first key listed while typing the second. "Then" means to release the option key and the first key before typing the second.
+
+acute accent
+é   Hold option key and e then e
+
+grave accent
+à, è, ù   Hold option key and ` then a, e, or u
+
+cedilla
+ç   Hold option key and c
+
+circumflex
+â, ê, î, ô, û   Hold option key and i then a, e, i, o, or u
+
+tréma
+ë, ï, ü   Hold option key and u then e, i, or u
+
+oe ligature
+œ   Hold option key and q
+
+French quotation marks
+«   Hold option key and \
+»   Hold option key and shift key and \
+
+Euro symbol
+€   Hold option key and shift key and 2
+
+
+~~~
+1\/10\/2018 0515 Wednesday Sunny
+~~~
+
+*Geometry of a Hyperplan*
+
+A hyperplane is a set satisfies $H=\{x:w^Tx=b\}$. An equivalent form is $w^T(x-\frac{w}{\|w\|^2}b) = 0$, which suggests that the vector $w$ is perpendicular to the hyperplane, called a normal vector.
+
+Particularly, since $\frac{w^Tw}{\|w\|^2}b = b$, we know $x_0=\frac{w}{\|w\|}\frac{b}{\|w\|}$ is on the hyperplane. The $x_0$ is actually the projection of the origin, since $w$ is orthogonal to the hyperplane and it is nothing but a scaled $w$ on the hyperplane. Therefore, the shortest distance (along the direction of $w$) from the origin to the hyperplane is given by $\frac{b}{\|w\|}$ (could be negative, which means $w$ is on the other side of the hyperplane).
+
+In general, if a hyperplane is given by the equation $f(x) = w^Tx-b = 0$, the distance from any arbitrary vector $p$ to the hyperplane $w^Tx=b$ is given by
+
+        $\frac{f(p)}{\|w\|} = \frac{w^Tp-b}{\|w\|}$,           if $p$ is on the opposite side of the origin
+
+$-\frac{f(p)}{\|w\|} = -\frac{w^Tp-b}{\|w\|}$,         if $p$ is on the same side of the origin
+
+Particularly, when $p=0$ (the origin), the above becomes $\frac{b}{\|w\|}$, which agrees with our previous result.
+
+Proof: Let's prove the first case. Suppose there is a vector $x$ on the hyperplane, such that $p-x = d\frac{w}{\|w\|}$. Since $w$ is orthogonal to the hyperplane, the scalar $d$ is the distance we are after. Now, multiply both sides by $w^T$,
+
+$w^Tp-w^Tx = dw^T\frac{w}{\|w\|}$
+
+$w^Tp-(w^Tx-b) = d\frac{w^Tw}{\|w\|}+b$
+
+$w^Tp = d\|w\| + b$
+
+$d = \frac{w^Tp-b}{\|w\|}$
+
+The proof for the other case is similar. $\blacksquare$
+
+
+~~~
 12\/10\/2017 0600 Sunday Sunny
 ~~~
 
