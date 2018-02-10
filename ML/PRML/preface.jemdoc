@@ -1,0 +1,14 @@
+# jemdoc: menu{ML/PRML/MENU_PRML}{preface.html}
+= Preface
+
+- The main focus of this book is Bayesian Machine Learning.
+- The framework is graphical models.
+- The inference algorithms are MCMC (exact) and variational methods (approximate).
+- Kernel methods and neural networks are briefly covered too.
+
+
+
+
+
+
+

@@ -7,7 +7,13 @@ Machine Learning
 	Good Readings			[good_readings.html]
 	Glossary				[glossary.html]
 	FAQ						[FAQ.html]
-	Hawkes Processes		[HP/index.html]
+	
+Readings
+	HP 						[HP/index.html]
+	PRML					[PRML/index.html]
+	MLAPP					[MLAPP/index.html]
+	GP 						[GP/index.html]
+	BDA						[BDA/index.html]
 
 Model :: Naive Models
 	Logistic Regression	and Soft-max			[.html]

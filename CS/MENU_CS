@@ -12,6 +12,7 @@ System
 	Compiler								[compiler.html]
 	Operating Systems						[OS.html]
 	Network									[network.html]
+	Distributed Computing					[distributed.html]
 
 Programming	Languages
 	C/C\+\+									[C.html]
@@ -21,3 +22,6 @@ Programming	Languages
 	Matlab									[Matlab.html]
 	Web Programming							[web.html]
 	
+Data Structures and Algorithms
+	Data Strctures							[DS.html]
+	Sorting									[sorting.html]

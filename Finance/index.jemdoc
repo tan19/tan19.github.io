@@ -2,18 +2,12 @@
 = Finance
 
 ~
-== Top Journals in Economics and Finance
+== Top Journals in Finance
 === Finance
 - The Journal of Finance (JF)
 - Journal of Financial Economics (JFE)
 - The Review of Financial Studies (RFS)
 
-=== Economics
-- The American Economic Review (AER)
-- The Quarterly Journal of Economics (QJE)
-- Econometrica
-- The Review of Economic Studies
-- Journal of Political Economy (JPE)
 ~
 
 There exist two separate branches of finance that require advanced quantitative techniques: derivatives pricing, and risk and portfolio management. One of the main differences is that they use different probabilities, namely the risk-neutral probability (or arbitrage-pricing probability), denoted by "Q", and the actual (or actuarial) probability, denoted by "P". (from wikipedia, article on Mathematical Finance)

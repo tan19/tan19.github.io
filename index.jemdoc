@@ -1,18 +1,7 @@
 # jemdoc: menu{MENU_MAIN}{index.html}
-== Welcome to Xi Tan's Homepage
+== Welcome to My Homepage
 
-~~~
-{}{img_left}{me.png}{}{225}{225}{}
-
-*Xi Tan* ([CV.pdf CV])
-
-E-mail: /xtan3.1415926 at gmail dot com/
-
-My educational background lies in Computer Science, Statistics, Mathematics, and Finance; in particular, [ML/index.html *Machine Learning*] and its applications in [Finance/index.html *Quantitative Finance*]. Parallel to the scientific world, I am interested in Chinese classics and calligraphy, as well as French, Japanese, and piano.
-
-~~~
-
-/Navy Pier, Chicago (Spring, 2012)/
+My intellectual curiosity lies in the problems, models, algorithms, and implementations of [ML/index.html *Machine Learning*] and [Finance/index.html *Quantitative Finance*], and centers around the following two famous equations:
 
 ~~~
 \(
@@ -23,3 +12,9 @@ My educational background lies in Computer Science, Statistics, Mathematics, and
 \)
 
 ~~~
+
+Parallel to the scientific world, I am interested in learning foreign languages (e.g., French, Japanese, and German), playing piano, and reading Chinese classics.
+
+
+I can be reached at: xtan3.1415926 at gmail dot com
+

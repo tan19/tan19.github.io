@@ -1,0 +1,27 @@
+Xi Tan
+    About       	    [../index.html]
+    
+PRML
+	Homepage								[index.html]
+	Prerequisite							[pre.html]
+	Glossary								[glossary.html]
+	FAQ										[FAQ.html]
+
+0. Preface
+	Preface		[preface.html]
+1. Introduction
+	Introduction	[1.html]
+	1.1 Example: Polynomial Curve Fitting [1_1.html]
+2. Probability Distribution
+3. Linear Models for Regression
+4. Linear Models for Classification
+5. Neural Networks
+6. Kernel Methods
+7. Sparse Kernel Machines
+8. Graphical Models
+9. Mixture Models and EM
+10. Approximate Inference
+11. Sampling Methods
+12. Continuous Latent Variables
+13. Sequential Data
+14. Combining Models
