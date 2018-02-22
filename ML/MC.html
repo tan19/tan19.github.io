@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Good Readings</title>
+<title>Monte Carlo Methods</title>
 <!-- MathJax -->
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
@@ -25,7 +25,7 @@ MathJax.Hub.Config({
 <div class="menu-category">Machine Learning</div>
 <div class="menu-item"><a href="index.html">Homepage</a></div>
 <div class="menu-item"><a href="people.html">People</a></div>
-<div class="menu-item"><a href="good_readings.html" class="current">Good&nbsp;Readings</a></div>
+<div class="menu-item"><a href="good_readings.html">Good&nbsp;Readings</a></div>
 <div class="menu-item"><a href="glossary.html">Glossary</a></div>
 <div class="menu-item"><a href="FAQ.html">FAQ</a></div>
 <div class="menu-category">Readings</div>
@@ -92,10 +92,10 @@ MathJax.Hub.Config({
 <div class="menu-item"><a href="VB.html">Variational&nbsp;Bayes&nbsp;(VB)</a></div>
 <div class="menu-item"><a href="EP.html">Expectation&nbsp;Propagation&nbsp;(EP)</a></div>
 <div class="menu-category">Inference :: Exact: Sampling Methods</div>
-<div class="menu-item"><a href="MC.html">Monte&nbsp;Carlo	Methods</a></div>
+<div class="menu-item"><a href="MC.html" class="current">Monte&nbsp;Carlo	Methods</a></div>
 <div class="menu-item"><a href="MH.html">Metropolis-Hastings&nbsp;Algorithm&nbsp;(M-H)</a></div>
 <div class="menu-item"><a href="Gibbs.html">Gibbs&nbsp;Sampling</a></div>
-<div class="menu-item"><a href="SMC.html">Sequential&nbsp;Monte&nbsp;Carlo&nbsp;(SMC)</a></div>
+<div class="menu-item"><a href="SMC.html" class="current">Sequential&nbsp;Monte&nbsp;Carlo&nbsp;(SMC)</a></div>
 <div class="menu-category">Inference :: Others</div>
 <div class="menu-item"><a href="SMO.html">Sequential&nbsp;Minimal&nbsp;Optimization&nbsp;(SMO)</a></div>
 <div class="menu-item"><a href="ADMM.html">Alternating&nbsp;Direction&nbsp;Method&nbsp;of&nbsp;Multipliers&nbsp;(ADMM)</a></div>
@@ -111,78 +111,25 @@ MathJax.Hub.Config({
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Good Readings</h1>
+<h1>Monte Carlo Methods</h1>
 </div>
-<h2>The Essentials</h2>
-<ul>
-<li><p>Pattern Recognition and Machine Learning <a href="http://www.springer.com/cda/content/document/cda_downloaddocument/9780387310732-t1.pdf" target=&ldquo;blank&rdquo;>toc</a>, <a href="https://github.com/PRML/PRMLT" target=&ldquo;blank&rdquo;>Code Repository</a>   </p>
-</li>
-<li><p>Machine Learning: A Probabilistic Perspective <a href="https://www.cs.ubc.ca/~murphyk/MLbook/pml-toc-22may12.pdf" target=&ldquo;blank&rdquo;>toc</a>   </p>
-</li>
-<li><p>Foundations of Machine Learning <a href="https://mitpress.mit.edu/sites/default/files/titles/content/9780262018258_toc_0001.pdf" target=&ldquo;blank&rdquo;>toc</a></p>
-</li>
-<li><p>Convex Optimization <a href="http://assets.cambridge.org/97805218/33783/toc/9780521833783_toc.pdf" target=&ldquo;blank&rdquo;>toc</a>, <a href="https://class.stanford.edu/courses/Engineering/CVX101/Winter2014/info" target=&ldquo;blank&rdquo;>courseware</a></p>
-</li>
-<li><p><a href="http://users.iems.northwestern.edu/~nocedal/book/toc.html" target=&ldquo;blank&rdquo;>Numerical Optimization</a></p>
-</li>
-<li><p>Machine Learning: A Bayesian and Optimization Perspective</p>
-</li>
-<li><p>Pattern Recognition</p>
-</li>
-<li><p>The Elements of Statistical Learning <a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/contents.pdf" target=&ldquo;blank&rdquo;>toc</a>, <a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/printings/ESLII_print10.pdf" target=&ldquo;blank&rdquo;>Ebook</a></p>
-</li>
-<li><p>Bayesian Reasoning and Machine Learning <a href="http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/181115.pdf" target=&ldquo;blank&rdquo;>Ebook</a>   </p>
-</li>
-<li><p>Introduction to Linear Optimization</p>
-</li>
-<li><p>Nonlinear Programming</p>
-</li>
-</ul>
-<h2>Others</h2>
-<ul>
-<li><p>MCMC</p>
-<ul>
-<li><p>Radford M. Neal's work of MCMC on DP (<a href="http://www.cs.toronto.edu/~radford/ftp/bmm.pdf" target=&ldquo;blank&rdquo;>1991</a>, <a href="http://www.cs.toronto.edu/~radford/ftp/mixmc.pdf" target=&ldquo;blank&rdquo;>1998</a>, <a href="http://www.cs.toronto.edu/~radford/ftp/mixsplit.pdf" target=&ldquo;blank&rdquo;>2000</a>, <a href="http://www.cs.toronto.edu/~radford/ftp/mixsplit2.pdf" target=&ldquo;blank&rdquo;>2005</a>).</p>
-</li>
-<li><p><a href="http://www.people.fas.harvard.edu/~junliu/TechRept/94folder/collaps2.pdf" target=&ldquo;blank&rdquo;>Collapsed Gibbs Sampler, by Jun S. Liu</a></p>
-</li>
-</ul>
-
-</li>
-</ul>
-<ul>
-<li><p>Variational Methods</p>
-<ul>
-<li><p><a href="http://www.cs.ubc.ca/~murphyk/Papers/EP.ps.gz" target=&ldquo;blank&rdquo;>From BP to EP, by Keven P Murphy</a></p>
-</li>
-</ul>
-
-</li>
-</ul>
-<ul>
-<li><p>Causal Inference</p>
-<ul>
-<li><p><a href="http://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf" target=&ldquo;blank&rdquo;>Causal inference in statistics: An overview</a></p>
-</li>
-</ul>
-
-</li>
-</ul>
-<ul>
-<li><p>Kernel Methods</p>
-<ul>
-<li><p><a href="http://www.umiacs.umd.edu/~hal/docs/daume04rkhs.pdf" target=&ldquo;blank&rdquo;>RKHS tutorial, by Hal Daum&lsquo;e III</a></p>
-</li>
-</ul>
-
-</li>
-</ul>
-<ul>
-<li><p>Top Conferences and Journals: <a href="http://jmlr.csail.mit.edu/proceedings" target=&ldquo;blank&rdquo;>JMLR</a> <a href="http://books.nips.cc" target=&ldquo;blank&rdquo;>NIPS</a> <a href="http://www.machinelearning.org/icml.html" target=&ldquo;blank&rdquo;>ICML</a> <a href="http://uai.sis.pitt.edu/proceedings.jsp?mmnu=1&amp;smnu=0" target=&ldquo;blank&rdquo;>UAI</a></p>
-</li>
-<li><p>Repository: <a href="http://machinelearning.wustl.edu/mlpapers/venues" target=&ldquo;blank&rdquo;>Repository</a>  </p>
-</li>
-</ul>
+<h3>Inverse Transform Sampling</h3>
+<p>Suppose \(z\) is uniform random numbers, i.e., \(p_Z(z) = 1\), and we want to sample \(y\) from \(p_Y(y)\). Since</p>
+<p style="text-align:center">
+\[
+p_Y(y) = p_Z(z)\left|\frac{d z}{d y}\right| = \left|\frac{d z}{d y}\right|
+\]
+</p><p>so</p>
+<p style="text-align:center">
+\[
+z = h(y) \equiv \int_{-\infty}^y p_Y(u) d u
+\]
+</p><p>and</p>
+<p style="text-align:center">
+\[
+y = h^{-1}(z)
+\]
+</p><p>This means: we can sample \(z\) first, and transform it to \(y\) through \(y = h^{-1}(z)\).</p>
 <div id="footer">
 <div id="footer-text">
 Page generated 2018-02-21 22:02:48 EST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.

@@ -15,14 +15,5 @@
 -- kernel models (SVM, GP) - basis functions are implicitly defined, dimension of which is essentially infinite;
 -- latent variable models \/ dimension reduction (HMMs, Sate Space Models; PCA, ICA).
 
-As to machine learning inference methods, they can be classified into three categories:
--- exact inference \/ direct inference (conjugacy, convex optimization, numerical optimization);
--- deterministic approximation inference (Variational Bayes and Expectation Propagation);
--- stochastic approximation inference (MCMC).
-
-Ask the following questions, in the listed order, for each machine learning problem:
--- task: regression \/ classification \/ clustering
--- data: supervised learning \/ unsupervised learning
--- feature generation: fixed \/ adaptive \/ kernel \/ latent
--- model: parametric \/ nonparametric
--- inference: exact \/ variational \/ MCMC
+- Q: How can I sample a random variable $x$ marginally if I know how to sample jointly $p(x,y)$?
+- A: Simply discard $y$ and keep $x$ in the joint samples.
