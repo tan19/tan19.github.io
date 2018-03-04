@@ -6,3 +6,6 @@
 
 - Model Evidence: Model evidence, or marginal likelihood function, is a likelihood function in which some parameter variables have been marginalized, usually denoted by P(D|M).
                   For example, in polynomial regression, M may denotes the degree of the regression function, and parameter variables are the coefficients for any given M.
+
+- *Filtering* is the task of tracking the posterior distribution of the latent state varialbe in state space models.
+
