@@ -11,6 +11,10 @@
 ~
 
 
+Read Hull and Wilmott first (probably CFA), then Shreve's two books (Stochastic Calculus for Finance I & II, Brownian Motion and Stochastic Calculus) for more math.
+
+- Interest Rate Models, by Brigo and Mercurio
+
 [https://wrds-web.wharton.upenn.edu/ Wharton Research Data Services]
 
 There exist two separate branches of finance that require advanced quantitative techniques: derivatives pricing, and risk and portfolio management. One of the main differences is that they use different probabilities, namely the risk-neutral probability (or arbitrage-pricing probability), denoted by "Q", and the actual (or actuarial) probability, denoted by "P". (from wikipedia, article on Mathematical Finance)
