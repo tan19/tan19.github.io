@@ -6,7 +6,8 @@
 - U. of Toronto           : Geoffrey Hinton (Deep Learning), Radford Neal (MCMC)
 
 = Europe
-- U. of Cambridge         : Zoubin Ghahramani, David MacKay ([http://videolectures.net/course_information_theory_pattern_recognition/ video]), Carl Rasmussen
+- Cambridge         : Zoubin Ghahramani, David MacKay ([http://videolectures.net/course_information_theory_pattern_recognition/ video]), Carl Rasmussen
+- Oxford			: Yee Whye Teh
 - UCL                     : John Shawe-Taylor (SVM, Kernel), Vladimir Vapnik (SVM)
 - ETH                     : Joachim Buhman
 - Max Planck Institute    : Bernhard Schoelkopf, Michael Black
@@ -27,7 +28,7 @@
 - Harvard                 : Ryan Adams, Avi Pfeffer
 - Duke                    : Sayan Mukherjee
 - Georgia Tech            : Aaron Bobick, Le Song (Kernel), Irfan Essa, Charles Isbell
-- Princeton               : David Blei (Topic Models), Rob Schapire
+- Princeton               : David Blei (Topic Models), Ryan Adams, Rob Schapire
 - Cornell                 : Thorsten Joachims, Rich Caruana
 - Columbia                : Tony Jebara, Michael Collins (NLP), Rocco Servedio, Peter Orbanz
 

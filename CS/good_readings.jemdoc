@@ -27,7 +27,14 @@
   - C\+\+ Coding Standards
   - Exceptional C\+\+ Style
 === Java
+
 === Python
+- Python: Python + Ipython (廖雪峰，Learning Python, Python源码剖析)
+- Data Science: NumPy + SciPy + Pandas + Matplotlib (Python for Data Analysis)
+- Machine Learning: Scikit-learn
+- Deep Learning: Tensorflow + NLTK
+- [https://see.stanford.edu/Course/CS107 Progamming Paradigms]
+- [https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X CSAPP]
 
 == Data Structures and Algorithms
 - Steven S Skiena. [https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693 The Algorithm Design Manual].
