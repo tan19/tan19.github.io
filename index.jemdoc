@@ -1,9 +1,6 @@
 # jemdoc: menu{MENU_MAIN}{index.html}
 == Welcome to My Homepage
 
-
-I received the B.S. degree in Computer Science from Northwestern Polytechnical University, China, in 2007; the M.Phil degree in Computer Science from University of Cambridge, England, in 2008; and the Ph.D. degree in Computer Science specializing in Machine Learning with double minors in Mathematics and Statistics from Purdue University, in 2018. I work in the Data Science and Finance industries.
-
 My intellectual curiosity lies in the problems, models, algorithms, and implementations of [ML/index.html *Machine Learning*] and [Finance/index.html *Quantitative Finance*], which center around the following two famous equations:
 
 ~~~
