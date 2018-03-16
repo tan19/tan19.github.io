@@ -61,9 +61,21 @@ MathJax.Hub.Config({
 </div>
 <p>Forwards and futures have two main uses, in speculation (risk-taking) and in hedging (risk-averse). </p>
 <p>Because you settle the change in value on a daily basis, the value of a futures contract at any time during its life is zero.</p>
+<h2>The forward contract price</h2>
+<p>Long one share of asset at time \(t\). Under no-arbitrage assumption, we have:</p>
+<table id="Forward Price">
+<tr class="r1"><td class="c1"></td><td class="c2"> \(t\) </td><td class="c3"> \(T\) </td></tr>
+<tr class="r2"><td class="c1">Cash 		</td><td class="c2"> \(-S(t)\) </td><td class="c3"> \(-S(t)e^{(T-t)r}\)  </td></tr>
+<tr class="r3"><td class="c1">Contract   	</td><td class="c2"> 0 </td><td class="c3"> \(F - S(T)\) </td></tr>
+<tr class="r4"><td class="c1">Asset   	</td><td class="c2"> \(S(t)\) </td><td class="c3"> \(S(T)\) </td></tr>
+<tr class="r5"><td class="c1"></td><td class="c2"> </td><td class="c3"> </td></tr>
+<tr class="r6"><td class="c1"><b>Balance</b> </td><td class="c2"> \(0\) </td><td class="c3"> \(0\)
+</td></tr></table>
+<p><br />
+The forward price \(F(t)\) at \(t\) is \(S(t)e^{(T-t)r}\) &ndash; which is kind of equivalent to saving \(S(t)\) in the a risk-free bank account.</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2018-03-14 21:24:38 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2018-03-15 01:33:02 EDT, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>
