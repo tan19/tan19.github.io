@@ -1,4 +1,10 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {section}{\numberline {2}Terminology}{1}{section.2}
-\contentsline {section}{\numberline {3}Clustering and the Dirichlet process}{1}{section.3}
-\contentsline {section}{\numberline {4}Latent features and the Indian buffet process}{1}{section.4}
+\contentsline {section}{\numberline {2}Notation}{1}{section.2}
+\contentsline {section}{\numberline {3}Terminology}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Parametric and nonparametric models}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bayesian and Bayesian nonparametric models}{2}{subsection.3.2}
+\contentsline {section}{\numberline {4}Clustering and the Dirichlet process}{2}{section.4}
+\contentsline {subsection}{\numberline {4.1}Finite mixture models}{2}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Bayesian mixture models}{3}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Dirichlet Process}{3}{subsection.4.3}
+\contentsline {section}{\numberline {5}Latent features and the Indian buffet process}{3}{section.5}

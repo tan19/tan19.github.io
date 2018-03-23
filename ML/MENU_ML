@@ -33,7 +33,7 @@ Model :: Naive Models
 	Projection Pursuit 							[.html]
 
 Model :: Bayesians: Graphical Models
-	Bayesian Nonparametrics						[BNP/BNP.html]
+	Bayesian Nonparametrics						[BNP.html]
 	Markov Network 								[.html]
 	Bayesian Network (BN) 						[.html]
 	Hidden Markov Models (HMM) 					[.html]
