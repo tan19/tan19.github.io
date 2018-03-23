@@ -262,10 +262,10 @@ which gives
 \ans{
 Naive Way: 
 \begin{align}
-	P(A=B=0) &= \left[{{3}\choose{0}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}\\
-	P(A=B=1) &= \left[{{3}\choose{1}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
-	P(A=B=2) &= \left[{{3}\choose{2}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
-	P(A=B=3) &= \left[{{3}\choose{3}} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}	
+	P(A=B=0) &= \left[\binom{3}{0} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}\\
+	P(A=B=1) &= \left[\binom{3}{1} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
+	P(A=B=2) &= \left[\binom{3}{2} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
+	P(A=B=3) &= \left[\binom{3}{3} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}	
 \end{align}
 So
 \begin{align}
@@ -275,7 +275,7 @@ Don't forget the case when both had no head (A=B=0).
 
 Clever Way: Let both do their tossing and then let B turn over each of her coins. Then the event you are looking for is that exactly three out of six coins show heads. Since B's "trick" doesn't destroy any randomness or independency, the answer is
 \begin{align}
-	P(A=B) &= {{6}\choose{3}} \left(\frac{1}{2}\right)^3 = \frac{5}{16}
+	P(A=B) &= \binom{6}{3} \left(\frac{1}{2}\right)^3 = \frac{5}{16}
 \end{align}
 }
 

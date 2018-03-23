@@ -53,7 +53,7 @@
 \contentsline {ques}{{Question}{6.{23}}{}}{6}{ques.6.23}
 \contentsline {ques}{{Question}{6.{24}}{}}{6}{ques.6.24}
 \contentsline {ques}{{Question}{6.{25}}{}}{6}{ques.6.25}
-\contentsline {ques}{{Question}{6.{26}}{}}{7}{ques.6.26}
+\contentsline {ques}{{Question}{6.{26}}{}}{6}{ques.6.26}
 \contentsline {ques}{{Question}{6.{27}}{}}{7}{ques.6.27}
 \contentsline {ques}{{Question}{6.{28}}{}}{7}{ques.6.28}
 \contentsline {ques}{{Question}{6.{29}}{}}{7}{ques.6.29}
@@ -65,11 +65,11 @@
 \contentsline {ques}{{Question}{6.{35}}{}}{7}{ques.6.35}
 \contentsline {ques}{{Question}{6.{36}}{}}{7}{ques.6.36}
 \contentsline {ques}{{Question}{6.{37}}{}}{7}{ques.6.37}
-\contentsline {ans}{{Answer}{6.{16}}{}}{8}{ans.6.16}
+\contentsline {ans}{{Answer}{6.{16}}{}}{7}{ans.6.16}
 \contentsline {ques}{{Question}{6.{38}}{}}{8}{ques.6.38}
 \contentsline {ans}{{Answer}{6.{17}}{}}{8}{ans.6.17}
-\contentsline {ques}{{Question}{6.{39}}{}}{9}{ques.6.39}
-\contentsline {ans}{{Answer}{6.{18}}{}}{9}{ans.6.18}
+\contentsline {ques}{{Question}{6.{39}}{}}{8}{ques.6.39}
+\contentsline {ans}{{Answer}{6.{18}}{}}{8}{ans.6.18}
 \contentsline {ques}{{Question}{6.{40}}{}}{9}{ques.6.40}
 \contentsline {ans}{{Answer}{6.{19}}{}}{9}{ans.6.19}
 \contentsline {ques}{{Question}{6.{41}}{}}{9}{ques.6.41}
@@ -78,7 +78,7 @@
 \contentsline {ques}{{Question}{6.{44}}{}}{9}{ques.6.44}
 \contentsline {ans}{{Answer}{6.{20}}{}}{9}{ans.6.20}
 \contentsline {ques}{{Question}{7.{1}}{}}{9}{ques.7.1}
-\contentsline {ans}{{Answer}{7.{1}}{}}{10}{ans.7.1}
+\contentsline {ans}{{Answer}{7.{1}}{}}{9}{ans.7.1}
 \contentsline {ques}{{Question}{7.{2}}{}}{10}{ques.7.2}
 \contentsline {ques}{{Question}{7.{3}}{}}{10}{ques.7.3}
 \contentsline {ques}{{Question}{7.{4}}{}}{10}{ques.7.4}
@@ -108,8 +108,8 @@
 \contentsline {ans}{{Answer}{9.{4}}{}}{11}{ans.9.4}
 \contentsline {ques}{{Question}{9.{5}}{}}{11}{ques.9.5}
 \contentsline {ans}{{Answer}{9.{5}}{}}{11}{ans.9.5}
-\contentsline {ques}{{Question}{9.{6}}{}}{12}{ques.9.6}
-\contentsline {ans}{{Answer}{9.{6}}{}}{12}{ans.9.6}
+\contentsline {ques}{{Question}{9.{6}}{}}{11}{ques.9.6}
+\contentsline {ans}{{Answer}{9.{6}}{}}{11}{ans.9.6}
 \contentsline {ques}{{Question}{9.{7}}{}}{12}{ques.9.7}
 \contentsline {ans}{{Answer}{9.{7}}{}}{12}{ans.9.7}
 \contentsline {ques}{{Question}{9.{8}}{}}{12}{ques.9.8}
@@ -128,7 +128,7 @@
 \contentsline {ans}{{Answer}{9.{14}}{}}{12}{ans.9.14}
 \contentsline {ques}{{Question}{9.{15}}{}}{12}{ques.9.15}
 \contentsline {ans}{{Answer}{9.{15}}{}}{12}{ans.9.15}
-\contentsline {ques}{{Question}{9.{16}}{}}{13}{ques.9.16}
+\contentsline {ques}{{Question}{9.{16}}{}}{12}{ques.9.16}
 \contentsline {ans}{{Answer}{9.{16}}{}}{13}{ans.9.16}
 \contentsline {ques}{{Question}{9.{17}}{}}{13}{ques.9.17}
 \contentsline {ans}{{Answer}{9.{17}}{}}{13}{ans.9.17}
@@ -141,6 +141,6 @@
 \contentsline {ques}{{Question}{13.{2}}{}}{13}{ques.13.2}
 \contentsline {ques}{{Question}{13.{3}}{}}{13}{ques.13.3}
 \contentsline {ques}{{Question}{13.{4}}{}}{13}{ques.13.4}
-\contentsline {ques}{{Question}{13.{5}}{}}{14}{ques.13.5}
+\contentsline {ques}{{Question}{13.{5}}{}}{13}{ques.13.5}
 \contentsline {ques}{{Question}{13.{6}}{}}{14}{ques.13.6}
 \contentsline {ques}{{Question}{13.{7}}{}}{14}{ques.13.7}
