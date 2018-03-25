@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Notation}{1}{section.2}
+\contentsline {section}{\numberline {3}Introduction}{2}{section.3}
+\contentsline {section}{\numberline {4}Independence Chains}{2}{section.4}
+\contentsline {section}{\numberline {5}Random walk chains}{3}{section.5}
+\contentsline {section}{\numberline {6}Gibbs sampler}{3}{section.6}
+\contentsline {section}{\numberline {7}Test for Convergence}{4}{section.7}
+\contentsline {section}{\numberline {8}How it is used}{4}{section.8}
+\contentsline {section}{\numberline {9}Advanced MCMC methods}{4}{section.9}
+\contentsline {subsection}{\numberline {9.1}Slice sampling}{4}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Reversible Jump MCMC}{4}{subsection.9.2}

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1521828835 "BNP.tex" "BNP.pdf" "BNP" 1521828836
+["pdflatex"] 1521936122 "BNP.tex" "BNP.pdf" "BNP" 1521936123
   "/Users/tan19/Dropbox/LaTeXMacros.tex" 1519791733 2718 a0a6ffc702230adc04dbf34f9a0b83c3 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1480098698 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -143,14 +143,14 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "BNP.aux" 1521828836 1767 c3392e397bd39e69cbabe23dd5c506b7 ""
-  "BNP.out" 1521828836 671 3bd7dea5a8787722bbff12c35045055c ""
-  "BNP.tex" 1521828835 4558 10ad83152c2284f8973a168a760f473b ""
-  "BNP.toc" 1521828836 850 8e4ddb836b674a35a22637c89b67949e ""
+  "BNP.aux" 1521936123 1767 55d99385f3df0ffef86f41eea2a245cb ""
+  "BNP.out" 1521936123 671 3bd7dea5a8787722bbff12c35045055c ""
+  "BNP.tex" 1521936122 4816 28bd4f38db518f7d025c60afd21036e6 ""
+  "BNP.toc" 1521936123 850 0abf62fae422048468a19660750a38fb ""
   (generated)
-  "BNP.pdf"
-  "BNP.out"
-  "BNP.log"
-  "BNP.aux"
   "BNP.thm"
+  "BNP.pdf"
+  "BNP.aux"
+  "BNP.log"
+  "BNP.out"
   "BNP.toc"

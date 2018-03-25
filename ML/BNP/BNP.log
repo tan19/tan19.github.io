@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  23 MAR 2018 14:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  24 MAR 2018 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,7 +757,7 @@ ine 79.
 \tf@thm=\write5
 \openout5 = `BNP.thm'.
 
- [3]
+ [3] [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
  (./BNP.aux)
@@ -772,8 +772,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 15607 strings out of 492995
- 261632 string characters out of 6132704
+ 15608 strings out of 492995
+ 261638 string characters out of 6132704
  446940 words of memory out of 5000000
  18891 multiletter control sequences out of 15000+600000
  15857 words of font info for 67 fonts, out of 8000000 for 9000
@@ -794,10 +794,10 @@ r17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
 pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
 b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on BNP.pdf (3 pages, 174119 bytes).
+Output written on BNP.pdf (4 pages, 174676 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 161 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

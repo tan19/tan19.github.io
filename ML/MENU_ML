@@ -15,6 +15,10 @@ Readings
 	GP 						[GP/index.html]
 	BDA						[BDA/index.html]
 
+Notes
+	Bayesian Nonparametrics						[BNP.html]
+	Monte Carlo	Methods							[MCMC.html]
+
 Model :: Naive Models
 	Logistic Regression	and Soft-max			[.html]
 	Poisson Regression							[.html]
@@ -32,8 +36,7 @@ Model :: Naive Models
 	Principle Component Analysis (PCA) 			[.html]
 	Projection Pursuit 							[.html]
 
-Model :: Bayesians: Graphical Models
-	Bayesian Nonparametrics						[BNP.html]
+Model :: Bayesians: Graphical Models	
 	Markov Network 								[.html]
 	Bayesian Network (BN) 						[.html]
 	Hidden Markov Models (HMM) 					[.html]
