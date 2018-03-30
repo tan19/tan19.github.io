@@ -12,10 +12,6 @@ Readings
 	PRML					[PRML/index.html]
 	MLAPP					[MLAPP/index.html]
 
-Notes
-	Bayesian Nonparametrics						[BNP.html]
-	Monte Carlo	Methods							[MCMC.html]
-
 Model :: Naive Models
 	Logistic Regression	and Soft-max			[.html]
 	Poisson Regression							[.html]

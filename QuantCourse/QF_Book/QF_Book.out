@@ -1,0 +1,73 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Some Distinctions}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Machine Learning v.s. Statistical Learning}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Parametric v.s. Non-parametric Models}{section.1.1}% 4
+\BOOKMARK [0][-]{chapter.2}{A Brief History of Machine Learning}{}% 5
+\BOOKMARK [-1][-]{part.1}{I Supervised Learning}{}% 6
+\BOOKMARK [0][-]{chapter.3}{Regression v.s. Classification}{part.1}% 7
+\BOOKMARK [0][-]{chapter.4}{Parametric v.s. Nonparametric Models}{part.1}% 8
+\BOOKMARK [0][-]{chapter.5}{Decision Trees}{part.1}% 9
+\BOOKMARK [-1][-]{part.2}{II Unsupervised Learning}{}% 10
+\BOOKMARK [0][-]{chapter.6}{Clustering}{part.2}% 11
+\BOOKMARK [0][-]{chapter.7}{Dimension Reduction}{part.2}% 12
+\BOOKMARK [-1][-]{part.3}{III General Models}{}% 13
+\BOOKMARK [0][-]{chapter.8}{Graphical Models}{part.3}% 14
+\BOOKMARK [0][-]{chapter.9}{Neural Networks}{part.3}% 15
+\BOOKMARK [0][-]{chapter.10}{Kernel Methods}{part.3}% 16
+\BOOKMARK [1][-]{section.10.1}{Support Vector Machines \(SVM\)}{chapter.10}% 17
+\BOOKMARK [1][-]{section.10.2}{Gaussian Processes \(GP\)}{chapter.10}% 18
+\BOOKMARK [-1][-]{part.4}{IV Statistical Learning Theory}{}% 19
+\BOOKMARK [-1][-]{part.5}{V TBD}{}% 20
+\BOOKMARK [0][-]{chapter.11}{Latent Dirichlet allocation \(LDA\)}{part.5}% 21
+\BOOKMARK [0][-]{chapter.12}{Principle Component Analysis \(PCA\)}{part.5}% 22
+\BOOKMARK [0][-]{chapter.13}{Linear Discriminant Analysis \(LDA\)}{part.5}% 23
+\BOOKMARK [-1][-]{part.6}{VI General Inference Algorithms}{}% 24
+\BOOKMARK [0][-]{chapter.14}{Expectation Maximization \(EM\)}{part.6}% 25
+\BOOKMARK [1][-]{section.14.1}{The EM algorithm}{chapter.14}% 26
+\BOOKMARK [1][-]{section.14.2}{The ECM and ECME algorithms}{chapter.14}% 27
+\BOOKMARK [1][-]{section.14.3}{The PX-EM algorithm}{chapter.14}% 28
+\BOOKMARK [0][-]{chapter.15}{Expectation Propagation \(EP\)}{part.6}% 29
+\BOOKMARK [0][-]{chapter.16}{Markov Chain Monte Carlo Methods}{part.6}% 30
+\BOOKMARK [1][-]{section.16.1}{Introduction}{chapter.16}% 31
+\BOOKMARK [1][-]{section.16.2}{Notation}{chapter.16}% 32
+\BOOKMARK [1][-]{section.16.3}{Introduction}{chapter.16}% 33
+\BOOKMARK [1][-]{section.16.4}{Independence Chains}{chapter.16}% 34
+\BOOKMARK [1][-]{section.16.5}{Random walk chains}{chapter.16}% 35
+\BOOKMARK [1][-]{section.16.6}{Gibbs sampler}{chapter.16}% 36
+\BOOKMARK [1][-]{section.16.7}{Test for Convergence}{chapter.16}% 37
+\BOOKMARK [1][-]{section.16.8}{How it is used}{chapter.16}% 38
+\BOOKMARK [1][-]{section.16.9}{Advanced MCMC methods}{chapter.16}% 39
+\BOOKMARK [2][-]{subsection.16.9.1}{Slice sampling}{section.16.9}% 40
+\BOOKMARK [2][-]{subsection.16.9.2}{Reversible Jump MCMC}{section.16.9}% 41
+\BOOKMARK [1][-]{section.16.10}{Introduction}{chapter.16}% 42
+\BOOKMARK [2][-]{subsection.16.10.1}{Sampling Methods in General}{section.16.10}% 43
+\BOOKMARK [2][-]{subsection.16.10.2}{Rejection Sampling}{section.16.10}% 44
+\BOOKMARK [1][-]{section.16.11}{Markov Chains}{chapter.16}% 45
+\BOOKMARK [1][-]{section.16.12}{Metropolis-Hastings Algorithm}{chapter.16}% 46
+\BOOKMARK [2][-]{subsection.16.12.1}{Metropolis Algorithm}{section.16.12}% 47
+\BOOKMARK [2][-]{subsection.16.12.2}{Gibbs Sampling}{section.16.12}% 48
+\BOOKMARK [2][-]{subsection.16.12.3}{Collapsed Gibbs Sampling}{section.16.12}% 49
+\BOOKMARK [2][-]{subsection.16.12.4}{Metropolis-Within-Gibbs}{section.16.12}% 50
+\BOOKMARK [1][-]{section.16.13}{Slice Sampling}{chapter.16}% 51
+\BOOKMARK [2][-]{subsection.16.13.1}{Elliptical Slice Sampling}{section.16.13}% 52
+\BOOKMARK [1][-]{section.16.14}{Split-Merge Sampling}{chapter.16}% 53
+\BOOKMARK [1][-]{section.16.15}{Hamiltonian Monte Carlo}{chapter.16}% 54
+\BOOKMARK [1][-]{section.16.16}{Data Fusion and Particle Filter \(Sequential MCMC\)}{chapter.16}% 55
+\BOOKMARK [1][-]{section.16.17}{Reversible jump MCMC}{chapter.16}% 56
+\BOOKMARK [1][-]{section.16.18}{Convergence Diagnostics}{chapter.16}% 57
+\BOOKMARK [0][-]{chapter.17}{Bayesian Nonparametrics}{part.6}% 58
+\BOOKMARK [1][-]{section.17.1}{Introduction}{chapter.17}% 59
+\BOOKMARK [1][-]{section.17.2}{Notation}{chapter.17}% 60
+\BOOKMARK [1][-]{section.17.3}{Terminology}{chapter.17}% 61
+\BOOKMARK [2][-]{subsection.17.3.1}{Parametric and nonparametric models}{section.17.3}% 62
+\BOOKMARK [2][-]{subsection.17.3.2}{Bayesian and Bayesian nonparametric models}{section.17.3}% 63
+\BOOKMARK [1][-]{section.17.4}{Clustering and the Dirichlet process}{chapter.17}% 64
+\BOOKMARK [2][-]{subsection.17.4.1}{Finite mixture models}{section.17.4}% 65
+\BOOKMARK [2][-]{subsection.17.4.2}{Bayesian mixture models}{section.17.4}% 66
+\BOOKMARK [2][-]{subsection.17.4.3}{Dirichlet Process}{section.17.4}% 67
+\BOOKMARK [-1][-]{part.7}{VII Appendix}{}% 68
+\BOOKMARK [0][-]{chapter.18}{Q \046 A}{part.7}% 69
+\BOOKMARK [0][-]{chapter.19}{Useful Resources}{part.7}% 70
+\BOOKMARK [1][-]{section.19.1}{Data Sets}{chapter.19}% 71
+\BOOKMARK [1][-]{section.19.2}{Packages and Source Codes}{chapter.19}% 72
+\BOOKMARK [1][-]{section.19.3}{Important Papers}{chapter.19}% 73
