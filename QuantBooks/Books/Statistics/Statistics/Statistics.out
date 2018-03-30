@@ -1,0 +1,78 @@
+\BOOKMARK [0][-]{section*.1}{Contents}{}% 1
+\BOOKMARK [-1][-]{part.1}{Statistical Models}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Collecting Data: Experiments and Surveys}{part.1}% 3
+\BOOKMARK [1][-]{section.1.1}{Design of Experiments}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Statistical Survey}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Opinion Poll}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{Sampling}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Describing Data}{part.1}% 8
+\BOOKMARK [1][-]{section.2.1}{Average: Mean, Median, and Mode}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Measures of Scale: Variance, Standard Deviation, Geometric Standard Deviation, and Median Absolute Deviation}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Correlation and Dependence}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Outlier}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{Statistical Graphics: Histogram, Frequency Distribution, Quantile, Survival Function, and Failure Rate}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Filtering Data}{part.1}% 14
+\BOOKMARK [1][-]{section.3.1}{Recursive Bayesian Estimation}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Moving Average}{chapter.3}% 16
+\BOOKMARK [0][-]{chapter.4}{Linear Regression Models}{part.1}% 17
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Simple Linear Regression}{chapter.4}% 19
+\BOOKMARK [0][-]{chapter.5}{Generalized Linear Regression Models}{part.1}% 20
+\BOOKMARK [1][-]{section.5.1}{Survival Analysis}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.6}{Analysis of Variance \(ANOVA\)}{part.1}% 22
+\BOOKMARK [0][-]{chapter.7}{Multivariate Analysis}{part.1}% 23
+\BOOKMARK [1][-]{section.7.1}{Principal Component Analysis \(PCA\)}{chapter.7}% 24
+\BOOKMARK [1][-]{section.7.2}{Factor Analysis}{chapter.7}% 25
+\BOOKMARK [1][-]{section.7.3}{Cluster Analysis}{chapter.7}% 26
+\BOOKMARK [1][-]{section.7.4}{Discriminant Analysis}{chapter.7}% 27
+\BOOKMARK [1][-]{section.7.5}{Correspondence Analysis}{chapter.7}% 28
+\BOOKMARK [1][-]{section.7.6}{Canonical Correlation Analysis \(CCA\)}{chapter.7}% 29
+\BOOKMARK [1][-]{section.7.7}{Multidimensional Scaling \(MDS\)}{chapter.7}% 30
+\BOOKMARK [0][-]{chapter.8}{Modeling Sample Data}{part.1}% 31
+\BOOKMARK [1][-]{section.8.1}{Density Estimation}{chapter.8}% 32
+\BOOKMARK [1][-]{section.8.2}{Time Series}{chapter.8}% 33
+\BOOKMARK [1][-]{section.8.3}{Robust Statistics}{chapter.8}% 34
+\BOOKMARK [0][-]{chapter.9}{Modeling Population Data: Statistical Inference}{part.1}% 35
+\BOOKMARK [1][-]{section.9.1}{Bayesian Inference}{chapter.9}% 36
+\BOOKMARK [1][-]{section.9.2}{Frequentist Inference}{chapter.9}% 37
+\BOOKMARK [1][-]{section.9.3}{Non-parametric Statistics}{chapter.9}% 38
+\BOOKMARK [0][-]{chapter.10}{Making Decisions: Decision Theory}{part.1}% 39
+\BOOKMARK [1][-]{section.10.1}{Optimal Decision, Type I and Type II errors}{chapter.10}% 40
+\BOOKMARK [1][-]{section.10.2}{Correlation and Causation}{chapter.10}% 41
+\BOOKMARK [0][-]{chapter.11}{Theory of Linear Models}{part.1}% 42
+\BOOKMARK [1][-]{section.11.1}{Linear Models, Estimable Functions, Least Squares Estimates=LSE, Normal Equations, Projections, Gauss Markov theorem, BLUE}{chapter.11}% 43
+\BOOKMARK [1][-]{section.11.2}{Multivariate Normal Distribution and Distribution of Linear and Quadratic Forms}{chapter.11}% 44
+\BOOKMARK [1][-]{section.11.3}{Properties of LSE and Generalized LSE}{chapter.11}% 45
+\BOOKMARK [1][-]{section.11.4}{General Linear Hypothesis=GLH, Testing of GLH}{chapter.11}% 46
+\BOOKMARK [1][-]{section.11.5}{Orthogonalization of Design Matrix and Canonical Reduction of GLH; Adding Variables To The Model}{chapter.11}% 47
+\BOOKMARK [1][-]{section.11.6}{Correlation, Multiple Correlation and Partial Correlation}{chapter.11}% 48
+\BOOKMARK [1][-]{section.11.7}{Confidence Regions and Prediction Regions}{chapter.11}% 49
+\BOOKMARK [1][-]{section.11.8}{Simultaneous Confidence Sets, Bonferroni, Scheffe Projection Method, Tukey Studentized Range}{chapter.11}% 50
+\BOOKMARK [1][-]{section.11.9}{Introduction to Design of Experiments, ANOVA and ANOCOVA, Factorial and Block Designs, Random, Fixed and Mixed Models, Components of Variance}{chapter.11}% 51
+\BOOKMARK [1][-]{section.11.10}{Hierarchial Bayes Analysis of Variance; \(Schervish Ch. 8, 8.1,8.2\) Partial Exchangeability and Hierarchical, Models, Examples and Representations, Normal One Way ANOVA and Two Way Mixed Model ANOVA}{chapter.11}% 52
+\BOOKMARK [-1][-]{part.2}{Mathematical Statistics}{}% 53
+\BOOKMARK [0][-]{chapter.12}{Introduction}{part.2}% 54
+\BOOKMARK [1][-]{section.12.1}{Degrees of Freedom}{chapter.12}% 55
+\BOOKMARK [1][-]{section.12.2}{sufficient, complete, and etc.}{chapter.12}% 56
+\BOOKMARK [1][-]{section.12.3}{Likelihood Function}{chapter.12}% 57
+\BOOKMARK [1][-]{section.12.4}{Exponential Family}{chapter.12}% 58
+\BOOKMARK [1][-]{section.12.5}{Cramer-Rao Theorem}{chapter.12}% 59
+\BOOKMARK [0][-]{chapter.13}{Data, Models, Statistics, Parameters}{part.2}% 60
+\BOOKMARK [1][-]{section.13.1}{Distributions of Functions of a Random Variable}{chapter.13}% 61
+\BOOKMARK [0][-]{chapter.14}{Decision Theory \(Bayes and Minimax Criteria, Risk Functions, Estimation and Testing in Terms of the Decision Theoretic Framework}{part.2}% 62
+\BOOKMARK [0][-]{chapter.15}{Bayesian Models, Conjugate \(and Other\) Prior Distributions}{part.2}% 63
+\BOOKMARK [0][-]{chapter.16}{Prediction \(Optimal MSPE and Optimal Linear MSPE\)}{part.2}% 64
+\BOOKMARK [0][-]{chapter.17}{Sufficiency \(Factorization theorem\)}{part.2}% 65
+\BOOKMARK [0][-]{chapter.18}{Natural Sufficient Statistics}{part.2}% 66
+\BOOKMARK [0][-]{chapter.19}{Minimal Sufficiency}{part.2}% 67
+\BOOKMARK [0][-]{chapter.20}{Estimation \(Least Squares, MLE, Frequency Plug-in, Method of Moments, Combinations of These\)}{part.2}% 68
+\BOOKMARK [0][-]{chapter.21}{Exponential Families \046 Properties, Canonical Exponential Families \(\046 Fisher Information\)}{part.2}% 69
+\BOOKMARK [0][-]{chapter.22}{Information Inequality, Fisher Information, UMVU Estimates, Cramer-Rao Lower Bound}{part.2}% 70
+\BOOKMARK [0][-]{chapter.23}{Neyman-Pearson Testing Theory \(Form, MP Test, UMP Test, MLR Family, Likelihood Ratio Tests\)}{part.2}% 71
+\BOOKMARK [0][-]{chapter.24}{Asymptotic Approximation / Large Sample Theory \(Consistency, Delta Method, Asymptotic Normality of MLE, Slutsky's theorem, Efficiency, Pearson's Chi-Square\)}{part.2}% 72
+\BOOKMARK [0][-]{chapter.25}{Selected Topics}{part.2}% 73
+\BOOKMARK [1][-]{section.25.1}{M-estimator}{chapter.25}% 74
+\BOOKMARK [1][-]{section.25.2}{Sweep Operator}{chapter.25}% 75
+\BOOKMARK [1][-]{section.25.3}{Information Geometry}{chapter.25}% 76
+\BOOKMARK [1][-]{section.25.4}{Boostrap}{chapter.25}% 77
+\BOOKMARK [-1][-]{part.3}{Appendix}{}% 78

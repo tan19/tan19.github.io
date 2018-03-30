@@ -1,0 +1,114 @@
+\documentclass{book}
+\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
+
+\title{Calculus}
+\author{Xi Tan (tan19@purdue.edu)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section*{Preface}
+This book reviews calculus, advanced calculus, real analysis, and functional Analysis. The main references to be used are \cite{Stewart} for calculus, \cite{Rudin} for advanced calculus, \cite{Royden} for real analysis, and \cite{Kreyszig} for functional analysis. Other useful texts include: \cite{Folland} and \cite{Torchinsky} for real analysis.
+\newpage
+
+\part{Calculus}
+\chapter{Infinite Sequences and Series}
+\section{Convergence Tests}
+There are five common techniques to test whether or not an infinite series is convergent. But first of all, a necessary condition:
+\thm{
+	If the limit of the summand is undefined or nonzero, that is, $\lim \limits_{n \to \infty} a_n \ne 0$, then the series $\sum_{n=1}^\infty a_n$ must diverge.
+}
+
+\thm{
+	{\bf{Comparison Test.}} If $\{a_n\},\{b_n\}>0$, and the limit $\lim \limits_{n \to \infty} \frac{a_n}{b_n}$ exists, is finite and is not zero, then $\sum_{n=1}^\infty a_n$ converges if and only if $\sum_{n=1}^\infty b_n$ converges.
+}
+
+\thm{
+	{\bf{Integral Test.}} Let $f:[1,\infty) \to \R_+$ be a positive and monotone decreasing function such that $f(n) = a_n$. Then the series $\{a_n\}$ converges if and only if the integral $\int_1^\infty f(x) dx$ converges.
+}
+
+\thm{
+	{\bf{Ratio Test.}} Suppose there exists $r$ such that $\lim \limits_{n \to \infty} |\frac{a_{n+1}}{a_n}| = r$. If $r < 1$, then the series converges. If $r > 1$, then the series diverges. If $r = 1$, the ratio test is inconclusive, and the series may converge or diverge.
+}
+
+\thm{
+	{\bf{Root Test.}} Define $r = \limsup \limits_{n \to \infty} \sqrt[n]{|a_n|}$. If $r < 1$, then the series converges. If $r > 1$, then the series diverges. If $r = 1$, the ratio test is inconclusive, and the series may converge or diverge.
+}
+
+\thm{
+	{\bf{Alternating Series Test.}} If the alternating series $\sum_{n=1}^\infty (-1)^{n-1}b_n, (b_n > 0)$ satisfies
+	\begin{enumerate}
+		\item $b_{n+1} \le b_n, ~ \mbox{for all $n$}$; and, 
+		\item $\lim_{n \to \infty} b_n = 0$.
+	\end{enumerate}
+	Then the series is convergent.
+}
+
+\thm{
+	A series is said to be absolutely convergent if $\sum_{i=1}^\infty |a_n|$ converges. Every absolutely convergent series is convergent. But not all convergent series are absolutely convergent. A convergent series that is not absolutely convergent is called conditionally convergent.
+}
+
+\chapter{Vectors and the Geometry of Space}
+\section{Lines in $\RRR^n$}
+\deff{
+	Given a vector $\p \in \RRR^n$ and a nonzero vector $\v \in \RRR^n$, the set of all points $\y \in \RRR^n$ such that
+	\begin{align}
+		\y = t\v + \p, ~~~ t \in \RRR
+	\end{align}
+	is called the \emph{line} through $\p$ in the direction of $\v$.
+}
+
+\ex{
+	The shortest distance from a point $\q \in \RRR^n$ to a line $L$ with equation $\y = t\v + \p$ is
+	\begin{align}
+		\left\|(\q-\p) - \frac{(\q-\p)^T\v}{\|\v\|^2} \v \right\|
+	\end{align}
+}
+
+\section{Hyperplanes in $\RRR^n$}
+\deff{
+	Suppose $\n$ is a normal vector for a hyperplan $H$ through $\p \in \RRR^n$, then the normal equation for $H$ is
+	\begin{align}
+		\n^T(\y - \p) = 0
+	\end{align}
+	If $H$ is in $\RRR^3$, we can use cross-product $\times$ to obtain the normal vector given two vectors on the hyperplane.
+}
+
+\ex{
+	The shortest distance from a point $\q \in \RRR^n$ to a hyperplane $H$ with equation $\n^T(\y - \p) = 0$ is
+	\begin{align}
+		\left| \frac{\n^T(\q-\p)}{\|\n\|} \right|
+	\end{align}
+}
+
+A hyperplane is a set satisfies $H=\{x:w^Tx=b\}$. An equivalent form is $w^T(x-\frac{w}{\|w\|^2}b) = 0$, which suggests that the vector $w$ is perpendicular to the hyperplane, called a normal vector.
+
+Particularly, since $\frac{w^Tw}{\|w\|^2}b = b$, we know $x_0=\frac{w}{\|w\|}\frac{b}{\|w\|}$ is on the hyperplane. The $x_0$ is actually the projection of the origin, since $w$ is orthogonal to the hyperplane and it is nothing but a scaled $w$ on the hyperplane. Therefore, the shortest distance (along the direction of $w$) from the origin to the hyperplane is given by $\frac{b}{\|w\|}$ (could be negative, which means $w$ is on the other side of the hyperplane).
+
+In general, if a hyperplane is given by the equation $f(x) = w^Tx-b = 0$, the distance from any arbitrary vector $p$ to the hyperplane $w^Tx=b$ is given by
+\begin{align}
+	\frac{f(p)}{\|w\|} = \frac{w^Tp-b}{\|w\|}, ~~~ \mbox{if $p$ is on the opposite side of the origin}\\
+	-\frac{f(p)}{\|w\|} = -\frac{w^Tp-b}{\|w\|}, ~~~ \mbox{if $p$ is on the same side of the origin}
+\end{align}	
+
+Particularly, when $p=0$ (the origin), the above becomes $\frac{b}{\|w\|}$, which agrees with our previous result.
+
+Proof: Let's prove the first case. Suppose there is a vector $x$ on the hyperplane, such that $p-x = d\frac{w}{\|w\|}$. Since $w$ is orthogonal to the hyperplane, the scalar $d$ is the distance we are after. Now, multiply both sides by $w^T$,
+
+$w^Tp-w^Tx = dw^T\frac{w}{\|w\|}$
+
+$w^Tp-(w^Tx-b) = d\frac{w^Tw}{\|w\|}+b$
+
+$w^Tp = d\|w\| + b$
+
+$d = \frac{w^Tp-b}{\|w\|}$
+
+The proof for the other case is similar.
+
+$\blacksquare$
+
+\end{document}

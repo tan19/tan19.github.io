@@ -1,33 +1,3 @@
 # jemdoc: menu{ML/MENU_ML}{FAQ.html}
 = FAQ
 
-### FAQ ###
-~~
-- Q: Why is the difference between Statistics and Machine Learning?
-- A: Statistics focuses on interpretability while Machine Learning cares more about predictability.
-~
-
-
-~~
-- Q: Why is the name "statistical" machine learning \/ data mining \/ pattern recognition?
-- A: It means the data is in vector form and not in, for example, strings, where it will be called "syntactical/structural" pattern recognition.
-~~
-
-~~
-- Q: How can I categorize machine learning models and methods?
-- A: In general, machine learning models can be categorized according to their strategies for generating features:
--- fixed basis function models - basis functions are pre-designed;
--- adaptive basis function models (CART, Neural Networks) - form or parameters of basis functions learned from data;
--- kernel models (SVM, GP) - basis functions are implicitly defined, dimension of which is essentially infinite;
--- latent variable models \/ dimension reduction (HMMs, Sate Space Models; PCA, ICA).
-~~
-
-~~
-- Q: How can I sample a random variable $x$ marginally if I know how to sample jointly $p(x,y)$?
-- A: Simply discard $y$ and keep $x$ in the joint samples.
-~~
-
-~~
-- Q: What's the difference between /learning/ and /inference/.
-- A: Learning is to fit parameters $\theta$ to a set of observations $(x_i,y_i)$ while inference is to identify the input $x$ for a particular observation $y$, using the learned parameters $\theta$. EM can be thought of as iterating between learning and inference.
-~~

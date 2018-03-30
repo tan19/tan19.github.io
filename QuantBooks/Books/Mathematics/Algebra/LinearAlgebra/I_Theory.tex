@@ -1,0 +1,174 @@
+%!TEX root = LinearAlgebra.tex
+
+\part{Theory}
+\chapter{Preliminaries}
+\deff{
+	A {\bf{field}} is a non-empty set $F$ {\em{closed}} under two operations, usually called {\em{addition}} and {\em{multiplication}}\footnote{Subtraction and division are defined implicitly in terms of the inverse operations of addition and multiplication.}, and denoted by $+$ and $\cdot$ respectively, such that the following {\em{nine}} axioms hold
+	\begin{enumerate}
+		\item[(1-2).] Associativity of addition and multiplication.
+		\item[(3-4).] Commutativity of addition and multiplication.
+		\item[(5-6).] Existence and uniqueness of additive and multiplicative identity elements.
+		\item[(7-8).] Existence and uniqueness of additive inverses and multiplicative inverses.
+		\item[(9).] Distributivity of multiplication over addition.
+	\end{enumerate}
+}
+\deff{
+	The characteristic of a ring $R$, $char(R)$, is the smallest positive integer $n$ such that
+	$$\underbrace{1+\cdots+1}_{n \text{ summands}} = 0$$
+}
+\thm{
+	Any finite ring has nonzero characteristic.
+}
+
+\chapter{Vector Spaces}
+\section{Vector Space}
+\deff{
+	A {\bf{vector space}} over a field $\FF$ is a {\em{nonempty}} set $V$ together with the operations of addition $V\times V \to V$ and scalar multiplication $\FF \times V \to V$ satisfying the following {\em{eight}} properties:
+	\begin{enumerate}[(-)]
+		\item Additive axioms. For every $\u,\v,\w \in V$, we have
+		\begin{enumerate}[(1)]
+			\item $\u+\v = \v+\u$
+			\item $(\u+\v)+\w = \u+(\v+\w)$
+			\item ${\bf{0}}+\u = \u+{\bf{0}}=\u$, where ${\bf{0}} \in V$ is unique for all $\u \in V$
+			\item $(-\u)+\u = \u+(-\u) = {\bf{0}}$, where $-\u \in V$ is unique for every $\u \in V$
+		\end{enumerate}
+		\item Multiplicative axioms. For every $\u \in V$ and scalars $a, b \in \FF$, we have
+		\begin{enumerate}[(1)]
+			\item $1\x = \x$
+			\item $(ab)\x = a(b\x)$
+		\end{enumerate}
+		\item Distributive axioms. For every $\u, \v \in V$ and scalars $a, b \in \FF$, we have
+		\begin{enumerate}[(1)]
+			\item a(\u+\v) = a\u + a\v
+			\item (a+b)\u = a\u + b\u
+		\end{enumerate}
+	\end{enumerate}
+}
+\section{Subspaces}
+\deff{
+	A subspace of $\RR^n$ is any collection $S$ of vectors in $\RR^n$ such that
+	\begin{enumerate}[(1)]
+		\item The zero vector $\mathbf{0}$ is in $S$.
+		\item If $\u$ and $\v$ are in $S$, then $\u+\v$ is in $S$. \footnote{$S$ is closed under addition.}
+		\item If $\u$ is in $S$ and $c$ is a scalar, then $c\u$ is in $S$. \footnote{$S$ is closed under scalar multiplication.}
+	\end{enumerate}
+}
+
+\deff{
+	Let $S, T$ be two subspaces of $\RR^n$. We say $S$ is orthogonal to $T$ if {\em{every}} vector in $S$ is orthogonal to {\em{every}} vector in $T$. The subspace $\{\mathbf{0}\}$ is orthogonal to all subspaces. \footnote{A line can be orthogonal to another line, or it can be orthogonal to a plane, but a plane cannot be orthogonal to a plane.}
+}
+
+\deff{
+	Let $A$ be an $m \times n$ matrix.
+	\begin{enumerate}[(1)]
+		\item The {\em{row space}} of $A$ is the subspace $row(A)$ of $\RR^n$ spanned by the rows of $A$.
+		\item The {\em{column space}} (or {\em{range}}) of $A$ is the subspace $col(A)$ of $\RR^m$ spanned by the columns of $A$.
+	\end{enumerate}
+}
+\subsection{Four Important Subspaces: the row, column, null, and left null space}
+\deff{
+	Let $A$ be an $m \times n$ matrix. The {\em{null space}} (or {\em{kernel}}) of $A$ is the subspace of $\RR^n$ consisting of solutions of the homogeneous linear system $A\x=\mathbf{0}$. It is denoted by {\em{null($A$)}}.
+}
+\deff{
+	A {\em{basis}} for a subspace $S$ of $\RR^n$ is a set of vectors in $S$ that
+	\begin{enumerate}[(1)]
+		\item spans $S$ and 
+		\item is linearly independent. \footnote{It does not mean that they are orthogonal.}
+	\end{enumerate}
+}
+\deff{
+	If $S$ is a subspace of $\RR^n$, then the number of vectors in a basis for $S$ is called the {\em{dimension}} of $S$, denoted {\em{dim $S$}}. \footnote{The zero vector $\mathbf{0}$ is always a subspace of $\RR^n$. Yet any set containing the zero vector is linearly dependent, so $\mathbf{0}$ cannot have a basis. We define {\em{dim $\mathbf{0}$}} to be 0.}
+}
+\deff{
+	The {\em{rank}} of a matrix $A$ is the dimension of its row and column spaces and is denoted by {\em{rank($A$)}}. \footnote{The row and column spaces of a matrix $A$ have the same dimension.}
+}
+\deff{
+	The {\em{nullity}} of a matrix $A$ is the dimension of its null space and is denoted by {\em{nullity($A$)}}.
+}
+\thm{
+	The Rank Theorem. If $A$ is an $m \times n$ matrix, then $$rank(A) + nullity(A) = n$$.
+}
+\thm{
+	If $A$ is invertible, then $A$ is a product of elementary matrices.
+}
+\thm{
+	Let $A$ be an $m \times n$ matrix. Then $rank(A^TA) = rank(A)$.
+}
+\deff{
+	Let $S$ be a subspace of $\RR^n$ and let $B=\{\v_1,\cdots,\v_k\}$ be a basis for $S$. Let $\v$ be a vector in $S$, and write $\v = c_1\v_1 + \cdots + c_k\v_k$. Then $c_1,\cdots,c_k$ are called the coordinates of $\v$ with respect to $B$, and the column vector $$[\v]_B = [c_1,\cdots,c_k]^T$$ is called the coordinate vector of $\v$ with respect to $B$. \footnote{This coordinate vector is unique.}
+}
+\deff{
+	A transformation $T: \RR^n \to \RR^m$ is called a linear transformation if $$T(c_1\v_1 + c_2\v_2) = c_1T(\v_1) + c_2T(\v_2)$$ for all $\v_1, \v_2$ in $\RR^n$ and scalars $c_1, c_2$.
+}
+\section{Bases and Dimension}
+\section{Coordinates}
+\section{Linear Forms: One Vector as Argument}
+\section{Bilinear and Quadratic Forms: Two Vectors as Argument}
+\section{Jordan Canoical Forms}
+
+\chapter{Eigenvalues and Eigenvectors}
+\section{Definitions}
+\rmk{
+	eigenvectors are non-zero.
+}
+
+\deff{
+	The set of all eigenvectors corresponding to the same eigenvalue, together with the zero vector, is called an {\em{eigenspace}}.
+}
+
+\deff{
+	The characteristic polynomial of a matrix $\A$ of order $n$ is
+	\begin{align}
+		|\A - \lambda\I| = \prod_{i=1}^n (\lambda - \lambda_i)
+	\end{align}
+}
+
+\thm{
+	Every square matrix of order $n$ has $n$ eigenvalues, possibly complex and not necessarily all unique.
+}
+
+\deff{
+	The algebraic multiplicity $\mu_A(\lambda_i)$ of a eigenvalue $\lambda_i$ is the multiplicity as a root of the characteristic polynomial.
+}
+
+\deff{
+	The eigenspace $E_{\lambda_i}$ associated with $\lambda_i$ is defined as
+	\begin{align}
+		E_{\lambda_i} = \{\v : (\A-\lambda_i \I)\v = 0 \}
+	\end{align}
+}
+
+\deff{
+	The dimension of the eigenspace $\E_{\lambda_i}$ is referred to as the geometric multiplicity $\gamma_A(\lambda_i)$ of $\lambda_i$.
+}
+
+\chapter{Vector Calculus}
+\section{Inner Product (Dot Product)}
+\deff{$$\u \otimes \v = \u \v^T$$}
+\rmk{The inner product is the trace of the outer product.}
+
+\section{Outer Product}
+\section{Cross Product}
+\deff{$$\a \times \b = \|\a\| \|\b\| sin(\theta) \n$$ It is also called the vector product.}
+
+\section{Scalar Triple Product}
+\section{Vector Triple Product}
+\section{Line, Surface, and Volume Integrals}
+\section{Integration of Vectors and Matrices}
+
+
+\chapter{Matrix Calculus}
+\section{Matrix Determinant}
+\section{Kronecker Product and Vec}
+\section{Hadamard Product and Diag}
+\section{Matrix Exponential}
+
+
+\input{Chapters/Vector_Matrix_Derivatives.tex}
+
+\chapter{Vector and Matrix Integrals}
+
+
+\chapter{Some Intuitive Explanations}
+\section{Eigenvalues and Singular Values}
+\section{SVD, PCA, and Change of Basis}

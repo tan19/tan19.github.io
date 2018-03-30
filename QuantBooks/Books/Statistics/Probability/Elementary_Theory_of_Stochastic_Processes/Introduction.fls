@@ -1,0 +1,9 @@
+PWD /Users/tan19/Desktop/Writeups/Machine_Learning/MachineLearning_Vol_1_Foundations/Probability/Elementary_Theory_of_Stochastic_Processes
+INPUT /usr/local/texlive/2015/texmf.cnf
+INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT Introduction.tex
+OUTPUT Introduction.log
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm

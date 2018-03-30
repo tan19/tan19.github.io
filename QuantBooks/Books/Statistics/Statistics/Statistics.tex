@@ -1,0 +1,356 @@
+\documentclass{memoir}
+\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
+
+\title{Statistics}
+\author{Xi Tan (tan19@purdue.edu)}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\newpage
+\chapter*{Preface}
+This booklet is divided into 7 Chapters. The first chapter introduces the definitions of basic concepts, such as event, sample space, and probability space. Followed in the next chapter, we will discuss the relationship between two or more events when they interplay with each other. The third chapter formally brings in random variables and vectors, as a basis to develop their quantitative measure and characteristic functions later in chapter four. Chapter five includes some well-known limit theorems, which is useful for asymptotic analysis. The last two chapters will discuss several selected topics in probability theory, and provide a summary of common distributions.
+
+Six types of statistical analysis:
+\begin{enumerate}
+	\item Descriptive
+	\item Exploratory
+	\item Inferential (parameters)
+	\item Predictive (what will happen)
+	\item Causal (why it happens)
+	\item Mechanistic (how to deal with it)
+\end{enumerate}
+
+
+A correlation matrix is defined as:
+\begin{align}
+	\text{Corr}(\X) = (\text{diag}(\bSigma))^{-\frac{1}{2}} \bSigma (\text{diag}(\bSigma))^{-\frac{1}{2}}
+\end{align}
+Both covariance matrices and correlation matrices are symmetric semipositive definite matrices.
+
+
+Main References:
+\begin{enumerate}
+	\item Extending the Linear Model with R, by Julian J. Faraway
+	\item Categorical Data Analysis 3rd Edition, by Alan Agresti
+	\item Generalized, Linear, and Mixed Models, by Charles E. McCulloch, Shayle R. Searle, John M. Neuhaus
+	\item An Introduction to Generalized Linear Models, by Annette J. Dobson, Adrian Barnett
+	\item Generalized Linear Models, by P. McCullagh, John A. Nelder
+\end{enumerate}
+
+\newpage
+\part{Statistical Models}
+\chapter{Collecting Data: Experiments and Surveys}
+\section{Design of Experiments}
+\section{Statistical Survey}
+\section{Opinion Poll}
+
+\section{Sampling}
+\subsection{Sampling Distribution}
+\subsection{Sampling: Stratified Sampling, Quota Sampling}
+\subsection{Biased Sample: Spectrum Bias, Survivorship Bias}
+
+\chapter{Describing Data}
+\section{Average: Mean, Median, and Mode}
+\section{Measures of Scale: Variance, Standard Deviation, Geometric Standard Deviation, and Median Absolute Deviation}
+\section{Correlation and Dependence}
+\section{Outlier}
+\section{Statistical Graphics: Histogram, Frequency Distribution, Quantile, Survival Function, and Failure Rate}
+
+\chapter{Filtering Data}
+\section{Recursive Bayesian Estimation}
+\subsection{Kalman Filter}
+\subsection{Particle Filter}
+\section{Moving Average}
+
+\chapter{Linear Regression Models}
+\section{Introduction}
+Generalized linear models include as special cases,  linear regression and analysis-of-variance models, logit and probit models for quantal responses, log linear models and multinomial response models for counts and some commonly used models for survival data.
+
+The second-order properties of the parameter estimates are insensitive to the assumed distributional form: the second-order properties depend mainly on the assumed variance-to-mean relationship and on uncorrelatedness or independence.
+
+Data types:
+
+\section{Simple Linear Regression}
+\subsection{Model}
+\begin{equation}
+	Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
+\end{equation}
+where $\epsilon_i \sim \NN(0,\sigma^2)$
+
+\subsection{Estimated Regression Function}
+\begin{align}
+	b_1 & = \rho_{XY} \cdot \frac{s_Y}{s_X} = \frac{\sum_{i=1}^n (X_i-\bar X) (Y_i-\bar Y)}{\sum_{i=1}^n (X_i - \bar X)^2 } = \sum_{i=1}^n \left[\frac{X_i-\bar X}{\sum_{i=1}^n (X_i - \bar X)^2 }\right] Y_i \\
+	b_0 & = \bar Y - b_1 \bar X \\
+	\hat \sigma^2 & = \frac{MSE}{n-2} = \frac{\sum_{i=1}^n (Y_i - \hat Y_i)^2}{n-2}
+\end{align}
+Notice, $\sum(X_i-\bar X)^2 = \sum X_i^2 - n\bar X^2$, and $b_1 = \rho \cdot \frac{s_Y}{s_X}$, where $\rho$ is the correlation between $X$ and $Y$ and $s_Y, s_X$ are standard error of $Y$ and $X$, respectively.
+
+The slope of the fitted line is equal to the correlation between $y$ and $x$ corrected by the ratio of standard deviations of these variables. The intercept of the fitted line is such that it passes through the center of mass $(\bar x, \bar y)$ of the data points.
+
+Another way of writing the estimated regression function is
+\begin{align}
+	\hat Y_i = \bar Y + b_1 (X_i - \bar X)	
+\end{align}
+Notice, $\bar Y$ and $b_1$ are uncorrelated (check it using the fact that $b_1 = \sum_{i=1}^n k_i Y_i$).
+
+\subsection{Inference About $b_1$ and $b_0$}
+Since $SSE/\sigma^2 \sim \chi_{n-2}^2$, and $\frac{s^2\{b_1\}}{\sigma^2\{b_1\}} \sim \frac{\chi_{n-2}^2}{n-2}$
+\begin{align}
+	\frac{b_1-\beta_1}{s\{b_1\}} = \left. \frac{b_1-\beta_1}{\sigma\{b_1\}} \middle/ \frac{s\{b_1\}}{\sigma\{b_1\}} \right. \sim \frac{z}{\sqrt{\frac{\chi_{n-2}^2}{n-2}}} = t_{n-2}
+\end{align}
+so the confidence interval for $b_1$, with confidence level $\alpha$ is
+\begin{equation}
+	b_1 \pm t(1-\alpha/2;n-2)s\{b_1\}\\
+\end{equation}
+or
+\begin{equation}
+	b_1 \mp t(\alpha/2;n-2)s\{b_1\}\\
+\end{equation}
+
+Similarly, the confidence interval for $b_0$, with confidence level $\alpha$ is
+\begin{equation}
+	b_0 \pm t(1-\alpha/2;n-2)s\{b_0\}\\
+\end{equation}
+or
+\begin{equation}
+	b_0 \mp t(\alpha/2;n-2)s\{b_0\}\\
+\end{equation}
+
+\noindent
+\\
+The power of testing $\beta_1 = \beta^{H_0}$ is $Power = P\{|t^*|>t(1-\alpha/2;n-2)|\delta\}$, where $\delta = \frac{|\beta_1 - \beta^{H_0}|}{\sigma\{b_1\}}$. Similar for $\beta_0$.
+
+\subsection{Properties of $k_i$}
+\begin{align}
+	k_i &= \frac{X_i - \bar X}{\sum_{i=1}^n (X_i-\bar X)^2}\\
+	\sum_{i=1}^n k_i &= 0\\
+	\sum_{i=1}^n k_i X_i &= 1\\
+	\sum_{i=1}^n k_i^2 &= \frac{1}{\sum_{i=1}^n(X_i - \bar X)^2}
+\end{align}
+
+The second and third identities hold as a requirement for the unbiasness, since $$E(b_1) = E\left(\sum k_i Y_i\right)= E\left(\sum k_i (\beta_0+\beta_1 X_i)\right) = E\left(k_i \sum\beta_0 + \beta_1 \sum k_i X_i \right) = \beta_1$$ requires $\sum k_i = 0$  and $\sum X_i k_i = 1$.
+The fourth identity ensures the attainment of the minimum variance.
+
+
+\subsection{Properties of $e_i$}
+\begin{align}
+	e_i & = Y_i - \hat Y_i \\
+	\sum e_i & = 0 \\
+	\sum X_i e_i & = 0 \\
+	\sum \hat Y_i e_i & = 0
+\end{align}
+
+\subsection{Properties of $b_1$ and $b_0$}
+\begin{align}
+	b_1 &\sim \NN \left(\beta_1,\frac{\sigma^2}{\sum(X_i-\bar X)^2}\right) \\
+	b_0 &\sim \NN \left(\beta_0,\frac{\sigma^2}{n} + \frac{\sigma^2 {\bar X}^2}{\sum(X_i-\bar X)^2} \right)
+\end{align}
+where $\sigma^2$ can be estimated by the MSE, i.e., $\hat \sigma^2 = \frac{\sum_{i=1}^n (Y_i - \hat Y_i)^2}{n-2}$
+
+\noindent
+\\
+Now, since
+\begin{align}
+	b_1 &= \frac{1}{\sum_{i=1}^n (X_i - \bar X)^2 } \sum_{i=1}^n (X_i-\bar X) Y_i \\
+	&= \sum_{i=1}^n k_i Y_i
+\end{align}
+where $k_i = \frac{X_i-\bar X}{\sum_{i=1}^n (X_i - \bar X)^2 }$, we have
+\begin{align}
+	\sum k_i &= 0 \\
+	\sum X_i k_i &= 1 \\
+	\sum k_i^2 &= \frac{1}{\sum_{i=1}^n (X_i - \bar X)^2 }
+\end{align}
+The first two identity hold as a requirement for the unbiasness, since $$E(b_1) = E\left(\sum k_i Y_i\right)= E\left(\sum k_i (\beta_0+\beta_1 X_i)\right) = E\left(\beta_0 \sum k_i \beta_0 + \beta_1 \sum k_i X_i \right) = \beta_1$$ requires $\sum k_i = 0$  and $\sum X_i k_i = 1$.
+The third identity ensures the attainment of the minimum variance.
+
+
+\newpage
+\begin{table}[h]
+\centering
+\begin{tabular}{c || c c c }
+\hline
+& {Estimate} & {Expectation} & {Variance} \\
+\hline
+\\
+$Y_i$& $\hat Y_i$ & $\beta_0+\beta_1 X_i$ & $\sigma^2$\\
+\\
+\hline
+\\
+$b_1$& $\frac{\sum (X_i-\bar X) Y_i}{\sum (X_i-\bar X)^2}$ & $\beta_1$ & $\sigma^2 \cdot \frac{1}{\sum (X_i-\bar X)^2}$\\
+\\
+\hline
+\\
+$b_0$& $\bar Y - b_1 \bar X$ & $\beta_0$ & $\sigma^2 \cdot \left[\frac{1}{n} + \frac{{\bar X}^2}{\sum (X_i-\bar X)^2}\right]$\\
+\\
+\hline
+\\
+$\hat Y_h$& $\bar Y + b_1 (X_h-\bar X)$ & $\beta_0+\beta_1 X_h$ & $\sigma^2 \cdot \left[\frac{1}{n} + \frac{(X_h-\bar X)^2}{\sum (X_i-\bar X)^2}\right]$\\
+\\
+\hline
+\\
+$\hat Y_{h(new)}$& $\bar Y + b_1 (X_h-\bar X)$ & $\beta_0+\beta_1 X_h$ & $\sigma^2 \cdot \left[1 + \frac{1}{n} + \frac{(X_h-\bar X)^2}{\sum (X_i-\bar X)^2}\right]$\\
+\\
+\hline
+\\
+$\hat Y_{h(new_m)}$& $\bar Y + b_1 (X_h-\bar X)$ & $\beta_0+\beta_1 X_h$ & $\sigma^2 \cdot \left[\frac{1}{m} + \frac{1}{n} + \frac{(X_h-\bar X)^2}{\sum (X_i-\bar X)^2}\right]$\\
+\\
+\hline
+\\
+$e_i$& $Y_i-\hat Y_i$ & $0$ & $1-h_{ii}$\\
+\\
+\hline
+\end{tabular}
+\caption{Simple Linear Regression}
+\end{table}
+
+In particular, when $X_h = 0$ we obtain the formulas for $b_0$, and when $X_h - \bar X = 1$ we obtain the formulas for $b_1$.
+
+\subsection{ANOVA of Simple Linear Regression Model}
+\begin{align}
+	SSTO &= SSR + SSE\\
+	\sum_{i=1}^n (Y_i - \hat Y_i) &= \sum_{i=1}^n (\hat Y_i - \bar y) + \sum_{i=1}^n (\bar y - \hat Y_i)
+\end{align}
+SSR can also be computed as $SSR = b_1^2 \sum_{i=1}^n (X_i - \bar X)$, so given the same ``distribution'' of $X$, the steeper the slope of the regression line, the higher the SSR, and hence the better fit of the model.
+
+To test $H_0: \beta_1 = 0$, we use $F = \frac{SSR}{SSE}$. There is equivalence between an $F$ test and a $t$ test: $[t(1-\alpha/2,n-2)]^2 = F(1-\alpha,n-2)$.
+
+\chapter{Generalized Linear Regression Models}
+\section{Survival Analysis}
+\begin{align}
+	S(t) &= \exp \left[-\int_0^t \lambda(u) du \right] \\
+	L(\lambda) &= \prod_{i=1}^n [\lambda(t_i)]^{\delta_i} [S(t_i)]^{1-\delta_i}
+\end{align}
+where $S(t)$ is the survival function, and $\lambda(t)$ is the hazard function.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c || c c c }
+\hline
+& {Estimate} & {Standard Error} & {NOTE} \\
+\hline
+\\
+$S$& $\hat{S(t)} = \prod \frac{n_j-d_j}{n_j}$ & $\hat{S(t)} \sqrt{\sum \frac{d_i}{n_j(n_j-d_j)}}$ &\\
+\\
+\hline
+\\
+$\Lambda$& $-\log \hat{S(t)}$ & $\sqrt{\sum \frac{d_i}{n_j(n_j-d_j)}}$& \\
+\\
+\hline
+\\
+$\lambda$& $\frac{\sum \delta_i}{\sum (X_i-V_i)}$ & $\frac{\hat \lambda}{\sqrt{\sum \delta_i}}$\\
+\\
+\hline
+\end{tabular}
+\caption{Survival Analysis}
+\end{table}
+
+\chapter{Analysis of Variance (ANOVA)}
+
+\chapter{Multivariate Analysis}
+\section{Principal Component Analysis (PCA)}
+ALgebraically, principal components are particular linear combinations of the $p$ random variables $X_1, \cdots, X_p$. Geometrically, these linear combinations represent the selection of a new coordinate system obtained by rotating the original system with $X_1, \cdots, X_p$ as the coordinate axes.
+
+
+
+\section{Factor Analysis}
+\section{Cluster Analysis}
+\section{Discriminant Analysis}
+\section{Correspondence Analysis}
+\section{Canonical Correlation Analysis (CCA)}
+\section{Multidimensional Scaling (MDS)}
+
+\chapter{Modeling Sample Data}
+\section{Density Estimation}
+\subsection{Kernel Density Estimation}
+\subsection{Multivariate Kernel Density Estimation}
+\section{Time Series}
+\section{Robust Statistics}
+
+
+\chapter{Modeling Population Data: Statistical Inference}
+\section{Bayesian Inference}
+\subsection{Bayes' theorem, Bayes Estimator, Prior Distribution, Posterior Distribution, Conjugate Prior, and All That}
+
+\section{Frequentist Inference}
+\subsection{Statistical Hypothesis Testing: Null, Alternative, P-value, Significance level, power, likelihood-ratio test, goodness-of-fit, confidence interval, M-estimator, Trimmed Estimator}
+
+\section{Non-parametric Statistics}
+\subsection{Nonparametric Regression, Kernel Methods}
+
+\chapter{Making Decisions: Decision Theory}
+\section{Optimal Decision, Type I and Type II errors}
+\section{Correlation and Causation}
+When a statistical test shows a correlation between A and B, there are usually five possibilities:
+\begin{enumerate}
+\item A causes B.
+\item B causes A.
+\item A and B both partly cause each other.
+\item A and B are both caused by a third factor, C.
+\item The observed correlation was due purely to chance.
+\end{enumerate}
+
+\chapter{Theory of Linear Models}
+\section{Linear Models, Estimable Functions, Least Squares Estimates=LSE, Normal Equations, Projections, Gauss Markov theorem, BLUE}
+\section{Multivariate Normal Distribution and Distribution of Linear and Quadratic Forms}
+\section{Properties of LSE and Generalized LSE}
+\section{General Linear Hypothesis=GLH, Testing of GLH}
+\section{Orthogonalization of Design Matrix and Canonical Reduction of GLH;  Adding Variables To The Model}
+\section{Correlation, Multiple Correlation and  Partial Correlation}
+\section{Confidence Regions and Prediction Regions}
+\section{Simultaneous Confidence Sets, Bonferroni, Scheffe Projection Method, Tukey Studentized Range}
+\section{Introduction to Design of Experiments, ANOVA and ANOCOVA, Factorial and Block Designs, Random, Fixed and Mixed Models, Components of Variance}
+\section{Hierarchial Bayes Analysis of Variance; (Schervish Ch. 8, 8.1,8.2) Partial Exchangeability and Hierarchical, Models, Examples and Representations, Normal One Way ANOVA and Two Way Mixed Model ANOVA}
+
+\part{Mathematical Statistics}
+\chapter{Introduction}
+\section{Degrees of Freedom}
+\section{sufficient, complete, and etc.}
+\section{Likelihood Function}
+\section{Exponential Family}
+\begin{align}
+	f(y|\theta,\phi) & = \exp \left\{ \frac{y\theta-b(\theta)}{a(\phi)}+c(y,\phi) \right\} \\
+	E(y) & = b'(\theta) \\
+	Var(y) & = b''(\theta)a(\phi)
+\end{align}
+\section{Cramer-Rao Theorem}
+
+\chapter{Data, Models, Statistics, Parameters}
+\section{Distributions of Functions of a Random Variable}
+\begin{thm}
+	From Casella \& Berger theorem 2.1.5) Let $X$ have pdf $f_X(x)$ and let $Y=g(X)$, where $g$ is a monotone function. Suppose that $f_X(x)$ is continuous and that $g^{-1}(y)$ has a continuous derivative. Then the pdf of $Y$ is given by
+	\begin{align}
+		f_Y(y) = f_X(g^{-1}(y)) \Big|\frac{d}{dy} g^{-1}(y)\Big|
+	\end{align}
+\end{thm}
+
+\chapter{Decision Theory (Bayes and Minimax Criteria, Risk Functions, Estimation and Testing in Terms of the Decision Theoretic Framework}
+\chapter{Bayesian Models, Conjugate (and Other) Prior Distributions}
+\chapter{Prediction (Optimal MSPE and Optimal Linear MSPE)}
+\chapter{Sufficiency (Factorization theorem)}
+\chapter{Natural Sufficient Statistics}
+\chapter{Minimal Sufficiency}
+\chapter{Estimation (Least Squares, MLE, Frequency Plug-in, Method of Moments, Combinations of These)}
+\chapter{Exponential Families \& Properties, Canonical Exponential Families (\& Fisher Information)}
+\chapter{Information Inequality, Fisher Information, UMVU Estimates, Cramer-Rao Lower Bound}
+\chapter{Neyman-Pearson Testing Theory (Form, MP Test, UMP Test, MLR Family, Likelihood Ratio Tests)}
+\chapter{Asymptotic Approximation / Large Sample Theory (Consistency, Delta Method, Asymptotic Normality of MLE, Slutsky's theorem, Efficiency, Pearson's Chi-Square)}
+
+\chapter{Selected Topics}
+\section{M-estimator}
+\section{Sweep Operator}
+\section{Information Geometry}
+\section{Boostrap}
+
+\part{Appendix}
+
+
+\end{document} 
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+\BOOKMARK [-1][-]{part.1}{I Theory}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Preliminaries}{part.1}% 2
+\BOOKMARK [0][-]{chapter.2}{Vector Spaces}{part.1}% 3
+\BOOKMARK [1][-]{section.2.1}{Vector Space}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Subspaces}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.1}{Four Important Subspaces: the row, column, null, and left null space}{section.2.2}% 6
+\BOOKMARK [1][-]{section.2.3}{Bases and Dimension}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.4}{Coordinates}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.5}{Linear Forms: One Vector as Argument}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.6}{Bilinear and Quadratic Forms: Two Vectors as Argument}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.7}{Jordan Canoical Forms}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Eigenvalues and Eigenvectors}{part.1}% 12
+\BOOKMARK [1][-]{section.3.1}{Definitions}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Vector Calculus}{part.1}% 14
+\BOOKMARK [1][-]{section.4.1}{Inner Product \(Dot Product\)}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Outer Product}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.3}{Cross Product}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.4}{Scalar Triple Product}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.5}{Vector Triple Product}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.6}{Line, Surface, and Volume Integrals}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.7}{Integration of Vectors and Matrices}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.5}{Matrix Calculus}{part.1}% 22
+\BOOKMARK [1][-]{section.5.1}{Matrix Determinant}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.2}{Kronecker Product and Vec}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.3}{Hadamard Product and Diag}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.4}{Matrix Exponential}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Vector and Matrix Derivatives}{part.1}% 27
+\BOOKMARK [1][-]{section.6.1}{Differentials}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.2}{Vector-by-vector Derivatives}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.3}{Derivatives of Vectors and Matrices}{chapter.6}% 30
+\BOOKMARK [2][-]{subsection.6.3.1}{Derivatives of a Vector or Matrix with Respect to a Scalar}{section.6.3}% 31
+\BOOKMARK [0][-]{chapter.7}{Vector and Matrix Integrals}{part.1}% 32
+\BOOKMARK [0][-]{chapter.8}{Some Intuitive Explanations}{part.1}% 33
+\BOOKMARK [1][-]{section.8.1}{Eigenvalues and Singular Values}{chapter.8}% 34
+\BOOKMARK [1][-]{section.8.2}{SVD, PCA, and Change of Basis}{chapter.8}% 35
+\BOOKMARK [-1][-]{part.2}{II Techniques}{}% 36
+\BOOKMARK [0][-]{chapter.9}{Special Square Matrices}{part.2}% 37
+\BOOKMARK [1][-]{section.9.1}{Elementary Matrices}{chapter.9}% 38
+\BOOKMARK [1][-]{section.9.2}{Permutation Matrices}{chapter.9}% 39
+\BOOKMARK [1][-]{section.9.3}{Symmetric Matrices}{chapter.9}% 40
+\BOOKMARK [1][-]{section.9.4}{Projection Matrices}{chapter.9}% 41
+\BOOKMARK [1][-]{section.9.5}{Normal Matrix}{chapter.9}% 42
+\BOOKMARK [1][-]{section.9.6}{Orthogonal Matrices}{chapter.9}% 43
+\BOOKMARK [1][-]{section.9.7}{Positive Definite Matrices}{chapter.9}% 44
+\BOOKMARK [0][-]{chapter.10}{Numerical Linear Algebra Algorithms}{part.2}% 45
+\BOOKMARK [1][-]{section.10.1}{Matrix Inverse: Binomial inverse theorem, Schur Complement, Blockwise Inversion}{chapter.10}% 46
+\BOOKMARK [0][-]{chapter.11}{The Ax=b Problem}{part.2}% 47
+\BOOKMARK [1][-]{section.11.1}{Solving a Linear System of Equations}{chapter.11}% 48
+\BOOKMARK [1][-]{section.11.2}{The Vector Spaces of a Matrix}{chapter.11}% 49
+\BOOKMARK [0][-]{chapter.12}{The Ax=x Problem}{part.2}% 50
+\BOOKMARK [0][-]{chapter.13}{Matrix Decomposition}{part.2}% 51
+\BOOKMARK [1][-]{section.13.1}{Decomposition related to solving Ax= b}{chapter.13}% 52
+\BOOKMARK [2][-]{subsection.13.1.1}{LU Decomposition: Schur Complement}{section.13.1}% 53
+\BOOKMARK [2][-]{subsection.13.1.2}{LDU Decomposition}{section.13.1}% 54
+\BOOKMARK [2][-]{subsection.13.1.3}{Rank Decomposition}{section.13.1}% 55
+\BOOKMARK [2][-]{subsection.13.1.4}{Cholesky Decomposition}{section.13.1}% 56
+\BOOKMARK [2][-]{subsection.13.1.5}{QR Decomposition: Givens Rotation, Householder Transformation}{section.13.1}% 57
+\BOOKMARK [1][-]{section.13.2}{Decomposition related to solving Ax= x}{chapter.13}% 58
+\BOOKMARK [2][-]{subsection.13.2.1}{Eigendecomposition}{section.13.2}% 59
+\BOOKMARK [2][-]{subsection.13.2.2}{Jordan Decomposition}{section.13.2}% 60
+\BOOKMARK [2][-]{subsection.13.2.3}{Schur Decomposition}{section.13.2}% 61
+\BOOKMARK [2][-]{subsection.13.2.4}{Singular Value Decomposition \(SVD\)}{section.13.2}% 62
+\BOOKMARK [2][-]{subsection.13.2.5}{QZ Decomposition}{section.13.2}% 63
+\BOOKMARK [1][-]{section.13.3}{Other Decompositions}{chapter.13}% 64
+\BOOKMARK [2][-]{subsection.13.3.1}{Polar Decomposition}{section.13.3}% 65
+\BOOKMARK [-1][-]{part.3}{III Topics}{}% 66
+\BOOKMARK [0][-]{chapter.14}{Minors and Cofactors}{part.3}% 67
+\BOOKMARK [1][-]{section.14.1}{Definition}{chapter.14}% 68
+\BOOKMARK [1][-]{section.14.2}{The Cramer's Rule and the Adjugate Matrix}{chapter.14}% 69

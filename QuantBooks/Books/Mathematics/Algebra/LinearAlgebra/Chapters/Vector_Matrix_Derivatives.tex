@@ -1,0 +1,148 @@
+%!TEX root = ../LinearAlgebra.tex
+
+\chapter{Vector and Matrix Derivatives}
+Suppose $\Y_{m \times n}$ and $\X_{p \times q}$ are both matrices (scalars, vectors are of course special cases). The derivative of $\Y$ with respect to $\X$ involves $mnpq$ partial derivatives, $\left[\frac{\partial Y_{ij}}{\partial X_{kl}}\right]$, for $i = 1, \cdots, m; j = 1, \cdots, n; k = 1, \cdots, p; l = 1, \cdots, q$. This immediately poses a question: What is a convenient (or logic) way of arraying these partial derivatives - as a row vector, as a column vector, or as a matrix (which is a natural choice), and if the latter of what shape/order?
+
+Two competing notational conventions can be distinguished by whether the index of the derivative (matrix) is majored by the numerator or the denominator.
+\begin{enumerate}
+	\item Numerator layout, i.e. according to $\Y$ and $\X^T$. This is sometimes known as the Jacobian layout.
+	\item Denominator layout, i.e. according to $\Y^T$ and $\X$. This is sometimes known as the gradient layout. It is named so because the gradient under this layout is a usual column vector.	
+\end{enumerate}
+The transpose of one layout is the same as the other. We use the {\bf{numerator-layout}} notation throughout the paper.
+
+{
+\renewcommand{\arraystretch}{2}
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+     & Scalar & Vector & Matrix \\ \hline
+    Scalar & $\frac{\partial y}{\partial x}$ & $\frac{\partial \y}{\partial x} = [\frac{\partial y_i}{\partial x}]$ & $\frac{d\Y}{\partial x} = [\frac{\partial y_{ij}}{\partial x}]$ \\ \hline
+    Vector & $\frac{\partial y}{\partial \x} = [\frac{\partial y}{\partial x_j}]$ & $\frac{\partial \y}{\partial \x} = [\frac{\partial y_i}{\partial x_j}]$ &  \\ \hline
+    Matrix & $\frac{\partial y}{d\X} = [\frac{\partial y}{\partial x_{ji}}]$ &  &  \\
+    \hline
+    \end{tabular}
+\end{center}
+}
+The partials with respect to the numerator are laid out according to the shape $Y$ while the partials with respect to the denominator are laid out according to the transpose of $X$. For example, $\partial y/\partial \x$ is a row vector\footnote{We distinguish $\partial y/\partial \x$ and the gradient $\nabla_\x y$, which is the transpose of the former and hence a column vector.} while $\partial \y/\partial x$ is a column vector.
+
+Note:
+\begin{enumerate}
+	\item derivative is a row vector; gradient is its transpose.
+	\item Hessian is the derivative of gradient.
+\end{enumerate}
+
+\section{Differentials}
+\ex{
+	\begin{align}
+		d\A = \A - \A = \bf{0}
+	\end{align}
+}
+
+\ex{
+	\begin{align}
+		d(\alpha\X) = \alpha(X + d\X) - \alpha\X = \alpha d\X
+	\end{align}
+}
+
+\ex{
+	\begin{align}
+		d(\X + \Y) = [(\X+\Y) + d(\X+\Y)] - (\X + \Y) = d\X + d\Y
+	\end{align}
+}
+
+\ex{
+	\begin{align}
+		d(\tr(\X)) = \tr(\X + d\X) - \tr(\X) = \tr(\X + d\X - \X) = \tr(d\X)
+	\end{align}
+}
+
+\ex{
+	\begin{align}
+		d(\X\Y) = (\X+d\X)(\Y+d\Y) - \X\Y = [\X\Y + \X d\Y + (d\X)\Y + d\X d\Y] - \X\Y = \X d\Y + (d\X)\Y
+	\end{align}
+}
+
+\ex{
+	\begin{align}
+		\bf{0} = d\I &= d(\X\X^{-1}) = (d\X)\X^{-1} + \X d\X^{-1}\\
+		d\X^{-1} &= -\X^{-1}(d\X)\X^{-1}
+	\end{align}
+}
+
+Another proof is: $$\frac{\A^{-1}(x+h) - \A^{-1}(x)}{h} = \frac{\A^{-1}(x+h)[\A(x+h)-\A(x)]\A^{-1}(x)}{h}$$
+
+\noindent
+Next, let's prove something not so trivial.
+\prop{
+	\begin{align}
+		d|\X| = |\X|\tr(\X^{-1}d\X)
+	\end{align}
+}
+\prof{
+	First, we see that
+	\begin{align}
+		\tr(\A^T\B) &= \sum_{i=1}^n \left(\sum_{j=1}^n (\A^T)_{ij}\B_{ji}\right) = \sum_{i=1}^n \sum_{j=1}^n \A_{ji}\B_{ji} = \sum_{i=1}^n \sum_{j=1}^n \A_{ij}\B_{ij} = \vec(\A)^T \vec(\B)
+	\end{align}
+	which can be computed by first multiply $\A$ and $\B$ element-wise, and then sum all the elements in the resulting matrix (known as the {\cem{Frobenius inner product}})\footnote{The trace operator is a scalar function (of a matrix), that essentially turns matrices into vectors and computes a dot product between them.}.
+
+	Next, applying the Laplace's formula
+	\begin{align}
+		|\X| = \sum_j x_{ij} \cdot adj^T(\X)_{ij}
+	\end{align}
+	we have,
+	\begin{align}
+		d(|\X|) &= \sum_i\sum_j \frac{\partial |\X|}{\partial x_{ij}} d x_{ij} \\
+		&= \sum_i\sum_j \frac{\partial\{\sum_k x_{ik} \cdot adj^T(\X)_{ik}\}}{\partial x_{ij}} d x_{ij} ~~~~~ \text{(expand by row $i$)}\\
+		&= \sum_i\sum_j \left \{ \sum_k \frac{\partial x_{ik}}{\partial x_{ij}} \cdot adj^T(\X)_{ik} + \sum_k x_{ik} \frac{\partial adj^T(\X)_{ik}}{\partial x_{ij}} \right \} d x_{ij} \\
+		&= \sum_i\sum_j adj^T(\X)_{ij} d x_{ij}  ~~~~~ \left(\frac{\partial adj^T(\X)_{ik}}{\partial x_{ij}} = 0, \forall k \ne j \right)\\
+	\end{align}
+
+	Now, use $\sum_{i=1}^n \sum_{j=1}^n \A_{ij}\B_{ij} = \tr(\A^T\B)$, we have
+	\begin{align}
+		d(|\X|) = tr(adj(X) d\X)
+	\end{align}
+
+	Since $\X$ is invertible, and $adj(\X) = |\X| \X^{-1}$, finally,
+	\begin{align}
+		d(|\X|) = |\X| tr(\X^{-1} d\X)
+	\end{align}
+}
+
+
+\section{Vector-by-vector Derivatives}
+The first two important identities are
+\begin{align}
+	\frac{\partial A\x}{\partial \x} &= A\\
+	\frac{\partial \x^TA}{\partial \x} &= A^T	
+\end{align}
+In the numerator-layout, the major index of the resulting matrix is based on the numerator, so when $A$ is on the left hand side of $\x$, the derivative is the same size as $A$, on the other hand, if $A$ is on the right hand side of $\x$, it needs to be transposed.
+
+\ex{
+	Suppose $a=a(\x)$ is a scalar function and $\u = \u(\x)$ a vector function.
+	\begin{align}
+		\frac{\partial a\u}{\partial \x} = \frac{\partial a\u}{\partial a}\frac{\partial a}{\partial \x} + \frac{\partial a\u}{\partial \u}\frac{\partial \u}{\partial \x} = \u \frac{\partial a}{\partial \x} + a\frac{\partial \u}{\partial \x}
+	\end{align}	
+	Recall that $\frac{\partial a\u}{\partial a}$ is a row vector, and the chain rule is expanded from right to left, just as the composition of functions.
+}
+
+
+\section{Derivatives of Vectors and Matrices}
+\subsection{Derivatives of a Vector or Matrix with Respect to a Scalar}
+Let $\A$ be a matrix, as a matrix-valued function
+\begin{align}
+	\A(x): \RR \rightarrow \RR^{m \times n}
+\end{align}
+
+For vector- and matrix-valued functions there is a further manifestation of the linearity of the derivative: Suppose that $f$ is a fixed linear function defined on $\RR^n$ and that $\A$ is a differentiable vector- or matrix-valued function. Then
+\begin{align}
+	f(\A)' = f(\A')
+\end{align}
+A useful example is the trace of $\A$, which is the sum of the diagonal elements of $\A$ (differentiable real-valued functions)
+\begin{align}
+	tr(\A)' = tr (\A')
+\end{align}
+
+Another example is the inner product of two vectors, where we have \footnote{Actually, it should work for all dot product (not necessarily the inner product, which is in the context of Euclidean spaces.)}
+\begin{align}
+	(\a^T\b)' = \a'^T\b + \a^T\b'
+\end{align}

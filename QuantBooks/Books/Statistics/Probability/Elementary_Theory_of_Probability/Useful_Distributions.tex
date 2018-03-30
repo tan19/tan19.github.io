@@ -1,0 +1,88 @@
+\chapter{Useful Distributions}
+\section{Discrete Distributions}
+\subsection{Poisson Distribution}
+\subsection{Bernoulli Distribution}
+\subsection{Binomial Distribution}
+\subsection{Negative Binomial Distribution}
+\subsection{Categorical Distribution}
+\subsection{Multinomial Distribution}
+\subsection{Geometric Distribution}
+\subsection{Hyper-Geometric Distribution}
+\subsection{Poisson Distribution}
+\section{Continuous Distributions}
+\subsection{Uniform Distribution}
+\subsection{Exponential Distribution}
+\subsection{$\chi^2$ Distribution}
+
+\subsection{Gaussian Distribution}
+\subsubsection{Univariate Gaussian}
+\subsubsection{Multivariate Gaussian}
+\begin{align}
+	f(\x|\bmu,\bSigma) = \frac{1}{\sqrt{2\pi|\bSigma|}} \exp\left\{-\frac{1}{2}(\x-\bmu)^T\bSigma^{-1}(\x-\bmu)\right\}
+\end{align}
+Using the technique of `completing the square', we have
+\begin{align}
+	f(\x_1|\x_2) &= \frac{f(\x_1,\x_2)}{f(\x_2)}\\
+	&= \frac{1/\sqrt{2\pi|\bSigma|}\exp\left\{-\frac{1}{2}(\x-\bmu)^T\bSigma^{-1}(\x-\bmu)\right\}}{1/\sqrt{2\pi|\bSigma_{22}|}\exp\left\{-\frac{1}{2}(\x_2-\bmu)^T\bSigma_{22}^{-1}(\x_2-\bmu)\right\}}\\
+	&= C \cdot \exp\left\{-\frac{1}{2}(\x-\bmu)^T\bSigma^{-1}(\x-\bmu)\right\}\\
+	&= C \cdot \exp\left\{-\frac{1}{2}[(\x_1-\bmu_1)^T\bLambda_{11}(\x_1-\bmu_1)+(\x_1-\bmu_1)^T\bLambda_{12}(\x_2-\bmu_2)+(\x_2-\bmu_2)^T\bLambda_{21}(\x_1-\bmu_1)]\right\}\\
+	&= C \cdot \exp\left\{-\frac{1}{2}\x_1^T\bLambda_{11}\x_1 + \x_1^T[\bLambda_{11}\bmu_1 - \bLambda_{12}(\x_2-\bmu_2)]\right\}	
+\end{align}
+Hence
+\begin{align}
+	\bSigma_{1|2} &= \bLambda_{11}^{-1}\\
+	\bmu_{1|2} &= \bmu_1 - \bLambda_{11}^{-1}\bLambda_{12}(\x_2-\bmu_2)
+\end{align}
+or
+\begin{align}
+	\bSigma_{1|2} &= \bSigma_{11} - \bSigma_{12}\bSigma_{22}^{-1}\bSigma_{21}\\
+	\bmu_{1|2} &= \bmu_1 + \bSigma_{12}\bSigma_{22}^{-1}(\x_2-\bmu_2)
+\end{align}
+
+\subsection{Dirichlet Distribution}
+\subsubsection{Gamma Function and Beta Function}
+The {\em{gamma function}} is defined for all complex numbers except the non-positive integers. For complex numbers with a positive real part, it is defined via an improper integral that converges:
+\begin{equation}
+	\Gamma(z) = \int_0^\infty e^{-t} t^{z-1} dt
+\end{equation}
+For all positive numbers $z$,
+\begin{equation}
+	\Gamma(z) = (z-1)\Gamma(z-1)
+\end{equation}
+and in particular, if $n$ is a positive integer:
+\begin{equation}
+	\Gamma(n) = (n-1)!
+\end{equation}
+Note, the gamma function shifts the normal definition of factorial by 1.
+
+The {\em{beta function}} is defined by
+\begin{equation}
+	B(x,y) = \int_0^1 t^{x-1} (1-t)^{y-1} dt
+\end{equation}
+for $Re(x), Re(y) > 0$.
+
+It can also be written as
+\begin{equation}
+	B(x,y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y)}
+\end{equation}
+
+\subsubsection{Introduction}
+The Dirichlet distribution of order $K \ge 2$ with parameters $\alpha_1, \dots, \alpha_K > 0$ has a probability density function with respect to Lebesgue measure on the Euclidean space $\RR^{K-1}$ given by
+\begin{equation}
+	f(x_1, \dots, x_{K-1}; \alpha_1, \dots, \alpha_K) = \frac{1}{B(\balpha)} \prod^K_{i=1} x_i^{\alpha_i-1}
+\end{equation}
+for all $x_1, \dots, x_K > 0$ and $x_1 + \dots + x_K = 1$. The density is zero outside this open\footnote{``Open'' here means none of the $x_i$'s can be 1, actually $x_i \in (0,1)$.} $(K-1)$-dimensional simplex.
+
+The normalizing constant is the multinomial beta function, which can be expressed in terms of the gamma function:
+\begin{equation}
+	B(\balpha) = \frac{\prod_{i=1}^K \Gamma(\alpha_i)}{\Gamma(\sum_{i=1}^K \alpha_i)}, \mbox{ where } \balpha=(\alpha_1, \dots, \alpha_K)
+\end{equation}
+
+
+\subsection{$t$ Distribution}
+\subsection{Inverse Gaussian Distribution}
+\subsection{log-normal Distribution}
+\subsection{Laplace Distribution}
+\subsection{Beta Distribution}
+\subsection{Gamma Distribution}
+\subsection{Wishart Distribution}
