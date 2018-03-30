@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1522390275 "QF_Book.tex" "QF_Book.pdf" "QF_Book" 1522390275
+["pdflatex"] 1522390706 "Book.tex" "Book.pdf" "Book" 1522390706
   "/Users/tan19/Dropbox/LaTeXMacros.tex" 1522386802 2771 cf3e4958eb026f3c7202441e2418e45f ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1480098698 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -155,16 +155,16 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "Book.aux" 1522390706 13978 e912c958af900b339a87284b04e26b29 ""
+  "Book.out" 1522390706 5042 b593e5e371cfcaaeb47ecabf19195e1c ""
+  "Book.tex" 1522390704 31226 2025c495b3ec8b862481dd283ccb1dd6 ""
+  "Book.toc" 1522390706 6216 be9319d1d9e25c372c093d8fdf144fa3 ""
   "Chapters/Graphical_Models.tex" 1473968646 369 e8e14461d4783d19856be9491b3e4a15 ""
   "Chapters/QA.tex" 1479633111 7016 320c80763bd1fa1b5004d046ca8932af ""
-  "QF_Book.aux" 1522390275 13978 e912c958af900b339a87284b04e26b29 ""
-  "QF_Book.out" 1522390275 5042 b593e5e371cfcaaeb47ecabf19195e1c ""
-  "QF_Book.tex" 1522390273 31226 2025c495b3ec8b862481dd283ccb1dd6 ""
-  "QF_Book.toc" 1522390275 6216 be9319d1d9e25c372c093d8fdf144fa3 ""
   (generated)
-  "QF_Book.log"
-  "QF_Book.toc"
-  "QF_Book.aux"
-  "QF_Book.pdf"
-  "QF_Book.thm"
-  "QF_Book.out"
+  "Book.thm"
+  "Book.aux"
+  "Book.log"
+  "Book.out"
+  "Book.toc"
+  "Book.pdf"
