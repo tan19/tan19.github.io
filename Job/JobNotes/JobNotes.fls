@@ -32,8 +32,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
@@ -93,9 +91,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/floatrow/floatrow.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/floatrow/floatrow.sty
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/multirow/multirow.sty
@@ -167,7 +162,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm

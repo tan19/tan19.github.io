@@ -476,6 +476,15 @@ Find the first and second moment of the CIR model. What is the distribution of $
 
 \section{Algorithms and Data Structures}
 \ques{
+	Given an array of $N$ numbers, find the smallest $K$ numbers of of it.
+}
+
+\ans{
+	Use max heap (O(k + (n-k)logk)). Other choices: sorting (O(nlogn)), selection sort (O(nk)).
+	\url{https://www.youtube.com/watch?v=eaYX0Ee0Kcg}
+}
+
+\ques{
 	Given an array of numbers, $nums$, return an array of numbers $products$, where $products[i]$ is the product of all $nums[j], j != i$. Give an $O(N)$ algorithm using only multiplication. ({\bf{Squarepoint, Research Quant}})
 }
 
