@@ -14,7 +14,13 @@ System
 	Network									[network.html]
 	Distributed Computing					[distributed.html]
 
-Programming	Languages
+Algorithms, Computing, and Theory
+	Data Structures							[DS.html]
+	Sorting								[sorting.html]
+	Scientific Computing						[*]
+	High Performance Computing 					[*]
+
+Programming Languages and Software Engineering
 	C/C\+\+									[C.html]
 	Java									[Java.html]
 	Python									[Python.html]
@@ -22,6 +28,3 @@ Programming	Languages
 	Matlab									[Matlab.html]
 	Web Programming							[web.html]
 	
-Data Structures and Algorithms
-	Data Strctures							[DS.html]
-	Sorting									[sorting.html]
