@@ -14,15 +14,24 @@
 
 ~
 
+~
+== Institutional Investor Hedge Fund Hall of Fame
+- 2013 Inductees: Leon Cooperman, Raymond Dalio, Israel Englander, David Shaw, Paul Singer, S. Donald Sussman, David Tepper.
 
-Read Hull and Wilmott first (probably CFA), then Shreve's two books (Stochastic Calculus for Finance I & II, Brownian Motion and Stochastic Calculus) for more math.
+- 2008 Inductees: Louis Bacon, Steven Cohen, Kenneth Griffin, Paul Tudor Jones II, Alfred Winslow Jones, Bruce Kovner, Seth Klarman, Leon Levy, Jack Nash, Julian Robertson Jr., James Simons, George Soros, Michael Steinhardt, David Swensen.
 
-- Interest Rate Models, by Brigo and Mercurio
+~
+
 
 [https://wrds-web.wharton.upenn.edu/ Wharton Research Data Services]
 
 There exist two separate branches of finance that require advanced quantitative techniques: derivatives pricing, and risk and portfolio management. One of the main differences is that they use different probabilities, namely the risk-neutral probability (or arbitrage-pricing probability), denoted by "Q", and the actual (or actuarial) probability, denoted by "P". (from wikipedia, article on Mathematical Finance)
 
+
+== Sell Side v.s. Buy Side
+- Sell Side Firms: investment banking, commercial banking, stock brokers, market makers.
+- Buy Side Firms: hedge funds, private equity, prop trading, venture capital, asset management, institutional investors, retail investing.
+- Equity Research is about finding the valuation of the /listed/ companies on stock exchanges while Private equity is researching and analyzing the /private/ companies and interpreting your results.
 
 === The Q world (Derivatives Pricing)
 The goal of derivatives pricing is to determine the fair price of a given security in terms of more liquid securities whose price is determined by the law of supply and demand.
@@ -64,6 +73,7 @@ Business | buy-side
 
 == Miscellaneous ==
 
+- [https://www.wallstreetmojo.com/sell-side-vs-buy-side/ sell-side vs buy-side]
 - [http://www.economicprinciples.org/wp-content/uploads/ray_dalio__how_the_economic_machine_works__leveragings_and_deleveragings.pdf How the Economic Machine Works]
 - [http://www.quantstart.com/articles/What-are-the-Different-Types-of-Quantitative-Analysts Types of Quants]
 - [http://www.garp.org/media/585808/feb%2041-44_quantclassroom.pdf P v.s. Q]
