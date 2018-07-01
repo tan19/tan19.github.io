@@ -1,0 +1,12 @@
+# jemdoc: menu{Finance/FRM/MENU_FRM}{FRM_12.html}
+= 1.12 Arbitrage Pricing Theory and Multifactor Models of Risk and Return
+
+~~
+After completing this reading you should be able to:
+- Describe the inputs, including factor betas, to a multifactor model.
+- Calculate the expected return of an asset using a single-factor and a multifactor model.
+- Describe properties of well-diversified portfolios and explain the impact of diversification on the residual risk of
+a portfolio.
+- Explain how to construct a portfolio to hedge exposure to multiple factors.
+- Describe and apply the Fama-French three factor model in estimating asset returns.
+~~
