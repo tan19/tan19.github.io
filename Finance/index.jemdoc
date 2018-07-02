@@ -1,34 +1,23 @@
 # jemdoc: menu{Finance/MENU_FINANCE}{index.html}
 = Finance
-- World GDP (2018): $85 Trillion
-- Derivatives Market Size: ~ 10 times of World GDP
+
+
 
 金融的本质是价值在不确定环境下的跨时空交换。经济学的本质是研究稀缺资源的优化配置。
 
 ~
 == Top Journals in Finance
-=== Finance
 - The Journal of Finance (JF)
 - Journal of Financial Economics (JFE)
 - The Review of Financial Studies (RFS)
 
+[https://wrds-web.wharton.upenn.edu/ Wharton Research Data Services]
 ~
 
-[http://www.markjoshi.com/RecommendedBooks.html Good books]
-[https://wrds-web.wharton.upenn.edu/ Wharton Research Data Services]
 
+~~
+== Facts
+- World GDP (2018): \$85 Trillion. Derivatives market size is roughtly 10 times of the world GDP.
+- When interest rate {{<font color=green size=+0.5><b>}}rises{{</b></font>}}, bond value {{<font color=red size=+0.5><b>}}decreases{{</b></font>}}.
+~~
 
-== Topics ==
-- Financial Mathematics
-- Economics
-- [../Finance/CFA.html CFA], FRM
-
-
--  [http://ocw.mit.edu/courses/economics/14-01sc-principles-of-microeconomics-fall-2011/ MIT Microeconomics (online course)]
-
-== Miscellaneous ==
-
-- [https://www.wallstreetmojo.com/sell-side-vs-buy-side/ sell-side vs buy-side]
-- [http://www.economicprinciples.org/wp-content/uploads/ray_dalio__how_the_economic_machine_works__leveragings_and_deleveragings.pdf How the Economic Machine Works]
-- [http://www.quantstart.com/articles/What-are-the-Different-Types-of-Quantitative-Analysts Types of Quants]
-- [http://www.garp.org/media/585808/feb%2041-44_quantclassroom.pdf P v.s. Q]
