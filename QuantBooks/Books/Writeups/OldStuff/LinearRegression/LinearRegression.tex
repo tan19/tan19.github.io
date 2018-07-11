@@ -1,0 +1,162 @@
+\documentclass{article}
+\usepackage{amssymb,amsmath}
+\usepackage[thmmarks,amsmath]{ntheorem}
+
+\usepackage{mathrsfs}
+
+
+\input{emacscomm.tex}
+\newcommand{\GP}{Gaussian process\xspace}
+\newcommand{\GPs}{Gaussian processes\xspace}
+\newcommand{\astar}{\alpha^{\star}}
+\newcommand{\alphas}{{\alpha^{\star}}}
+\newcommand{\betas}{\beta^{\star}}
+
+\newcommand{\FF}{\mathcal{F}}
+\newcommand{\XX}{\mathcal{X}}
+\newcommand{\YY}{\mathcal{Y}}
+\newcommand{\HH}{\mathcal{H}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\NN}{\mathcal{N}}
+\newcommand{\DD}{\mathcal{D}}
+\newcommand{\RR}{\mathbb{R}}
+
+\theorembodyfont{\normalfont}
+\newtheorem{problem}{Problem}[section]
+\newtheorem{definition}{Definition}[section]
+
+\title{Linear Regression Models}
+\author{Xi Tan (tan19@purdue.edu)}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section*{Preface}
+TBD
+
+\newpage
+\section{Introduction}
+Generalized linear models include as special cases,  linear regression and analysis-of-variance models, logit and probit models for quantal responses, log linear models and multinomial response models for counts and some commonly used models for survival data.
+
+The second-order properties of the parameter estimates are insensitive to the assumed distributional form: the second-order properties depend mainly on the assumed variance-to-mean relationship and on uncorrelatedness or independence.
+
+Data types:
+
+\newpage
+\section{Simple Linear Regression}
+
+\subsection{Model}
+\begin{equation}
+	Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
+\end{equation}
+where $\epsilon_i \sim \NN(0,\sigma^2)$
+
+\subsection{Estimators}
+\begin{eqnarray}
+	b_1 & = & \frac{1}{\sum_{i=1}^n (X_i - \bar X)^2 } \sum_{i=1}^n (X_i-\bar X) Y_i \\
+	b_0 & = & \bar Y - b_1 \bar X \\
+	\hat \sigma^2 & = & \frac{\sum_{i=1}^n (Y_i - \hat Y_i)^2}{n-2}
+\end{eqnarray}
+Notice, $\sum(X_i-\bar X)^2 = \sum X_i^2 - n\bar X^2$, and $b_1 = \rho \cdot \frac{s_Y}{s_X}$, where $\rho$ is the correlation between $X$ and $Y$ and $s_Y, s_X$ are standard error of $Y$ and $X$, respectively.
+
+\subsection{Properties of Residuals}
+\begin{eqnarray}
+	e_i & = & Y_i - \hat Y_i \\
+	\sum e_i & = & 0 \\
+	\sum X_i e_i & = & 0 \\
+	\sum \hat Y_i e_i & = & 0
+\end{eqnarray}
+
+\subsection{Properties of $b_1$ and $b_0$}
+\begin{eqnarray}
+	b_1 &\sim& \NN \left(\beta_1,\frac{\sigma^2}{\sum(X_i-\bar X)^2}\right) \\
+	b_0 &\sim& \NN \left(\beta_0,\frac{\sigma^2}{n} + \frac{\sigma^2 {\bar X}^2}{\sum(X_i-\bar X)^2} \right)
+\end{eqnarray}
+where $\sigma^2$ can be estimated by the MSE, i.e., $\hat \sigma^2 = \frac{\sum_{i=1}^n (Y_i - \hat Y_i)^2}{n-2}$
+
+\noindent
+\\
+Now, since
+\begin{eqnarray}
+	b_1 & = & \frac{1}{\sum_{i=1}^n (X_i - \bar X)^2 } \sum_{i=1}^n (X_i-\bar X) Y_i \\
+	& = & \sum_{i=1}^n k_i Y_i
+\end{eqnarray}
+where $k_i = \frac{X_i-\bar X}{\sum_{i=1}^n (X_i - \bar X)^2 }$, we have
+\begin{eqnarray}
+	\sum k_i &=& 0 \\
+	\sum X_i k_i &=& 1 \\
+	\sum k_i^2 &=& \frac{1}{\sum_{i=1}^n (X_i - \bar X)^2 }
+\end{eqnarray}
+The first two identity hold as a requirement for the unbiasness, since $$E(b_1) = E\left(\sum k_i Y_i\right)= E\left(\sum k_i (\beta_0+\beta_1 X_i)\right) = E\left(\beta_0 \sum k_i \beta_0 + \beta_1 \sum k_i X_i \right) = \beta_1$$ requires $\sum k_i = 0$  and $\sum X_i k_i = 1$.
+The third identity ensures the attainment of the minimum variance.
+
+\subsection{Confidence Interval of $b_1$ and $b_0$}
+Since $SSE/\sigma^2 \sim \chi_{n-2}^2$, and $\frac{s^2\{b_1\}}{\sigma^2\{b_1\}} \sim \frac{\chi_{n-2}^2}{n-2}$
+\begin{eqnarray}
+	\frac{b_1-\beta_1}{s\{b_1\}} = \left. \frac{b_1-\beta_1}{\sigma\{b_1\}} \middle/ \frac{s\{b_1\}}{\sigma\{b_1\}} \right. \sim \frac{z}{\sqrt{\frac{\chi_{n-2}^2}{n-2}}} = t_{n-2}
+\end{eqnarray}
+so the confidence interval for $b_1$, with confidence level $\alpha$ is
+\begin{equation}
+	b_1 \pm t(1-\alpha/2;n-2)s\{b_1\}\\
+\end{equation}
+or
+\begin{equation}
+	b_1 \mp t(\alpha/2;n-2)s\{b_1\}\\
+\end{equation}
+
+Similarly, the confidence interval for $b_0$, with confidence level $\alpha$ is
+\begin{equation}
+	b_0 \pm t(1-\alpha/2;n-2)s\{b_0\}\\
+\end{equation}
+or
+\begin{equation}
+	b_0 \mp t(\alpha/2;n-2)s\{b_0\}\\
+\end{equation}
+
+\noindent
+\\
+The power of testing $\beta_1 = \beta^{H_0}$ is $Power = P\{|t^*|>t(1-\alpha/2;n-2)|\delta\}$, where $\delta = \frac{|\beta_1 - \beta^{H_0}|}{\sigma\{b_1\}}$. Similar for $\beta_0$.
+
+
+%\begin{landscape}
+\begin{table}[h]
+\centering
+\begin{tabular}{c || c c c }
+\hline
+& {Estimate} & {Expectation} & {Variance} \\
+\hline
+\\
+$Y_i$& $\hat Y_i$ & $\beta_0+\beta_1 X_i$ & $\sigma^2$\\
+\\
+\hline
+\\
+$b_1$& $\frac{\sum (X_i-\bar X) Y_i}{\sum (X_i-\bar X)^2}$ & $\beta_1$ & $\sigma^2 \cdot \frac{1}{\sum (X_i-\bar X)^2}$\\
+\\
+\hline
+\\
+$b_0$& $\bar Y - b_1 \bar X$ & $\beta_0$ & $\sigma^2 \cdot \left[\frac{1}{n} + \frac{{\bar X}^2}{\sum (X_i-\bar X)^2}\right]$\\
+\\
+\hline
+\\
+$\hat Y_i$& $\bar Y + b_1 (X_i-\bar X)$ & $\beta_0+\beta_1 X_i$ & $\sigma^2 \cdot \left[\frac{1}{n} + \frac{(X_i-\bar X)^2}{\sum (X_i-\bar X)^2}\right]$\\
+\\
+\hline
+\\
+$e_i$& $Y_i-\hat Y_i$ & $0$ & $TBD$\\
+\\
+\hline
+\end{tabular}
+\caption{Simple Linear Regression}
+\end{table}
+%\end{landscape}
+
+\end{document} 
+
+
+
+
+
+

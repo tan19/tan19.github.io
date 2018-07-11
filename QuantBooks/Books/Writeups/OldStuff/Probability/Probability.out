@@ -1,0 +1,114 @@
+\BOOKMARK [1][-]{part*.3}{Part I: Probability}{}% 1
+\BOOKMARK [1][-]{section.1}{Combinatorial Analysis}{}% 2
+\BOOKMARK [2][-]{subsection.1.1}{Axioms}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.2}{Binomial Coefficient and Its Applications}{section.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Binomial Coefficient}{subsection.1.2}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Bernoulli Distribution}{subsection.1.2}% 6
+\BOOKMARK [3][-]{subsubsection.1.2.3}{The i.i.d. Case: Binomial Distribution}{subsection.1.2}% 7
+\BOOKMARK [3][-]{subsubsection.1.2.4}{The Batch Mode Case: Hypergeometric Distribution}{subsection.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.3}{Multinomial Coefficient and Its Applications}{section.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Multinomial Coefficient}{subsection.1.3}% 10
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Categorical Distribution}{subsection.1.3}% 11
+\BOOKMARK [3][-]{subsubsection.1.3.3}{Multinomial Distribution}{subsection.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.4}{Multiset Coefficient and Its Applications}{section.1}% 13
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Multiset Coefficient}{subsection.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.5}{Selected Topics}{section.1}% 15
+\BOOKMARK [3][-]{subsubsection.1.5.1}{Double Factorial}{subsection.1.5}% 16
+\BOOKMARK [3][-]{subsubsection.1.5.2}{Stirling Numbers}{subsection.1.5}% 17
+\BOOKMARK [3][-]{subsubsection.1.5.3}{The Bertrand's Ballot Problem}{subsection.1.5}% 18
+\BOOKMARK [3][-]{subsubsection.1.5.4}{Catalan Number}{subsection.1.5}% 19
+\BOOKMARK [1][-]{section.2}{Probability}{}% 20
+\BOOKMARK [2][-]{subsection.2.1}{Axioms}{section.2}% 21
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Law of Total Probability}{subsection.2.1}% 22
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Law of Total Variance}{subsection.2.1}% 23
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Law of Total Covariance}{subsection.2.1}% 24
+\BOOKMARK [3][-]{subsubsection.2.1.4}{Law of Total Expectation}{subsection.2.1}% 25
+\BOOKMARK [3][-]{subsubsection.2.1.5}{Law of Total Cumulance}{subsection.2.1}% 26
+\BOOKMARK [3][-]{subsubsection.2.1.6}{Probability Inequalities}{subsection.2.1}% 27
+\BOOKMARK [2][-]{subsection.2.2}{Definitions of Sample Space, Events, and Probability}{section.2}% 28
+\BOOKMARK [2][-]{subsection.2.3}{Types of Probabilities: Frequentism and Bayesian}{section.2}% 29
+\BOOKMARK [2][-]{subsection.2.4}{Probability Redefined: Formal Definition with Measure Theory}{section.2}% 30
+\BOOKMARK [1][-]{section.3}{Conditional Probability and Independence}{}% 31
+\BOOKMARK [2][-]{subsection.3.1}{Conditional Probability}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.2}{Conditional Expectation}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.3}{Conditional Independence}{section.3}% 34
+\BOOKMARK [1][-]{section.4}{Random Variables}{}% 35
+\BOOKMARK [2][-]{subsection.4.1}{Continuous Random Variables}{section.4}% 36
+\BOOKMARK [2][-]{subsection.4.2}{Discrete Random Variables}{section.4}% 37
+\BOOKMARK [2][-]{subsection.4.3}{Joint Distributed Random Variables}{section.4}% 38
+\BOOKMARK [2][-]{subsection.4.4}{Random Vectors/Matrices}{section.4}% 39
+\BOOKMARK [2][-]{subsection.4.5}{Stochastic Processes}{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.6}{Random Field}{section.4}% 41
+\BOOKMARK [2][-]{subsection.4.7}{Convolutions: Sum of Normally Distributed Random Variables}{section.4}% 42
+\BOOKMARK [2][-]{subsection.4.8}{Product Distribution}{section.4}% 43
+\BOOKMARK [2][-]{subsection.4.9}{Ratio Distribution}{section.4}% 44
+\BOOKMARK [1][-]{section.5}{Quantitative Measure and Characteristic Functions}{}% 45
+\BOOKMARK [2][-]{subsection.5.1}{Describing Shape of a Distribution: Skewness, Kurtosis}{section.5}% 46
+\BOOKMARK [2][-]{subsection.5.2}{Describing a Sample: Mean, Variance}{section.5}% 47
+\BOOKMARK [2][-]{subsection.5.3}{Degrees of Freedom, Mean, Variance, and Moment, Central Moment, Cumulant, Law of the unconscious statistician}{section.5}% 48
+\BOOKMARK [2][-]{subsection.5.4}{Percentile and Median}{section.5}% 49
+\BOOKMARK [2][-]{subsection.5.5}{Coefficient of Variation}{section.5}% 50
+\BOOKMARK [2][-]{subsection.5.6}{Covariance and Correlation}{section.5}% 51
+\BOOKMARK [2][-]{subsection.5.7}{Moment Generating Function}{section.5}% 52
+\BOOKMARK [2][-]{subsection.5.8}{Characteristic Function}{section.5}% 53
+\BOOKMARK [1][-]{section.6}{Limit Theorems}{}% 54
+\BOOKMARK [1][-]{section.7}{Selected Topics in Probability}{}% 55
+\BOOKMARK [2][-]{subsection.7.1}{Ordered Statistics}{section.7}% 56
+\BOOKMARK [2][-]{subsection.7.2}{Copula}{section.7}% 57
+\BOOKMARK [1][-]{section.8}{Summary of Common Distributions}{}% 58
+\BOOKMARK [1][-]{part*.4}{Part II: Statistics}{}% 59
+\BOOKMARK [1][-]{section.9}{Collecting Data: Experiments and Surveys}{}% 60
+\BOOKMARK [2][-]{subsection.9.1}{Design of Experiments}{section.9}% 61
+\BOOKMARK [2][-]{subsection.9.2}{Statistical Survey}{section.9}% 62
+\BOOKMARK [2][-]{subsection.9.3}{Opinion Poll}{section.9}% 63
+\BOOKMARK [2][-]{subsection.9.4}{Sampling}{section.9}% 64
+\BOOKMARK [3][-]{subsubsection.9.4.1}{Sampling Distribution}{subsection.9.4}% 65
+\BOOKMARK [3][-]{subsubsection.9.4.2}{Sampling: Stratified Sampling, Quota Sampling}{subsection.9.4}% 66
+\BOOKMARK [3][-]{subsubsection.9.4.3}{Biased Sample: Spectrum Bias, Survivorship Bias}{subsection.9.4}% 67
+\BOOKMARK [1][-]{section.10}{Describing Data}{}% 68
+\BOOKMARK [2][-]{subsection.10.1}{Average: Mean, Median, and Mode}{section.10}% 69
+\BOOKMARK [2][-]{subsection.10.2}{Measures of Scale: Variance, Standard Deviation, Geometric Standard Deviation, and Median Absolute Deviation}{section.10}% 70
+\BOOKMARK [2][-]{subsection.10.3}{Correlation and Dependence}{section.10}% 71
+\BOOKMARK [2][-]{subsection.10.4}{Outlier}{section.10}% 72
+\BOOKMARK [2][-]{subsection.10.5}{Statistical Graphics: Histogram, Frequency Distribution, Quantile, Survival Function, and Failure Rate}{section.10}% 73
+\BOOKMARK [1][-]{section.11}{Filtering Data}{}% 74
+\BOOKMARK [2][-]{subsection.11.1}{Recursive Bayesian Estimation}{section.11}% 75
+\BOOKMARK [3][-]{subsubsection.11.1.1}{Kalman Filter}{subsection.11.1}% 76
+\BOOKMARK [3][-]{subsubsection.11.1.2}{Particle Filter}{subsection.11.1}% 77
+\BOOKMARK [2][-]{subsection.11.2}{Moving Average}{section.11}% 78
+\BOOKMARK [1][-]{section.12}{Modeling Sample Data}{}% 79
+\BOOKMARK [2][-]{subsection.12.1}{Regression Analysis}{section.12}% 80
+\BOOKMARK [3][-]{subsubsection.12.1.1}{Analysis of Variance \(ANOVA\)}{subsection.12.1}% 81
+\BOOKMARK [3][-]{subsubsection.12.1.2}{General Linear Model}{subsection.12.1}% 82
+\BOOKMARK [3][-]{subsubsection.12.1.3}{Generalized Linear Model}{subsection.12.1}% 83
+\BOOKMARK [2][-]{subsection.12.2}{Density Estimation}{section.12}% 84
+\BOOKMARK [3][-]{subsubsection.12.2.1}{Kernel Density Estimation}{subsection.12.2}% 85
+\BOOKMARK [3][-]{subsubsection.12.2.2}{Multivariate Kernel Density Estimation}{subsection.12.2}% 86
+\BOOKMARK [2][-]{subsection.12.3}{Time Series}{section.12}% 87
+\BOOKMARK [2][-]{subsection.12.4}{Multivariate Analysis}{section.12}% 88
+\BOOKMARK [3][-]{subsubsection.12.4.1}{Principal Component Analysis \(PCA\)}{subsection.12.4}% 89
+\BOOKMARK [3][-]{subsubsection.12.4.2}{Factor Analysis}{subsection.12.4}% 90
+\BOOKMARK [3][-]{subsubsection.12.4.3}{Cluster Analysis}{subsection.12.4}% 91
+\BOOKMARK [3][-]{subsubsection.12.4.4}{Correspondence Analysis}{subsection.12.4}% 92
+\BOOKMARK [3][-]{subsubsection.12.4.5}{Multidimensional Scaling}{subsection.12.4}% 93
+\BOOKMARK [2][-]{subsection.12.5}{Robust Statistics}{section.12}% 94
+\BOOKMARK [1][-]{section.13}{Modeling Population Data: Statistical Inference}{}% 95
+\BOOKMARK [2][-]{subsection.13.1}{Bayesian Inference}{section.13}% 96
+\BOOKMARK [3][-]{subsubsection.13.1.1}{Bayes' Theorem, Bayes Estimator, Prior Distribution, Posterior Distribution, Conjugate Prior, and All That}{subsection.13.1}% 97
+\BOOKMARK [2][-]{subsection.13.2}{Frequentist Inference}{section.13}% 98
+\BOOKMARK [3][-]{subsubsection.13.2.1}{Statistical Hypothesis Testing: Null, Alternative, P-value, Significance level, power, likelihood-ratio test, goodness-of-fit, confidence interval, M-estimator, Trimmed Estimator}{subsection.13.2}% 99
+\BOOKMARK [2][-]{subsection.13.3}{Non-parametric Statistics}{section.13}% 100
+\BOOKMARK [3][-]{subsubsection.13.3.1}{Nonparametric Regression, Kernel Methods}{subsection.13.3}% 101
+\BOOKMARK [1][-]{section.14}{Making Decisions: Decision Theory}{}% 102
+\BOOKMARK [2][-]{subsection.14.1}{Optimal Decision, Type I and Type II errors}{section.14}% 103
+\BOOKMARK [2][-]{subsection.14.2}{Correlation and Causation}{section.14}% 104
+\BOOKMARK [1][-]{section.15}{Statistics Theory}{}% 105
+\BOOKMARK [2][-]{subsection.15.1}{Mathematical Statistics}{section.15}% 106
+\BOOKMARK [3][-]{subsubsection.15.1.1}{Degrees of Freedom}{subsection.15.1}% 107
+\BOOKMARK [3][-]{subsubsection.15.1.2}{sufficient, complete, and etc.}{subsection.15.1}% 108
+\BOOKMARK [3][-]{subsubsection.15.1.3}{Likelihood Function}{subsection.15.1}% 109
+\BOOKMARK [3][-]{subsubsection.15.1.4}{Exponential Family}{subsection.15.1}% 110
+\BOOKMARK [2][-]{subsection.15.2}{Statistical Learning Theory}{section.15}% 111
+\BOOKMARK [2][-]{subsection.15.3}{Interpretations of Probability}{section.15}% 112
+\BOOKMARK [3][-]{subsubsection.15.3.1}{Cox's Theorem}{subsection.15.3}% 113
+\BOOKMARK [3][-]{subsubsection.15.3.2}{Principle of Maximum Entropy}{subsection.15.3}% 114
