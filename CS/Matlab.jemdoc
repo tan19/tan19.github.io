@@ -1,6 +1,0 @@
-# jemdoc: menu{CS/MENU_CS}{Matlab.html}
-= Matlab
-
-- Matlab Tricks ([http://research.microsoft.com/en-us/um/people/minka/software/matlab.html 1], [http://www.mathworks.com/support/tech-notes/1100/1109.html 2], [http://www.ee.columbia.edu/~marios/matlab/matlab_tricks.html 3], [http://ubcmatlabguide.github.io/html/speedup.html 4])
-
-- \[\~, n\] = size(M); % if M is a 3x5 matrix, this will return n=5, without using an additional variable.
