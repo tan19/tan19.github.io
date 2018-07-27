@@ -11,34 +11,14 @@ Finance
 	FRM				[FRM/index.html]
 	Wilmott 		[Wilmott/index.html]
 
-Financial Mathematics
-	Stochastic Calculus							[*]
-	Stochastic Differential Equations			[*]
-	Numerical Methods (MC, Finite Difference)	[*]
+
+Foundation
+	Financial Mathematics	[Financial_Mathematics/index.html]
 	
-Pricing
-	Equilibrium Asset Pricing: CAPM, Factor Model 	[*]
-	Derivatives	(Options, Futures, Forwards, Swaps)	[*]
-	Equity											[*]
-	Fixed Income									[*]
-	Currencies (interest rate)						[*]
+Theory
+	Corporate Finance 		[Corporate_Finance/index.html]
+	Asset Pricing 			[Asset_Pricing/index.html]
 
-Risk
-	Hedging				[*]	
-	Volatility Risk 	[*]
-	Credit Risk 		[*]
-	Market Risk 		[*]
-	Liquidity Risk 		[*]
-
-Investment 
-	Optimal Portfolio Theory					[*]
-
-Products and Markets
-	Equities					[equities.html]
-	Commodities					[commodities.html]
-	Currencies					[currencies.html]
-	Indices						[indices.html]
-	Fixed-income Securities		[*]
-	Forwards and Futures		[FF.html]
-
-Coorporate Finance
+Practice
+	Investment				[*]
+	
