@@ -25,12 +25,38 @@ Generally speaking, there are two paths to solve a quantitative finance problem 
 
 
 ~~~
-Core Readings 1/2 (Finance\/Econ).
+*Core Readings*
 
-- Sense and Literacy: Mankiw, Financial Intelligence, Tuckman's fixed income securities
-- Models: Wilmmott\/Hull\/Cochrane (general), Anderson\/Brigo (fixed income), Gatheral (equity)
-- Trading: 1) microstructure, stochastic control methods; 2) dynamic asset pricing and allocation
-- Math Background: Jones, Hamilton
+. Overview
+.. Finance - Capital Markets, Financial Management, and Investment Management
+.. The Complete Guide to Hedge Funds & Hedge Fund Strategies
+.. Principles of Economics
+.. Financial Statements: A Step-by-Step Guide to Understanding and Creating Financial Reports
+.. CFA \/ FRM \/ Wilmott
+. Market
+.. The Complete Guide to Capital Markets for Quantitative Professionals
+.. Capital Markets and Investments
+.. Trading and Exchanges: Market Micro-structure for Practitioners
+. Pricing (sell-side)
+.. Asset Pricing
+.. Stochastic Calculus for Finance I & II
+.. Stochastic Calculus and Financial Applications \/ A Primer For The Mathematics Of Financial Engineering \/ Mathematical Techniques in Finance: Tools for Incomplete Markets
+.. Monte Carlo Methods in Financial Engineering
+. Investment (buy-side)
+.. PRML \/ MLAPP \/ ESL
+.. Numerical Optimization \/ Linear Optimization \/ Nonlinear Programming \/ Convex Optimization
+.. Time Series Analysis : Univariate and Multivariate Methods
+.. Robust Portfolio Optimization and Management
+. Practice
+.. C\/C\+\+, Java, Python
+.. {trading \/ kaggle \/ leetcode \/ mental} competitions
+. Interview
+.. A Practical Guide to Quantitative Finance Interviews
+.. Quant Job Interview Questions and Answers
+.. Heard on the Street
+.. 150 Most Frequently Asked Questions on Quant Interviews
+
+
 
 ~~~
 
