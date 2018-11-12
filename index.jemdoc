@@ -27,12 +27,7 @@ Some good readings for Sciences.
 {{
 <img src="index.files/PRML.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
 <img src="index.files/MLAPP.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="index.files/BDA3.png" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="index.files/DL.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="index.files/Casella.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="index.files/FrankJones.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
 <img src="index.files/Seber.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="index.files/ConvexBoyd.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
 <img src="index.files/LP.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
 <img src="index.files/NPBertsekas.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
 <img src="index.files/Nocedal.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
@@ -40,7 +35,6 @@ Some good readings for Sciences.
 <img src="index.files/Hull.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
 <img src="index.files/PWOQF.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
 <img src="index.files/CFA.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="index.files/SCFA.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
 <p style="clear: both;">
 }}
 
@@ -100,5 +94,5 @@ Some good interview books.
 
 [https://en.wikipedia.org/wiki/List_of_quantitative_analysts List of Quants]
 
-[Download/1.pdf]
+[Download/FRM.pdf], [Download/FRM_Mock.pdf]
 
