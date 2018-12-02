@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU_MAIN}{index.html}
 == Welcome to My Homepage
 
-I have insatiable thirst for knowledge. Parallel to my intellectual curiosities, I like piano, Chinese calligraphy, and foreign languages.
+I have insatiable thirst for knowledge. Parallel to my intellectual curiosities, I like piano, Chinese calligraphy, and languages.
 
 I can be reached at: xtan3.1415926 at gmail dot com
 \n\n
@@ -9,16 +9,19 @@ I can be reached at: xtan3.1415926 at gmail dot com
 
 ~~~
 {}{table}{TABLE}
-*Implementation*  | Software Engineering ||
-*Solution*  | Algorithm \/ Optimization \/\/ Stochastic Calculus \/ Monte Carlo ||
-*Model* | Machine Learning \/ Financial Math   ||
-*Problem*   | Economics \/ Finance ||
-| ||
-*World*   | Politics \/ Languages||
-*Told*   | History ||
-*God*   | Philosophy \/ Arts
+*Implementation*  | Software Engineering | [https://1drv.ms/u/s!AvUVegMBVpDwggDghH85JUXXn4j0 CS and Software Engineering] ||
+*Solution*  | Algorithms \/ Optimization | [https://1drv.ms/u/s!AvUVegMBVpDwhTFIy372gl8-2A2U Numerical Algorithms], [https://1drv.ms/u/s!AvUVegMBVpDwgX7OyM4NXSEhfReA Optimization Algorithms], [https://1drv.ms/u/s!AvUVegMBVpDwhS1SXrFVihXWiSee Data Structure Algorithms]||
+*Model* | Mathematics / Physics | [https://1drv.ms/u/s!AvUVegMBVpDwgW9OP_4oqT23_2gt Calculus and Analysis], [https://1drv.ms/u/s!AvUVegMBVpDwhRijwilJCGt0wdNH Linear Algebra and Abstract Algebra], [https://1drv.ms/u/s!AvUVegMBVpDwhTXmg6vuEL7OhEWZ Probability and Stochastic Calculus], [https://1drv.ms/u/s!AvUVegMBVpDwgXsOImBOFO5vjNzF Statistics and Machine Learning]   ||
+*Problem*   | Economics \/ Finance | [https://1drv.ms/u/s!AvUVegMBVpDwgWyvmYCW4-oC_qby Finance and Economics] ||
+| | ||
+*World*   | Politics \/ Languages | ||
+*Told*   | History | [https://1drv.ms/u/s!AvUVegMBVpDwgXhqlHw8U6iK03yX History] ||
+*God*   | Philosophy \/ Arts | [https://1drv.ms/u/s!AvUVegMBVpDwhSUPbDEFUxeemsQb Philosophy], [https://1drv.ms/u/s!AvUVegMBVpDwgXMNrJfJKLN4-HiB Music], [https://1drv.ms/u/s!AvUVegMBVpDwhSlJ0f5KLsyyNEQO Arts]
 ~~~
 \n\n
+
+
+
 
 ~~~
 Some good readings for Sciences.
@@ -93,6 +96,3 @@ Some good interview books.
 }}
 
 [https://en.wikipedia.org/wiki/List_of_quantitative_analysts List of Quants]
-
-[Download/FRM.pdf], [Download/FRM_mock.pdf], [Download/Asset.pdf]
-
