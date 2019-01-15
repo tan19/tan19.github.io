@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.2)  13 JAN 2019 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.2)  13 JAN 2019 23:10
 entering extended mode
-**./MachineLearning.tex
-(MachineLearning.tex
+**./Quantitative_Finance.tex
+(Quantitative_Finance.tex
 LaTeX2e <2018-04-01> patch level 5
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
@@ -435,6 +435,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip79
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
 Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 \col@sep=\dimen150
@@ -605,27 +608,33 @@ Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
 \c@currprofctr=\count181
 \c@endprofctr=\count182
 \c@prof=\count183
-) (MachineLearning.aux
+)
+\@indexfile=\write3
+\openout3 = `Quantitative_Finance.idx'.
+
+
+Writing index file Quantitative_Finance.idx
+(Quantitative_Finance.aux
 
 LaTeX Warning: Label `Nydick' multiply defined.
 
 )
-\openout1 = `MachineLearning.aux'.
+\openout1 = `Quantitative_Finance.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
  ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count184
@@ -656,7 +665,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring ON on input line 4.
+Package hyperref Info: Link coloring ON on input line 9.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -666,32 +675,32 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count190
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
 
-(MachineLearning.out) (MachineLearning.out)
-\@outlinefile=\write3
-\openout3 = `MachineLearning.out'.
+(Quantitative_Finance.out) (Quantitative_Finance.out)
+\@outlinefile=\write4
+\openout4 = `Quantitative_Finance.out'.
 
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 12.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 12.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 9.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 12.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+esint on input line 9.
+LaTeX Font Info:    Try loading font information for U+esint on input line 12.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\esint\uesint.fd"
 File: uesint.fd 
@@ -700,247 +709,187 @@ File: uesint.fd
 
 {C:/Users/tancy/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
-] (MachineLearning.toc
+] (Quantitative_Finance.toc
 [3] [4])
-\tf@toc=\write4
-\openout4 = `MachineLearning.toc'.
+\tf@toc=\write5
+\openout5 = `Quantitative_Finance.toc'.
 
  (../preface.tex [5] [6
 
 ]) [7] [8
 
-]
+] [9] [10]
 Chapter 1.
-[9] [10
+[11
+
+] [12
 
 ]
 Chapter 2.
 
-Overfull \hbox (5.99707pt too wide) in paragraph at lines 42--43
-[][][]$\OT1/cmtt/m/n/10 http : / / en . wikipedia . org / wiki / Timeline _ of 
-_ artificial _ intelligence$[][] 
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 29.
 
-[11] [12
 
-]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\chi' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 51.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 51.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+Overfull \vbox (104.86066pt too high) has occurred while \output is active []
+
+
+[14]
 Chapter 3.
-[13] [14
+[15
+
+] [16
 
 ]
 Chapter 4.
-[15] [16
-
-]
-Chapter 5.
 [17] [18
 
+] [19] [20]
+Chapter 5.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21
+
 ]
+Overfull \vbox (31.45798pt too high) has occurred while \output is active []
+
+
+[22]
 Chapter 6.
-[19] [20
+[23
+
+] [24
 
 ]
 Chapter 7.
-(Chapters/Graphical_Models.tex [21] [22
 
-]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
+Overfull \vbox (51.0274pt too high) has occurred while \output is active []
+
+
+[26] [27
+
+] [28]
 Chapter 8.
-) [23] [24
+[29
+
+] [30
 
 ]
-Chapter 9.
-[25] [26
-
-]
-Chapter 10.
-[27] [28
-
-]
-Chapter 11.
-Package hyperref Info: bookmark level for unknown deff defaults to 0 on input l
-ine 78.
-[29] [30
-
-]
-Chapter 12.
-[31] [32
-
-]
-Chapter 13.
-[33] [34
-
-]
-Chapter 14.
-[35] [36
-
-]
-Chapter 15.
-[37] [38
-
-]
-Chapter 16.
-[39] [40
-
-]
-Chapter 17.
-[41]
-Overfull \hbox (5.61061pt too wide) in paragraph at lines 136--137
-[]\OT1/cmr/m/n/10 The MCMC sam-pling strat-egy is to con-struct an ir-re-ducibl
-e, ape-ri-odic Markov
- []
-
-[42] [43] [44]
-Package hyperref Info: bookmark level for unknown rmk defaults to 0 on input li
-ne 235.
-
-Overfull \hbox (64.80568pt too wide) in paragraph at lines 247--248
-[]\OT1/cmr/m/n/10 A \OT1/cmr/m/it/10 Markov chain \OT1/cmr/m/n/10 is a col-lec-
-tion of ran-dom vari-ables $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 X[]; X[]; X[]; [
-] \OMS/cmsy/m/n/10 g$\OT1/cmr/m/n/10 ,
- []
-
-[45]
-Overfull \hbox (17.77364pt too wide) detected at line 282
-[]
- []
-
-
-Overfull \hbox (17.77364pt too wide) detected at line 286
-[]
- []
-
-Package hyperref Info: bookmark level for unknown thm defaults to 0 on input li
-ne 299.
-[46]
-Overfull \hbox (74.7993pt too wide) detected at line 328
-[]
- []
-
-
-Overfull \hbox (9.8773pt too wide) in paragraph at lines 340--341
-\OT1/cmr/m/n/10 di-tional dis-tri-bu-tion $\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 (\
-OML/cmm/m/it/10 X[]\OMS/cmsy/m/n/10 j\OT1/cmr/bx/n/10 X[]\OT1/cmr/m/n/10 )$ is 
-known, where $\OT1/cmr/bx/n/10 X[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 X[]; [] 
- ; X[]; X[]; X[]\OT1/cmr/m/n/10 )$.
- []
-
-[47] [48]
-Chapter 18.
-[49
-
-] [50] [51] [52
-
-]
-Appendix A.
-(Chapters/QA.tex [53] [54
-
-]
-Appendix B.
-Package hyperref Info: bookmark level for unknown ques defaults to 0 on input l
-ine 4.
-Package hyperref Info: bookmark level for unknown ans defaults to 0 on input li
-ne 5.
-[55] [56] [57]) [58]
-Appendix C.
-[59
-
-] [60
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 477--478
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 [][][]$\OT1/cmtt/m/n/10 http : / / normaldeviate . wordpress . com / 2012 / 11 
 / 17 /
  []
 
 
-Overfull \hbox (157.0515pt too wide) in paragraph at lines 478--479
+Overfull \hbox (157.0515pt too wide) in paragraph at lines 147--148
 [][][]$\OT1/cmtt/m/n/10 http : / / www . quora . com / What-[]is-[]the-[]differ
 ence-[]between-[]Bayesian-[]and-[]frequentist-[]statisticians$[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 [][][]$\OT1/cmtt/m/n/10 http : / / www . bayesian-[]inference . com / likelihoo
 d #
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 [][][]$\OT1/cmtt/m/n/10 http : / / www . quora . com / Statistics-[]academic-[]
 discipline /
  []
 
 
-Overfull \hbox (157.0515pt too wide) in paragraph at lines 485--486
+Overfull \hbox (157.0515pt too wide) in paragraph at lines 154--155
 [][][]$\OT1/cmtt/m/n/10 http : / / www . quora . com / What-[]is-[]the-[]differ
 ence-[]between-[]Bayesian-[]and-[]frequentist-[]statisticians$[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 [][][]$\OT1/cmtt/m/n/10 http : / / en . wikipedia . org / wiki / Confidence _ i
 nterval # Meaning _
  []
 
-[61]
-\tf@thm=\write5
-\openout5 = `MachineLearning.thm'.
-
- [62pdfTeX warning (ext4): destination with the same identifier (name{cite.Nydi
-ck}) has been already used, duplicate ignored
+[31] (Quantitative_Finance.ind [32pdfTeX warning (ext4): destination with the s
+ame identifier (name{cite.Nydick}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.497 \end{document}
-                    ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 497.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 497.
- (MachineLearning.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 497.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 497.
-Package rerunfilecheck Info: File `MachineLearning.out' has not changed.
-(rerunfilecheck)             Checksum: DC43E6B5795E3A912AC56BD9917F9969;4780.
+l.1 \begin{theindex}
+                    ] [33
+
+
+])
+\tf@thm=\write6
+\openout6 = `Quantitative_Finance.thm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+ (Quantitative_Finance.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package rerunfilecheck Info: File `Quantitative_Finance.out' has not changed.
+(rerunfilecheck)             Checksum: 02D05887858BC4A0F80BA53FCF604C6F;7167.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 497.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 83 ({)
-### bottom level 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+ ) 
 Here is how much of TeX's memory you used:
- 15280 strings out of 492973
- 257102 string characters out of 3135933
- 339805 words of memory out of 3000000
- 18632 multiletter control sequences out of 15000+200000
- 18402 words of font info for 75 fonts, out of 3000000 for 9000
+ 15176 strings out of 492973
+ 256210 string characters out of 3135933
+ 338645 words of memory out of 3000000
+ 18651 multiletter control sequences out of 15000+200000
+ 15332 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,40p,945b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cmextra/cmmib7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsl10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MachineLearning.pdf (62 pages, 435670 bytes).
+ 42i,6n,40p,950b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Quantitative_Finance.pdf (33 pages, 271192 bytes).
 PDF statistics:
- 928 PDF objects out of 1000 (max. 8388607)
- 268 named destinations out of 1000 (max. 500000)
- 553 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 785 words of extra memory for PDF output out of 10000 (max. 10000000)
 
