@@ -94,6 +94,18 @@
 \section{Volatility Models}
 \subsection{Implied Volatility Surface}
 \subsection{Local Volatility Model}
+\begin{align}
+	C(K, T; S_0) &= 
+\end{align}
+Differentiating this twice with respect to $K$ to obtain
+\begin{align}
+	\frac{\partial C^2}{\partial K^2} &= \frac{1}{\partial K^2} \left[\int_K^\infty \dd S_T \phi(S_T, T; S_0) S_T - K \int_K^\infty \dd S_T \phi(S_T, T; S_0) \right]\\
+	&= \frac{1}{\partial K} \left[K \phi(K, T; S_0) K - \int_K^\infty \dd S_T \phi(S_T, T; S_0) - K K \phi(K, T; S_0) \right]\\
+	&= - \frac{1}{\partial K} \left[ \int_K^\infty \dd S_T \phi(S_T, T; S_0)\right]\\
+	&= - K \phi(K, T; S_0) \\
+\end{align}
+
+
 \subsection{Stochastic Volatility Models}
 \section{Jump Models}
 
