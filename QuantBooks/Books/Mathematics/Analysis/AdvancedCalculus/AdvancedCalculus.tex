@@ -1,25 +1,89 @@
-\documentclass{book}
-\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
+\chapter{Advanced Calculus}
 
-\title{Advanced Calculus}
-\author{Xi Tan (tan19@purdue.edu)}
-\date{\today}
+\section{$\liminf$ and $\limsup$}
+\deff{
+	\begin{align}	
+		\liminf\limits_n A_n &= \cup_{n=1}^\infty \cap_{i=n}^\infty A_i = \{x ~|~ x \in A_i ~\text{eventually}\}\\
+		\limsup\limits_n A_n &= \cap_{n=1}^\infty \cup_{i=n}^\infty A_i = \{x ~|~ x \in A_i ~\text{for infinitely many}~ i\}
+	\end{align}
+}
 
-\begin{document}
-\maketitle
+The meaning of $\liminf$ can be seen by re-writing the above definition as: $x \in \liminf\limits_n A_n$ if $\exists n \in \NNN$, s.t. $\forall i \ge n$ and $i \in \NNN$, $x \in A_i$. Hence the elements in $\liminf\limits_n A_n$ are in all but (the first) finitely many sets, though the ``first finitely many sets'' may be different for different elements in $\liminf$. $\limsup$ can be best seen by examining its complement, according to the De Morgan's law.
 
-\tableofcontents
-\newpage
+\prop{
+	\begin{align}
+		(\limsup\limits_n A_n)^c &= \liminf\limits_n A_n^c\\
+		\liminf A_k &\subset \limsup A_k\\
+		\limsup(A_k \cup B_k) &= \limsup A_k \cup \limsup B_k\\
+		\liminf(A_k \cap B_k) &= \liminf A_k \cap \liminf B_k
+	\end{align}	
+}
 
-\input{Chapter1}
-\input{Chapter2}
-\input{Chapter3}
-\input{Chapter4}
-\input{Chapter5}
-\input{Chapter6}
-\input{Chapter7}
-\input{Chapter8}
-\input{Chapter9}
-\input{Excercises}
+\section{Lines in $\RRR^n$}
+\deff{
+	Given a vector $\p \in \RRR^n$ and a nonzero vector $\v \in \RRR^n$, the set of all points $\y \in \RRR^n$ such that
+	\begin{align}
+		\y = t\v + \p, ~~~ t \in \RRR
+	\end{align}
+	is called the \emph{line} through $\p$ in the direction of $\v$.
+}
 
-\end{document}
+\ex{
+	The shortest distance from a point $\q \in \RRR^n$ to a line $L$ with equation $\y = t\v + \p$ is
+	\begin{align}
+		\left\|(\q-\p) - \frac{(\q-\p)^T\v}{\|\v\|^2} \v \right\|
+	\end{align}
+}
+
+\section{Hyperplanes in $\RRR^n$}
+\deff{
+	Suppose $\n$ is a normal vector for a hyperplan $H$ through $\p \in \RRR^n$, then the normal equation for $H$ is
+	\begin{align}
+		\n^T(\y - \p) = 0
+	\end{align}
+	If $H$ is in $\RRR^3$, we can use cross-product $\times$ to obtain the normal vector given two vectors on the hyperplane.
+}
+
+\ex{
+	The shortest distance from a point $\q \in \RRR^n$ to a hyperplane $H$ with equation $\n^T(\y - \p) = 0$ is
+	\begin{align}
+		\left| \frac{\n^T(\q-\p)}{\|\n\|} \right|
+	\end{align}
+}
+
+A hyperplane is a set satisfies $H=\{x:w^Tx=b\}$. An equivalent form is $w^T(x-\frac{w}{\|w\|^2}b) = 0$, which suggests that the vector $w$ is perpendicular to the hyperplane, called a normal vector.
+
+Particularly, since $\frac{w^Tw}{\|w\|^2}b = b$, we know $x_0=\frac{w}{\|w\|}\frac{b}{\|w\|}$ is on the hyperplane. The $x_0$ is actually the projection of the origin, since $w$ is orthogonal to the hyperplane and it is nothing but a scaled $w$ on the hyperplane. Therefore, the shortest distance (along the direction of $w$) from the origin to the hyperplane is given by $\frac{b}{\|w\|}$ (could be negative, which means $w$ is on the other side of the hyperplane).
+
+In general, if a hyperplane is given by the equation $f(x) = w^Tx-b = 0$, the distance from any arbitrary vector $p$ to the hyperplane $w^Tx=b$ is given by
+\begin{align}
+	\frac{f(p)}{\|w\|} = \frac{w^Tp-b}{\|w\|}, ~~~ \mbox{if $p$ is on the opposite side of the origin}\\
+	-\frac{f(p)}{\|w\|} = -\frac{w^Tp-b}{\|w\|}, ~~~ \mbox{if $p$ is on the same side of the origin}
+\end{align}	
+
+Particularly, when $p=0$ (the origin), the above becomes $\frac{b}{\|w\|}$, which agrees with our previous result.
+
+Proof: Let's prove the first case. Suppose there is a vector $x$ on the hyperplane, such that $p-x = d\frac{w}{\|w\|}$. Since $w$ is orthogonal to the hyperplane, the scalar $d$ is the distance we are after. Now, multiply both sides by $w^T$,
+
+$w^Tp-w^Tx = dw^T\frac{w}{\|w\|}$
+
+$w^Tp-(w^Tx-b) = d\frac{w^Tw}{\|w\|}+b$
+
+$w^Tp = d\|w\| + b$
+
+$d = \frac{w^Tp-b}{\|w\|}$
+
+The proof for the other case is similar.
+
+$\blacksquare$
+
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter1}
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter2}
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter3}
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter4}
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter5}
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter6}
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter7}
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter8}
+\input{Mathematics/Analysis/AdvancedCalculus/Chapter9}
+\input{Mathematics/Analysis/AdvancedCalculus/Excercises}

@@ -1,19 +1,3 @@
-\documentclass{book}
-\input{../LaTeXMacros.tex}
-
-\title{Quantitative Finance}
-\author{Xi Tan (xtan3.1415926@gmail.com)}
-
-\makeindex
-
-\begin{document}
-
-\maketitle
-\tableofcontents
-\input{../preface}
-\addcontentsline{toc}{chapter}{Preface}
-
-\part{Background}
 \chapter{Economical Finance}
 \section{Capital Market Overview}
 \section{Trading and Exchanges}
@@ -41,6 +25,79 @@
 \section{Stochastic Differential Equations}
 \subsection{The Feynman--Kac Formula}
 \subsection{Kolmogorov Forward and Backward Equations}
+Start with the SDE defined by
+\begin{align}
+  \dd X_t & = \mu(X_t)\dd t + \sigma(X_t) \dd W_t.
+\end{align}
+The transition density $\rho(x,t|y,s)$ is defined by
+\begin{align}
+  \int_A \rho(x,t|y,s) \dd x & = \PPP[X_{t+s} \in A | X_s = y] = \PPP[X_t \in A | X_0 = y].
+\end{align}
+The density $\rho(x, t | y, s)$ is time-invariance since $\mu(X_t)$ and $\sigma(X_t)$ are assumed to be time invariance, and consequently, that $X_t$ is assumed to be stationary.
+
+Consider a differentiable function $V(X_t, t) = V(x, t)$ with $V(X_t, t) = 0$ for $t \notin (0,T)$. Then by It\^o's lemma
+\begin{align}
+  \dd V & = \left[\frac{\partial V}{\partial t} + \mu\frac{\partial V}{\partial x} + \frac{1}{2}\sigma^2 \frac{\partial^2 V}{\partial x^2}\right]\dd t + \left[\sigma \frac{\partial V}{\partial x}\right]\dd W_t
+\end{align}
+so that
+\begin{align}
+  V(X_T, T) - V(X_0, 0) & = \int_0^T \left[\frac{\partial V}{\partial t} + \mu\frac{\partial V}{\partial x} + \frac{1}{2}\sigma^2 \frac{\partial^2 V}{\partial x^2}\right]\dd t + \int_0^T \left[\sigma \frac{\partial V}{\partial x}\right]\dd W_t
+\end{align}
+where $\mu = \mu(X_t)$ and $\sigma = \sigma(X_t)$ for notational convenience. Take the conditional expectation of both sides of the above equation given $X_0$
+\begin{align}
+    \EEE[V(X_T, T) - V(X_0, 0)] & = \EEE\left[\int_0^T \left[\frac{\partial V}{\partial t} + \mu\frac{\partial V}{\partial x} + \frac{1}{2}\sigma^2 \frac{\partial^2 V}{\partial x^2}\right]\dd t\right]\nonumber \\
+    &= \int_\RRR \left\{\int_0^T \left[\frac{\partial V}{\partial t} + \mu\frac{\partial V}{\partial x} + \frac{1}{2}\sigma^2 \frac{\partial^2 V}{\partial x^2}\right]\dd t\right\}\rho(x,t|y,s) \dd x
+\end{align}
+We write this equation as the sum of three integrals:
+\begin{align}
+    I_1 &\equiv \int_\RRR \int_0^T \rho \frac{\partial V}{\partial t} \dd t \dd x \\
+    I_2 &\equiv \int_\RRR \int_0^T \rho \mu \frac{\partial V}{\partial x} \dd t \dd x \\
+    I_3 &\equiv \frac{1}{2}\int_\RRR \int_0^T \rho \sigma^2 \frac{\partial^2 V}{\partial x^2} \dd t \dd x
+\end{align}
+The objective of the derivation is to apply integration by parts to get rid of the derivatives of $V$.
+
+\subsubsection{Evaluation of the Integrals}
+The trick is that $I_1$ is evaluated using integration by parts on $t$, while $I_2$ and $I_3$ are each evaluated using integration by parts on $x$.
+
+\paragraph{Evaluation of $I_1$}
+\begin{align}
+  I_1 & = \int_\RRR \left[\int_0^T \rho \frac{\partial V}{\partial t} \dd t \right] \dd x = \int_\RRR \left[\rho V |_0^T -\int_0^T \frac{\partial \rho}{\partial t} V \dd t\right]\dd x  = -\int_\RRR \int_0^T \frac{\partial \rho}{\partial t} V \dd t \dd x
+\end{align}
+where we have used the fact that at boundaries $0$ and $T$, $V = 0$.
+
+\paragraph{Evaluation of $I_2$}
+\begin{align}
+  I_2 & = \int_0^T \left[\int_\RRR \rho \mu \frac{\partial V}{\partial x} \dd x \right] \dd t = \int_0^T\left[\rho\mu V|_\RRR - \int_\RRR V \frac{\partial(\rho\mu)}{\partial x} \dd x\right] \dd t = -\int_\RRR \int_0^T \frac{\partial (\rho \mu)}{\partial x} V \dd t \dd x
+\end{align}
+where again we have used the fact that $\rho(X_t = \pm \infty, t | X_0, 0) = 0$.
+
+\paragraph{Evaluation of $I_3$}
+\begin{align}
+  I_3 & = \frac{1}{2} \int_0^T \left[\int_\RRR \rho\sigma^2 \frac{\partial^2 V}{\partial x^2} \dd x\right] \dd t = \frac{1}{2}\int_0^T \left[\rho\sigma^2\frac{\partial V}{\partial x}\bigg\vert_\RRR - \int_\RRR \frac{\partial V}{\partial x} \frac{\partial (\rho \sigma^2)}{\partial x} \dd x\right] \dd t \nonumber\\
+  &= -\frac{1}{2}\int_0^T \left[\int_\RRR \frac{\partial V}{\partial x}\frac{\partial(\rho\sigma^2)}{\partial x} \dd x\right] \dd t = -\frac{1}{2}\int_0^T \left[\frac{\partial(\rho \sigma^2)}{\partial x}V \bigg\vert_\RRR - \int_\RRR \frac{\partial^2 (\rho\sigma^2)}{\partial x^2} V \dd x\right] \dd t \nonumber\\
+  &= \frac{1}{2}\int_\RRR\int_0^T \frac{\partial^2(\rho\sigma^2)}{\partial x^2}V \dd t \dd x
+\end{align}
+
+Since $\EEE[V(X_T,T) - V(X_0,0)] \equiv 0$, we have
+\begin{align}
+   \int_\RRR \int_0^T \frac{\partial \rho}{\partial t} V \dd t \dd x + \int_\RRR \int_0^T \frac{\partial (\rho \mu)}{\partial x} V \dd t \dd x = \frac{1}{2}\int_\RRR\int_0^T \frac{\partial^2(\rho\sigma^2)}{\partial x^2}V \dd t \dd x
+\end{align}
+and
+\begin{align}
+  \frac{\partial \rho}{\partial t} = - \frac{\partial(\rho \mu)}{\partial x} + \frac{1}{2} \frac{\partial^2(\rho \sigma^2)}{\partial x^2}
+\end{align}
+Suppose the dynamics of $X_t$ is instead specified by a geometric Brownian motion,
+\begin{align}
+  \dd X_t & \mu(X_t, t)X_t \dd t + \sigma(X_t, t)X_t \dd W_t
+\end{align}
+Then
+\begin{align}\label{Fokker--Planck Forward Equation}
+  \frac{\partial \rho}{\partial t} = - \frac{\partial(\rho \mu x)}{\partial x} + \frac{1}{2} \frac{\partial^2(\rho \sigma^2 x^2)}{\partial x^2}
+\end{align}
+This is the Fokker--Planck forward equation\index{Fokker--Planck forward equation} \cite{Rouah, Harrison05}.
+
+
+
 \subsection{Explicitly Solvable Stochastic Differential Equations}
 \subsection{Backward Induction (BI)}
 \subsection{Autonomous System}
@@ -76,8 +133,6 @@
 \subsection{Non-linear Optimization}
 \section{Software Engineering}
 
-
-\part{Pricing, Investment, and Risk Management}
 \chapter{Financial Modeling}
 \section{Overview of (Arbitrage) Pricing Strategies}
 \section{The Black--Scholes Model and Its Variants}
@@ -95,14 +150,18 @@
 \subsection{Implied Volatility Surface}
 \subsection{Local Volatility Model}
 \begin{align}
-	C(K, T; S_0) &= 
+	C(K, T; S_0) &= \int_K^\infty \phi(S_T, T; S_0) [S_T - K] \dd S_T
 \end{align}
 Differentiating this twice with respect to $K$ to obtain
 \begin{align}
-	\frac{\partial C^2}{\partial K^2} &= \frac{1}{\partial K^2} \left[\int_K^\infty \dd S_T \phi(S_T, T; S_0) S_T - K \int_K^\infty \dd S_T \phi(S_T, T; S_0) \right]\\
-	&= \frac{1}{\partial K} \left[K \phi(K, T; S_0) K - \int_K^\infty \dd S_T \phi(S_T, T; S_0) - K K \phi(K, T; S_0) \right]\\
-	&= - \frac{1}{\partial K} \left[ \int_K^\infty \dd S_T \phi(S_T, T; S_0)\right]\\
-	&= - K \phi(K, T; S_0) \\
+	\frac{\partial C^2}{\partial K^2} &= \frac{1}{\partial K^2} \left[\int_K^\infty \phi(S_T, T; S_0) S_T \dd S_T  - K \int_K^\infty \phi(S_T, T; S_0) \dd S_T \right] \nonumber \\
+	&= \frac{1}{\partial K} \left[- K \phi(K, T; S_0) - \int_K^\infty \phi(S_T, T; S_0) \dd S_T + K \phi(K, T; S_0) \right] \nonumber \\
+	&= - \frac{1}{\partial K} \left[ \int_K^\infty \phi(S_T, T; S_0) \dd S_T \right] \nonumber \\
+    &= \phi(K, T; S_0)
+\end{align}
+and differentiating this with respect to $T$ we obtain
+\begin{align}
+  \frac{\partial C}{\partial T} & = \int_{K}^{\infty} \left[\frac{\partial}{\partial T} \phi(S_T, T;S_0) \right] (S_T - K) \dd S_T \nonumber \\
 \end{align}
 
 
@@ -145,41 +204,3 @@ Differentiating this twice with respect to $K$ to obtain
 \subsection{Term Structure of Interest Rate}
 \subsection{Duration}
 \subsection{Convexity}
-
-\part{Miscellaneous}
-\chapter{Study Notes}
-
-
-
-
-\begin{thebibliography}{100} % 100 is a random guess of the total number of %references
-\bibitem{Stewart} James Stewart {\em{Calsulus - Early Transcendentals}}. Cengage Learning, 2012
-\bibitem{Rudin} Walter Rudin {\em{Principles of Mathematical Analysis}}. McGraw-Hill Companies, Inc., 1976.
-\bibitem{Royden} H. L. Royden {\em{Real Analysis}}. Pearson Eduction, Inc., 1988.
-\bibitem{Kreyszig} Erwin Kreyszig {\em{Introductory Functional Analysis with Applications}}. Wiley, 1989.
-\bibitem{Folland} Gerald B. Folland {\em{Real Analysis: Modern Techniques and Their Applications}}. Wiley, 1999.
-\bibitem{Torchinsky} Alberto Torchinsky {\em{Real Variables}}. Westview Press, 1995.
-
-\bibitem{Wasserman} {\url{http://normaldeviate.wordpress.com/2012/11/17/what-is-bayesianfrequentist-inference/}}
-\bibitem{Hochster} {\url{http://www.quora.com/What-is-the-difference-between-Bayesian-and-frequentist-statisticians}}
-\bibitem{bayesian-inference advantage} {\url{http://www.bayesian-inference.com/advantagesbayesian}}
-\bibitem{bayesian-inference likelihood} {\url{http://www.bayesian-inference.com/likelihood#likelihoodprinciple}}
-\bibitem{Rossi} Rossi P, Allenby G, McCulloch R. {\emph{Bayesian Statistics and Marketing (pp. 4)}}. John Wiley \& Sons, 2005.
-\bibitem{Efron 1978} Efron, Bradley. {\emph{Controversies in the Foundations of Statistics}}. The American Mathematical Monthly, Vol. 85, No. 4 (Apr., 1978), pp. 231-246.
-\bibitem{Efron 2013} Efron, Bradley. {\emph{A 250-year Argument: Belief, Behavior, and the Bootstrap}}. Bull. Amer. Math. Soc. 50 (2013), 129-146.
-\bibitem{quora CI} {\url{http://www.quora.com/Statistics-academic-discipline/What-is-a-confidence-interval-in-laymans-terms}}
-\bibitem{quora diff} {\url{http://www.quora.com/What-is-the-difference-between-Bayesian-and-frequentist-statisticians}}
-\bibitem{wiki} {\url{http://en.wikipedia.org/wiki/Confidence_interval#Meaning_and_interpretation}}
-
-\bibitem{Minka} Thomas P. Minka. {\em{Old and New Matrix Algebra Useful for Statistics}}. December 28, 2000.
-\bibitem{Wikepedia} \url{http://en.wikipedia.org/wiki/Matrix_calculus}. Accessed on \today
-\bibitem{Searle} S. R. Searle and H. V. Henderson. {\em{A Primer on Differential Calculus for Vectors and Matrices}}. BU-1047-MB, 1993.
-\bibitem{Nydick} Steven W. Nydick. {\em{A Different(ial) Way Matrix Derivatives Again}}. May 17, 2012.
-\bibitem{Nydick} Steven W. Nydick. {\em{With(out) A Trace Matrix Derivatives the Easy Way}}. May 16, 2012.
-\bibitem{Roweis} Sam Roweis. {\em{Matrix Identities}}. June 1999.
-\bibitem{Tao} Terry Tao. {\em{Matrix identities as derivatives of determinant identities}}. January 13, 2013
-\end{thebibliography}
-
-\printindex
-
-\end{document}

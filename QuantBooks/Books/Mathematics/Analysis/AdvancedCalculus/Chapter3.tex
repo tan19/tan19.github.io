@@ -1,10 +1,10 @@
-\chapter{Numerical Sequences and Series}
+\section{Numerical Sequences and Series}
 
 \section{Convergent Sequences}
 \subsection{Definitions}
-\begin{deff}
-	A sequence $\{p_n\}$ in a metric space $X$ is said to {\cem{converge}} \smallmarginpar{If $\{p_n\}$ does not converge, it is said to {\cem{diverge}}.} if there is a point $p \in X$ with the following property: For every $\epsilon > 0$ there is an integer $N$ such that $n \ge N$ implies that $d(p_n,p) < \epsilon$. (Here $d$ denotes the distance in X.)	
-\end{deff}
+%\begin{deff}
+%	A sequence $\{p_n\}$ in a metric space $X$ is said to {\cem{converge}} \smallmarginpar{If $\{p_n\}$ does not converge, it is said to {\cem{diverge}}.} if there is a point $p \in X$ with the following property: For every $\epsilon > 0$ there is an integer $N$ such that $n \ge N$ implies that $d(p_n,p) < \epsilon$. (Here $d$ denotes the distance in X.)	
+%\end{deff}
 
 \begin{deff}
 	The sequence $\{p_n\}$ is said to be {\cem{bounded}} if its range is bounded.
@@ -17,7 +17,7 @@
 		\item $\{p_n\}$ converges to $p \in X$ if and only if every neighborhood of $p$ contains $p_n$ for all but finitely many $n$.
 		\item If $p \in X, p' \in X$, and if $\{p_n\}$ converges to $p$ and to $p'$, then $p'=p$.
 		\item If $\{p_n\}$ converges, then $\{p_n\}$ is bounded.
-		\item If $E \subset X$ and if $p$ is a limit point \smallmarginpar{A point $p$ is a limit point of a set $E$ if and only if there is a sequence $\{p_n\}$ of {\underline{distinct points of $E$}} converging to $p$.} of $E$, then there is a sequence $\{p_n\}$ in $E$ such that $p = \lim_{n \to \infty} p_n$
+		\item If $E \subset X$ and if $p$ is a limit point %\smallmarginpar{A point $p$ is a limit point of a set $E$ if and only if there is a sequence $\{p_n\}$ of {\underline{distinct points of $E$}} converging to $p$.} of $E$, then there is a sequence $\{p_n\}$ in $E$ such that $p = \lim_{n \to \infty} p_n$
 	\end{enumerate}
 \end{thm}
 
@@ -75,7 +75,7 @@
 \end{deff}
 
 \begin{deff}
-	A metric space in which every Cauchy sequence converges is said to be {\cem{complete}}. 
+	A metric space in which every Cauchy sequence converges is said to be {\cem{complete}}.
 \end{deff}
 
 \begin{deff}
@@ -103,7 +103,7 @@
 		\item in $R^k$, every Cauchy sequence converges.
 	\end{enumerate}
 	The fact that a sequence converges in $R^k$ if and only it is a Cauchy sequence is usually called the {\cem{Cauchy criterion}} for convergence.\\
-	This thm says that {\cem{all compact metric spaces and all Euclidean spaces are complete}}. It implies also that {\cem{every closed subset of $E$ of a complete metric space $X$ is complete}}.  
+	This thm says that {\cem{all compact metric spaces and all Euclidean spaces are complete}}. It implies also that {\cem{every closed subset of $E$ of a complete metric space $X$ is complete}}.
 \end{thm}
 
 \begin{thm}
@@ -320,4 +320,4 @@
 }
 \thm{
 	If $\sum a_n$ is a series of complex numbers which converges absolutely, then every rearrangement of $\sum a_n$ converges, and they all converges to the same sum.
-}
+} 

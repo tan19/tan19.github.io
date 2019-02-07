@@ -1,41 +1,25 @@
-\documentclass{memoir}
-\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
-
-\title{Probability}
-\author{Xi Tan (tan19@purdue.edu)}
-\date{\today}
-
-\begin{document}
-\maketitle
-\tableofcontents
-
-\newpage
-\chapter*{Preface}
+\section{Probability Preface}
 This booklet is divided into 7 Chapters. The first chapter introduces the definitions of basic concepts, such as event, sample space, and probability space. Followed in the next chapter, we will discuss the relationship between two or more events when they interplay with each other. The third chapter formally brings in random variables and vectors, as a basis to develop their quantitative measure and characteristic functions later in chapter four. Chapter five includes some well-known limit theorems, which is useful for asymptotic analysis. The last two chapters will discuss several selected topics in probability theory, and provide a summary of common distributions.
 
-\newpage
-\part{Elementary Theory of Probability}
-\input{./Elementary_Theory_of_Probability/Combinatorial_Analysis.tex}
-\input{./Elementary_Theory_of_Probability/Conditional_Probability.tex}
-\input{./Elementary_Theory_of_Probability/Probaility_Space.tex}
-\input{./Elementary_Theory_of_Probability/Random_Variables.tex}
-\input{./Elementary_Theory_of_Probability/Useful_Distributions.tex}
-\input{./Elementary_Theory_of_Probability/Quantitative_Measure_and_Characteristic_Functions.tex}
-\input{./Elementary_Theory_of_Probability/Limit_Theorems.tex}
-\input{./Elementary_Theory_of_Probability/Selected_Topics_of_Probability.tex}
+\section{Elementary Theory of Probability}
+\input{Statistics/Probability/Elementary_Theory_of_Probability/Combinatorial_Analysis.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Probability/Conditional_Probability.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Probability/Probaility_Space.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Probability/Random_Variables.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Probability/Useful_Distributions.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Probability/Quantitative_Measure_and_Characteristic_Functions.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Probability/Limit_Theorems.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Probability/Selected_Topics_of_Probability.tex}
 
 
-\newpage
-\part{Elementary Theory of Stochastic Processes}
-\input{./Elementary_Theory_of_Stochastic_Processes/Introduction.tex}
-\input{./Elementary_Theory_of_Stochastic_Processes/Markov_Chains.tex}
-\input{./Elementary_Theory_of_Stochastic_Processes/Poisson_Processes.tex}
-\input{./Elementary_Theory_of_Stochastic_Processes/Renewal_Theory.tex}   
-\input{./Elementary_Theory_of_Stochastic_Processes/Selected_Topics_of_Stochastic_Processes.tex}
+\section{Elementary Theory of Stochastic Processes}
+\input{Statistics/Probability/Elementary_Theory_of_Stochastic_Processes/Introduction.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Stochastic_Processes/Markov_Chains.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Stochastic_Processes/Poisson_Processes.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Stochastic_Processes/Renewal_Theory.tex}
+\input{Statistics/Probability/Elementary_Theory_of_Stochastic_Processes/Selected_Topics_of_Stochastic_Processes.tex}
 
-\newpage
-\part{Measure-theoretical Probability}
-\chapter{Introduction}
+\section{Measure-theoretical Probability}
 \section{Why Do We Need Rigorous Probability Theory?}
 Let's recall the axioms from non-measure probability courses. We have a \emph{sample space} $\Omega$, the elements of which $w \in \Omega$ called \emph{outcomes}, and the subsets $E \subset \Omega$ called \emph{events}. \emph{Probability measure} is nothing but assigning probability $P(E)$ to each event $E \subset \Omega$, under the following constraints:
 \begin{enumerate}
@@ -132,7 +116,7 @@ Note, 1) $\Omega \in \FF, \emptyset \in \FF$ since $\Omega = A \cup A^c if A \in
 	Let $\AA \subset 2^\Omega$, then $\sigma(\AA)$ is the smallest $\sigma$-field containing $\AA$. If $\OO \subset \R$ is the collection of all open subsets of $\R$, then $\sigma(\OO) = \BB$ is called the \emph{Borel $\sigma$-field}.
 }
 
-\chapter{Lecture 5 (1/21/2015 Wednesday): }
+\section{Lecture 5 (1/21/2015 Wednesday): }
 (Today and Friday) in Appendix A.
 \deff{
 	A non-empty collection of subsets $\AA \subset 2^\Omega$ is called an algebra if
@@ -166,7 +150,7 @@ Note: Meausre on algebras also satisfy Themorem 1.1.1
 \end{enumerate}
 
 
-\chapter{Probability Space and Measure}
+\section{Probability Space and Measure}
 
 \section{Algebra of Sets}
 
@@ -209,7 +193,7 @@ The third ``strongest'' operation is the union, which can not be implied from di
 
 The ``weakest'' operation is the intersection, which can be implied from the difference.
 
-To summarize, the ``strongest'' pair would be the complement plus any one more, which implies everything else; the second ``strongest'' would be the difference plus the union, which implies the intersection but not the complement ($\Omega$ may not be in the collection). \smallmarginpar{\textdbend}
+%To summarize, the ``strongest'' pair would be the complement plus any one more, which implies everything else; the second ``strongest'' would be the difference plus the union, which implies the intersection but not the complement ($\Omega$ may not be in the collection). \smallmarginpar{\textdbend}
 
 \subsubsection{Class of Set Collection}
 \begin{deff}
@@ -246,9 +230,9 @@ So a field is closed under all {\em{finite}} combination of set operations.
 
 $\not \exists$
 
-\chapter{Integration Theory}
-\chapter{Random Variables}
-\chapter{Law of Large Numbers}
+\section{Integration Theory}
+\section{Random Variables}
+\section{Law of Large Numbers}
 \section{Types of Convergence}
 \subsubsection{Convergence in Distribution}
 \subsubsection{Convergence in Probability}
@@ -258,9 +242,9 @@ $\not \exists$
 \section{Weak Law of Large Numbers (WLLN)}
 \section{Strong Law of Large Numbers (SLLN)}
 
-\chapter{Central Limit theorem}
+\section{Central Limit theorem}
 
-\chapter{Some Tricks}
+\section{Some Tricks}
 \section{Prove by Contraposition}
 
 \section{Construct Finer Partition}
@@ -279,18 +263,15 @@ In a similar spirit, if one needs to show that a quantity $X$ vanishes, try show
 
 If one wants to show that a sequence $x_n$ of real numbers converges to zero, try showing that $\limsup_{n \to \infty} |x_n| \le \epsilon, \forall \epsilon > 0$
 
-{\textbf{One caveat:}} for finite $x$, and any $\epsilon > 0$, it is true that $x + \epsilon > x$ and $x - \epsilon < x$, but it is not true when $x$ is equal to $+\infty$ or $-\infty$. \smallmarginpar{\textdbend}
+%{\textbf{One caveat:}} for finite $x$, and any $\epsilon > 0$, it is true that $x + \epsilon > x$ and $x - \epsilon < x$, but it is not true when $x$ is equal to $+\infty$ or $-\infty$. \smallmarginpar{\textdbend}
 
 
 \section{Interpretations of Probability}
 \subsection{Cox's theorem}
 \subsection{Principle of Maximum Entropy}
 
-\part{Measure-theoretical Stochastic Processes}
+\section{Measure-theoretical Stochastic Processes}
 
-\part{Appendix}
-
-\end{document} 
 
 
 

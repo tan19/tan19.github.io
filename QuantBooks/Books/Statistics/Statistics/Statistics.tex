@@ -1,16 +1,4 @@
-\documentclass{memoir}
-\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
-
-\title{Statistics}
-\author{Xi Tan (tan19@purdue.edu)}
-\date{\today}
-
-\begin{document}
-\maketitle
-\tableofcontents
-
-\newpage
-\chapter*{Preface}
+\section{Statistics Preface}
 This booklet is divided into 7 Chapters. The first chapter introduces the definitions of basic concepts, such as event, sample space, and probability space. Followed in the next chapter, we will discuss the relationship between two or more events when they interplay with each other. The third chapter formally brings in random variables and vectors, as a basis to develop their quantitative measure and characteristic functions later in chapter four. Chapter five includes some well-known limit theorems, which is useful for asymptotic analysis. The last two chapters will discuss several selected topics in probability theory, and provide a summary of common distributions.
 
 Six types of statistical analysis:
@@ -40,9 +28,7 @@ Main References:
 	\item Generalized Linear Models, by P. McCullagh, John A. Nelder
 \end{enumerate}
 
-\newpage
-\part{Statistical Models}
-\chapter{Collecting Data: Experiments and Surveys}
+\section{Collecting Data: Experiments and Surveys}
 \section{Design of Experiments}
 \section{Statistical Survey}
 \section{Opinion Poll}
@@ -52,20 +38,20 @@ Main References:
 \subsection{Sampling: Stratified Sampling, Quota Sampling}
 \subsection{Biased Sample: Spectrum Bias, Survivorship Bias}
 
-\chapter{Describing Data}
+\section{Describing Data}
 \section{Average: Mean, Median, and Mode}
 \section{Measures of Scale: Variance, Standard Deviation, Geometric Standard Deviation, and Median Absolute Deviation}
 \section{Correlation and Dependence}
 \section{Outlier}
 \section{Statistical Graphics: Histogram, Frequency Distribution, Quantile, Survival Function, and Failure Rate}
 
-\chapter{Filtering Data}
+\section{Filtering Data}
 \section{Recursive Bayesian Estimation}
 \subsection{Kalman Filter}
 \subsection{Particle Filter}
 \section{Moving Average}
 
-\chapter{Linear Regression Models}
+\section{Linear Regression Models}
 \section{Introduction}
 Generalized linear models include as special cases,  linear regression and analysis-of-variance models, logit and probit models for quantal responses, log linear models and multinomial response models for counts and some commonly used models for survival data.
 
@@ -217,7 +203,7 @@ SSR can also be computed as $SSR = b_1^2 \sum_{i=1}^n (X_i - \bar X)$, so given 
 
 To test $H_0: \beta_1 = 0$, we use $F = \frac{SSR}{SSE}$. There is equivalence between an $F$ test and a $t$ test: $[t(1-\alpha/2,n-2)]^2 = F(1-\alpha,n-2)$.
 
-\chapter{Generalized Linear Regression Models}
+\section{Generalized Linear Regression Models}
 \section{Survival Analysis}
 \begin{align}
 	S(t) &= \exp \left[-\int_0^t \lambda(u) du \right] \\
@@ -247,9 +233,9 @@ $\lambda$& $\frac{\sum \delta_i}{\sum (X_i-V_i)}$ & $\frac{\hat \lambda}{\sqrt{\
 \caption{Survival Analysis}
 \end{table}
 
-\chapter{Analysis of Variance (ANOVA)}
+\section{Analysis of Variance (ANOVA)}
 
-\chapter{Multivariate Analysis}
+\section{Multivariate Analysis}
 \section{Principal Component Analysis (PCA)}
 ALgebraically, principal components are particular linear combinations of the $p$ random variables $X_1, \cdots, X_p$. Geometrically, these linear combinations represent the selection of a new coordinate system obtained by rotating the original system with $X_1, \cdots, X_p$ as the coordinate axes.
 
@@ -262,7 +248,7 @@ ALgebraically, principal components are particular linear combinations of the $p
 \section{Canonical Correlation Analysis (CCA)}
 \section{Multidimensional Scaling (MDS)}
 
-\chapter{Modeling Sample Data}
+\section{Modeling Sample Data}
 \section{Density Estimation}
 \subsection{Kernel Density Estimation}
 \subsection{Multivariate Kernel Density Estimation}
@@ -270,7 +256,7 @@ ALgebraically, principal components are particular linear combinations of the $p
 \section{Robust Statistics}
 
 
-\chapter{Modeling Population Data: Statistical Inference}
+\section{Modeling Population Data: Statistical Inference}
 \section{Bayesian Inference}
 \subsection{Bayes' theorem, Bayes Estimator, Prior Distribution, Posterior Distribution, Conjugate Prior, and All That}
 
@@ -280,7 +266,7 @@ ALgebraically, principal components are particular linear combinations of the $p
 \section{Non-parametric Statistics}
 \subsection{Nonparametric Regression, Kernel Methods}
 
-\chapter{Making Decisions: Decision Theory}
+\section{Making Decisions: Decision Theory}
 \section{Optimal Decision, Type I and Type II errors}
 \section{Correlation and Causation}
 When a statistical test shows a correlation between A and B, there are usually five possibilities:
@@ -292,7 +278,7 @@ When a statistical test shows a correlation between A and B, there are usually f
 \item The observed correlation was due purely to chance.
 \end{enumerate}
 
-\chapter{Theory of Linear Models}
+\section{Theory of Linear Models}
 \section{Linear Models, Estimable Functions, Least Squares Estimates=LSE, Normal Equations, Projections, Gauss Markov theorem, BLUE}
 \section{Multivariate Normal Distribution and Distribution of Linear and Quadratic Forms}
 \section{Properties of LSE and Generalized LSE}
@@ -304,8 +290,7 @@ When a statistical test shows a correlation between A and B, there are usually f
 \section{Introduction to Design of Experiments, ANOVA and ANOCOVA, Factorial and Block Designs, Random, Fixed and Mixed Models, Components of Variance}
 \section{Hierarchial Bayes Analysis of Variance; (Schervish Ch. 8, 8.1,8.2) Partial Exchangeability and Hierarchical, Models, Examples and Representations, Normal One Way ANOVA and Two Way Mixed Model ANOVA}
 
-\part{Mathematical Statistics}
-\chapter{Introduction}
+\section{Mathematical Statistics}
 \section{Degrees of Freedom}
 \section{sufficient, complete, and etc.}
 \section{Likelihood Function}
@@ -317,7 +302,7 @@ When a statistical test shows a correlation between A and B, there are usually f
 \end{align}
 \section{Cramer-Rao Theorem}
 
-\chapter{Data, Models, Statistics, Parameters}
+\section{Data, Models, Statistics, Parameters}
 \section{Distributions of Functions of a Random Variable}
 \begin{thm}
 	From Casella \& Berger theorem 2.1.5) Let $X$ have pdf $f_X(x)$ and let $Y=g(X)$, where $g$ is a monotone function. Suppose that $f_X(x)$ is continuous and that $g^{-1}(y)$ has a continuous derivative. Then the pdf of $Y$ is given by
@@ -326,28 +311,24 @@ When a statistical test shows a correlation between A and B, there are usually f
 	\end{align}
 \end{thm}
 
-\chapter{Decision Theory (Bayes and Minimax Criteria, Risk Functions, Estimation and Testing in Terms of the Decision Theoretic Framework}
-\chapter{Bayesian Models, Conjugate (and Other) Prior Distributions}
-\chapter{Prediction (Optimal MSPE and Optimal Linear MSPE)}
-\chapter{Sufficiency (Factorization theorem)}
-\chapter{Natural Sufficient Statistics}
-\chapter{Minimal Sufficiency}
-\chapter{Estimation (Least Squares, MLE, Frequency Plug-in, Method of Moments, Combinations of These)}
-\chapter{Exponential Families \& Properties, Canonical Exponential Families (\& Fisher Information)}
-\chapter{Information Inequality, Fisher Information, UMVU Estimates, Cramer-Rao Lower Bound}
-\chapter{Neyman-Pearson Testing Theory (Form, MP Test, UMP Test, MLR Family, Likelihood Ratio Tests)}
-\chapter{Asymptotic Approximation / Large Sample Theory (Consistency, Delta Method, Asymptotic Normality of MLE, Slutsky's theorem, Efficiency, Pearson's Chi-Square)}
+\section{Decision Theory (Bayes and Minimax Criteria, Risk Functions, Estimation and Testing in Terms of the Decision Theoretic Framework}
+\section{Bayesian Models, Conjugate (and Other) Prior Distributions}
+\section{Prediction (Optimal MSPE and Optimal Linear MSPE)}
+\section{Sufficiency (Factorization theorem)}
+\section{Natural Sufficient Statistics}
+\section{Minimal Sufficiency}
+\section{Estimation (Least Squares, MLE, Frequency Plug-in, Method of Moments, Combinations of These)}
+\section{Exponential Families \& Properties, Canonical Exponential Families (\& Fisher Information)}
+\section{Information Inequality, Fisher Information, UMVU Estimates, Cramer-Rao Lower Bound}
+\section{Neyman-Pearson Testing Theory (Form, MP Test, UMP Test, MLR Family, Likelihood Ratio Tests)}
+\section{Asymptotic Approximation / Large Sample Theory (Consistency, Delta Method, Asymptotic Normality of MLE, Slutsky's theorem, Efficiency, Pearson's Chi-Square)}
 
-\chapter{Selected Topics}
+\section{Selected Topics}
 \section{M-estimator}
 \section{Sweep Operator}
 \section{Information Geometry}
 \section{Boostrap}
 
-\part{Appendix}
-
-
-\end{document} 
 
 
 

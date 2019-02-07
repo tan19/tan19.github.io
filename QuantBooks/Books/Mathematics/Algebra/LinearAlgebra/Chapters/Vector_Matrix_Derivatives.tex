@@ -1,6 +1,4 @@
-%!TEX root = ../LinearAlgebra.tex
-
-\chapter{Vector and Matrix Derivatives}
+\section{Vector and Matrix Derivatives}
 Suppose $\Y_{m \times n}$ and $\X_{p \times q}$ are both matrices (scalars, vectors are of course special cases). The derivative of $\Y$ with respect to $\X$ involves $mnpq$ partial derivatives, $\left[\frac{\partial Y_{ij}}{\partial X_{kl}}\right]$, for $i = 1, \cdots, m; j = 1, \cdots, n; k = 1, \cdots, p; l = 1, \cdots, q$. This immediately poses a question: What is a convenient (or logic) way of arraying these partial derivatives - as a row vector, as a column vector, or as a matrix (which is a natural choice), and if the latter of what shape/order?
 
 Two competing notational conventions can be distinguished by whether the index of the derivative (matrix) is majored by the numerator or the denominator.
@@ -145,4 +143,4 @@ A useful example is the trace of $\A$, which is the sum of the diagonal elements
 Another example is the inner product of two vectors, where we have \footnote{Actually, it should work for all dot product (not necessarily the inner product, which is in the context of Euclidean spaces.)}
 \begin{align}
 	(\a^T\b)' = \a'^T\b + \a^T\b'
-\end{align}
+\end{align} 

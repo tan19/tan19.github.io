@@ -1,17 +1,4 @@
-\documentclass{memoir}
-\input{../LaTeXMacros.tex}
-
-\title{Optimization Notes}
-\author{Xi Tan (tan19@purdue.edu)}
-\date{\today}
-
-\makeindex
-
-\begin{document}
-\maketitle
-\tableofcontents
-
-\chapter{Introduction}
+\chapter{Optimization Introduction}
 {\em{Quadratic optimization problems}} (including, e.g., least-squares) form the base of the hierarchy; they can be solved exactly by solving a set of linear equations. {\em{Newton's method}} is the next level in the hierarchy. In Newton's method, solving an unconstrained or equality constrained problem is reduced to solving a sequence of quadratic problems. {\em{The interior-point methods}}, which form the top level of the hierarchy, solve an inequality constrained problem by solving a sequence of unconstrained, or equality constrained, problems. Besides Newton's method, there are quasi-Newton, conjugate-gradient, bundle, cutting-plane algorithms, and etc.
 
 Optimization problems can be broadly divided into two types: linear optimization and nonlinear optimization,  the later of which consists of unconstrained and constrained optimization problems. Obtaining necessary and sufficient conditions is one of the central problems of nonlinear optimization. The main theory is the study of Lagrange multipliers, including the Karush-Kuhn-Tucker (KKT) theorem and its extensions. However, the theory of Lagrange multipliers is far from adequate, since it does not take into account the difficulties associated with solving the equations resulting from the necessary conditions.
@@ -76,7 +63,7 @@ which gives us
 Recall that the Newton's method requires the function's derivative, which is always available. The secant method approximates the derivative with difference. It works as follows:
 \begin{itemize}
   \item Start with two approximations $x_0$ and $x_1$.
-  \item Compute the $(k+1)$th approximation with 
+  \item Compute the $(k+1)$th approximation with
   \begin{align}
     x_{k+1} & \equiv x_k - f(x_k)/\frac{f(x_k) - f(x_{k-1})}{x_k - x_{k-1}}
   \end{align}
@@ -88,9 +75,6 @@ Recall that the Newton's method requires the function's derivative, which is alw
 
 \chapter{Convex Optimization}
 
-\printindex
-
-\end{document}
 
 
 

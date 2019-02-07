@@ -1,10 +1,10 @@
-\chapter{Continuity}
+\section{Continuity}
 
 \section{Limits of Functions}
 \subsection{Definitions}
-\begin{deff}\label{def:function limit}
-Let $X$ and $Y$ be metric spaces; suppose $E \subset X$, $f$ maps $E$ into $Y$, and $p$ is a limit point of $E$. \smallmarginpar{The deff does not say anything about $f(p)$.} We write $f(x) \to q$ as $x \to p$, or $$\lim_{x \to p} f(x) = q$$ if there is a point $q \in Y$ with the following property: For every $\epsilon > 0$ there exists a $\delta > 0$ such that $$d_Y(f(x),q) < \epsilon$$ for all points $x \in E$ for which $$0 < d_X(x,p) < \delta.$$
-\end{deff}
+%\begin{deff}\label{def:function limit}
+%Let $X$ and $Y$ be metric spaces; suppose $E \subset X$, $f$ maps $E$ into $Y$, and $p$ is a limit point of $E$. \smallmarginpar{The deff does not say anything about $f(p)$.} We write $f(x) \to q$ as $x \to p$, or $$\lim_{x \to p} f(x) = q$$ if there is a point $q \in Y$ with the following property: For every $\epsilon > 0$ there exists a $\delta > 0$ such that $$d_Y(f(x),q) < \epsilon$$ for all points $x \in E$ for which $$0 < d_X(x,p) < \delta.$$
+%\end{deff}
 
 \subsection{Theorems}
 \begin{thm}
@@ -31,9 +31,9 @@ Let $X$ and $Y$ be metric spaces; suppose $E \subset X$, $f$ maps $E$ into $Y$, 
 \end{deff}
 
 \subsection{Theorems}
-\begin{thm}
-	In the situation given in Definition~\ref{def:function continuous}, assume also that {\underline{$p$ is a limit point}} \smallmarginpar{If $p$ is an {\underline{isolated point}} of $E$, then every function $f$ which has $E$ as its domain of defintion is continuous at $p$.} of $E$. Then $f$ is continuous at $p$ if and only if $\lim_{x \to p} f(x) = f(p).$
-\end{thm}
+%\begin{thm}
+%	In the situation given in Definition~\ref{def:function continuous}, assume also that {\underline{$p$ is a limit point}} \smallmarginpar{If $p$ is an {\underline{isolated point}} of $E$, then every function $f$ which has $E$ as its domain of defintion is continuous at $p$.} of $E$. Then $f$ is continuous at $p$ if and only if $\lim_{x \to p} f(x) = f(p).$
+%\end{thm}
 
 \begin{thm}
 	Suppose $X, Y, Z$ are metric spaces, $E \subset X$, $f$ maps $E$ into $Y$, $g$ maps the range of $f$, $f(E)$, into $Z$, and $h$ is the mapping of $E$ into $Z$ defined by $$h(x) = g(f(x)) ~ ~ (x \in E).$$ If $f$ is continuous at a point $p \in E$ and if $g$ is continuous at the point $f(p)$, then $h$ is continuous at $p$.
@@ -79,9 +79,9 @@ Let $X$ and $Y$ be metric spaces; suppose $E \subset X$, $f$ maps $E$ into $Y$, 
 	If $\f$ is a continuous mapping of a compact metric space $X$ into $R^k$, then $\f(X)$ is closed and bounded. Thus, $\f$ is bounded.
 }
 
-\thm{
-	Suppose $f$ is a continuous real function on a compact metric space $X$, and $$M = \sup_{p \in X} f(p), ~ ~ m = \inf_{p \in X}f(p).$$ Then there exist points $p, q \in X$ such that $f(p) = M$ and $f(q) = m$. \smallmarginpar{This is to say, $f$ attains its maximum (at $p$) and its minimum (at $q$).}
-}
+%\thm{
+%	Suppose $f$ is a continuous real function on a compact metric space $X$, and $$M = \sup_{p \in X} f(p), ~ ~ m = \inf_{p \in X}f(p).$$ Then there exist points $p, q \in X$ such that $f(p) = M$ and $f(q) = m$. \smallmarginpar{This is to say, $f$ attains its maximum (at $p$) and its minimum (at $q$).}
+%}
 
 \thm{
 	Suppose $f$ is a continuous 1-1 mapping of a compact metric space $X$ {\underline{onto}} a metric space $Y$. Then the inverse mapping $f^{-1}$ defined on $Y$ by $$f^{-1}(f(x)) = x ~ ~ (x \in X)$$ is a continuous mapping of $Y$ {\underline{onto}} $X$.
@@ -95,7 +95,7 @@ Let $X$ and $Y$ be metric spaces; suppose $E \subset X$, $f$ maps $E$ into $Y$, 
 	Let $E$ be a noncompact set in $R^1$. Then
 	\begin{enumerate}[(a)]
 		\item there exists a continuous function on $E$ which is not bounded;
-		\item there exists a continuous and bounded function on $E$ which has no maximum. If, in addition, $E$ is bounded, then 
+		\item there exists a continuous and bounded function on $E$ which has no maximum. If, in addition, $E$ is bounded, then
 		\item there exists a continuous function on $E$ which is not uniformly continuous.
 	\end{enumerate}
 }
@@ -113,12 +113,12 @@ Let $X$ and $Y$ be metric spaces; suppose $E \subset X$, $f$ maps $E$ into $Y$, 
 \section{Discontinuities}
 \subsection{Definitions}
 \deff{
-	Let $f$ be defined on $(a,b)$. Consider any point $x$ such that $a \le x < b$. We write $$f(x+) = q$$ if $f(t_n) \to q$ as $n \to \infty$, for all sequences $\{t_n\}$ in $(x,b)$ such that $t_n \to x$. To obtain the deff of $f(x-)$, for $a < x \le b$, we restrict ourselves to sequences $\{t_n\}$ in $(a,x)$. It is clear that any point $x$ of $(a,b)$, $\lim_{t \to x} f(t)$ exists if and only if $$f(x+) = f(x-) = \lim_{t \to x} f(t).$$ 
+	Let $f$ be defined on $(a,b)$. Consider any point $x$ such that $a \le x < b$. We write $$f(x+) = q$$ if $f(t_n) \to q$ as $n \to \infty$, for all sequences $\{t_n\}$ in $(x,b)$ such that $t_n \to x$. To obtain the deff of $f(x-)$, for $a < x \le b$, we restrict ourselves to sequences $\{t_n\}$ in $(a,x)$. It is clear that any point $x$ of $(a,b)$, $\lim_{t \to x} f(t)$ exists if and only if $$f(x+) = f(x-) = \lim_{t \to x} f(t).$$
 }
 
-\deff{
-	Let $f$ be defined on $(a,b)$. If $f$ is discontinuous at a point $x$, and if $f(x+)$ and $f(x-)$ exist, then $f$ is said to have a discontinuity of the {\cem{first kind}}, or a {\cem{simple discontinuity}} at $x$. \smallmarginpar{There are two ways in which a function can have a simple discontinuity: either $f(x+) \ne f(x-)$, in which case the value $f(x)$ is immaterial, or $f(x+) = f(x-) \ne f(x)$.} Otherwise the discontinuity is said to be of the {\cem{second kind}}.
-}
+%\deff{
+%	Let $f$ be defined on $(a,b)$. If $f$ is discontinuous at a point $x$, and if $f(x+)$ and $f(x-)$ exist, then $f$ is said to have a discontinuity of the {\cem{first kind}}, or a {\cem{simple discontinuity}} at $x$. \smallmarginpar{There are two ways in which a function can have a simple discontinuity: either $f(x+) \ne f(x-)$, in which case the value $f(x)$ is immaterial, or $f(x+) = f(x-) \ne f(x)$.} Otherwise the discontinuity is said to be of the {\cem{second kind}}.
+%}
 
 \section{Monotonic Functions}
 \subsection{Definitions}
@@ -131,9 +131,9 @@ Let $X$ and $Y$ be metric spaces; suppose $E \subset X$, $f$ maps $E$ into $Y$, 
 	Let $f$ be monotonically increasing on $(a,b)$. Then $f(x+)$ and $f(x-)$ exist at every point of $x$ of $(a,b)$. More precisely, $$\sup_{a<t<x}f(t) = f(x-) \le f(x) \le f(x+) = \inf_{x<t<b}f(t).$$ Furthermore, if $a<x<y<b$, then $$f(x+) \le f(y-).$$ Analogous results evidently hod for monotonically decreasing functions.
 }
 
-\cor{
-	Monotonic functions have no discontinuities of the second kind. \smallmarginpar{Compare with Corollary~\ref{cor: derivative functions do not have discontinuities of the first kind.}}
-}\label{cor: monotone functions do not have discontinuities of the second kind.}
+%\cor{
+%	Monotonic functions have no discontinuities of the second kind. \smallmarginpar{Compare with Corollary~\ref{cor: derivative functions do not have discontinuities of the first kind.}}
+%}\label{cor: monotone functions do not have discontinuities of the second kind.}
 
 \thm{
 	Let $f$ be monotonic on $(a,b)$. Then the set of points of $(a,b)$ at which $f$ is discontinuous is at most countable.
@@ -159,4 +159,4 @@ Let $X$ and $Y$ be metric spaces; suppose $E \subset X$, $f$ maps $E$ into $Y$, 
 		\item $(f/g)(t) \to A/B,$
 	\end{enumerate}
 	provided the right member of (b), (c), and (d) are defined.
-}
+} 

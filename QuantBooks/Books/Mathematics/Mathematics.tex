@@ -1,35 +1,10 @@
-\documentclass{memoir}
-\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
+\input{Mathematics/Analysis/Calculus/Calculus}
+\input{Mathematics/Analysis/AdvancedCalculus/AdvancedCalculus}
+\input{Mathematics/Analysis/RealAnalysis/RealAnalysis}
 
-\title{Mathematics Notes}
-\author{Xi Tan (tan19@purdue.edu)}
-\date{\today}
+\input{Mathematics/Algebra/LinearAlgebra/LinearAlgebra}
+\input{Mathematics/Algebra/Abstract_Algebra/Abstract_Algebra}
 
-\begin{document}
-\maketitle
-\tableofcontents
-
-\chapter{Introduction to $\RRR^n$}
-\section{$\liminf$ and $\limsup$}
-\deff{
-	\begin{align}	
-		\liminf\limits_n A_n &= \cup_{n=1}^\infty \cap_{i=n}^\infty A_i = \{x ~|~ x \in A_i ~\text{eventually}\}\\
-		\limsup\limits_n A_n &= \cap_{n=1}^\infty \cup_{i=n}^\infty A_i = \{x ~|~ x \in A_i ~\text{for infinitely many}~ i\}
-	\end{align}
-}
-
-The meaning of $\liminf$ can be seen by re-writing the above definition as: $x \in \liminf\limits_n A_n$ if $\exists n \in \NNN$, s.t. $\forall i \ge n$ and $i \in \NNN$, $x \in A_i$. Hence the elements in $\liminf\limits_n A_n$ are in all but (the first) finitely many sets, though the ``first finitely many sets'' may be different for different elements in $\liminf$. $\limsup$ can be best seen by examining its complement, according to the De Morgan's law.
-
-\prop{
-	\begin{align}
-		(\limsup\limits_n A_n)^c &= \liminf\limits_n A_n^c\\
-		\liminf A_k &\subset \limsup A_k\\
-		\limsup(A_k \cup B_k) &= \limsup A_k \cup \limsup B_k\\
-		\liminf(A_k \cap B_k) &= \liminf A_k \cap \liminf B_k
-	\end{align}	
-}
-
-\end{document} 
 
 
 

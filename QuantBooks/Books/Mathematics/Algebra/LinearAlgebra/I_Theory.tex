@@ -1,7 +1,4 @@
-%!TEX root = LinearAlgebra.tex
-
-\part{Theory}
-\chapter{Preliminaries}
+\section{Preliminaries}
 \deff{
 	A {\bf{field}} is a non-empty set $F$ {\em{closed}} under two operations, usually called {\em{addition}} and {\em{multiplication}}\footnote{Subtraction and division are defined implicitly in terms of the inverse operations of addition and multiplication.}, and denoted by $+$ and $\cdot$ respectively, such that the following {\em{nine}} axioms hold
 	\begin{enumerate}
@@ -20,7 +17,7 @@
 	Any finite ring has nonzero characteristic.
 }
 
-\chapter{Vector Spaces}
+\chapter{Linear Algebra}
 \section{Vector Space}
 \deff{
 	A {\bf{vector space}} over a field $\FF$ is a {\em{nonempty}} set $V$ together with the operations of addition $V\times V \to V$ and scalar multiplication $\FF \times V \to V$ satisfying the following {\em{eight}} properties:
@@ -72,7 +69,7 @@
 \deff{
 	A {\em{basis}} for a subspace $S$ of $\RR^n$ is a set of vectors in $S$ that
 	\begin{enumerate}[(1)]
-		\item spans $S$ and 
+		\item spans $S$ and
 		\item is linearly independent. \footnote{It does not mean that they are orthogonal.}
 	\end{enumerate}
 }
@@ -106,7 +103,7 @@
 \section{Bilinear and Quadratic Forms: Two Vectors as Argument}
 \section{Jordan Canoical Forms}
 
-\chapter{Eigenvalues and Eigenvectors}
+\section{Eigenvalues and Eigenvectors}
 \section{Definitions}
 \rmk{
 	eigenvectors are non-zero.
@@ -142,7 +139,7 @@
 	The dimension of the eigenspace $\E_{\lambda_i}$ is referred to as the geometric multiplicity $\gamma_A(\lambda_i)$ of $\lambda_i$.
 }
 
-\chapter{Vector Calculus}
+\section{Vector Calculus}
 \section{Inner Product (Dot Product)}
 \deff{$$\u \otimes \v = \u \v^T$$}
 \rmk{The inner product is the trace of the outer product.}
@@ -157,18 +154,18 @@
 \section{Integration of Vectors and Matrices}
 
 
-\chapter{Matrix Calculus}
+\section{Matrix Calculus}
 \section{Matrix Determinant}
 \section{Kronecker Product and Vec}
 \section{Hadamard Product and Diag}
 \section{Matrix Exponential}
 
 
-\input{Chapters/Vector_Matrix_Derivatives.tex}
+\input{Mathematics/Algebra/LinearAlgebra/Chapters/Vector_Matrix_Derivatives.tex}
 
-\chapter{Vector and Matrix Integrals}
+\section{Vector and Matrix Integrals}
 
 
-\chapter{Some Intuitive Explanations}
+\section{Some Intuitive Explanations}
 \section{Eigenvalues and Singular Values}
-\section{SVD, PCA, and Change of Basis}
+\section{SVD, PCA, and Change of Basis} 

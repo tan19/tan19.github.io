@@ -1,7 +1,4 @@
-%!TEX root = LinearAlgebra.tex
-
-\part{Techniques}
-\chapter{Special Square Matrices}
+\section{Special Square Matrices}
 \section{Elementary Matrices}
 There are three types of elementary matrices: {\color{red}{Row Switching, Row Multiplication, and Row Addition.}}
 
@@ -57,7 +54,7 @@ There are three types of elementary matrices: {\color{red}{Row Switching, Row Mu
 	\end{align}
 }
 Or, alternatively,
-\rmk{An orthogonal matrix is a square matrix with orthonormal \smallmarginpar{orthogonal and unit vectors} columns.}
+%\rmk{An orthogonal matrix is a square matrix with orthonormal \smallmarginpar{orthogonal and unit vectors} columns.}
 
 \begin{rmk}
 	$Q^TQ = I$ even if $Q$ is rectangular (but then left-inverse).
@@ -86,12 +83,12 @@ Or, alternatively,
 \rmk{As a linear transformation, an orthogonal matrix preserves the dot product of vectors (therefore also norm and angle), and therefore acts as an isometry of Euclidean space, such as a rotation or reflection. In other words, it is a unitary transformation.}
 
 \rmk{The product of two rotation matrices is a rotation matrix, and the product of two reflection matrices is also a rotation matrix. See figure~\ref{fig:rotation}.}
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.4]{rotation}
-\caption{The product of two reflection matrices is a rotation matrix.}
-\label{fig:rotation}
-\end{figure}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[scale=0.4]{rotation}
+%\caption{The product of two reflection matrices is a rotation matrix.}
+%\label{fig:rotation}
+%\end{figure}
 
 \section{Positive Definite Matrices}
 \deff{
@@ -101,15 +98,15 @@ Or, alternatively,
 	\end{align}
 }
 
-\thm{\marginnote{\dbend}
-	If $\A$ is positive definite, then
-	\begin{enumerate}
-		\item The diagonal elements of a positive definite matrix are positive.
-		\item All eigenvalues of $\A$ is positive.
-		\item Its determinant is positive.
-		\item It is nonsingular.
-	\end{enumerate}
-}
+%\thm{\marginnote{\dbend}
+%	If $\A$ is positive definite, then
+%	\begin{enumerate}
+%		\item The diagonal elements of a positive definite matrix are positive.
+%		\item All eigenvalues of $\A$ is positive.
+%		\item Its determinant is positive.
+%		\item It is nonsingular.
+%	\end{enumerate}
+%}
 \noindent
 \prof{
 	The diagonal elements are positive because $a_{kk} = \e_k^T \A \e_k > 0$. The eigenvalues of an s.p.d. matrix are all positive is easy to prove by observing that $$0 < \x^T\A\x = \x^T\lambda\x = \lambda \|\x\|_2^2$$ The positivity of determinant can be shown by looking at the LDU decomposition. Finally, it is nonsingular because the determinant is nonzero.
@@ -121,25 +118,25 @@ Or, alternatively,
 	Let $\A$ be an $n \times n$ square matrix. A {\em{leading}} principal submatrix of $\A$ is a principal submatrix of $\A$ with the index subset $\{1,\cdots,m\}$, for some $m \le n$.
 }
 
-\thm{\marginnote{\dbend}
-	If $\A$ is positive definite then every principle submatrix is s.p.d..
-}
+%\thm{\marginnote{\dbend}
+%	If $\A$ is positive definite then every principle submatrix is s.p.d..
+%}
 \prof{
 	Suppose $\A_p$ of size $p$ is a principle submatrix of $\A$. Since $\A$ is positive definite, for any nonzero vector $\x$ we have $\x^T \A \x > 0$. Remove the corresponding coordinates of $\x$, same as those removed when creating the principle submatrix, and call it $\x_p$. Then the resulting vector $\x_p^T \A_p \x_p = \x^T \A \x > 0$.
 }
 
 
-\chapter{Numerical Linear Algebra Algorithms}
+\section{Numerical Linear Algebra Algorithms}
 \section{Matrix Inverse: Binomial inverse theorem, Schur Complement, Blockwise Inversion}
 \begin{rmk}
 	$\mathbf{A}^{-1} = \begin{bmatrix}
-a & b \\ c & d \\ 
+a & b \\ c & d \\
 \end{bmatrix}^{-1} =
 \frac{1}{\det{\mathbf{A}}} \begin{bmatrix}
-\,\,\,d & \!\!-b \\ -c & \,a \\ 
+\,\,\,d & \!\!-b \\ -c & \,a \\
 \end{bmatrix} =
 \frac{1}{ad - bc} \begin{bmatrix}
-\,\,\,d & \!\!-b \\ -c & \,a \\ 
+\,\,\,d & \!\!-b \\ -c & \,a \\
 \end{bmatrix}$
 \end{rmk}
 
@@ -170,7 +167,7 @@ unless $\C$ and $\D$ are commutable, i.e., $\C\D = \D\C$. The general formula fo
 which is based on Schur complement.
 
 
-\chapter{The $\A\x=\b$ Problem}
+\section{The $\A\x=\b$ Problem}
 \section{Solving a Linear System of Equations}
 \thm{
 	If $A = \left[\begin{matrix}a & b\\ c & d\end{matrix}\right]$, then $A$ is invertible if $ad-bc\ne 0$, in which case $$A^{-1} = \frac{1}{ad-bc} \left[\begin{matrix}d & -b\\ -c & a\end{matrix}\right]$$
@@ -217,9 +214,9 @@ which is based on Schur complement.
 
 
 
-\chapter{The $\A\x=\lambda \x$ Problem}
+\section{The $\A\x=\lambda \x$ Problem}
 
-\chapter{Matrix Decomposition}
+\section{Matrix Decomposition}
 \section{Decomposition related to solving $\A\x = \b$}
 \subsection{LU Decomposition: Schur Complement}
 Usually, $|\A\B| \ne |\B\A|$. For example
@@ -265,12 +262,12 @@ We denote \footnote{It is easy to remember if you multiply the submatrices clock
 \end{align}
 and call it {\em{the Schur complement of $\A$ in $\M$}}, or {\em{the Schur complement of $\M$ relative to $\A$}}.
 
-\rmk{
-A very useful identity can be revealed from equation \ref{eq:shurA} \marginnote{\dbend}
-\begin{align}
-	\M = \left[\begin{matrix}\A & \B \\ \C & \D \end{matrix}\right] = \left[\begin{matrix}\I & \mathbf{0} \\ \C\A^{-1} & \I \end{matrix}\right] \left[\begin{matrix}\A & \mathbf{0} \\ \mathbf{0} & \D-\C\A^{-1}\B \end{matrix}\right] \left[\begin{matrix}\I & \A^{-1}\B \\ \mathbf{0} & \I \end{matrix}\right]
-\end{align}
-}which gives us the following identities
+%\rmk{
+%A very useful identity can be revealed from equation \ref{eq:shurA} \marginnote{\dbend}
+%\begin{align}
+%	\M = \left[\begin{matrix}\A & \B \\ \C & \D \end{matrix}\right] = \left[\begin{matrix}\I & \mathbf{0} \\ \C\A^{-1} & \I \end{matrix}\right] \left[\begin{matrix}\A & \mathbf{0} \\ \mathbf{0} & \D-\C\A^{-1}\B \end{matrix}\right] \left[\begin{matrix}\I & \A^{-1}\B \\ \mathbf{0} & \I \end{matrix}\right]
+%\end{align}
+%}which gives us the following identities
 \thm{
 \begin{align}
 	det(\M) &= det(\M/\A) \cdot det(\A)\\
@@ -344,4 +341,4 @@ where the columns of $\Q$ are eigenvectors of $\M$ (hence invertible), and $\bLa
 \subsection{QZ Decomposition}
 
 \section{Other Decompositions}
-\subsection{Polar Decomposition}
+\subsection{Polar Decomposition} 

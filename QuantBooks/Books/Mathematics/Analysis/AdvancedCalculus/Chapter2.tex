@@ -1,4 +1,4 @@
-\chapter{Basic Topology}
+\section{Basic Topology}
 
 \section{Finite, Countable, and Uncountable Sets}
 
@@ -101,7 +101,7 @@
 	\begin{enumerate}[(a)]
 		\item A {\cem{neighborhood}} of $p$ is a set $N_r(p)$ consisting of all $q$ such that $d(p,q) < r$, for some $r > 0$. The number $r$ is called the {\cem{radius}} of $N_r(p)$.
 		\item A point $p$ is a limit point of the set $E$ if every neighborhood of $p$ contains a point $q \ne p$ such that $q \in E$.
-		\item If $p \in E$ and $p$ is not a limit point of $E$, then $p$ is called an {\cem{isolated point}} \smallmarginpar{An equivalent deff: There exsits a neighborhood of $p$ such that the only element {\underline{in $E$}} it contains is $p$ itself.} of $E$.
+		%\item If $p \in E$ and $p$ is not a limit point of $E$, then $p$ is called an {\cem{isolated point}} \smallmarginpar{An equivalent deff: There exsits a neighborhood of $p$ such that the only element {\underline{in $E$}} it contains is $p$ itself.} of $E$.
 		\item $E$ is {\cem{closed }} if every limit point of $E$ is a point of $E$.
 		\item A point $p$ is an {\cem{interior}} point of $E$ if there is a neighborhood $N$ of $p$ such that $N \subset E$.
 		\item $E$ is {\cem{open}} if every point of $E$ is an interior point of $E$.
@@ -178,14 +178,14 @@ If $X$ is a metric space, if $E \subset X$, and if $E'$ denotes the set of all l
 	By an {\cem{open cover}} of a set $E$ in a metric space $X$ we mean a collection $\{G_\alpha\}$ of open subsets of $X$ such that $E \subset \bigcup_\alpha G_\alpha$.
 \end{deff}
 
-\begin{deff}
-	A subset $K$ of a metric space $X$ is said to be {\cem{compact}} if every open cover of $K$ contains a {\cem{finite}} subcover. \smallmarginpar{It is clear that every finite set is compact.}
-\end{deff}
+%\begin{deff}
+%	A subset $K$ of a metric space $X$ is said to be {\cem{compact}} if %every open cover of $K$ contains a {\cem{finite}} subcover. %\smallmarginpar{It is clear that every finite set is compact.}
+%\end{deff}
 
 \subsection{Theorems}
-\begin{thm}
-	Suppose $K \subset Y \subset X$. Then $K$ is compact relative to $X$ if and only if $K$ is compact relative to $Y$. \smallmarginpar{Every metric space $X$ is an open subset of itself, and is a closed subset of itself.}
-\end{thm}
+%\begin{thm}
+%	Suppose $K \subset Y \subset X$. Then $K$ is compact relative to $X$ if and only if $K$ is compact relative to $Y$. \smallmarginpar{Every metric space $X$ is an open subset of itself, and is a closed subset of itself.}
+%\end{thm}
 
 \begin{thm}
 	Compact subsets of metric spaces are closed.
@@ -244,11 +244,11 @@ If $X$ is a metric space, if $E \subset X$, and if $E'$ denotes the set of all l
 
 \section{Connected Sets}
 \subsection{Definitions}
-\begin{deff}
-	Two subsets $A$ and $B$ of a metric space $X$ are said to be {\cem{separated}} if both $A \cap \bar B$ and $\bar A \cap B$ are empty, i.e., if no point of $A$lies in the closure of $B$ and no point of $B$lies in the closure of $A$. A set $E \subset X$ is siad to be {\cem{connected}} if $E$ is {\cem{not}} a union of two nonempty separated sets. \smallmarginpar{Separated sets are of course disjoint, but disjoint sets need not be sparated.}
-\end{deff}
+%\begin{deff}
+%	Two subsets $A$ and $B$ of a metric space $X$ are said to be {\cem{separated}} if both $A \cap \bar B$ and $\bar A \cap B$ are empty, i.e., if no point of $A$lies in the closure of $B$ and no point of $B$lies in the closure of $A$. A set $E \subset X$ is siad to be {\cem{connected}} if $E$ is {\cem{not}} a union of two nonempty separated sets. \smallmarginpar{Separated sets are of course disjoint, but disjoint sets need not be sparated.}
+%\end{deff}
 
 \subsection{Theorems}
 \begin{thm}
 	A subset $E$ of the ral line $R^1$ is connected if and only if it has the following property: If $x \in E$, $y \in E$, and $x < z < y$, then $z \in E$.
-\end{thm}
+\end{thm} 

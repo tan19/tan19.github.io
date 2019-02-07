@@ -1,5 +1,5 @@
-\chapter{Combinatorial Analysis}
-\section{Axioms} 
+\section{Combinatorial Analysis}
+\section{Axioms}
 There are two important rules in combinatorics: the rule of sum, and the rule of product.
 
 The rule of sum says, if we have $a$ ways to finish a task using one method and alternatively, $b$ ways to finish the same task using another method, then there are $ab$ ways of finish this task. More generally,
@@ -127,17 +127,17 @@ The number of multisets of cardinality $k$, with elements taken from a finite se
 \begin{prob}\label{prob:multiset}
 	With replacement, how many possible combinations to make $k$ draws from a urn with $n$ distinguishable balls labeled $1 \dots n$?
 \end{prob}
-If we translate this prob directly to the combinatorial language, \smallmarginpar{It is NOT the sum of all the multinomial coefficients, which can be seen by computing $(1+ \dots +1)^k$, that is, $\sum {k \choose N_1, N_2, \ldots, N_n} = n^k$.} we may end up with counting the total number of the multinomial coefficients (actually, it is also correct). To solve this prob, let's first see a similar example.
+%If we translate this prob directly to the combinatorial language, \smallmarginpar{It is NOT the sum of all the multinomial coefficients, which can be seen by computing $(1+ \dots +1)^k$, that is, $\sum {k \choose N_1, N_2, \ldots, N_n} = n^k$.} we may end up with counting the total number of the multinomial coefficients (actually, it is also correct). To solve this prob, let's first see a similar example.
 
 \begin{prob}
 	Suppose $k$ balls that are indistinguishable from each other are to be distributed into $n$ distinguishable (non-empty) urns, how many different outcomes are possible?
 \end{prob}
-We note that this prob is equivalent to selecting $n-1$ of the $k-1$ spaces between (fixed) adjacent objects as our dividing points, \smallmarginpar{Objects being adjacent ensures the non-emptiness.} e.g., $OOO|OOO|OO$. We count the "bars" as urns (in total $n$) and big "O" as balls (in total $k$). Therefore, there are $k-1 \choose n-1$ such outcomes.\\
+%We note that this prob is equivalent to selecting $n-1$ of the $k-1$ spaces between (fixed) adjacent objects as our dividing points, \smallmarginpar{Objects being adjacent ensures the non-emptiness.} e.g., $OOO|OOO|OO$. We count the "bars" as urns (in total $n$) and big "O" as balls (in total $k$). Therefore, there are $k-1 \choose n-1$ such outcomes.\\
 
 
 Now, we are ready to go back to our original prob. prob \ref{prob:multiset} could be asked this way: if however, we allow empty urns, how many outcomes are possible?
 
-One possible way of borrowing the non-empty case solution to solve the empty one is by starting with $k+n$ balls (instead of $k$), and place them into $n$ urns, \smallmarginpar{It is of probability 1 to remove one ball from each urn.} however at last remove one ball from each urn (so in total $n$). Because some of the urns may only contain one ball, this would give us the number of orderings $n+r-1 \choose r-1$. Another way to look at it is to allow all $k+n-1$ positions (not gaps) available to both symbols, and we count all balls between two bars the same type. Hence, the number of all possible combinations is ${n+k-1 \choose n-1} = {n+k-1 \choose k}$. Note, this scheme is allowing emptiness, because two ``bars'' can be adjacent to each other.
+%One possible way of borrowing the non-empty case solution to solve the empty one is by starting with $k+n$ balls (instead of $k$), and place them into $n$ urns, \smallmarginpar{It is of probability 1 to remove one ball from each urn.} however at last remove one ball from each urn (so in total $n$). Because some of the urns may only contain one ball, this would give us the number of orderings $n+r-1 \choose r-1$. Another way to look at it is to allow all $k+n-1$ positions (not gaps) available to both symbols, and we count all balls between two bars the same type. Hence, the number of all possible combinations is ${n+k-1 \choose n-1} = {n+k-1 \choose k}$. Note, this scheme is allowing emptiness, because two ``bars'' can be adjacent to each other.
 
 Another beautiful explanation is to construct an equivalent mapping. Note, the rule of drawing a series of $k$ numbers $a_1, a_2, \ldots, a_k$ from the set $\{1,2,\ldots,n\}$ with repetition is
 \begin{equation*}
@@ -162,9 +162,9 @@ A last thing worth noting is that, as we mentioned earlier, the number of all mu
 \section{The Bertrand's Ballot prob}\label{chapter: Bertrand_Ballot_prob}
 The Bertrand's ballot prob was first introduced by Joseph Bertrand in 1887, in the form of: "In an election where candidate A receives $p$ votes and candidate B receives $q$ votes with $p>q$, what is the probability that A will be strictly ahead of B throughout the count?"
 
-J. Bertrand himself gave the solution $\frac{p-q}{p+q}$  by using mathematical induction in the original paper. First of all, let's consider the initial case. At the first count, the vote can be either for candidate A or B. If it {\em{could}} \smallmarginpar{The word "could" means it is possible for an event to happen, but does not indicate its necessity.} be for candidate A, the simplest scenario is $p=1, q=0$, which is of probability 1 for candidate A to win the vote. This agrees with the formula. If it {\em{could}} be for candidate B, the simplest scenario is $p=2,q=1$, now there are ${2+1 \choose 1} = 3$ counting orders, i.e., AAB, ABA, or BAA. Note "AAA" is the only favorable order out of three possible orders. This again agrees with the formula. Assume the theorem is true when $p=a-1 \mbox{ and } q=b$ (last vote would be for candidate A), and when $p=a \mbox{ and } q=b-1$ (last vote would be for candidate B), which is the two possible scenarios at the second to last count. Now, considering the case with $p=a \mbox{ and } q=b$, the last vote is either for candidate A with probability $a/(a+b)$, or for candidate B with probability $b/(a+b)$. So the probability of candidate A to always lead the count is:
+%J. Bertrand himself gave the solution $\frac{p-q}{p+q}$  by using mathematical induction in the original paper. First of all, let's consider the initial case. At the first count, the vote can be either for candidate A or B. If it {\em{could}} \smallmarginpar{The word "could" means it is possible for an event to happen, but does not indicate its necessity.} be for candidate A, the simplest scenario is $p=1, q=0$, which is of probability 1 for candidate A to win the vote. This agrees with the formula. If it {\em{could}} be for candidate B, the simplest scenario is $p=2,q=1$, now there are ${2+1 \choose 1} = 3$ counting orders, i.e., AAB, ABA, or BAA. Note "AAA" is the only favorable order out of three possible orders. This again agrees with the formula. Assume the theorem is true when $p=a-1 \mbox{ and } q=b$ (last vote would be for candidate A), and when $p=a \mbox{ and } q=b-1$ (last vote would be for candidate B), which is the two possible scenarios at the second to last count. Now, considering the case with $p=a \mbox{ and } q=b$, the last vote is either for candidate A with probability $a/(a+b)$, or for candidate B with probability $b/(a+b)$. So the probability of candidate A to always lead the count is:
 
-\smallmarginpar{$\frac{(a-1)-b}{(a-1)+b} \mbox{ and } \frac{a-(b-1)}{a+(b-1)}$ are conditional probabilities, which are conditioned on the last count.}
+%\smallmarginpar{$\frac{(a-1)-b}{(a-1)+b} \mbox{ and } \frac{a-(b-1)}{a+(b-1)}$ are conditional probabilities, which are conditioned on the last count.}
 
 \begin{equation*}
 	\frac{a}{a+b} \frac{(a-1)-b}{(a-1)+b} + \frac{b}{a+b} \frac{a-(b-1)}{a+(b-1)} = \frac{a-b}{a+b}
@@ -172,7 +172,7 @@ J. Bertrand himself gave the solution $\frac{p-q}{p+q}$  by using mathematical i
 
 This proves that the theorem is true for all $p>q\ge0$.
 
-D\'esir\'e Andr\'e in the same year gave an elegant proof of this prob, and the method is now called "the principle of reflection", or "the Andr\'e's reflection method", or "the Bertrand's ballot theorem". There are three facts need to noted. One is that, the sequences start with A or B with probability $p/(p+q)$ and $q/(p+q)$, respectively. The second fact is that, sequences start with B will for sure to tie at some point because A will finally win, and they are all unfavorable, because A already "loses" at the first count. The third is that, sequences that start with A can be classified into two cases, one is the case that A leads the counting process from beginning to the end which is the favorable case, the other is the case when the sequence will tie at some point which is the unfavorable case, importantly, the number of sequences in this latter case is the same as that of the sequences starting with B, because there is a bijection mapping. \smallmarginpar{One possible mapping is to denote the sequence as LBR, where "L" and "R" is the left and right part of the first tie position (must be a "B"), and then converting each character in L to its alternative, e.g., {\color{red}{AAB}}BABAA would become {\color{red}{BBA}}BABAA.} The probability is $1 - 2 \times \frac{q}{p+q} = \frac{p-q}{p+q}$.
+%D\'esir\'e Andr\'e in the same year gave an elegant proof of this prob, and the method is now called "the principle of reflection", or "the Andr\'e's reflection method", or "the Bertrand's ballot theorem". There are three facts need to noted. One is that, the sequences start with A or B with probability $p/(p+q)$ and $q/(p+q)$, respectively. The second fact is that, sequences start with B will for sure to tie at some point because A will finally win, and they are all unfavorable, because A already "loses" at the first count. The third is that, sequences that start with A can be classified into two cases, one is the case that A leads the counting process from beginning to the end which is the favorable case, the other is the case when the sequence will tie at some point which is the unfavorable case, importantly, the number of sequences in this latter case is the same as that of the sequences starting with B, because there is a bijection mapping. \smallmarginpar{One possible mapping is to denote the sequence as LBR, where "L" and "R" is the left and right part of the first tie position (must be a "B"), and then converting each character in L to its alternative, e.g., {\color{red}{AAB}}BABAA would become {\color{red}{BBA}}BABAA.} The probability is $1 - 2 \times \frac{q}{p+q} = \frac{p-q}{p+q}$.
 
 The number of the unfavorable cases is $2 \times {p+q-1 \choose q-1}$, of which half starts with "A" and another half starts with "B", as explained above. The number of favorable cases is ${p+q-1 \choose p-1} - {p+q-1 \choose q-1}$. Actually, $\frac{{p+q-1 \choose p-1} - {p+q-1 \choose q-1}}{{p+q \choose p}} = \frac{p-q}{p+q}$.
 
@@ -190,7 +190,7 @@ The probability can then be computed as:
 	& = \frac{(p+1-q)/(p+1+q)}{(p+1)/(p+1+q)} = \frac{p+1-q}{p+1}
 \end{split}
  \end{equation*}
- 
+
  Another way to look at this prob is to model it as the following: represent a voting sequence as a lattice path on the Cartesian plane and,
 \begin{itemize}
 	\item Start the path at (0, 0);
@@ -199,12 +199,12 @@ The probability can then be computed as:
 \end{itemize}
 Each such path corresponds to a unique sequence of votes and will end at $(p, q)$. A sequence is ``good'' exactly when the corresponding path never goes above the diagonal line $y = x$; equivalently, a sequence is ``bad'' exactly when the corresponding path touches the line $y = x + 1$. For each ``bad'' path P, define a new path P' by reflecting the part of P up to the first point it touches the line across it. P' is a path from (-1, 1) to (p, q). The same operation applied again restores the original P. This produces a one-to-one correspondence between the ``bad'' paths and the paths from (-1, 1) to (p, q). The number of these paths is $p+q \choose q-1$. So the probability asked is $\frac{{p+q \choose q} - {p+q \choose q-1}}{{p+q \choose p}} = \frac{p+1-q}{p+1}$.
 
-\begin{figure}[htb]
-	\centering	
-	\includegraphics[width=150pt]{2000px-AndreReflection.png}
-	\caption{Bertrand's Ballot prob allowing Ties}
-	\label{fig:Bertrand's_Ballot_prob}
-\end{figure}
+%\begin{figure}[htb]
+%	\centering	
+%	\includegraphics[width=150pt]{2000px-AndreReflection.png}
+%	\caption{Bertrand's Ballot prob allowing Ties}
+%	\label{fig:Bertrand's_Ballot_prob}
+%\end{figure}
 
 An interesting application of this is the famous Catalan number formula, which can be introduced under the random walk story. A random walk on the integers is to take $n$ steps of unit length, beginning at the origin and ending at the point $m$, that never become negative. Assuming $n$ and $m$ have the same parity and $n \ge m \ge 0$, this number is, according to the Bertrand's Ballot prob allowing ties,
 \begin{equation*}
@@ -237,4 +237,4 @@ The Catalan number is defined as,
 \end{equation}
 The underlying story reads: Given two urns, one with $n$ red balls and the other with $n$ black balls, we want to draw one ball at a time (either red or black), such that at no time the number of pre-specified color is less than its alternative.
 
-Since the Catalan number is associated with two equal-sized sets, it is oftentimes co-occurrent  with the words "pair", "full binary", and etc.
+Since the Catalan number is associated with two equal-sized sets, it is oftentimes co-occurrent  with the words "pair", "full binary", and etc. 

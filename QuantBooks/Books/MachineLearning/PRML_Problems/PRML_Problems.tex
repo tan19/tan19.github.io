@@ -1,20 +1,4 @@
-\documentclass{article}
-\input{/Users/tan19/Dropbox/LaTeXMacros.tex}
-
-\newcommand{\tr}{{\mathrm{tr}}}
-\renewcommand{\vec}{{\mathrm{vec}}}
-
-\title{PRML Problems}
-\author{Xi Tan (tan19@purdue.edu)}
-\date{\today}
-
-\begin{document}
-\maketitle
-
-\tableofcontents
-\newpage
-
-\section{Introduction}
+\chapter{PRML Problems}
 \section{Probability Distributions}
 \prob{
 	Prove that
@@ -26,7 +10,7 @@
 \sol{
 	We apply Gaussian Elimianation in the following way:
 	\begin{align}
-		\left[ \left(\begin{matrix}\I & \O \\ -\D^{-1}\C & \I\end{matrix}\right) \left(\begin{matrix}(\A-\B\D^{-1}C)^{-1} & \O \\ \O & \I\end{matrix}\right) \left(\begin{matrix}\I & -\B \\ \O & \I\end{matrix}\right) \left(\begin{matrix}\I & \O \\ \O & \D^{-1}\end{matrix}\right) \right] \left(\begin{matrix}\A & \B \\ \C & \D\end{matrix}\right) = \left(\begin{matrix}\I & \O \\ \O & \I\end{matrix}\right) 
+		\left[ \left(\begin{matrix}\I & \O \\ -\D^{-1}\C & \I\end{matrix}\right) \left(\begin{matrix}(\A-\B\D^{-1}C)^{-1} & \O \\ \O & \I\end{matrix}\right) \left(\begin{matrix}\I & -\B \\ \O & \I\end{matrix}\right) \left(\begin{matrix}\I & \O \\ \O & \D^{-1}\end{matrix}\right) \right] \left(\begin{matrix}\A & \B \\ \C & \D\end{matrix}\right) = \left(\begin{matrix}\I & \O \\ \O & \I\end{matrix}\right)
 	\end{align}
 	and we have
 	\begin{align}
@@ -44,5 +28,3 @@
 		(\A^{-1})^T = (\A^{-1})^T\A\A^{-1} = (\A^{-1})^T\A^T\A^{-1} = (\A\A^{-1})^T \A^{-1} = \A^{-1}
 	\end{align}
 }
-
-\end{document}

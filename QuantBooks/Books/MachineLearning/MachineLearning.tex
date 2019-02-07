@@ -1,17 +1,4 @@
-\documentclass{book}
-\input{../LaTeXMacros.tex}
-
-\begin{document}
-\title{Machine Learning}
-\author{Xi Tan (xtan3.1415926@gmail.com)}
-
-\maketitle
-\tableofcontents
-\input{../preface}
-\addcontentsline{toc}{chapter}{Preface}
-
-
-\chapter{Introduction}
+\section{Machine Learning Introduction}
 There are two main types of Machine Learning problems: the {\bf{predictive}} or {\bf{supervised learning}}, and the {\bf{descriptive}} or {\bf{unsupervised learning}} \footnote{It is also called {\bf{Knowledge Discovery}} in the Data Mining literature}.
 
 For supervised learning, there are two subtypes: the {\bf{classification}} problem, where the response variable is categorical (either ordinal or nomial); and the {\bf{regression}} problem, where the response variable is numerical (either discrete or continuous).
@@ -25,7 +12,7 @@ For unsupervised learning, it is also called {\bf{density estimation}} in Statis
 \subsection{Parametric v.s. Non-parametric Models}
 A parametric model has a fixed {\em{finite}} number of parameters, while the number of parameters in a non-parametric model grows with the amount of training data. A model with infinite number of parameters is usually non-parametric.
 
-\chapter{A Brief History of Machine Learning}
+\section{A Brief History of Machine Learning}
 The perceptron model was invented in 1957, and it generated over optimistic view for AI during 1960s. After Marvin Minsky pointed out the limitation of this model in expressing complex functions, researchers stopped pursuing this model for the next decade.
 
 In 1970s, the machine learning field was dormant, when expert systems became the mainstream approach in AI.  The revival of machine learning came in mid-1980s, when the decision tree model was invented and distributed as software. It is also in mid 1980s multi-layer neural networks were invented, With enough hidden layers, a neural network can express any function, thus overcoming the limitation of perceptron. We see a revival of the neural network study.
@@ -49,26 +36,26 @@ mid 1980s: Multi-layer Neural Networks
 
 
 
-\chapter{Regression v.s. Classification}
+\section{Regression v.s. Classification}
 Consider a supervised learning problem in which we wish to approximate an unknown target function $f: \XX \to \YY$, or equivalently $P(Y|X)$. One way to learn $P(Y|X)$ is to use the training data to estimate $P(X|Y)$ and $P(Y)$, and then use Bayes rule to determine $P(Y|X)$.
-\chapter{Parametric v.s. Nonparametric Models}
-\chapter{Decision Trees}
+\section{Parametric v.s. Nonparametric Models}
+\section{Decision Trees}
 
-\chapter{Clustering}
-\chapter{Dimension Reduction}
-
-
+\section{Clustering}
+\section{Dimension Reduction}
 
 
 
 
-\input{Chapters/Graphical_Models}
-\chapter{Neural Networks}
-\chapter{Kernel Methods}
+
+
+\input{MachineLearning/Chapters/Graphical_Models}
+\section{Neural Networks}
+\section{Kernel Methods}
 \section{Support Vector Machines (SVM)}
 \section{Gaussian Processes (GP)}
 
-\chapter{Statistical Learning Theory}
+\section{Statistical Learning Theory}
 Statistical learning theory studies the properties, in particular error-bounds, of learning algorithms in a statistical framework.
 
 The No Free Lunch theorem says, if no assumptions about how training data are related to the testing data, prediction is impossible; furthermore, if no assumptions about the data to be expected, generalization is impossible.
@@ -99,19 +86,19 @@ Simply means we need to make the assumption that there is a stationary distribut
 	We write $f = \tilde O(g)$ if there exists $k \in \NNN$ such that $f(x) = O(g(x)\log^k(g(x)))$.
 }
 
-\chapter{Latent Dirichlet allocation (LDA)}
-\chapter{Principle Component Analysis (PCA)}
-\chapter{Linear Discriminant Analysis (LDA)}
+\section{Latent Dirichlet allocation (LDA)}
+\section{Principle Component Analysis (PCA)}
+\section{Linear Discriminant Analysis (LDA)}
 
-\chapter{Expectation Maximization (EM)}
+\section{Expectation Maximization (EM)}
 \section{The EM algorithm}
 \section{The ECM and ECME algorithms}
 \section{The PX-EM algorithm}
 
-\chapter{Expectation Propagation (EP)}
+\section{Expectation Propagation (EP)}
 
 
-\chapter{Markov Chain Monte Carlo Methods}
+\section{Markov Chain Monte Carlo Methods}
 \section{Introduction}
 This note is based on Peter Orbanz's BNP notes:
 \vspace*{5mm}
@@ -362,7 +349,7 @@ If not all full conditional probabilities are known or can be easily sampled fro
 
 
 
-\chapter{Bayesian Nonparametrics}
+\section{Bayesian Nonparametrics}
 The concept of functions can be generalized to that of algorithms, which describe procedures, with loops and conditional tests, of how to generate output from input.
 
 A draw from a finite dimensional Gaussian distribution is a real number, while a real-valued function can be considered as a sequence of (uncountably) infinite number of real numbers. A Gaussian Process (GP) is an infinite dimensional generalization of a Gaussian distribution. It defines a prior over real-valued functions, and a sample of it is a particular example of such functions.
@@ -448,50 +435,15 @@ z_i &\sim \text{Categorical}(p_1^i, \dots, p_K^i)\\
 	is called a {\em{Dirichlet process (DP)}} with base measure $G$ and concentration $\alpha$, and denote its law by $\text{DP}(\alpha, G)$.
 }
 
-\appendix
-\chapter{Glossary}
+\section{Glossary}
 \url{http://alumni.media.mit.edu/~tpminka/statlearn/glossary/}
 
 
 - Model Evidence: Model evidence, or *marginal likelihood*, or *normalization constant*, is a likelihood function in which all parameter variables have been marginalized, usually denoted by $P(D|M)$, or $P(D)$ for short. For example, in polynomial regression, $M$ may denotes the degree of the regression function, and parameter variables are the coefficients for any given M.
 
-- Filtering is the task of tracking the posterior distribution of the latent state varialbe in state space models.
+- Filtering is the task of tracking the posterior distribution of the latent state variable in state space models.
 
-\input{Chapters/QA}
-
-\chapter{Useful Resources}
+\section{Useful Resources}
 \section{Data Sets}
 \section{Packages and Source Codes}
 \section{Important Papers}
-
-
-
-\begin{thebibliography}{100} % 100 is a random guess of the total number of %references
-\bibitem{Stewart} James Stewart {\em{Calsulus - Early Transcendentals}}. Cengage Learning, 2012
-\bibitem{Rudin} Walter Rudin {\em{Principles of Mathematical Analysis}}. McGraw-Hill Companies, Inc., 1976.
-\bibitem{Royden} H. L. Royden {\em{Real Analysis}}. Pearson Eduction, Inc., 1988.
-\bibitem{Kreyszig} Erwin Kreyszig {\em{Introductory Functional Analysis with Applications}}. Wiley, 1989.
-\bibitem{Folland} Gerald B. Folland {\em{Real Analysis: Modern Techniques and Their Applications}}. Wiley, 1999.
-\bibitem{Torchinsky} Alberto Torchinsky {\em{Real Variables}}. Westview Press, 1995.
-
-\bibitem{Wasserman} {\url{http://normaldeviate.wordpress.com/2012/11/17/what-is-bayesianfrequentist-inference/}}
-\bibitem{Hochster} {\url{http://www.quora.com/What-is-the-difference-between-Bayesian-and-frequentist-statisticians}}
-\bibitem{bayesian-inference advantage} {\url{http://www.bayesian-inference.com/advantagesbayesian}}
-\bibitem{bayesian-inference likelihood} {\url{http://www.bayesian-inference.com/likelihood#likelihoodprinciple}}
-\bibitem{Rossi} Rossi P, Allenby G, McCulloch R. {\emph{Bayesian Statistics and Marketing (pp. 4)}}. John Wiley \& Sons, 2005.
-\bibitem{Efron 1978} Efron, Bradley. {\emph{Controversies in the Foundations of Statistics}}. The American Mathematical Monthly, Vol. 85, No. 4 (Apr., 1978), pp. 231-246.
-\bibitem{Efron 2013} Efron, Bradley. {\emph{A 250-year Argument: Belief, Behavior, and the Bootstrap}}. Bull. Amer. Math. Soc. 50 (2013), 129-146.
-\bibitem{quora CI} {\url{http://www.quora.com/Statistics-academic-discipline/What-is-a-confidence-interval-in-laymans-terms}}
-\bibitem{quora diff} {\url{http://www.quora.com/What-is-the-difference-between-Bayesian-and-frequentist-statisticians}}
-\bibitem{wiki} {\url{http://en.wikipedia.org/wiki/Confidence_interval#Meaning_and_interpretation}}
-
-\bibitem{Minka} Thomas P. Minka. {\em{Old and New Matrix Algebra Useful for Statistics}}. December 28, 2000.
-\bibitem{Wikepedia} \url{http://en.wikipedia.org/wiki/Matrix_calculus}. Accessed on \today
-\bibitem{Searle} S. R. Searle and H. V. Henderson. {\em{A Primer on Differential Calculus for Vectors and Matrices}}. BU-1047-MB, 1993.
-\bibitem{Nydick} Steven W. Nydick. {\em{A Different(ial) Way Matrix Derivatives Again}}. May 17, 2012.
-\bibitem{Nydick} Steven W. Nydick. {\em{With(out) A Trace Matrix Derivatives the Easy Way}}. May 16, 2012.
-\bibitem{Roweis} Sam Roweis. {\em{Matrix Identities}}. June 1999.
-\bibitem{Tao} Terry Tao. {\em{Matrix identities as derivatives of determinant identities}}. January 13, 2013
-\end{thebibliography}
-
-\end{document}
