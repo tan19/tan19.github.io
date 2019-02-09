@@ -1,6 +1,0 @@
-# jemdoc: menu{QuantBookS/MENU_QUANTBOOKS}{MachineLearningBook.html}
-== Machine Learning
-
-{{
-<iframe src="Books/MachineLearning/MachineLearning.html" width="1300" height="600" frameborder="0" scrolling="yes"></iframe>
-}}
