@@ -2,23 +2,37 @@
 == Within and Beyond Language
 
 {{
-<center><img src="index.files/MYF.jpg" class="center" style="width:256px;"></center>
-<center>马一浮</center>
-<center>(1883年4月2日 - 1967年6月2日)</center>
+<center>
+<div class="row">
+  <div class="column">
+  	<img src="index.files/Einstein.jpg" alt="Mountains" style="height: 9cm; width: 6.5cm;">  	  	  	
+  	&emsp;
+  	<img src="index.files/MYF.jpg" alt="Mountains" style="height: 9cm; width: 6.5cm;">  	  	  	
+  	&emsp;
+    <img src="index.files/Wallerstein.jpg" alt="Snow" style="height: 9cm; width: 6.2cm;">   
+    <p>
+    &emsp;爱因斯坦&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;马一浮&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 沃勒斯坦
+    <p>
+    &emsp;(1879年3月14日 - 1955年4月18日)&emsp;&emsp;(1930年9月28日 - 2019年8月31日)&emsp;&emsp;(1930年9月28日 - 2019年8月31日)       
+  </div>
+</div>
+</center>
 }}
-
-~~~
-
-~~~
 
 {{
 <center>
-地人天
+天地人
 <p>
 数计政经
 音美文史
 </center>
 }}
+
+~~~
+
+~~~
+
+
 
 ~~~
 {}{table}{TABLE}
