@@ -1,38 +1,39 @@
 Homepage
     About                  [index.html]    
-	What's New       	   [New/index.html]
+	What's New       	   [Misc/New/index.html]
 	Quant Books		   	   [QuantBooks/index.html]
 
 Current	
-	CFA					   [Finance/CFA/index.html]
-	FRM					   [Finance/FRM/index.html]
-	Wilmott 			   [Finance/Wilmott/index.html]
-	Hull				   [Finance/Hull/index.html]
+	Finance				   [Humanities/Finance/index.html]
+	Statistics			   [Sciences/Statistics/index.html]
+	Algorithms			   [Sciences/Algorithms/index.html]	
 
 Sciences
-    Homepage of Sciences   [Sciences.html]
-    Economics         	   [Economics/index.html]
-    Finance         	   [Finance/index.html]
-    Physics				   [Physics/index.html]
-    Mathematics            [Math/index.html]
-    Statistics             [Statistics/index.html]      
-    Machine Learning	   [ML/index.html]
-    Numerics               [Numerics/index.html]
-    Algorithms			   [Algorithms/index.html]
-    Optimization           [Optimization/index.html]  
-    Computer Science	   [CS/index.html]
+    Homepage of Sciences   [Sciences/Sciences.html]    
+    Physics				   [Sciences/Physics/index.html]
+    Mathematics            [Sciences/Math/index.html]
+    Statistics             [Sciences/Statistics/index.html]      
+    Machine Learning	   [Sciences/ML/index.html]
+    Numerics               [Sciences/Numerics/index.html]
+    Algorithms			   [Sciences/Algorithms/index.html]
+    Optimization           [Sciences/Optimization/index.html]  
+    Computer Science	   [Sciences/CS/index.html]
 
 Humanities
-    Homepage of Humanities  [Humanities.html]
-    Politics                [Politics/index.html]
-    History                 [History/index.html]
-    Philosophy              [Philosophy/index.html]
-    Music                   [Music/index.html]
-    Painting                [Painting/index.html]
-    Languages               [Languages/index.html]
-    
+    Homepage of Humanities  [Humanities/Humanities.html]
+    Politics                [Humanities/Politics/index.html]	
+    History                 [Humanities/History/index.html]
+    Philosophy              [Humanities/Philosophy/index.html]        
+    Economics and Finance  	[Humanities/Economics_Finance/index.html]        
+   
+Arts
+	Homepage of Arts  		[Arts/Arts.html]
+	Languages               [Arts/Languages/index.html]	
+	Music                   [Arts/Music/index.html]
+    Painting                [Arts/Painting/index.html]
+   
 Miscellaneous
-    Job                     [Job/index.html]
-    IQ                      [IQ/index.html]
-    Health                  [Health/index.html]
-    Random                  [Random/index.html]
+    Job                     [Misc/Job/index.html]
+    IQ                      [Misc/IQ/index.html]
+    Health                  [Misc/Health/index.html]
+    Random                  [Misc/Random/index.html]

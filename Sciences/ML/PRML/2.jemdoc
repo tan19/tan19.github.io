@@ -1,0 +1,19 @@
+# jemdoc: menu{Sciences/ML/PRML/MENU_PRML}{2.html}
+= Probability Distribution
+
+~~~
+*The main goals of this chapter are:*
+. xxx
+. xxx
+
+*It consists of the following sections:*
+- 2.1 Binary Variables
+- 2.2 Multinomial Variables
+- 2.3 The Gaussian Distribution
+- 2.4 The Exponential Family
+- 2.5 Nonparametric Methods
+~~~
+
+=== Binary Variables
+
+
