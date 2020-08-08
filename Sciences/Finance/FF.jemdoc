@@ -1,0 +1,22 @@
+# jemdoc: menu{MENU_FINANCE}{FF.html}
+= Forwards and Futures
+
+Forwards and futures have two main uses, in speculation (risk-taking) and in hedging (risk-averse). 
+
+Because you settle the change in value on a daily basis, the value of a futures contract at any time during its life is zero.
+
+== The forward contract price
+
+Long one share of asset at time $t$. Under no-arbitrage assumption, we have:
+~~~
+{}{table}{Forward Price}
+  	| $t$ | $T$ ||
+Cash 		| $-S(t)$ | $-S(t)e^{(T-t)r}$  ||
+Contract   	| 0 | $F - S(T)$ ||
+Asset   	| $S(t)$ | $S(T)$ ||
+| | ||
+*Balance* | $0$ | $0$
+~~~
+
+\n
+The forward price $F(t)$ at $t$ is $S(t)e^{(T-t)r}$ -- which is kind of equivalent to saving $S(t)$ in the a risk-free bank account.
