@@ -4,12 +4,12 @@ Homepage
 	Quant Books		   	   [QuantBooks/index.html]
 
 Current	
-	Finance				   [Humanities/Finance/index.html]
+	Finance				   [Sciences/Finance/index.html]
 	Statistics			   [Sciences/Statistics/index.html]
 	Algorithms			   [Sciences/Algorithms/index.html]	
 
 Sciences
-    Homepage of Sciences   [Sciences/Sciences.html]    
+    Homepage of Sciences   [Sciences/index.html]    
     Physics				   [Sciences/Physics/index.html]
     Mathematics            [Sciences/Math/index.html]
     Statistics             [Sciences/Statistics/index.html]      
@@ -22,14 +22,14 @@ Sciences
 	Finance				   [Sciences/Finance/index.html]        
 
 Societies
-    Homepage of Societies  [Societies/Societies.html]
+    Homepage of Societies  [Societies/index.html]
 	Languages              [Societies/Languages/index.html]		
     Politics               [Societies/Politics/index.html]		
     History                [Societies/History/index.html]
 	Geography              [Societies/Geography/index.html]	      
    
 Souls
-	Homepage of Souls  		[Souls/Souls.html]	
+	Homepage of Souls  		[Souls/index.html]	
 	Music                   [Souls/Music/index.html]
     Painting                [Souls/Painting/index.html]
 	Literature              [Souls/Literature/index.html]	
