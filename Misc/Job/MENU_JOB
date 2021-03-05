@@ -4,18 +4,19 @@ Xi Tan
 Job
 	Overview			[index.html]
 
-Data Science
-	Data Science Interviews [*]
-	Machine Learning [../ML/index.html]
-	Computer Science	[../CS/index.html]
-	Statistics [../Statistics/index.html]
-
+Brainteasers
+    Quantitative Brainteasers [IQ.html]
+    Qualitative Brainteasers [IQ.html]
+    
+Mathematics
+    Calculus [Calculus.html]
+        
+Quant Finance
+    Stochastic Calculus [Stochastic_Calculus.html]
+	
+Computer Science
+    LeetCode [LeetCode.html]
+	
 Finance
 	Finance Interviews	[FinanceInterviews.html]	
-	Finance [../Finance/index.html]
-	CFA			[../Finance/CFA/index.html]
-
-Others
-	Brain Teasers		[../IQ/bt.html]
-	Notes		[JobNotes/JobNotes.html]
 	
