@@ -94,7 +94,7 @@
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
-  Brambles of Quant Finance
+  VirtuosoBook
  </span>
 </p>
 <ul class="nav sidenav_l1">
@@ -600,16 +600,16 @@
 <details>
   - <summary>Answer: </summary> 
 <p>Decompose <span class="math notranslate nohighlight">\(W_{1+t}\)</span> into <span class="math notranslate nohighlight">\(W_1 + B_t\)</span> where <span class="math notranslate nohighlight">\(B_t\)</span> is an incremental Brownian motion independent from <span class="math notranslate nohighlight">\(W_1\)</span>, then:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-26cf6115-7123-4c4b-b8b4-76bff95eb01f">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-26cf6115-7123-4c4b-b8b4-76bff95eb01f" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-54aa91e2-a2dc-400d-9b6a-41cc047893e9">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-54aa91e2-a2dc-400d-9b6a-41cc047893e9" title="Permalink to this equation">¶</a></span>\[\begin{align}
 		P(W_1W_{1+t} \ge 0) &amp;= P(W_1(W_1 + B_t) \ge 0)\\
 		&amp;= P(W_1 \ge 0, W_1 + B_t \ge 0) + P(W_1 \le 0, W_1 + B_t \le 0) \\
 		&amp;= 2P(W_1 \ge 0, W_1 + B_t \ge 0)\\
 		&amp;= 2P\left(W_1 \ge 0, Z \equiv \frac{B_t}{\sqrt{t}} \ge -\frac{W_1}{\sqrt{t}}\right)
 	\end{align}\]</div>
 <p>Now, draw a coordinate system with <span class="math notranslate nohighlight">\(W_1\)</span> and <span class="math notranslate nohighlight">\(Z\)</span>, which are i.i.d. standard normal. The final answer is (need to check):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-70296a64-69a5-44cb-9581-33d4c36671e3">
-<span class="eqno">(4.2)<a class="headerlink" href="#equation-70296a64-69a5-44cb-9581-33d4c36671e3" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a309a65e-9e5d-4d80-9327-717cf08fca27">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-a309a65e-9e5d-4d80-9327-717cf08fca27" title="Permalink to this equation">¶</a></span>\[\begin{align}
 		2\left(\frac14 + \frac{\arctan(1/\sqrt{t})}{2\pi}\right)
 \end{align}\]</div>
 </details>
@@ -893,8 +893,8 @@ What is Girsanov’s Theorem?
 <br>
 <ul>
 <li><p>Question:  	Solve the Bachelier model:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-475c7b8d-f89e-4690-b0af-00279137bbf8">
-<span class="eqno">(4.3)<a class="headerlink" href="#equation-475c7b8d-f89e-4690-b0af-00279137bbf8" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ee747450-4557-4091-a500-bcc1ae5f1055">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-ee747450-4557-4091-a500-bcc1ae5f1055" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 	dS(t) = (r-q)S(t)dt + \sigma dW(t)
 	\end{equation}\]</div>
 </li>
@@ -907,8 +907,8 @@ What is Girsanov’s Theorem?
 <ul class="simple">
 <li><p>Question:  	Solve the Ornstein-Uhlenbeck process</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-bfbfd915-ac90-4e8b-bb99-49d129bc10dd">
-<span class="eqno">(4.4)<a class="headerlink" href="#equation-bfbfd915-ac90-4e8b-bb99-49d129bc10dd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2b78dae3-9674-46d0-8e82-611f1942d982">
+<span class="eqno">(4.4)<a class="headerlink" href="#equation-2b78dae3-9674-46d0-8e82-611f1942d982" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 	dr_t = \lambda(\theta - r_t)dt + \sigma dW_t
 \end{equation}\]</div>
 <p>which is used, e.g., in the Vasicek model for interest rates.</p>
