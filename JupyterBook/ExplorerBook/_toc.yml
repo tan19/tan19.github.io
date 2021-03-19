@@ -1,0 +1,40 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+- file: index
+  numbered: true
+
+# Part I. Economics & Finance
+- part: Part I. History and Philosophy
+  chapters:
+  - file: History_Philosophy/China/index
+    sections:
+    - file: History_Philosophy/China/PRC/index
+    - file: History_Philosophy/China/MinGuo/index
+    - file: History_Philosophy/China/Qing/index
+    - file: History_Philosophy/China/Ming/index
+    - file: History_Philosophy/China/Yuan/index
+    - file: History_Philosophy/China/Song/index
+    - file: History_Philosophy/China/Tang/index
+    - file: History_Philosophy/China/Zhou/index    
+    - file: History_Philosophy/China/WeiJinNanBeiChao/index 
+    - file: History_Philosophy/China/WuDaiShiGuo/index     
+  - file: History_Philosophy/US/index
+  - file: History_Philosophy/UK/index
+  - file: History_Philosophy/Japan/index
+  - file: History_Philosophy/Russia/index
+  - file: History_Philosophy/France/index
+  - file: History_Philosophy/Germany/index
+  - file: History_Philosophy/MidEast/index
+  - file: History_Philosophy/SoutheastAsia/index
+  - file: History_Philosophy/Egypt_Greece_Rome/index
+ 
+# Part III. Statistics & Machine Learning
+- part: Part III. Language, Geography and Society
+  chapters:
+  - file: Language_Geography_Society/Language/index
+    sections:
+    - file: Language_Geography_Society/Language/French/index
+    - file: Language_Geography_Society/Language/Japanese/index
+  - file: Language_Geography_Society/Geography/index
+  - file: Language_Geography_Society/Society/index

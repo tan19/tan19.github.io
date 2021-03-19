@@ -57,12 +57,12 @@
 # Part IV. Algorithms & Optimization
 - part: Part IV. Algorithms & Optimization
   chapters:
-  - file: Handbook/Theories/Theories
+  - file: Algorithm_Optimization/index
 
 # Part Part V. Computer Science & Electronic Engineering
 - part: Part V. Computer Science & Electronic Engineering
   chapters:
-  - file: Handbook/Theories/Theories
+  - file: CSEE/index
 
 # Appendix. Interview Guide
 - part: Appendix. Interview Guide
@@ -95,6 +95,4 @@
       - file: InterviewPrep/ComputerScience/Data_Structure_and_Algorithm/Data_Structure_and_Algorithm
       - file: InterviewPrep/ComputerScience/Database_and_Data_Infrastructure/Database_and_Data_Infrastructure
       - file: InterviewPrep/ComputerScience/Network_and_Operating_Systems/Network_and_Operating_Systems
-  - file: InterviewPrep/List_of_Firms_Strategies/index
-    sections:
-      - file: InterviewPrep/List_of_Firms_Strategies/index
+  - file: InterviewPrep/List_of_Firms_Strategies/index    
