@@ -4,6 +4,40 @@
 - file: index
   numbered: true
 
+# Appendix. Interview Guide
+- part: Appendix. Interview Guide
+  chapters:
+  - file: InterviewPrep/Brainteasers/Brainteasers
+    sections:
+      - file: InterviewPrep/Brainteasers/Quantitative_Brainteasers/Quantitative_Brainteasers  
+      - file: InterviewPrep/Brainteasers/Qualitative_Brainteasers/Qualitative_Brainteasers  
+  - file: InterviewPrep/Mathematics/Mathematics
+    sections:
+      - file: InterviewPrep/Mathematics/Calculus/Calculus
+      - file: InterviewPrep/Mathematics/DifferentialEquations/DifferentialEquations
+      - file: InterviewPrep/Mathematics/LinearAlgebra/LinearAlgebra
+  - file: InterviewPrep/Statistics/Statistics
+    sections:
+      - file: InterviewPrep/Statistics/Combinatorics/Combinatorics
+      - file: InterviewPrep/Statistics/Probability/Probability
+      - file: InterviewPrep/Statistics/Statistics/Statistics
+      - file: InterviewPrep/Statistics/MachineLearning/MachineLearning
+  - file: InterviewPrep/QuantFinance/QuantFinance
+    sections:
+      - file: InterviewPrep/QuantFinance/StochasticCalculus/StochasticCalculus
+      - file: InterviewPrep/QuantFinance/OptionsBS/OptionsBS
+      - file: InterviewPrep/QuantFinance/Exotics/Exotics      
+  - file: InterviewPrep/ComputerScience/ComputerScience
+    sections:
+      - file: InterviewPrep/ComputerScience/CPP/CPP
+      - file: InterviewPrep/ComputerScience/Java/Java
+      - file: InterviewPrep/ComputerScience/Python/Python
+      - file: InterviewPrep/ComputerScience/Data_Structure_and_Algorithm/Data_Structure_and_Algorithm
+      - file: InterviewPrep/ComputerScience/Database_and_Data_Infrastructure/Database_and_Data_Infrastructure
+      - file: InterviewPrep/ComputerScience/Network_and_Operating_Systems/Network_and_Operating_Systems
+  - file: InterviewPrep/List_of_Firms_Strategies/index
+
+  
 # Part O. The Quant Handbook
 - part: Brambles of Quant Finance
   chapters:
@@ -14,6 +48,8 @@
   chapters:
   - file: Economics_Finance/Microeconomics/index
   - file: Economics_Finance/Macroeconomics/index
+    sections:
+    - file: Economics_Finance/Macroeconomics/Inflation_Deflation
   - file: Economics_Finance/Equity/index  
   - file: Economics_Finance/Fixed_Income/index
   - file: Economics_Finance/Portfolio_Management/index
@@ -57,42 +93,22 @@
 # Part IV. Algorithms & Optimization
 - part: Part IV. Algorithms & Optimization
   chapters:
-  - file: Algorithm_Optimization/index
+  - file: Algorithm_Optimization/Algorithm/Algorithm
+    sections:
+    - file: Algorithm_Optimization/Algorithm/Data_Structures/Data_Structures
+      sections:
+      - file: Algorithm_Optimization/Algorithm/Data_Structures/Linear_DS
+      - file: Algorithm_Optimization/Algorithm/Data_Structures/Tree  
+      - file: Algorithm_Optimization/Algorithm/Data_Structures/Graph      
+    - file: Algorithm_Optimization/Algorithm/Algorithms/Algorithms
+      sections:
+      - file: Algorithm_Optimization/Algorithm/Algorithms/DFS
+      - file: Algorithm_Optimization/Algorithm/Algorithms/BFS  
+      - file: Algorithm_Optimization/Algorithm/Algorithms/Sorting_Selection
+      - file: Algorithm_Optimization/Algorithm/Algorithms/Two_Pointers
+  - file: Algorithm_Optimization/Optimization
 
 # Part Part V. Computer Science & Electronic Engineering
 - part: Part V. Computer Science & Electronic Engineering
   chapters:
-  - file: CSEE/index
-
-# Appendix. Interview Guide
-- part: Appendix. Interview Guide
-  chapters:
-  - file: InterviewPrep/Brainteasers/Brainteasers
-    sections:
-      - file: InterviewPrep/Brainteasers/Quantitative_Brainteasers/Quantitative_Brainteasers  
-      - file: InterviewPrep/Brainteasers/Qualitative_Brainteasers/Qualitative_Brainteasers  
-  - file: InterviewPrep/Mathematics/Mathematics
-    sections:
-      - file: InterviewPrep/Mathematics/Calculus/Calculus
-      - file: InterviewPrep/Mathematics/DifferentialEquations/DifferentialEquations
-      - file: InterviewPrep/Mathematics/LinearAlgebra/LinearAlgebra
-  - file: InterviewPrep/Statistics/Statistics
-    sections:
-      - file: InterviewPrep/Statistics/Combinatorics/Combinatorics
-      - file: InterviewPrep/Statistics/Probability/Probability
-      - file: InterviewPrep/Statistics/Statistics/Statistics
-      - file: InterviewPrep/Statistics/MachineLearning/MachineLearning
-  - file: InterviewPrep/QuantFinance/QuantFinance
-    sections:
-      - file: InterviewPrep/QuantFinance/StochasticCalculus/StochasticCalculus
-      - file: InterviewPrep/QuantFinance/OptionsBS/OptionsBS
-      - file: InterviewPrep/QuantFinance/Exotics/Exotics      
-  - file: InterviewPrep/ComputerScience/ComputerScience
-    sections:
-      - file: InterviewPrep/ComputerScience/CPP/CPP
-      - file: InterviewPrep/ComputerScience/Java/Java
-      - file: InterviewPrep/ComputerScience/Python/Python
-      - file: InterviewPrep/ComputerScience/Data_Structure_and_Algorithm/Data_Structure_and_Algorithm
-      - file: InterviewPrep/ComputerScience/Database_and_Data_Infrastructure/Database_and_Data_Infrastructure
-      - file: InterviewPrep/ComputerScience/Network_and_Operating_Systems/Network_and_Operating_Systems
-  - file: InterviewPrep/List_of_Firms_Strategies/index    
+  - file: CSEE/index   
