@@ -4,8 +4,26 @@
 - file: index
   numbered: true
 
+# Part I. Classics
+- part: Part I. Classics
+  chapters:
+  - file: Classics/周易/index
+  - file: Classics/尚书/index
+  - file: Classics/诗经/index
+  - file: Classics/周礼/index
+  - file: Classics/仪礼/index
+  - file: Classics/礼记/index
+  - file: Classics/左传/index
+  - file: Classics/公羊传/index
+  - file: Classics/谷梁传/index
+  - file: Classics/孝经/index
+  - file: Classics/论语/index
+  - file: Classics/尔雅/index
+  - file: Classics/孟子/index  
+  - file: Classics/资治通鉴/index
+
 # Part I. Music
-- part: Part I. Music, Art and Literature
+- part: Part I. Music
   chapters:
   - file: Music/ClassicalMusic/index
   - file: Music/Piano/index
@@ -18,5 +36,5 @@
 # Part III. Literature
 - part: Part III. Literature
   chapters:
-  - file: Literature/LuXun/index    
+  - file: Literature/鲁迅/index    
   - file: Literature/Shakespeare/index

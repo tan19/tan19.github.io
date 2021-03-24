@@ -286,10 +286,14 @@
    4. Fixed Income
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../../../Economics_Finance/Portfolio_Management/index.html">
    5. Portfolio Management
   </a>
+  <ul class="simple collapse-ul">
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../../Economics_Finance/Derivatives/index.html">
@@ -665,16 +669,16 @@
 <details>
   - <summary>Answer: </summary> 
 <p>Decompose <span class="math notranslate nohighlight">\(W_{1+t}\)</span> into <span class="math notranslate nohighlight">\(W_1 + B_t\)</span> where <span class="math notranslate nohighlight">\(B_t\)</span> is an incremental Brownian motion independent from <span class="math notranslate nohighlight">\(W_1\)</span>, then:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e749fa81-e17b-4542-a7f2-064d3e22404c">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-e749fa81-e17b-4542-a7f2-064d3e22404c" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-cd19ec42-6da6-4c97-9085-2e69e226afaa">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-cd19ec42-6da6-4c97-9085-2e69e226afaa" title="Permalink to this equation">¶</a></span>\[\begin{align}
 		P(W_1W_{1+t} \ge 0) &amp;= P(W_1(W_1 + B_t) \ge 0)\\
 		&amp;= P(W_1 \ge 0, W_1 + B_t \ge 0) + P(W_1 \le 0, W_1 + B_t \le 0) \\
 		&amp;= 2P(W_1 \ge 0, W_1 + B_t \ge 0)\\
 		&amp;= 2P\left(W_1 \ge 0, Z \equiv \frac{B_t}{\sqrt{t}} \ge -\frac{W_1}{\sqrt{t}}\right)
 	\end{align}\]</div>
 <p>Now, draw a coordinate system with <span class="math notranslate nohighlight">\(W_1\)</span> and <span class="math notranslate nohighlight">\(Z\)</span>, which are i.i.d. standard normal. The final answer is (need to check):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7d97b52d-55fb-45a6-95b5-66785e6009c7">
-<span class="eqno">(4.2)<a class="headerlink" href="#equation-7d97b52d-55fb-45a6-95b5-66785e6009c7" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5979320a-f879-4149-b2f9-2e7cbfca819e">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-5979320a-f879-4149-b2f9-2e7cbfca819e" title="Permalink to this equation">¶</a></span>\[\begin{align}
 		2\left(\frac14 + \frac{\arctan(1/\sqrt{t})}{2\pi}\right)
 \end{align}\]</div>
 </details>
@@ -904,8 +908,8 @@ dS(t) = (r-q)S(t)dt + \sigma dW(t)
 </details>
 <br>
 <p><strong>Question:</strong>  	Solve the Ornstein-Uhlenbeck process</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2656d075-fae5-4c78-80af-bd3b0a4a4411">
-<span class="eqno">(4.3)<a class="headerlink" href="#equation-2656d075-fae5-4c78-80af-bd3b0a4a4411" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-34e2e33f-11c4-4c85-8d33-5245a7422b68">
+<span class="eqno">(4.3)<a class="headerlink" href="#equation-34e2e33f-11c4-4c85-8d33-5245a7422b68" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 	dr_t = \lambda(\theta - r_t)dt + \sigma dW_t
 \end{equation}\]</div>
 <p>which is used, e.g., in the Vasicek model for interest rates.</p>

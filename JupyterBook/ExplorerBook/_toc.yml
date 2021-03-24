@@ -135,41 +135,25 @@
     - file: History_Philosophy/US/Donald_John_Trump
     - file: History_Philosophy/US/Joseph_Robinette_Biden_Jr
     
-  
-      
-# Part II. UK
-- part: Part II. UK
+        
+# Part II. Europe
+- part: Part II. Europe  
   chapters:       
-  - file: History_Philosophy/UK/index
-    
-# Part III. Japan
-- part: Part III. Japan
-  chapters:       
-  - file: History_Philosophy/Japan/index
-
-# Part IV. Russia
-- part: Part IV. Russia
-  chapters:       
-  - file: History_Philosophy/Russia/index
-
-# Part V. France
-- part: Part V. France
-  chapters:       
-  - file: History_Philosophy/France/index
-
-# Part VI. Germany
-- part: Part VI. Germany
-  chapters:       
-  - file: History_Philosophy/Germany/index
+  - file: History_Philosophy/Europe/Europe
+  - file: History_Philosophy/Europe/UK/index
+  - file: History_Philosophy/Europe/Russia/index    
+  - file: History_Philosophy/Europe/France/index
+  - file: History_Philosophy/Europe/Germany/index 
 
 # Part VII. MidEast
 - part: Part VII. MidEast
   chapters:       
   - file: History_Philosophy/MidEast/index
 
-# Part VIII. SoutheastAsia
-- part: Part VIII. SoutheastAsia
+# Part VIII. Asia
+- part: Part VIII. Asia
   chapters:       
+  - file: History_Philosophy/Japan/index
   - file: History_Philosophy/SoutheastAsia/index
 
 # Part IX. Egypt_Greece_Rome
@@ -177,12 +161,11 @@
   chapters:       
   - file: History_Philosophy/Egypt_Greece_Rome/index
 
-# Part III. Statistics & Machine Learning
-- part: Part III. Language, Geography and Society
+# Part X. Language and Society
+- part: Part X. Language and Society
   chapters:
-  - file: Language_Geography_Society/Language/index
+  - file: Language_Society/Language/index
     sections:
-    - file: Language_Geography_Society/Language/French/index
-    - file: Language_Geography_Society/Language/Japanese/index
-  - file: Language_Geography_Society/Geography/index
-  - file: Language_Geography_Society/Society/index
+    - file: Language_Society/Language/French/index
+    - file: Language_Society/Language/Japanese/index  
+  - file: Language_Society/Society/index

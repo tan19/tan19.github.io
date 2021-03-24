@@ -53,6 +53,8 @@
   - file: Economics_Finance/Equity/index  
   - file: Economics_Finance/Fixed_Income/index
   - file: Economics_Finance/Portfolio_Management/index
+    sections:
+    - file: Economics_Finance/Portfolio_Management/PortfolioOptimization
   - file: Economics_Finance/Derivatives/index
   - file: Economics_Finance/Corporate_Finance/index  
   - file: Economics_Finance/Commodities/index

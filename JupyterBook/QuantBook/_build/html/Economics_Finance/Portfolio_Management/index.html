@@ -52,9 +52,11 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"EEE": "\\mathbb{E}", "floor": ["\\lfloor#1\\rfloor", 1]}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="6. Derivatives" href="../Derivatives/index.html" />
+    <link rel="next" title="5.1.2.1. Portfolio Optimization" href="PortfolioOptimization.html" />
     <link rel="prev" title="4. Fixed Income" href="../Fixed_Income/index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -284,10 +286,19 @@
    4. Fixed Income
   </a>
  </li>
- <li class="toctree-l1 current active">
+ <li class="toctree-l1 current active collapsible-parent">
   <a class="current reference internal" href="#">
    5. Portfolio Management
   </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="PortfolioOptimization.html">
+     5.1.2.1. Portfolio Optimization
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../Derivatives/index.html">
@@ -607,6 +618,33 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#los-40-a-describe-the-portfolio-approach-to-investing">
+   5.1. LOS 40.a: Describe the portfolio approach to investing.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#two-risky-assets">
+     5.1.1. Two Risky Assets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-risky-assets">
+     5.1.2. Multiple Risky Assets
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
         </div>
     </div>
 </div>
@@ -617,14 +655,54 @@
                 
   <div class="section" id="portfolio-management">
 <h1><span class="section-number">5. </span>Portfolio Management<a class="headerlink" href="#portfolio-management" title="Permalink to this headline">¶</a></h1>
-<p>Daphne is a project that was in my head long time ago.</p>
-<p>Part I-V provide with the background materials covering:</p>
-<ul class="simple">
-<li><p>Problem: Economics and Finance</p></li>
-<li><p>Theory: Mathematics and Physics</p></li>
-<li><p>Model: Statistics and Machine Learning</p></li>
-<li><p>Implementation: Computer Science and Electronic Engineering</p></li>
-</ul>
+<div class="section" id="los-40-a-describe-the-portfolio-approach-to-investing">
+<h2><span class="section-number">5.1. </span>LOS 40.a: Describe the portfolio approach to investing.<a class="headerlink" href="#los-40-a-describe-the-portfolio-approach-to-investing" title="Permalink to this headline">¶</a></h2>
+<p>Modern portfolio theory concludes that the extra risk from holding only a single security is not rewarded with higher expected investment returns. Conversely, diversification allows an investor to reduce portfolio risk without necessarily reducing the portfolio’s expected return. In the early 1950s, the research of Professor Harry Markowitz concluded that: <span style="color:red"><strong>unless the returns of the risky assets are perfectly positively correlated, risk <em>can</em> be reduced by diversifying across assets.</strong></span></p>
+<div class="section" id="two-risky-assets">
+<h3><span class="section-number">5.1.1. </span>Two Risky Assets<a class="headerlink" href="#two-risky-assets" title="Permalink to this headline">¶</a></h3>
+<p>Suppose our portfolio <span class="math notranslate nohighlight">\(P\)</span> consists of <span class="math notranslate nohighlight">\(w\)</span> shares of security <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(y\)</span> shares of security <span class="math notranslate nohighlight">\(Y\)</span>:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-bd181bb5-d598-4633-8748-4f9f7e1f4a42">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-bd181bb5-d598-4633-8748-4f9f7e1f4a42" title="Permalink to this equation">¶</a></span>\[\begin{align}
+    P \equiv wX + (1-w)Y
+\end{align}\]</div>
+<p>then,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-18039a5a-f953-4c03-b58c-456bb62217fa">
+<span class="eqno">(5.2)<a class="headerlink" href="#equation-18039a5a-f953-4c03-b58c-456bb62217fa" title="Permalink to this equation">¶</a></span>\[\begin{align}
+\mu_P &amp;= w\mu_X + (1-w)\mu_Y\\
+\sigma_P^2 &amp;= w^2 \sigma_X^2 + (1-w)^2 \sigma_Y^2 + 2w(1-w) \rho \sigma_X\sigma_Y
+\end{align}\]</div>
+<p>Taking the derivative w.r.t. <span class="math notranslate nohighlight">\(w\)</span> (assume the variances and covariance are independent from <span class="math notranslate nohighlight">\(w\)</span>) we obtain</p>
+<div class="amsmath math notranslate nohighlight" id="equation-21e25959-ee34-4a14-abe5-11d09821ee22">
+<span class="eqno">(5.3)<a class="headerlink" href="#equation-21e25959-ee34-4a14-abe5-11d09821ee22" title="Permalink to this equation">¶</a></span>\[\begin{align}
+2w \sigma_X^2 - 2(1-w) \sigma_Y^2 + 2(1-2w) \rho \sigma_X\sigma_Y = 0
+\end{align}\]</div>
+<p>which implies that the minimum variance is obtained when</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c10c12f9-4012-4eb5-9a51-076c4cdfb3c6">
+<span class="eqno">(5.4)<a class="headerlink" href="#equation-c10c12f9-4012-4eb5-9a51-076c4cdfb3c6" title="Permalink to this equation">¶</a></span>\[\begin{align}
+\hat{w} &amp;= \frac{\sigma_Y^2 - \rho \sigma_X\sigma_Y}{\sigma_X^2 - 2\rho \sigma_X\sigma_Y + \sigma_Y^2} \not \in \{0, 1\}, ~~~ \rho \ne 1\\
+\hat\mu &amp;= \mu_Y + \frac{\sigma_Y^2 - \rho \sigma_X\sigma_Y}{\sigma_X^2 - 2\rho \sigma_X\sigma_Y + \sigma_Y^2}(\mu_X - \mu_Y)\\
+\hat{\sigma}^2 &amp;= \frac{\sigma_X^2\sigma_Y^2(1-\rho^2)}{\sigma_X^2 - 2\rho\sigma_X\sigma_Y+\sigma_Y^2}\\
+\end{align}\]</div>
+<p>Note that, the optimal weight is neither <span class="math notranslate nohighlight">\(0\)</span> nor <span class="math notranslate nohighlight">\(1\)</span>, indicating that the minimum variance portfolio always has a smaller variance compared to its components (an arbitrary construction does not guarantee this, though).</p>
+</div>
+<div class="section" id="multiple-risky-assets">
+<h3><span class="section-number">5.1.2. </span>Multiple Risky Assets<a class="headerlink" href="#multiple-risky-assets" title="Permalink to this headline">¶</a></h3>
+<p>Suppose we have the following portfolio:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-fd8330b0-b01f-4001-b23d-9dcae19b048a">
+<span class="eqno">(5.5)<a class="headerlink" href="#equation-fd8330b0-b01f-4001-b23d-9dcae19b048a" title="Permalink to this equation">¶</a></span>\[\begin{align}
+    \pi &amp;= w^TX    
+\end{align}\]</div>
+<p>with <span class="math notranslate nohighlight">\(w^T1 = 1\)</span>, and</p>
+<div class="amsmath math notranslate nohighlight" id="equation-75364cee-1dbd-40fa-95ae-62d89b625561">
+<span class="eqno">(5.6)<a class="headerlink" href="#equation-75364cee-1dbd-40fa-95ae-62d89b625561" title="Permalink to this equation">¶</a></span>\[\begin{align}
+    \mu &amp;= w^T\mu_X\\
+    \sigma^2 &amp;= w^T \Sigma w
+\end{align}\]</div>
+<p><a class="reference external" href="https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/lecture-notes/MIT18_S096F13_lecnote14.pdf">MIT Lecture Notes</a></p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -653,7 +731,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="../Fixed_Income/index.html" title="previous page"><span class="section-number">4. </span>Fixed Income</a>
-    <a class='right-next' id="next-link" href="../Derivatives/index.html" title="next page"><span class="section-number">6. </span>Derivatives</a>
+    <a class='right-next' id="next-link" href="PortfolioOptimization.html" title="next page"><span class="section-number">5.1.2.1. </span>Portfolio Optimization</a>
 
         </div>
         
