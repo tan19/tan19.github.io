@@ -1,0 +1,33 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+- file: index
+  numbered: true
+
+# Part I. Languages
+- part: Part I. Languages
+  chapters:
+  - file: Languages/index
+  - file: Languages/French
+  - file: Languages/Japanese
+  - file: Languages/German
+  - file: Languages/Spanish
+  - file: Languages/中文
+
+# Part II. Poems and Writings
+- part: Part II. Poems and Writings
+  chapters:
+  - file: Poems_and_Writings/Poems
+  - file: Poems_and_Writings/Writings
+
+# Part III. Piano and Composing
+- part: Part II. Piano and Composing
+  chapters:
+  - file: Piano_and_Composing/Piano
+  - file: Piano_and_Composing/Composing
+
+# Part IV. Calligraphy and Drawing
+- part: Part III. Calligraphy and Drawing
+  chapters:
+  - file: Calligraphy_and_Drawing/Calligraphy    
+  - file: Calligraphy_and_Drawing/Drawing
