@@ -143,6 +143,8 @@
   - file: History_Philosophy/Europe/UK/index
   - file: History_Philosophy/Europe/Russia/index    
   - file: History_Philosophy/Europe/France/index
+    sections:
+    - file: History_Philosophy/Europe/France/French_Revolution
   - file: History_Philosophy/Europe/Germany/index 
 
 # Part VII. MidEast
