@@ -30,7 +30,8 @@
   chapters:      
   - file: Finance/StochasticCalculus/StochasticCalculus
   - file: Finance/OptionsBS/OptionsBS
-  - file: Finance/Exotics/Exotics      
+  - file: Finance/Exotics/Exotics
+  - file: Finance/Market/index
 
 # Part V. Algorithms
 - part: Part III. Algorithms
@@ -53,15 +54,13 @@
 - part: Part V. Computer Science
   chapters:    
   - file: ComputerScience/Programming_Languages/Programming_Languages
-    sections:
-    - file: ComputerScience/Programming_Languages/System_Design
+    sections:    
+    - file: ComputerScience/Programming_Languages/index
     - file: ComputerScience/Programming_Languages/CPP
     - file: ComputerScience/Programming_Languages/Java
     - file: ComputerScience/Programming_Languages/Python  
-  - file: ComputerScience/Systems/Systems
-    sections:
-    - file: ComputerScience/Systems/OS
-    - file: ComputerScience/Systems/DB
-    - file: ComputerScience/Systems/Network
+  - file: ComputerScience/Software_Engineering/System_Design  
+  - file: ComputerScience/OS/OS    
+  - file: ComputerScience/Network/Network
 
   

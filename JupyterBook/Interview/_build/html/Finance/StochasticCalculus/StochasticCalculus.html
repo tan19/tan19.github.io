@@ -179,6 +179,11 @@
    3. Exotics
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Market/index.html">
+   4. Market
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -261,52 +266,38 @@
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../../ComputerScience/Programming_Languages/System_Design.html">
-     1.1. System Design
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="../../ComputerScience/Programming_Languages/CPP.html">
-     1.2. C++
+     1.1. C++
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../ComputerScience/Programming_Languages/Java.html">
-     1.3. Java
+     1.2. Java
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../ComputerScience/Programming_Languages/Python.html">
-     1.4. Python
+     1.3. Python
     </a>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../../ComputerScience/Systems/Systems.html">
-   2. Systems
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ComputerScience/Software_Engineering/System_Design.html">
+   2. System Design
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ComputerScience/Systems/OS.html">
-     2.1. Operating Systems
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ComputerScience/Systems/DB.html">
-     2.2. Database and Infrastructure
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../ComputerScience/Systems/Network.html">
-     2.3. Network
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ComputerScience/OS/OS.html">
+   3. Operating Systems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../ComputerScience/Network/Network.html">
+   4. Network
+  </a>
  </li>
 </ul>
 
@@ -445,16 +436,16 @@
 <details>
   - <summary>Answer: </summary> 
 <p>Decompose <span class="math notranslate nohighlight">\(W_{1+t}\)</span> into <span class="math notranslate nohighlight">\(W_1 + B_t\)</span> where <span class="math notranslate nohighlight">\(B_t\)</span> is an incremental Brownian motion independent from <span class="math notranslate nohighlight">\(W_1\)</span>, then:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a9bd908f-5fad-499d-9b01-828d0c9b3b59">
-<span class="eqno">(1.1)<a class="headerlink" href="#equation-a9bd908f-5fad-499d-9b01-828d0c9b3b59" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9231ea20-9d58-4677-91fb-a4ccf3fe111e">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-9231ea20-9d58-4677-91fb-a4ccf3fe111e" title="Permalink to this equation">¶</a></span>\[\begin{align}
 		P(W_1W_{1+t} \ge 0) &amp;= P(W_1(W_1 + B_t) \ge 0)\\
 		&amp;= P(W_1 \ge 0, W_1 + B_t \ge 0) + P(W_1 \le 0, W_1 + B_t \le 0) \\
 		&amp;= 2P(W_1 \ge 0, W_1 + B_t \ge 0)\\
 		&amp;= 2P\left(W_1 \ge 0, Z \equiv \frac{B_t}{\sqrt{t}} \ge -\frac{W_1}{\sqrt{t}}\right)
 	\end{align}\]</div>
 <p>Now, draw a coordinate system with <span class="math notranslate nohighlight">\(W_1\)</span> and <span class="math notranslate nohighlight">\(Z\)</span>, which are i.i.d. standard normal. The final answer is (need to check):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ef271e46-8b18-425d-8631-419ed948e25a">
-<span class="eqno">(1.2)<a class="headerlink" href="#equation-ef271e46-8b18-425d-8631-419ed948e25a" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-2437e705-7219-4485-a664-021901b6840f">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-2437e705-7219-4485-a664-021901b6840f" title="Permalink to this equation">¶</a></span>\[\begin{align}
 		2\left(\frac14 + \frac{\arctan(1/\sqrt{t})}{2\pi}\right)
 \end{align}\]</div>
 </details>
@@ -684,8 +675,8 @@ dS(t) = (r-q)S(t)dt + \sigma dW(t)
 </details>
 <br>
 <p><strong>Question:</strong>  	Solve the Ornstein-Uhlenbeck process</p>
-<div class="amsmath math notranslate nohighlight" id="equation-00c67a17-9b5e-4c18-bb08-a876b442a3b2">
-<span class="eqno">(1.3)<a class="headerlink" href="#equation-00c67a17-9b5e-4c18-bb08-a876b442a3b2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5c4911aa-9121-4ace-9476-79a902a13ae7">
+<span class="eqno">(1.3)<a class="headerlink" href="#equation-5c4911aa-9121-4ace-9476-79a902a13ae7" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 	dr_t = \lambda(\theta - r_t)dt + \sigma dW_t
 \end{equation}\]</div>
 <p>which is used, e.g., in the Vasicek model for interest rates.</p>

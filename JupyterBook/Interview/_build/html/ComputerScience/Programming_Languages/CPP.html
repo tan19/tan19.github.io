@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.2. C++ &#8212; Quant Interview Guide</title>
+    <title>1.1. C++ &#8212; Quant Interview Guide</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -54,8 +54,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="1.3. Java" href="Java.html" />
-    <link rel="prev" title="1.1. System Design" href="System_Design.html" />
+    <link rel="next" title="1.2. Java" href="Java.html" />
+    <link rel="prev" title="1. Programming Languages" href="Programming_Languages.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -177,6 +177,11 @@
    3. Exotics
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Finance/Market/index.html">
+   4. Market
+  </a>
+ </li>
 </ul>
 <p class="caption collapsible-parent">
  <span class="caption-text">
@@ -258,53 +263,39 @@
    1. Programming Languages
   </a>
   <ul class="current collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="System_Design.html">
-     1.1. System Design
-    </a>
-   </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     1.2. C++
+     1.1. C++
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Java.html">
-     1.3. Java
+     1.2. Java
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="Python.html">
-     1.4. Python
+     1.3. Python
     </a>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../Systems/Systems.html">
-   2. Systems
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Software_Engineering/System_Design.html">
+   2. System Design
   </a>
-  <ul class="collapse-ul">
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Systems/OS.html">
-     2.1. Operating Systems
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Systems/DB.html">
-     2.2. Database and Infrastructure
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../Systems/Network.html">
-     2.3. Network
-    </a>
-   </li>
-  </ul>
-  <i class="fas fa-chevron-down">
-  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../OS/OS.html">
+   3. Operating Systems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Network/Network.html">
+   4. Network
+  </a>
  </li>
 </ul>
 
@@ -396,8 +387,50 @@
               <div>
                 
   <div class="section" id="c">
-<h1><span class="section-number">1.2. </span>C++<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h1>
-<p><strong>Question 1:</strong> When to use a virtual destructor? (Ubiquant)</p>
+<h1><span class="section-number">1.1. </span>C++<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h1>
+<p><strong>Question 1:</strong> What is the <strong>sizeof</strong> of an empty class? Follow-up: 1) why not zero? 2) what if I add a constructor and a destructor? 3) what if the destructor is virtual? 4) what if I add an int and a double? 5) what if I add an int and a double? (剑指Offer)</p>
+<details>
+<summary>Answer: </summary> 
+(Usually) 1 Byte.
+<p>An object has to occupy some physical memory space, otherwise when you instantiate it you wouldn’t be able to use it. The size of an empty class is usually 1 byte, but it depends on the compiler and system.</p>
+<p>If we add a constructor and a destructor, the <strong>sizeof</strong> will still be one byte. If the destructor is virtual, the <strong>sizeof</strong> will be 8 bytes (in a x386-64 machine, which is 64-bit), since a <strong>vpointer</strong> will be added to point to a <strong>vtable</strong>.</p>
+<p>If we add an int, the size will be 4 (in a x386-64 machine), but if we add one more double, the size will be 16, although a double takes 8 bytes and an int take 4 bytes. This is because of <strong>padding</strong>, i.e., shorter types will be padded to align with the longest type.</p>
+</details>
+<br>
+<p><strong>Question 2:</strong> What’s wrong with the following code? (剑指Offer)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">A</span> <span class="p">{</span>
+<span class="n">private</span><span class="p">:</span>
+    <span class="nb">int</span> <span class="n">value</span><span class="p">;</span>
+<span class="n">public</span><span class="p">:</span>
+    <span class="n">A</span><span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span> <span class="p">}</span>
+    <span class="n">A</span><span class="p">(</span><span class="n">A</span> <span class="n">other</span><span class="p">)</span> <span class="p">{</span> <span class="n">value</span> <span class="o">=</span> <span class="n">other</span><span class="o">.</span><span class="n">value</span><span class="p">;</span> <span class="p">}</span>
+
+    <span class="n">void</span> <span class="n">Print</span><span class="p">()</span> <span class="p">{</span><span class="n">std</span><span class="p">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">value</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="p">::</span><span class="n">endl</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="nb">int</span> <span class="n">_tmain</span><span class="p">(</span><span class="nb">int</span> <span class="n">argc</span><span class="p">,</span> <span class="n">_TCHAR</span><span class="o">*</span> <span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
+    <span class="n">A</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">A</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+    <span class="n">b</span><span class="o">.</span><span class="n">Print</span><span class="p">();</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<details>
+<summary>Answer: </summary> 
+<p>Should be</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="p">(</span><span class="n">const</span> <span class="n">A</span><span class="o">&amp;</span> <span class="n">other</span><span class="p">)</span>
+</pre></div>
+</div>
+</details>
+<br>
+<p><strong>Question 3:</strong> Explain <strong>value type</strong> and <strong>reference type</strong>. (剑指Offer)</p>
+<details>
+<summary>Answer: </summary> 
+</details>
+<br>
+<p><strong>Question 3:</strong> Implement a singleton class. (剑指Offer)</p>
 <details>
 <summary>Answer: </summary> 
 </details>
@@ -428,8 +461,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="System_Design.html" title="previous page"><span class="section-number">1.1. </span>System Design</a>
-    <a class='right-next' id="next-link" href="Java.html" title="next page"><span class="section-number">1.3. </span>Java</a>
+    <a class='left-prev' id="prev-link" href="Programming_Languages.html" title="previous page"><span class="section-number">1. </span>Programming Languages</a>
+    <a class='right-next' id="next-link" href="Java.html" title="next page"><span class="section-number">1.2. </span>Java</a>
 
         </div>
         
