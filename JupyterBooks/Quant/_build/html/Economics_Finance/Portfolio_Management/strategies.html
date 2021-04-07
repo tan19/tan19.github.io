@@ -524,24 +524,24 @@
 <div class="section" id="two-risky-assets">
 <h3><span class="section-number">5.1.2.1.1.1. </span>Two Risky Assets<a class="headerlink" href="#two-risky-assets" title="Permalink to this headline">¶</a></h3>
 <p>Suppose our portfolio <span class="math notranslate nohighlight">\(P\)</span> consists of <span class="math notranslate nohighlight">\(w\)</span> shares of security <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(y\)</span> shares of security <span class="math notranslate nohighlight">\(Y\)</span>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c4157c94-1c61-41ad-a110-e0c361d59d23">
-<span class="eqno">(5.7)<a class="headerlink" href="#equation-c4157c94-1c61-41ad-a110-e0c361d59d23" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e6a83344-294b-4df3-b384-41f79054add4">
+<span class="eqno">(5.7)<a class="headerlink" href="#equation-e6a83344-294b-4df3-b384-41f79054add4" title="Permalink to this equation">¶</a></span>\[\begin{align}
     P \equiv wX + (1-w)Y
 \end{align}\]</div>
 <p>then,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-366a7e97-73e9-4338-bdc1-ad4778b88b23">
-<span class="eqno">(5.8)<a class="headerlink" href="#equation-366a7e97-73e9-4338-bdc1-ad4778b88b23" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-644df31a-a307-4dd1-a26a-be65b8a8addf">
+<span class="eqno">(5.8)<a class="headerlink" href="#equation-644df31a-a307-4dd1-a26a-be65b8a8addf" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \mu_P &amp;= w\mu_X + (1-w)\mu_Y\\
 \sigma_P^2 &amp;= w^2 \sigma_X^2 + (1-w)^2 \sigma_Y^2 + 2w(1-w) \rho \sigma_X\sigma_Y
 \end{align}\]</div>
 <p>Taking the derivative w.r.t. <span class="math notranslate nohighlight">\(w\)</span> (assume the variances and covariance are independent from <span class="math notranslate nohighlight">\(w\)</span>) we obtain</p>
-<div class="amsmath math notranslate nohighlight" id="equation-73622de0-38c4-4c4b-9f91-7830f94259fb">
-<span class="eqno">(5.9)<a class="headerlink" href="#equation-73622de0-38c4-4c4b-9f91-7830f94259fb" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-c45071af-5c21-432d-9e0a-a85c16aa0cf6">
+<span class="eqno">(5.9)<a class="headerlink" href="#equation-c45071af-5c21-432d-9e0a-a85c16aa0cf6" title="Permalink to this equation">¶</a></span>\[\begin{align}
 2w \sigma_X^2 - 2(1-w) \sigma_Y^2 + 2(1-2w) \rho \sigma_X\sigma_Y = 0
 \end{align}\]</div>
 <p>which implies that the minimum variance is obtained when</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7e2ceeea-6a8b-4f87-a408-53728990b39c">
-<span class="eqno">(5.10)<a class="headerlink" href="#equation-7e2ceeea-6a8b-4f87-a408-53728990b39c" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-97defd0f-fb81-4ca3-97ca-7e8fb9ea2ab6">
+<span class="eqno">(5.10)<a class="headerlink" href="#equation-97defd0f-fb81-4ca3-97ca-7e8fb9ea2ab6" title="Permalink to this equation">¶</a></span>\[\begin{align}
 \hat{w} &amp;= \frac{\sigma_Y^2 - \rho \sigma_X\sigma_Y}{\sigma_X^2 - 2\rho \sigma_X\sigma_Y + \sigma_Y^2} \not \in \{0, 1\}, ~~~ \rho \ne 1\\
 \hat\mu &amp;= \mu_Y + \frac{\sigma_Y^2 - \rho \sigma_X\sigma_Y}{\sigma_X^2 - 2\rho \sigma_X\sigma_Y + \sigma_Y^2}(\mu_X - \mu_Y)\\
 \hat{\sigma}^2 &amp;= \frac{\sigma_X^2\sigma_Y^2(1-\rho^2)}{\sigma_X^2 - 2\rho\sigma_X\sigma_Y+\sigma_Y^2}\\
@@ -551,13 +551,13 @@
 <div class="section" id="multiple-risky-assets">
 <h3><span class="section-number">5.1.2.1.1.2. </span>Multiple Risky Assets<a class="headerlink" href="#multiple-risky-assets" title="Permalink to this headline">¶</a></h3>
 <p>Suppose we have the following portfolio:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a0c9820f-757d-4e73-95ee-94d69e9657e7">
-<span class="eqno">(5.11)<a class="headerlink" href="#equation-a0c9820f-757d-4e73-95ee-94d69e9657e7" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-47d9efaa-4af4-4702-972d-9099925022ab">
+<span class="eqno">(5.11)<a class="headerlink" href="#equation-47d9efaa-4af4-4702-972d-9099925022ab" title="Permalink to this equation">¶</a></span>\[\begin{align}
     \pi &amp;= w^TX    
 \end{align}\]</div>
 <p>with <span class="math notranslate nohighlight">\(w^T1 = 1\)</span>, and</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5e41989c-893a-47ae-b390-14d442a7532e">
-<span class="eqno">(5.12)<a class="headerlink" href="#equation-5e41989c-893a-47ae-b390-14d442a7532e" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0e666e9f-5ff5-4883-b855-049e7909a686">
+<span class="eqno">(5.12)<a class="headerlink" href="#equation-0e666e9f-5ff5-4883-b855-049e7909a686" title="Permalink to this equation">¶</a></span>\[\begin{align}
     \mu &amp;= w^T\mu_X\\
     \sigma^2 &amp;= w^T \Sigma w
 \end{align}\]</div>

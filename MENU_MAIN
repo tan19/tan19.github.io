@@ -3,7 +3,6 @@ Homepage
 	What's New       	[Misc/New/index.html]	            
     
 Jupyter Books
-InterviewPrep [JupyterBooks/Interview/_build/html/index.html]
 Quant [JupyterBooks/Quant/_build/html/index.html]
 Explorer [JupyterBooks/Explorer/_build/html/index.html]
 Virtuoso [JupyterBooks/Virtuoso/_build/html/index.html]
@@ -31,12 +30,12 @@ Hobbyist [JupyterBooks/Hobbyist/_build/html/index.html]
 #    Caligraphy             [*]
 #    French                 [*]	
 #	Languages              [Life/Languages/index.html]		    
-#    Painting               [Life/Painting/index.html]
+#   Painting               [Life/Painting/index.html]
 #	Literature             [Life/Literature/index.html]	
 #	Philosophy             [Life/Philosophy/index.html]           
 
 Misc
-    Wiki                    [Wiki/index.html]
+    Wiki                    [wiki/index.html]
     GitHub                  [https://github.com/tan19]
     LeetCode                [https://leetcode.com/emc57721/]
     Kaggle                  [https://www.kaggle.com/david73]
