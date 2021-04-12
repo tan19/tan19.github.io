@@ -1,10 +1,18 @@
 import subprocess
-from os import walk
+import os
+from multiprocessing import Pool
 
 files = []
-for root, subdirs, f in walk("../"):
+for root, subdirs, f in os.walk("./"):
     if f:        
         files += [root + "\\" + x for x in f if ".jemdoc" in x]
 
-for f in files:    
-    subprocess.run(["python", "bin/jemdoc", f], shell = True)
+def gen(f):
+    subprocess.run(["python", 
+                    "C:/Users/XiMTa/Dropbox/Writings/tan19.github.io/bin/jemdoc", 
+                    "-c", "C:/Users/XiMTa/Dropbox/Writings/tan19.github.io/bin/mysite.conf", 
+                    os.path.basename(f)], shell = True, cwd=os.path.dirname(f))           
+
+if __name__ == '__main__':
+    with Pool(16) as p:
+        p.map(gen, files)
