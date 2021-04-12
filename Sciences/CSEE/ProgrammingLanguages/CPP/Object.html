@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>C/C++ Object Model</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">emc57721</div>
+<div class="menu-item"><a href="../index.html">Go&nbsp;Up</a></div>
+<div class="menu-item"><a href="http://tan19.github.io/index.html">Homepage</a></div>
+<div class="menu-category">C/C++</div>
+<div class="menu-item"><a href="good_readings.html">Good&nbsp;Readings</a></div>
+<div class="menu-item"><a href="Object.html" class="current">C++&nbsp;Object&nbsp;Model</a></div>
+<div class="menu-category">Java</div>
+<div class="menu-item"><a href="../Java/good_readings.html">Good&nbsp;Readings</a></div>
+<div class="menu-item"><a href="glossary.html">Glossary</a></div>
+<div class="menu-item"><a href="FAQ.html">FAQ</a></div>
+<div class="menu-category">Python</div>
+<div class="menu-item"><a href="Python/good_readings.html">Good&nbsp;Readings</a></div>
+<div class="menu-item"><a href="glossary.html">Glossary</a></div>
+<div class="menu-item"><a href="FAQ.html">FAQ</a></div>
+<div class="menu-category">JavaScript</div>
+<div class="menu-item"><a href="JavaScript/good_readings.html">Good&nbsp;Readings</a></div>
+<div class="menu-item"><a href="glossary.html">Glossary</a></div>
+<div class="menu-item"><a href="FAQ.html">FAQ</a></div>
+<div class="menu-category">Haskell</div>
+<div class="menu-item"><a href="Haskell/good_readings.html">Good&nbsp;Readings</a></div>
+<div class="menu-item"><a href="glossary.html">Glossary</a></div>
+<div class="menu-item"><a href="FAQ.html">FAQ</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>C/C++ Object Model</h1>
+</div>
+<h2>Layout Costs for Adding Encapsulation</h2>
+<ul>
+<li><p>Data members are directly contained within each class <i>object</i>.</p>
+</li>
+<li><p>Only one copy of each non-inline member function is generated. Each inline function has either zero or one definition of itself generated within each module in which it is used.</p>
+</li>
+<li><p>The primary layout and access-time overheads within C<tt></tt> are associated with the <i>virtuals</i>.</p>
+</li>
+</ul>
+<h2>Types of Member Variables and Member Functions</h2>
+<p>In C++, there are</p>
+<ul>
+<li><p>Two types of member variables:</p>
+<ul>
+<li><p>static member variables (stored within each object)</p>
+</li>
+<li><p>non-static member variables (stored outside of each object, with their actual values)</p>
+</li></ul>
+</li>
+<li><p>Three types of member function:</p>
+<ul>
+<li><p>static member functions (stored outside each object, with function call addresses)</p>
+</li>
+<li><p>non-static member functions (stored within each object, with function call addresses)</p>
+</li>
+<li><p>virtual member functions (handled by virtual pointers <b>vptr</b> and virtual tables <b>vtable</b>)</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<p>The setting, resetting, and not setting of the vptr is handled automatically through code generated within each class constructor, destructor, and copy assignment operator. In addition, the <i>type_info</i> object is inserted to the first slot of the vtable to support RTTI (runtime type identification). </p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-04-10 17:27:12 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

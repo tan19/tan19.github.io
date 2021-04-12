@@ -1,41 +1,25 @@
 Homepage
-    About               [index.html]    
-	What's New       	[Misc/New/index.html]	            
+    About                           [index.html]    
+    Wiki & Blog                     [wiki/index.html]	
     
-Jupyter Books
-Quant [JupyterBooks/Quant/_build/html/index.html]
-Explorer [JupyterBooks/Explorer/_build/html/index.html]
-Virtuoso [JupyterBooks/Virtuoso/_build/html/index.html]
-Hobbyist [JupyterBooks/Hobbyist/_build/html/index.html]
-
-#Part O. Quant Prep School
-#Interview Prep         [Work/Interview/index.html]    
+World    
+    History, Politics & Geography   [World/History/index.html]        
+    Classics                        [World/Classics/index.html]
+    Languages                       [World/Languages/index.html]    
     
-#Part I. Problems and Theories
-#    Economics & Finance                              [Work/EconomicsFinance/index.html]        	        
-#    Mathematics & Physics                            [Work/MathPhysics/index.html]
-    
-#Part II. Models, Algorithms and Implementations
-#    Statistics & Machine Learning                      [Work/StatisticsMachineLearning/index.html]    
-#    Numerical Methods, Algorithms & Optimization   [Work/Numerical/index.html]    
-#    Computer Science	                      [Work/CS/index.html]
+Sciences    
+    Economics & Finance             [Sciences/EconomicsFinance/index.html]    
+    Mathematics & Physics           [Sciences/MathPhysics/index.html]    
+    Statistics & Machine Learning   [Sciences/StatisticsMachineLearning/index.html]    
+    Algorithms & Optimization       [Sciences/AlgorithmsOptimization/index.html]    
+    CS & EE                         [Sciences/CSEE/index.html]
 
-#Part III. More about the World    
-#    History                [Life/History/index.html]
-#    Geography              [Life/Geography/index.html]	          
-#    Politics               [Life/Politics/index.html]		    
-	
-#Life          
-#    Piano                  [*]
-#    Caligraphy             [*]
-#    French                 [*]	
-#	Languages              [Life/Languages/index.html]		    
-#   Painting               [Life/Painting/index.html]
-#	Literature             [Life/Literature/index.html]	
-#	Philosophy             [Life/Philosophy/index.html]           
+Arts       
+    Performing Arts                 [Arts/PerformingArts/index.html]
+    Visual Arts                     [Arts/VisualArts/index.html]
+	Literature                      [Arts/Literature/index.html]	
 
-Misc
-    Wiki                    [wiki/index.html]
-    GitHub                  [https://github.com/tan19]
-    LeetCode                [https://leetcode.com/emc57721/]
-    Kaggle                  [https://www.kaggle.com/david73]
+Misc        
+    GitHub                          [https://github.com/tan19]
+    LeetCode                        [https://leetcode.com/emc57721/]
+    Kaggle                          [https://www.kaggle.com/david73]
