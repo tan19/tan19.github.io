@@ -1,0 +1,232 @@
+\usepackage{amssymb,amsmath,mathtools}
+
+\usepackage{algorithm2e,algorithmic}
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+\usepackage{mathrsfs}
+\usepackage{paralist}
+
+
+\usepackage{svg}
+
+%% Draw dice
+\usepackage{tikz}
+\usetikzlibrary{
+  decorations.pathreplacing,
+  calc,
+  patterns,
+  datavisualization.formats.functions,
+  external}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\tikzset{
+  dot hidden/.style={},
+  line hidden/.style={},
+  dot colour/.style={dot hidden/.append style={color=#1}},
+  dot colour/.default=black,
+  line colour/.style={line hidden/.append style={color=#1}},
+  line colour/.default=black
+}
+
+\usepackage{esint} % for \fint
+
+\allowdisplaybreaks
+
+\usepackage{color}
+\usepackage{graphicx} 	% insert image files
+\usepackage{enumerate} 	% enumerate items
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow,multicol}
+\usepackage[makeroom]{cancel}
+
+\usepackage{import} % to import subfolder LaTeX files
+\usepackage{imakeidx}
+
+\usepackage{shorttoc}
+\usepackage{minitoc}
+
+
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref} % need to be place after imakeidx
+
+\newcommand{\cem}[1]{\color{magenta}{\em{#1}}} % color emphasize
+\newcommand{\dual}[2]{{#1}^{(#2)}} % color emphasize
+
+\newcommand{\tr}{{\mathrm{tr}}}
+\renewcommand{\vec}{{\mathrm{vec}}}
+
+\newcommand{\dd}{{\,\mathrm{d}\,}}
+%%
+%% horizontal and vertical centering in table p mode
+%%
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} % horizontal centering
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}} % vertical centering
+
+%%
+%% define bold font for the alphabet
+%%
+\usepackage{pgffor}
+\foreach \letter in {a,...,z}{ % bold font for a..z
+\expandafter\xdef\csname \letter \endcsname{\noexpand\ensuremath{\noexpand\mathbf{\letter}}}
+}
+\foreach \letter in {A,...,Z}{ % bold font for A..Z
+\expandafter\xdef\csname \letter \endcsname{\noexpand\ensuremath{\noexpand\mathbf{\letter}}}
+}
+\foreach \letter in {A,...,Z}{ % `field' font for AA..ZZ
+\expandafter\xdef\csname \letter\letter \endcsname{\noexpand\ensuremath{\noexpand\mathcal{\letter}}}
+}
+\foreach \letter in {A,...,Z}{ % `field' font for AAA..ZZZ
+\expandafter\xdef\csname \letter\letter\letter \endcsname{\noexpand\ensuremath{\noexpand\mathbb{\letter}}}
+}
+\newcommand{\balpha}{{\boldsymbol{\alpha}}}
+\newcommand{\bbeta}{{\boldsymbol{\beta}}}
+\newcommand{\bgamma}{{\boldsymbol{\gamma}}}
+\newcommand{\bkappa}{{\boldsymbol{\kappa}}}
+\newcommand{\bmu}{{\boldsymbol{\mu}}}
+\newcommand{\btheta}{{\boldsymbol{\theta}}}
+\newcommand{\bTheta}{{\boldsymbol{\Theta}}}
+\newcommand{\bPi}{{\boldsymbol{\Pi}}}
+\newcommand{\bSigma}{{\boldsymbol{\Sigma}}}
+\newcommand{\bPhi}{{\boldsymbol{\Phi}}}
+\newcommand{\bLambda}{{\boldsymbol{\Lambda}}}
+\newcommand{\bdeta}{{\boldsymbol{\eta}}}
+\newcommand{\bphi}{{\boldsymbol{\phi}}}
+
+\newcommand{\bOne}{{\boldsymbol{1}}}
+\newcommand{\bZero}{{\boldsymbol{0}}}
+
+
+
+%%
+%% add definitions and theorems
+%%
+\usepackage[thmmarks,amsmath]{ntheorem}
+\theorembodyfont{\normalfont}
+\newtheorem{deff}{Definition}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{rmk}{Remark}[section]
+\newtheorem{alg}{Algorithm}[section]
+\newtheorem{ex}{Example}[section]
+\newtheorem{ques}{Question}[section]
+\newtheorem{ans}{Answer}[section]
+\newtheorem{prob}{Problem}[section]
+\newtheorem{sol}{Solution}[section]
+\newtheorem*{prof}{Proof}[section] 
+
+
+
+\usepackage{pgffor,xparse,listofitems}
+
+
+\NewDocumentCommand{\drawdie}{O{}m}{%
+\begin{tikzpicture}[x=1em,y=1em,radius=0.1,#1]
+  \draw[rounded corners=0.5,line hidden] (0,0) rectangle (1,1);
+  \ifodd#2
+    \fill[dot hidden] (0.5,0.5) circle;
+  \fi
+  \ifnum#2>1
+    \fill[dot hidden] (0.2,0.2) circle;
+    \fill[dot hidden] (0.8,0.8) circle;
+   \ifnum#2>3
+     \fill[dot hidden] (0.2,0.8) circle;
+     \fill[dot hidden] (0.8,0.2) circle;
+    \ifnum#2>5
+      \fill[dot hidden] (0.8,0.5) circle;
+      \fill[dot hidden] (0.2,0.5) circle;
+     \ifnum#2>7
+       \fill[dot hidden] (0.5,0.8) circle;
+       \fill[dot hidden] (0.5,0.2) circle;
+      \fi
+    \fi
+  \fi
+\fi
+\end{tikzpicture}%
+}  
+
+
+% Make some ntheorem environments to hold the questions and answers
+
+\theoremstyle{plain} % plain or break
+\theoremheaderfont{\bfseries}
+\theorembodyfont{}
+\theoremnumbering{arabic}
+\theoremseparator{:}
+\newtheorem{ntquestion}{Question}
+
+\theoremstyle{plain}
+\theoremheaderfont{\bfseries}
+\theorembodyfont{}
+\theoremnumbering{arabic}
+\theoremseparator{}
+%\theoremindent=0cm
+\newtheorem*{ntanswer}{Answer}
+
+
+% Make new environments to ease the labelling
+% use the xparse package, since we need the arguments in the last bit of the environment as well
+\newcounter{indexlink}
+\newcommand{\Index}[1]{\index{Tag: #1{\string\hypertarget{\theindexlink}{}}}\hyperlink{\theindexlink}{#1}}
+  
+\NewDocumentEnvironment{question}
+{
+	m % title
+	m % difficulty level
+	m % tags	
+} 
+{
+	\begin{ntquestion}
+	\label{q:#1}
+
+	%	
+	% process question name and level
+	%
+	\index{Question: #1}
+	\index{Question Level: #2}	
+	
+	\underline{\emph{#1}} (#2) (Tags:\setsepchar{; }\readlist*\looplist{#3}\foreachitem \n \in \looplist{ \Index{\n};})\\
+	
+}
+{	
+	\begin{flushright}
+		(\hyperref[a:#1]{Answer on page \pageref*{a:#1}})
+	\end{flushright}
+		
+	\end{ntquestion}
+}
+
+\NewDocumentEnvironment{answer}{m}%
+{
+	\begin{ntanswer}{\bf{\ref*{q:#1}:}}
+	\label{a:#1}
+	{\color{blue} \underline{\emph{#1}}}
+	\hfill(\hyperref[q:#1]{Question on page \pageref*{q:#1}})\\
+	\\
+}%
+{
+	\end{ntanswer}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Usage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{question}{questionlabelname}
+% Write stuff here
+%\end{question}
+
+%\begin{answer}{questionlabelname}
+% Write stuff here
+%\end{answer}
+
+% this will automatically create the labels called `q:questionlabelname` and `a:questionlabelname`.
+% To change the formatting of the question and answer blocks, change their corresponding ntheorem styles.
+
