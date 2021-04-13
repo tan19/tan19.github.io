@@ -3,17 +3,9 @@
 == Within and Beyond a Quant Life
 
 ~~~
-{}{raw}
-<center>
-<div style="height: 500px; padding-top: 20px; position: relative; left: 0%; width: 600px; margin-left: 0px;">	
-	<p>
-    <img src="index.files/Apollo_and_Daphne.jpg" alt="Italian Trulli", style="width:50%;">
-    <p></p>
-    (<i>Apollo and Daphne</i> by Gian Lorenzo Bernini, circa 1625)        
-	</p>    
-</div>
-</center>
+{}{img_left}{index.files/Apollo_and_Daphne.jpg}{alt text}{300px}{}{}
 ~~~
 
-#There are two things I care most in my life: love and prosperity of humanity.
+[https://en.wikipedia.org/wiki/Apollo_and_Daphne /Apollo and Daphne/] by [https://en.wikipedia.org/wiki/Gian_Lorenzo_Bernini /Gian Lorenzo Bernini/]
 
+\n\n\n
