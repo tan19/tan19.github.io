@@ -2,6 +2,9 @@ import subprocess
 import os
 from multiprocessing import Pool
 
+f = "C:/Users/XiMTa/Dropbox/Writings/tan19.github.io/Interview/InterviewQuestionBank/source/genTeXJemdoc.py"
+subprocess.run(["python", f], shell = True, cwd=os.path.dirname(f))
+
 files = []
 for root, subdirs, f in os.walk("./"):
     if f:        

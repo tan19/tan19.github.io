@@ -1,0 +1,111 @@
+# jemdoc: menu{MENU_Interview}{Finance_Stochastic_Calculus.html}
+= Stochastic Calculus (4 Problems)
+
+- Brownian Motion (4 Problems)
+== Brownian Motion
+
+~~~
+*Question \#1: *
+Prove that $E[B_t^{2k}] = \frac{(2k)!}{2^k\dot k!} t^k$, where $B_t$ is a Brownian motion.
+
+\n\n*Title: *Brownian Motion I\n*FileName: *3001.md\n*Difficulty: *Easy\n*Category: *Finance\/Stochastic Calculus\/Brownian Motion\n*Tags: *Stochastic Calculus; Brownian Motion; Moments of Brownian Motion; Moments of Gaussian Random Variable\n*Source: *Black Book, page 42\n
+~~~
+
+*Answer: *
+Recall that the $n^{th}$ centralized moment of a standard normal random variable is
+\(
+\begin{align}
+    E[Z^n] = (n-1)!!
+\end{align}
+\)
+
+Therefore,
+\(
+\begin{align}
+    E[B_t^{2k}] = t^k (2k-1)!! = \frac{(2k)!}{2^k k!} t^k
+\end{align}
+\)
+
+
+
+~~~
+*Question \#2: *
+What are the distributions, respectively, of the minimum and maximum of a Brownian motion in a given time frame $[0,t]$?
+
+\n\n*Title: *Min and Max of Brownian Motion\n*FileName: *3002.md\n*Difficulty: *Easy\n*Category: *Finance\/Stochastic Calculus\/Brownian Motion\n*Tags: *Stochastic Calculus; Brownian Motion; Min and Max of Normal; Min and Max of Brownian Motion\n*Source: *Green Book, page 132\n
+~~~
+
+*Answer: *
+Use passage time density of a Brownian motion.
+
+This is related to the question about min and max of two normal random variables.
+
+
+~~~
+*Question \#3: *
+What is the mean of the stopping time $T$ for a Brownian motion to reach either the upper level $U$ or the below level $-B$?
+	
+Follow-up question: One man at 17 meter of a 100-meter-long bridge. He has 50\% going one meter forward or backward. What is the probability he makes it to the end of the end of the bridge (the 100-meter end) before he reaches the other end (the 0-meter end)? What is the expected number of steps he takes to reach either end?
+
+\n\n*Title: *Brownian Motion Stopping Time I\n*FileName: *3003.md\n*Difficulty: *Easy\n*Category: *Finance\/Stochastic Calculus\/Brownian Motion\n*Tags: *Stochastic Calculus; Brownian Motion; Brownian Motion Stopping Time\n*Source: *Green Book\n
+~~~
+
+*Answer: *
+The answer is $E[T] = UB$. Define:
+\(
+\begin{align}
+    T = \min\{t : W_t = U \mbox{ or } W_t = -B\}
+\end{align}
+\)
+
+Since a martingale stopped at a stopping time is a martingale, 
+\(
+\begin{align}
+    0 &= E[W_T] \\
+    &= -B P(W_T = -B) + U P(W_T = U)\\
+    &= -B P(W_T = -B) + U (1 - P(W_T = -B))\\
+    &= U - (U+B)P(W_T = -B)\\
+    &\implies P(W_T = -B) = \frac{U}{U+B}\\
+    &\implies P(W_T = U) = \frac{B}{U+B}
+\end{align}
+\)
+
+Now, since $W_T - T$ is also a martingale, we see that
+\(
+\begin{align}
+    0 & = E[W_T^2 - T] = E[W_T^2] - T = B^2 P(W_T = -B) + U^2 P(W_T = U) - E[T]\\
+    & = \frac{B^2U}{U+B} - \frac{U^2B}{U+B} - E[T] = UB - E[T]\\	
+    &\implies E[T] = UB
+\end{align}
+\)
+
+For the follow-up question, the answer is obvious: the probability of reaching the end of the bridge is 17/100, and the expected number of steps to reach either end is $17 \times 83 = 1411$.
+
+
+~~~
+*Question \#4: *
+What is $P(W_1W_{1+t} \ge 0)$, where $W_1$ is a standard Brownian motion?
+
+\n\n*Title: *Brownian Motion II\n*FileName: *3004.md\n*Difficulty: *Easy\n*Category: *Finance\/Stochastic Calculus\/Brownian Motion\n*Tags: *Stochastic Calculus; Brownian Motion\n*Source: *Credit Suisse\n
+~~~
+
+*Answer: *
+Decompose $W_{1+t}$ into $W_1 + B_t$ where $B_t$ is an incremental Brownian motion independent from $W_1$, then:
+\(
+\begin{align}
+    P(W_1W_{1+t} \ge 0) &= P(W_1(W_1 + B_t) \ge 0)\\
+    &= P(W_1 \ge 0, W_1 + B_t \ge 0) + P(W_1 \le 0, W_1 + B_t \le 0) \\
+    &= 2P(W_1 \ge 0, W_1 + B_t \ge 0)\\
+    &= 2P\left(W_1 \ge 0, Z \equiv \frac{B_t}{\sqrt{t}} \ge -\frac{W_1}{\sqrt{t}}\right)
+\end{align}
+\)
+
+Now, draw a coordinate system with $W_1$ and $Z$, which are i.i.d. standard normal. The final answer is (need to check):
+\(
+\begin{align}
+    2\left(\frac14 + \frac{\arctan(1/\sqrt{t})}{2\pi}\right)
+\end{align}
+\)
+
+
+

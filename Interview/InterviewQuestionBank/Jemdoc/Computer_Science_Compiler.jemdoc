@@ -1,0 +1,20 @@
+# jemdoc: menu{MENU_Interview}{Computer_Science_Compiler.html}
+= Compiler (1 Problems)
+
+- Compiling Process (1 Problems)
+== Compiling Process
+
+~~~
+*Question \#1: *
+What are the stages of compiling?
+
+\n\n*Title: *Compiling Process\n*FileName: *4101.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Compiler\/Compiling Process\n*Tags: *Compiler\n*Source: *NA\n
+~~~
+
+*Answer: *
+- Macro Substitution
+- Syntactic Analysis
+- Grammatical Analysis
+- Quadruplet Generation
+- Table of Variable Maintenance
+

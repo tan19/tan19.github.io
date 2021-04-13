@@ -216,10 +216,10 @@ def standardconf():
   [nomenulastbit]
   </div>
   
-  [bodyend]
+  [bodyend]  
   </body>
   </html>
-  
+
   [infoblock]
   <div class="infoblock">
   

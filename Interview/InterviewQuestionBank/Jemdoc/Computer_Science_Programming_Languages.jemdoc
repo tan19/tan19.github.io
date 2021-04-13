@@ -1,0 +1,206 @@
+# jemdoc: menu{MENU_Interview}{Computer_Science_Programming_Languages.html}
+= Programming Languages (18 Problems)
+
+- C\+\+ (17 Problems)
+- Python (1 Problems)
+== C\+\+
+
+~~~
+*Question \#1: *
+Describe all the C\+\+ castings and their properties.
+
+\n\n*Title: *Casting\n*FileName: *4002.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Casting\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#2: *
+What is **shallow copy** and **deep copy**? What member function needs to be implemented in order to implement **deep copy**?
+
+\n\n*Title: *Shallow Copy vs Deep Copy\n*FileName: *4003.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Deep Copy, Shallow Copy\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#3: *
+What is the **sizeof** of an empty class? Follow-up: 1) why not zero? 2) what if I add a constructor and a destructor? 3) what if the destructor is virtual? 4) what if I add an int and a double? 5) what if I add an int and a double?
+
+\n\n*Title: *Empty Class\n*FileName: *4004.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Computer Science, Empty Class\n*Source: *Jian Zhi Offer\n
+~~~
+
+*Answer: *
+(Usually) 1 Byte.
+
+An object has to occupy some physical memory space, otherwise when you instantiate it you wouldn't be able to use it. The size of an empty class is usually 1 byte, but it depends on the compiler and system.
+
+If we add a constructor and a destructor, the **sizeof** will still be one byte. If the destructor is virtual, the **sizeof** will be 8 bytes (in a x386-64 machine, which is 64-bit), since a **vpointer** will be added to point to a **vtable**.
+
+If we add an int, the size will be 4 (in a x386-64 machine), but if we add one more double, the size will be 16, although a double takes 8 bytes and an int take 4 bytes. This is because of **padding**, i.e., shorter types will be padded to align with the longest type.
+
+~~~
+*Question \#4: *
+You can only read the source code of a class, which has a private member variable. How can you get the access of the private member variable?
+
+\n\n*Title: *Private Member Variable\n*FileName: *4005.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Private Member Variable\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#5: *
+Explain **value type** and **reference type**.
+
+\n\n*Title: *Value Type and Reference Type\n*FileName: *4006.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Value Type and Reference Type\n*Source: *Jian Zhi Offer\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#6: *
+What is the difference between **vector** and **list**? How does **vector** expand in size, why not use 2x?
+
+\n\n*Title: *Vector vs List\n*FileName: *4007.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *STL\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#7: *
+What will be implemented for an empty class?
+
+\n\n*Title: *Empty Class\n*FileName: *4008.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Class\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#8: *
+What is the difference between **map** and **unordered map**?
+
+\n\n*Title: *Map vs Unorder Map\n*FileName: *4009.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *STL\n*Source: *NA\n
+~~~
+
+*Answer: *
+**unordered map** is faster than **map**, as the former is implemented via a hash function while the latter is implemented by keeping the keys always sorted using a self-balancing binary tree.
+
+
+~~~
+*Question \#9: *
+What is the difference between **select**, **poll** and **epoll**?
+
+\n\n*Title: *Select, Poll and Epoll\n*FileName: *4010.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Multithreading\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#10: *
+What is the difference between **new** and **malloc**?
+
+\n\n*Title: *New and Malloc\n*FileName: *4011.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *C++, Memory\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#11: *
+Can a derived class modify the default parameters of a virtual function of a parent class? If so, at compile time or run time?
+
+\n\n*Title: *Modify Virtual Function of Parent Class\n*FileName: *4012.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *C++, Virtual Function\n*Source: *Tencent\n
+~~~
+
+*Answer: *
+
+
+
+~~~
+*Question \#12: *
+What is the difference between pointers and references? Does reference take memory space?
+
+\n\n*Title: *Pointers and References\n*FileName: *4013.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *C++, Pointers and References\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+
+~~~
+*Question \#13: *
+Explain smart pointers.
+
+\n\n*Title: *Smart Pointers\n*FileName: *4014.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *C++, Smart Pointers\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+
+~~~
+*Question \#14: *
+What are the six key components of STL? Explain.
+
+\n\n*Title: *Six Key Components of STL\n*FileName: *4015.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *C++, STL\n*Source: *NA\n
+~~~
+
+*Answer: *
+- containers
+- algorithm
+- iterator
+- adapter
+- allocator
+- functor 
+
+~~~
+*Question \#15: *
+Are data in STL map ordered?
+
+\n\n*Title: *STL Map\n*FileName: *4016.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *C++, STL\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#16: *
+What is the difference between **map** and **set**?
+
+\n\n*Title: *Map vs Set\n*FileName: *4017.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *C++, STL\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#17: *
+When to use a virtual destructor?
+
+\n\n*Title: *When to use a virtual destructor?\n*FileName: *4018.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Virtual Destructor\n*Source: *Ubiquant\n
+~~~
+
+*Answer: *
+Need to check if the matrix is square first.
+
+
+
+== Python
+
+~~~
+*Question \#18: *
+Explain "if \_\_name\_\_ == \_\_main\_\_".
+
+\n\n*Title: *Python\n*FileName: *4019.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/Python\n*Tags: *C++, Debug\n*Source: *NA\n
+~~~
+
+*Answer: *
+Checking if the current module (== file) contains a main function, and is not imported.
+

@@ -135,6 +135,12 @@ In a hospital there were 3 boys and some girls. A woman gave birth to a child in
 
 \end{question}
 
+\section{Uniform Random Variables}
+\begin{question}{Uniform Random Variables}{Easy}{\#2104.md; Uniform Random Variables; NA}
+$X, Y, Z$ are i.i.d. $U[0,1]$. What is the distribution of $(XY)^Z$?
+
+\end{question}
+
 \section{Coin Games}
 \begin{question}{Coin Game}{Easy}{\#2111.md; Coin Games; SIG}
 You and I each flip 3 fair coins, if we got same heads I pay you \$2, if different you pay me \$1. Will you play this game?
@@ -173,6 +179,8 @@ The answer is 10.6. Setup an indicator function $X_i = \mbox{all aces are behind
 	 &= \frac{\frac{4}{3+N+1} \cdot \frac{1}{2}}{\frac{4}{3+N+1} \cdot \frac{1}{2} + \frac{3}{3+N+1} \cdot \frac{1}{2}}\\
 	 &= \frac{4}{4+3} = \frac{4}{7}
 \end{align}\end{answer}
+\begin{answer}{Uniform Random Variables}
+\end{answer}
 \begin{answer}{Coin Game}
 Naive Way:
 \begin{align}
@@ -379,9 +387,53 @@ NA
 NA
 \end{answer}
 \part{Computer Science}
-\chapter{C++}
+\chapter{Compiler}
 \minitoc
-\section{Debug}
+\section{Compiling Process}
+\begin{question}{Compiling Process}{Easy}{\#4101.md; Compiler; NA}
+What are the stages of compiling?
+
+\end{question}
+
+\newpage\section{Chapter Answers}\begin{answer}{Compiling Process}
+- Macro Substitution
+- Syntactic Analysis
+- Grammatical Analysis
+- Quadruplet Generation
+- Table of Variable Maintenance\end{answer}
+\chapter{Database}
+\minitoc
+\section{Database}
+\begin{question}{B Tree vs B+ Tree}{Easy}{\#4201.md; Database; NA}
+What is the difference between {\bf{B Tree}} and {\bf{B+ Tree}}? WHy do we need B+ tree?
+
+\end{question}
+
+\newpage\section{Chapter Answers}\begin{answer}{B Tree vs B+ Tree}
+\end{answer}
+\chapter{Network}
+\minitoc
+\section{DNS}
+\begin{question}{DNS}{Easy}{\#4301.md; Network; DNS; NA}
+Explain DNS.
+
+\end{question}
+
+\newpage\section{Chapter Answers}\begin{answer}{DNS}
+\end{answer}
+\chapter{Operating System}
+\minitoc
+\section{Thread}
+\begin{question}{Process vs Thread}{Easy}{\#4401.md; Operating System; NA}
+What is the difference between {\bf{process}} and {\bf{thread}}?
+
+\end{question}
+
+\newpage\section{Chapter Answers}\begin{answer}{Process vs Thread}
+\end{answer}
+\chapter{Programming Languages}
+\minitoc
+\section{C++}
 \begin{question}{Code Debug}{Easy}{\#4001.md; C++, Debug; NA}
 What's wrong with the following code?
 
@@ -408,21 +460,33 @@ int _tmain(int argc, _TCHAR* argv[]) {
 
 \end{question}
 
-\section{Casting}
 \begin{question}{C++ Cast}{Easy}{\#4002.md; Casting; NA}
 Describe all the C++ casts and their properties.
 
 \end{question}
 
-\section{Shallow Copy and Deep Copy}
 \begin{question}{Shallow Copy vs Deep Copy}{Easy}{\#4003.md; Deep Copy, Shallow Copy; NA}
 What is {\bf{shallow copy}} and {\bf{deep copy}}? What member function needs to be implemented in order to implement {\bf{deep copy}}?
 
 \end{question}
 
-\section{Class}
 \begin{question}{Empty Class}{Easy}{\#4004.md; Computer Science, Empty Class; Jian Zhi Offer}
 What is the {\bf{sizeof}} of an empty class? Follow-up: 1) why not zero? 2) what if I add a constructor and a destructor? 3) what if the destructor is virtual? 4) what if I add an int and a double? 5) what if I add an int and a double?
+
+\end{question}
+
+\begin{question}{Private Member Variable}{Easy}{\#4005.md; Private Member Variable; NA}
+You can only read the source code of a class, which has a private member variable. How can you get the access of the private member variable?
+
+\end{question}
+
+\begin{question}{Value Type and Reference Type}{Easy}{\#4006.md; Value Type and Reference Type; Jian Zhi Offer}
+Explain {\bf{value type}} and {\bf{reference type}}.
+
+\end{question}
+
+\begin{question}{Vector vs List}{Easy}{\#4007.md; STL; NA}
+What is the difference between {\bf{vector}} and {\bf{list}}? How does {\bf{vector}} expand in size, why not use 2x?
 
 \end{question}
 
@@ -431,26 +495,33 @@ What will be implemented for an empty class?
 
 \end{question}
 
-\section{Private Member Variable}
-\begin{question}{Private Member Variable}{Easy}{\#4005.md; Private Member Variable; NA}
-You can only read the source code of a class, which has a private member variable. How can you get the access of the private member variable?
-
-\end{question}
-
-\section{Value Type and Reference Type}
-\begin{question}{Value Type and Reference Type}{Easy}{\#4006.md; Value Type and Reference Type; Jian Zhi Offer}
-Explain {\bf{value type}} and {\bf{reference type}}.
-
-\end{question}
-
-\section{STL}
-\begin{question}{Vector vs List}{Easy}{\#4007.md; STL; NA}
-What is the difference between {\bf{vector}} and {\bf{list}}? How does {\bf{vector}} expand in size, why not use 2x?
-
-\end{question}
-
 \begin{question}{Map vs Unorder Map}{Easy}{\#4009.md; STL; NA}
-What is the difference between {\bf{map}} and {\bf{unorder map}}?
+What is the difference between {\bf{map}} and {\bf{unordered map}}?
+
+\end{question}
+
+\begin{question}{Select, Poll and Epoll}{Easy}{\#4010.md; Multithreading; NA}
+What is the difference between {\bf{select}}, {\bf{poll}} and {\bf{epoll}}?
+
+\end{question}
+
+\begin{question}{New and Malloc}{Easy}{\#4011.md; C++, Memory; NA}
+What is the difference between {\bf{new}} and {\bf{malloc}}?
+
+\end{question}
+
+\begin{question}{Modify Virtual Function of Parent Class}{Easy}{\#4012.md; C++, Virtual Function; Tencent}
+Can a derived class modify the default parameters of a virtual function of a parent class? If so, at compile time or run time?
+
+\end{question}
+
+\begin{question}{Pointers and References}{Easy}{\#4013.md; C++, Pointers and References; NA}
+What is the difference between pointers and references? Does reference take memory space?
+
+\end{question}
+
+\begin{question}{Smart Pointers}{Easy}{\#4014.md; C++, Smart Pointers; NA}
+Explain smart pointers.
 
 \end{question}
 
@@ -469,39 +540,14 @@ What is the difference between {\bf{map}} and {\bf{set}}?
 
 \end{question}
 
-\section{Multithreading}
-\begin{question}{Select, Poll and Epoll}{Easy}{\#4010.md; Multithreading; NA}
-What is the difference between {\bf{select}}, {\bf{poll}} and {\bf{epoll}}?
-
-\end{question}
-
-\section{Memory}
-\begin{question}{New and Malloc}{Easy}{\#4011.md; C++, Memory; NA}
-What is the difference between {\bf{new}} and {\bf{malloc}}?
-
-\end{question}
-
-\section{Virtual Function}
-\begin{question}{Modify Virtual Function of Parent Class}{Easy}{\#4012.md; C++, Virtual Function; Tencent}
-Can a derived class modify the default parameters of a virtual function of a parent class? If so, at compile time or run time?
-
-\end{question}
-
-\section{Pointers and References}
-\begin{question}{Pointers and References}{Easy}{\#4013.md; C++, Pointers and References; NA}
-What is the difference between pointers and references? Does reference take memory space?
-
-\end{question}
-
-\section{Smart Pointers}
-\begin{question}{Smart Pointers}{Easy}{\#4014.md; C++, Smart Pointers; NA}
-Explain smart pointers.
-
-\end{question}
-
-\section{Virtual Functions}
 \begin{question}{When to use a virtual destructor?}{Easy}{\#4018.md; Virtual Destructor; Ubiquant}
 When to use a virtual destructor?
+
+\end{question}
+
+\section{Python}
+\begin{question}{Python}{Easy}{\#4019.md; C++, Debug; NA}
+Explain "if \_\_name\_\_ == \_\_main\_\_".
 
 \end{question}
 
@@ -532,6 +578,7 @@ If we add an int, the size will be 4 (in a x386-64 machine), but if we add one m
 \begin{answer}{Empty Class}
 \end{answer}
 \begin{answer}{Map vs Unorder Map}
+{\bf{unordered map}} is faster than {\bf{map}}, as the former is implemented via a hash function while the latter is implemented by keeping the keys always sorted using a self-balancing binary tree.
 \end{answer}
 \begin{answer}{Select, Poll and Epoll}
 \end{answer}
@@ -561,40 +608,8 @@ If we add an int, the size will be 4 (in a x386-64 machine), but if we add one m
 Need to check if the matrix is square first.
 
 \end{answer}
-\chapter{Compiler}
-\minitoc
-\section{Compiling Process}
-\begin{question}{Compiling Process}{Easy}{\#4101.md; Compiler; NA}
-What are the stages of compiling?
-
-\end{question}
-
-\newpage\section{Chapter Answers}\begin{answer}{Compiling Process}
-- Macro Substitution
-- Syntactic Analysis
-- Grammatical Analysis
-- Quadruplet Generation
-- Table of Variable Maintenance\end{answer}
-\chapter{Database}
-\minitoc
-\section{Database}
-\begin{question}{B Tree vs B+ Tree}{Easy}{\#4301.md; Database; NA}
-What is the difference between {\bf{B Tree}} and {\bf{B+ Tree}}? WHy do we need B+ tree?
-
-\end{question}
-
-\newpage\section{Chapter Answers}\begin{answer}{B Tree vs B+ Tree}
-\end{answer}
-\chapter{Operating System}
-\minitoc
-\section{Thread}
-\begin{question}{Process vs Thread}{Easy}{\#4201.md; Operating System; NA}
-What is the difference between {\bf{process}} and {\bf{thread}}?
-
-\end{question}
-
-\newpage\section{Chapter Answers}\begin{answer}{Process vs Thread}
-\end{answer}
+\begin{answer}{Python}
+Checking if the current module (== file) contains a main function, and is not imported.\end{answer}
 \part{Algorithm and Optimization}
 \chapter{Optimization}
 \minitoc

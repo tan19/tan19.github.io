@@ -1,0 +1,26 @@
+# jemdoc: menu{MENU_Interview}{Brainteaser_Math_Brainteaser.html}
+= Math Brainteaser (2 Problems)
+
+- Games (2 Problems)
+== Games
+
+~~~
+*Question \#1: *
+You have two strings. Each string takes exactly one hour to burn. The rate at which the strings are burnt is completely random and the two strings are different. How do you measure 45 minutes with these two strings?
+
+\n\n*Title: *Two Strings\n*FileName: *1101.md\n*Difficulty: *Easy\n*Category: *Brainteaser\/Math Brainteaser\/Games\n*Tags: *Brainteaser, Math Brainteaser\n*Source: *Microsoft\n
+~~~
+
+*Answer: *
+45 = 30 + 15. Burn one string (pick any one of the two) at both ends, and only one end of the other string. As soon as the first string is finished (which takes 30 minutes), burn the other end of the second string. It will take additional 15 minutes for the second string to finish. The total time is 45 minutes.
+
+~~~
+*Question \#2: *
+Two people take 1-5 coins in turn from a pile of 100 coins. Is there a strategy to guarantee that the first person to pick always get the last coin?
+
+\n\n*Title: *Coin Game\n*FileName: *1102.md\n*Difficulty: *Easy\n*Category: *Brainteaser\/Math Brainteaser\/Games\n*Tags: *Brainteaser, Math Brainteaser\n*Source: *Baidu\n
+~~~
+
+*Answer: *
+
+

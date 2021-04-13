@@ -1,0 +1,23 @@
+# jemdoc: menu{MENU_Interview}{Algorithm_Unconstrained_Optimization.html}
+= Unconstrained Optimization (1 Problems)
+
+- Root Finding (1 Problems)
+== Root Finding
+
+~~~
+*Question \#1: *
+Explain Newton's method.
+
+\n\n*Title: *Newton's Method\n*FileName: *5201.md\n*Difficulty: *Easy\n*Category: *Algorithm\/Unconstrained Optimization\/Root Finding\n*Tags: *Newton's Method\n*Source: *NA\n
+~~~
+
+*Answer: *
+Suppose we have a function $f(x) = 0$ and we want to find its root. We start with $x_0$ close to its root, and update as
+\(
+\begin{align}
+    x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
+\end{align}
+\)
+
+
+

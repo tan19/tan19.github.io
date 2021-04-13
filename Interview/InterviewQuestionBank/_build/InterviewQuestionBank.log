@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.18)  7 APR 2021 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 21.1) (preloaded format=pdflatex 2021.2.18)  12 APR 2021 15:54
 entering extended mode
 **./LaTeX/InterviewQuestionBank.tex
 (LaTeX/InterviewQuestionBank.tex
@@ -1292,8 +1292,8 @@ Package minitoc Info: I0002
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc0)
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc0)
 Package minitoc Info: I0012
 (minitoc)             Long extensions (Unix-like) will be used.
 Package minitoc Info: I0031
@@ -1603,14 +1603,30 @@ Package minitoc Info: I0033
 (minitoc)             Writing InterviewQuestionBank.mtc15.
 \openout5 = `InterviewQuestionBank.mtc15'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing InterviewQuestionBank.mtc16.
+\openout5 = `InterviewQuestionBank.mtc16'.
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.aux
+
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.aux
 
 LaTeX Warning: Label `q:Coin Game' multiply defined.
 
 
 LaTeX Warning: Label `a:Coin Game' multiply defined.
+
+
+LaTeX Warning: Label `q:Empty Class' multiply defined.
+
+
+LaTeX Warning: Label `a:Empty Class' multiply defined.
+
+
+LaTeX Warning: Label `q:NA' multiply defined.
+
+
+LaTeX Warning: Label `a:NA' multiply defined.
 
 )
 \openout1 = `InterviewQuestionBank.aux'.
@@ -1719,16 +1735,17 @@ LaTeX Info: Redefining \ref on input line 15.
 LaTeX Info: Redefining \pageref on input line 15.
 LaTeX Info: Redefining \nameref on input line 15.
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.out)
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.out)
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.out)
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.out)
 \@outlinefile=\write7
 \openout7 = `InterviewQuestionBank.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
 
- ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
+
+("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
@@ -1749,11 +1766,10 @@ LaTeX Font Info:    Trying to load font information for U+esint on input line 1
 (C:\Users\XiMTa\AppData\Roaming\MiKTeX\tex/latex/esint\uesint.fd
 File: uesint.fd 
 )
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.toc [1
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.toc [1
 
-{C:/Users/XiMTa/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-[2]) [3] [4
+{C:/Users/XiMTa/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2]) [3] [4
 
 ] [5] [6]
 \openout5 = `InterviewQuestionBank.mtc'.
@@ -1761,8 +1777,8 @@ tionBank.toc [1
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc2)
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc2)
 Package hyperref Info: bookmark level for unknown ntquestion defaults to 0 on i
 nput line 27.
 
@@ -1797,8 +1813,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc3)
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc3)
 Underfull \hbox (badness 10000) in paragraph at lines 37--37
 
  []
@@ -1833,8 +1849,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc4)
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc4)
 Underfull \hbox (badness 10000) in paragraph at lines 55--55
 
  []
@@ -1893,8 +1909,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc5)
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc5)
 Underfull \hbox (badness 10000) in paragraph at lines 112--112
 
  []
@@ -1938,114 +1954,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--145
  []
 
 
-LaTeX Warning: Hyper reference `a:Robot Flipping Coins' on page 18 undefined on
- input line 148.
-
-
-LaTeX Warning: Reference `a:Robot Flipping Coins' on page 18 undefined on input
- line 148.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
 
  []
-
-
-LaTeX Warning: Hyper reference `a:Coupon Collection' on page 18 undefined on in
-put line 153.
-
-
-LaTeX Warning: Reference `a:Coupon Collection' on page 18 undefined on input li
-ne 153.
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
 
  []
 
 
-LaTeX Warning: Hyper reference `a:Two Heads' on page 19 undefined on input line
- 158.
-
-
-LaTeX Warning: Reference `a:Two Heads' on page 19 undefined on input line 158.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--160
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
 
  []
 
 
-LaTeX Warning: Hyper reference `a:One More Coin' on page 19 undefined on input 
-line 163.
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 
-
-LaTeX Warning: Reference `a:One More Coin' on page 19 undefined on input line 1
-63.
+ []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Overfull \hbox (1.46696pt too wide) in paragraph at lines 167--168
+Overfull \hbox (1.46696pt too wide) in paragraph at lines 173--174
 \OT1/cmr/m/n/10 The an-swer is 10.6. Setup an in-di-ca-tor func-tion $\OML/cmm/
 m/it/10 X[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 i$\OT1/cmr/m/n/10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Overfull \hbox (51.6123pt too wide) detected at line 175
+Overfull \hbox (51.6123pt too wide) detected at line 181
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 271--273
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 279--281
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 287--290
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
 
@@ -2057,131 +2057,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--290
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc6)
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc6)
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
 
  []
 
 
-LaTeX Warning: Hyper reference `a:How to check positive definiteness of a matri
-x?' on page 25 undefined on input line 301.
-
-
-LaTeX Warning: Reference `a:How to check positive definiteness of a matrix?' on
- page 25 undefined on input line 301.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
 
  []
 
 
-LaTeX Warning: Hyper reference `a:Trace of Matrix Sum' on page 25 undefined on 
-input line 307.
-
-
-LaTeX Warning: Reference `a:Trace of Matrix Sum' on page 25 undefined on input 
-line 307.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
 
  []
 
 [25]
-
-LaTeX Warning: Hyper reference `a:Sherman-Morrison Formula' on page 26 undefine
-d on input line 313.
-
-
-LaTeX Warning: Reference `a:Sherman-Morrison Formula' on page 26 undefined on i
-nput line 313.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
 
  []
-
-
-LaTeX Warning: Hyper reference `a:QR Decomposition' on page 26 undefined on inp
-ut line 319.
-
-
-LaTeX Warning: Reference `a:QR Decomposition' on page 26 undefined on input lin
-e 319.
 
 [26]
-
-LaTeX Warning: Reference `q:How to check positive definiteness of a matrix?' on
- page 27 undefined on input line 321.
-
-
-LaTeX Warning: Hyper reference `q:How to check positive definiteness of a matri
-x?' on page 27 undefined on input line 321.
-
-
-LaTeX Warning: Reference `q:How to check positive definiteness of a matrix?' on
- page 27 undefined on input line 321.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
 
-LaTeX Warning: Reference `q:Trace of Matrix Sum' on page 27 undefined on input 
-line 323.
-
-
-LaTeX Warning: Hyper reference `q:Trace of Matrix Sum' on page 27 undefined on 
-input line 323.
-
-
-LaTeX Warning: Reference `q:Trace of Matrix Sum' on page 27 undefined on input 
-line 323.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 323--325
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
 
  []
 
 
-LaTeX Warning: Reference `q:Sherman-Morrison Formula' on page 27 undefined on i
-nput line 338.
-
-
-LaTeX Warning: Hyper reference `q:Sherman-Morrison Formula' on page 27 undefine
-d on input line 338.
-
-
-LaTeX Warning: Reference `q:Sherman-Morrison Formula' on page 27 undefined on i
-nput line 338.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--340
+Underfull \hbox (badness 10000) in paragraph at lines 346--348
 
  []
 
 
-Overfull \hbox (8.14008pt too wide) detected at line 343
+Overfull \hbox (8.14008pt too wide) detected at line 351
 []
  []
 
 
-LaTeX Warning: Reference `q:QR Decomposition' on page 27 undefined on input lin
-e 355.
-
-
-LaTeX Warning: Hyper reference `q:QR Decomposition' on page 27 undefined on inp
-ut line 355.
-
-
-LaTeX Warning: Reference `q:QR Decomposition' on page 27 undefined on input lin
-e 355.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--357
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 
  []
 
@@ -2193,32 +2111,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 355--357
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc7)
-Underfull \hbox (badness 10000) in paragraph at lines 373--373
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc7)
+Underfull \hbox (badness 10000) in paragraph at lines 381--381
 
  []
-
-
-LaTeX Warning: Hyper reference `a:NA' on page 31 undefined on input line 376.
-
-
-LaTeX Warning: Reference `a:NA' on page 31 undefined on input line 376.
 
 [31
 
 ]
-
-LaTeX Warning: Reference `q:NA' on page 32 undefined on input line 378.
-
-
-LaTeX Warning: Hyper reference `q:NA' on page 32 undefined on input line 378.
-
-
-LaTeX Warning: Reference `q:NA' on page 32 undefined on input line 378.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 378--380
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
 
  []
 
@@ -2230,782 +2132,389 @@ Underfull \hbox (badness 10000) in paragraph at lines 378--380
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc8)
-Underfull \hbox (badness 10000) in paragraph at lines 385--385
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc8)
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
 
  []
 
 [35
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 398--403
 
-LaTeX Warning: Hyper reference `a:Code Debug' on page 36 undefined on input lin
-e 409.
+ []
+
+[36]
+\openout5 = `InterviewQuestionBank.mtc'.
+
+\openout5 = `InterviewQuestionBank.mtc'.
 
 
-LaTeX Warning: Reference `a:Code Debug' on page 36 undefined on input line 409.
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc9)
+Underfull \hbox (badness 10000) in paragraph at lines 407--407
 
+ []
 
+[37
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--412
+]
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
 
-LaTeX Warning: Hyper reference `a:C++ Cast' on page 36 undefined on input line 
-415.
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+
+ []
+
+[38]
+\openout5 = `InterviewQuestionBank.mtc'.
+
+\openout5 = `InterviewQuestionBank.mtc'.
 
 
-LaTeX Warning: Reference `a:C++ Cast' on page 36 undefined on input line 415.
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc10)
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+[39
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
 
-LaTeX Warning: Hyper reference `a:Shallow Copy vs Deep Copy' on page 36 undefin
-ed on input line 421.
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
+
+ []
+
+[40]
+\openout5 = `InterviewQuestionBank.mtc'.
+
+\openout5 = `InterviewQuestionBank.mtc'.
 
 
-LaTeX Warning: Reference `a:Shallow Copy vs Deep Copy' on page 36 undefined on 
-input line 421.
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc11)
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+
+ []
+
+[41
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+ []
 
 
-Overfull \hbox (9.93678pt too wide) in paragraph at lines 424--424
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+ []
+
+[42]
+\openout5 = `InterviewQuestionBank.mtc'.
+
+\openout5 = `InterviewQuestionBank.mtc'.
+
+
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc12)
+Underfull \hbox (badness 10000) in paragraph at lines 437--437
+
+ []
+
+[43
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
+
+ []
+
+
+Overfull \hbox (9.93678pt too wide) in paragraph at lines 473--473
 []$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4004.md[][]; [][][]Com-puter Sci-en
 ce, Empty
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--424
-
- []
-
-
-LaTeX Warning: Hyper reference `a:Empty Class' on page 36 undefined on input li
-ne 427.
-
-
-LaTeX Warning: Reference `a:Empty Class' on page 36 undefined on input line 427
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 429--429
-
- []
-
-
-LaTeX Warning: Hyper reference `a:Empty Class' on page 36 undefined on input li
-ne 432.
-
-
-LaTeX Warning: Reference `a:Empty Class' on page 36 undefined on input line 432
-.
-
-
-Overfull \hbox (10.9168pt too wide) in paragraph at lines 435--435
-[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4005.md[][]; [][][]Pri-vate Mem-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--435
-
- []
-
-[36]
-
-LaTeX Warning: Hyper reference `a:Private Member Variable' on page 37 undefined
- on input line 438.
-
-
-LaTeX Warning: Reference `a:Private Member Variable' on page 37 undefined on in
-put line 438.
-
-
-Overfull \hbox (3.88313pt too wide) in paragraph at lines 441--441
-[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4006.md[][]; [][][]Value
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 441--441
-
- []
-
-
-LaTeX Warning: Hyper reference `a:Value Type and Reference Type' on page 37 und
-efined on input line 444.
-
-
-LaTeX Warning: Reference `a:Value Type and Reference Type' on page 37 undefined
- on input line 444.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 447--447
-
- []
-
-
-LaTeX Warning: Hyper reference `a:Vector vs List' on page 37 undefined on input
- line 450.
-
-
-LaTeX Warning: Reference `a:Vector vs List' on page 37 undefined on input line 
-450.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 452--452
-
- []
-
-
-LaTeX Warning: Hyper reference `a:Map vs Unorder Map' on page 37 undefined on i
-nput line 455.
-
-
-LaTeX Warning: Reference `a:Map vs Unorder Map' on page 37 undefined on input l
-ine 455.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 457--457
-
- []
-
-
-LaTeX Warning: Hyper reference `a:Six Key Components of STL' on page 37 undefin
-ed on input line 460.
-
-
-LaTeX Warning: Reference `a:Six Key Components of STL' on page 37 undefined on 
-input line 460.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--462
-
- []
-
-
-LaTeX Warning: Hyper reference `a:STL Map' on page 37 undefined on input line 4
-65.
-
-
-LaTeX Warning: Reference `a:STL Map' on page 37 undefined on input line 465.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 467--467
-
- []
-
-
-LaTeX Warning: Hyper reference `a:Map vs Set' on page 37 undefined on input lin
-e 470.
-
-
-LaTeX Warning: Reference `a:Map vs Set' on page 37 undefined on input line 470.
-
-
-[37]
 Underfull \hbox (badness 10000) in paragraph at lines 473--473
 
  []
 
 
-LaTeX Warning: Hyper reference `a:Select, Poll and Epoll' on page 38 undefined 
-on input line 476.
-
-
-LaTeX Warning: Reference `a:Select, Poll and Epoll' on page 38 undefined on inp
-ut line 476.
-
-
-Overfull \hbox (3.99594pt too wide) in paragraph at lines 479--479
-[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4011.md[][]; [][][]C++, Mem-ory[][]
-; [][][]NA[][];) 
+Overfull \hbox (10.9168pt too wide) in paragraph at lines 478--478
+[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4005.md[][]; [][][]Pri-vate Mem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--479
+Underfull \hbox (badness 10000) in paragraph at lines 478--478
 
  []
 
 
-LaTeX Warning: Hyper reference `a:New and Malloc' on page 38 undefined on input
- line 482.
-
-
-LaTeX Warning: Reference `a:New and Malloc' on page 38 undefined on input line 
-482.
-
-
-Overfull \hbox (17.32645pt too wide) in paragraph at lines 485--485
-[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4012.md[][];
+Overfull \hbox (3.88313pt too wide) in paragraph at lines 483--483
+[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4006.md[][]; [][][]Value
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--485
+Underfull \hbox (badness 10000) in paragraph at lines 483--483
 
  []
 
 
-LaTeX Warning: Hyper reference `a:Modify Virtual Function of Parent Class' on p
-age 38 undefined on input line 488.
-
-
-LaTeX Warning: Reference `a:Modify Virtual Function of Parent Class' on page 38
- undefined on input line 488.
-
-
-Overfull \hbox (2.86958pt too wide) in paragraph at lines 491--491
-[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4013.md[][]; [][][]C++, Point-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
 
  []
 
 
-LaTeX Warning: Hyper reference `a:Pointers and References' on page 38 undefined
- on input line 494.
-
-
-LaTeX Warning: Reference `a:Pointers and References' on page 38 undefined on in
-put line 494.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
 
  []
 
-[38]
 
-LaTeX Warning: Hyper reference `a:Smart Pointers' on page 39 undefined on input
- line 500.
+Underfull \hbox (badness 10000) in paragraph at lines 498--498
 
-
-LaTeX Warning: Reference `a:Smart Pointers' on page 39 undefined on input line 
-500.
-
-
-Overfull \hbox (8.54562pt too wide) in paragraph at lines 503--503
-[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4018.md[][]; [][][]Vir-
  []
 
-
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 503--503
 
  []
 
 
-LaTeX Warning: Hyper reference `a:When to use a virtual destructor?' on page 39
- undefined on input line 506.
+Overfull \hbox (3.99594pt too wide) in paragraph at lines 508--508
+[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4011.md[][]; [][][]C++, Mem-ory[][]
+; [][][]NA[][];) 
+ []
 
 
-LaTeX Warning: Reference `a:When to use a virtual destructor?' on page 39 undef
-ined on input line 506.
-
-[39]
-
-LaTeX Warning: Reference `q:Code Debug' on page 40 undefined on input line 508.
-
-
-
-LaTeX Warning: Hyper reference `q:Code Debug' on page 40 undefined on input lin
-e 508.
-
-
-LaTeX Warning: Reference `q:Code Debug' on page 40 undefined on input line 508.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 508--510
+Underfull \hbox (badness 10000) in paragraph at lines 508--508
 
  []
 
 
-LaTeX Warning: Reference `q:C++ Cast' on page 40 undefined on input line 514.
+Overfull \hbox (17.32645pt too wide) in paragraph at lines 513--513
+[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4012.md[][];
+ []
 
 
-LaTeX Warning: Hyper reference `q:C++ Cast' on page 40 undefined on input line 
-514.
-
-
-LaTeX Warning: Reference `q:C++ Cast' on page 40 undefined on input line 514.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
+Overfull \hbox (2.86958pt too wide) in paragraph at lines 518--518
+[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4013.md[][]; [][][]C++, Point-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 
  []
 
 
-LaTeX Warning: Reference `q:Shallow Copy vs Deep Copy' on page 40 undefined on 
-input line 516.
-
-
-LaTeX Warning: Hyper reference `q:Shallow Copy vs Deep Copy' on page 40 undefin
-ed on input line 516.
-
-
-LaTeX Warning: Reference `q:Shallow Copy vs Deep Copy' on page 40 undefined on 
-input line 516.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+Underfull \hbox (badness 10000) in paragraph at lines 523--523
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+Underfull \hbox (badness 10000) in paragraph at lines 528--528
 
  []
 
 
-LaTeX Warning: Reference `q:Empty Class' on page 40 undefined on input line 518
-.
+Underfull \hbox (badness 10000) in paragraph at lines 533--533
 
+ []
 
-LaTeX Warning: Hyper reference `q:Empty Class' on page 40 undefined on input li
-ne 518.
-
-
-LaTeX Warning: Reference `q:Empty Class' on page 40 undefined on input line 518
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 518--520
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 538--538
 
  []
 
 
-LaTeX Warning: Reference `q:Private Member Variable' on page 40 undefined on in
-put line 526.
+Overfull \hbox (8.54562pt too wide) in paragraph at lines 543--543
+[]$[]$ \OT1/cmr/m/n/10 (Easy) (Tags: [][][]#4018.md[][]; [][][]Vir-
+ []
 
 
-LaTeX Warning: Hyper reference `q:Private Member Variable' on page 40 undefined
- on input line 526.
-
-
-LaTeX Warning: Reference `q:Private Member Variable' on page 40 undefined on in
-put line 526.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
-
- []
-
-
-LaTeX Warning: Reference `q:Value Type and Reference Type' on page 40 undefined
- on input line 528.
-
-
-LaTeX Warning: Hyper reference `q:Value Type and Reference Type' on page 40 und
-efined on input line 528.
-
-
-LaTeX Warning: Reference `q:Value Type and Reference Type' on page 40 undefined
- on input line 528.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
-
- []
-
-
-LaTeX Warning: Reference `q:Vector vs List' on page 40 undefined on input line 
-530.
-
-
-LaTeX Warning: Hyper reference `q:Vector vs List' on page 40 undefined on input
- line 530.
-
-
-LaTeX Warning: Reference `q:Vector vs List' on page 40 undefined on input line 
-530.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
-
- []
-
-
-LaTeX Warning: Reference `q:Empty Class' on page 40 undefined on input line 532
-.
-
-
-LaTeX Warning: Hyper reference `q:Empty Class' on page 40 undefined on input li
-ne 532.
-
-
-LaTeX Warning: Reference `q:Empty Class' on page 40 undefined on input line 532
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 532--533
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 532--533
-
- []
-
-
-LaTeX Warning: Reference `q:Map vs Unorder Map' on page 40 undefined on input l
-ine 534.
-
-
-LaTeX Warning: Hyper reference `q:Map vs Unorder Map' on page 40 undefined on i
-nput line 534.
-
-
-LaTeX Warning: Reference `q:Map vs Unorder Map' on page 40 undefined on input l
-ine 534.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
-
- []
-
-
-LaTeX Warning: Reference `q:Select, Poll and Epoll' on page 40 undefined on inp
-ut line 536.
-
-
-LaTeX Warning: Hyper reference `q:Select, Poll and Epoll' on page 40 undefined 
-on input line 536.
-
-
-LaTeX Warning: Reference `q:Select, Poll and Epoll' on page 40 undefined on inp
-ut line 536.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 536--537
-
- []
-
-[40]
-
-LaTeX Warning: Reference `q:New and Malloc' on page 41 undefined on input line 
-538.
-
-
-LaTeX Warning: Hyper reference `q:New and Malloc' on page 41 undefined on input
- line 538.
-
-
-LaTeX Warning: Reference `q:New and Malloc' on page 41 undefined on input line 
-538.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
-
- []
-
-
-LaTeX Warning: Reference `q:Modify Virtual Function of Parent Class' on page 41
- undefined on input line 540.
-
-
-LaTeX Warning: Hyper reference `q:Modify Virtual Function of Parent Class' on p
-age 41 undefined on input line 540.
-
-
-LaTeX Warning: Reference `q:Modify Virtual Function of Parent Class' on page 41
- undefined on input line 540.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
-
- []
-
-
-LaTeX Warning: Reference `q:Pointers and References' on page 41 undefined on in
-put line 543.
-
-
-LaTeX Warning: Hyper reference `q:Pointers and References' on page 41 undefined
- on input line 543.
-
-
-LaTeX Warning: Reference `q:Pointers and References' on page 41 undefined on in
-put line 543.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--544
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--544
-
- []
-
-
-LaTeX Warning: Reference `q:Smart Pointers' on page 41 undefined on input line 
-546.
-
-
-LaTeX Warning: Hyper reference `q:Smart Pointers' on page 41 undefined on input
- line 546.
-
-
-LaTeX Warning: Reference `q:Smart Pointers' on page 41 undefined on input line 
-546.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
-
- []
-
-
-LaTeX Warning: Reference `q:Six Key Components of STL' on page 41 undefined on 
-input line 549.
-
-
-LaTeX Warning: Hyper reference `q:Six Key Components of STL' on page 41 undefin
-ed on input line 549.
-
-
-LaTeX Warning: Reference `q:Six Key Components of STL' on page 41 undefined on 
-input line 549.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 549--555
-
- []
-
-
-LaTeX Warning: Reference `q:STL Map' on page 41 undefined on input line 556.
-
-
-LaTeX Warning: Hyper reference `q:STL Map' on page 41 undefined on input line 5
-56.
-
-
-LaTeX Warning: Reference `q:STL Map' on page 41 undefined on input line 556.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
-
- []
-
-
-LaTeX Warning: Reference `q:Map vs Set' on page 41 undefined on input line 558.
-
-
-
-LaTeX Warning: Hyper reference `q:Map vs Set' on page 41 undefined on input lin
-e 558.
-
-
-LaTeX Warning: Reference `q:Map vs Set' on page 41 undefined on input line 558.
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
-
- []
-
-
-LaTeX Warning: Reference `q:When to use a virtual destructor?' on page 41 undef
-ined on input line 560.
-
-
-LaTeX Warning: Hyper reference `q:When to use a virtual destructor?' on page 41
- undefined on input line 560.
-
-
-LaTeX Warning: Reference `q:When to use a virtual destructor?' on page 41 undef
-ined on input line 560.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--562
-
- []
-
-[41] [42
-
-]
-\openout5 = `InterviewQuestionBank.mtc'.
-
-\openout5 = `InterviewQuestionBank.mtc'.
-
-
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc9)
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
-
- []
-
-
-LaTeX Warning: Hyper reference `a:Compiling Process' on page 43 undefined on in
-put line 570.
-
-
-LaTeX Warning: Reference `a:Compiling Process' on page 43 undefined on input li
-ne 570.
-
-[43]
-
-LaTeX Warning: Reference `q:Compiling Process' on page 44 undefined on input li
-ne 572.
-
-
-LaTeX Warning: Hyper reference `q:Compiling Process' on page 44 undefined on in
-put line 572.
-
-
-LaTeX Warning: Reference `q:Compiling Process' on page 44 undefined on input li
-ne 572.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 572--577
-
- []
-
-[44]
-\openout5 = `InterviewQuestionBank.mtc'.
-
-\openout5 = `InterviewQuestionBank.mtc'.
-
-
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc10)
-Underfull \hbox (badness 10000) in paragraph at lines 581--581
-
- []
-
-
-LaTeX Warning: Hyper reference `a:B Tree vs B+ Tree' on page 45 undefined on in
-put line 584.
-
-
-LaTeX Warning: Reference `a:B Tree vs B+ Tree' on page 45 undefined on input li
-ne 584.
-
-[45
-
-]
-
-LaTeX Warning: Reference `q:B Tree vs B+ Tree' on page 46 undefined on input li
-ne 586.
-
-
-LaTeX Warning: Hyper reference `q:B Tree vs B+ Tree' on page 46 undefined on in
-put line 586.
-
-
-LaTeX Warning: Reference `q:B Tree vs B+ Tree' on page 46 undefined on input li
-ne 586.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
+Underfull \hbox (badness 10000) in paragraph at lines 549--549
 
  []
 
 [46]
-\openout5 = `InterviewQuestionBank.mtc'.
-
-\openout5 = `InterviewQuestionBank.mtc'.
-
-
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc11)
-Underfull \hbox (badness 10000) in paragraph at lines 591--591
+Underfull \hbox (badness 10000) in paragraph at lines 554--556
 
  []
 
 
-LaTeX Warning: Hyper reference `a:Process vs Thread' on page 47 undefined on in
-put line 594.
-
-
-LaTeX Warning: Reference `a:Process vs Thread' on page 47 undefined on input li
-ne 594.
-
-[47
-
-]
-
-LaTeX Warning: Reference `q:Process vs Thread' on page 48 undefined on input li
-ne 596.
-
-
-LaTeX Warning: Hyper reference `q:Process vs Thread' on page 48 undefined on in
-put line 596.
-
-
-LaTeX Warning: Reference `q:Process vs Thread' on page 48 undefined on input li
-ne 596.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--582
+
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 596--602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--604
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--604
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--609
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
 
  []
 
@@ -3017,37 +2526,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 596--597
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc12)
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc13)
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
 
  []
-
-
-LaTeX Warning: Hyper reference `a:Newton's Method' on page 51 undefined on inpu
-t line 605.
-
-
-LaTeX Warning: Reference `a:Newton's Method' on page 51 undefined on input line
- 605.
 
 [51
 
 ]
-
-LaTeX Warning: Reference `q:Newton's Method' on page 52 undefined on input line
- 607.
-
-
-LaTeX Warning: Hyper reference `q:Newton's Method' on page 52 undefined on inpu
-t line 607.
-
-
-LaTeX Warning: Reference `q:Newton's Method' on page 52 undefined on input line
- 607.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 607--609
+Underfull \hbox (badness 10000) in paragraph at lines 622--624
 
  []
 
@@ -3057,32 +2545,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 607--609
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc13)
-Underfull \hbox (badness 10000) in paragraph at lines 616--616
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc14)
+Underfull \hbox (badness 10000) in paragraph at lines 631--631
 
  []
-
-
-LaTeX Warning: Hyper reference `a:NA' on page 53 undefined on input line 619.
-
-
-LaTeX Warning: Reference `a:NA' on page 53 undefined on input line 619.
 
 [53
 
 ]
-
-LaTeX Warning: Reference `q:NA' on page 54 undefined on input line 621.
-
-
-LaTeX Warning: Hyper reference `q:NA' on page 54 undefined on input line 621.
-
-
-LaTeX Warning: Reference `q:NA' on page 54 undefined on input line 621.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 621--623
+Underfull \hbox (badness 10000) in paragraph at lines 636--638
 
  []
 
@@ -3094,37 +2566,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 621--623
 \openout5 = `InterviewQuestionBank.mtc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.mtc14)
-Underfull \hbox (badness 10000) in paragraph at lines 628--628
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.mtc15)
+Underfull \hbox (badness 10000) in paragraph at lines 643--643
 
  []
-
-
-LaTeX Warning: Hyper reference `a:Naive Bayes vs Logistic Regression' on page 5
-7 undefined on input line 631.
-
-
-LaTeX Warning: Reference `a:Naive Bayes vs Logistic Regression' on page 57 unde
-fined on input line 631.
 
 [57
 
 ]
-
-LaTeX Warning: Reference `q:Naive Bayes vs Logistic Regression' on page 58 unde
-fined on input line 633.
-
-
-LaTeX Warning: Hyper reference `q:Naive Bayes vs Logistic Regression' on page 5
-8 undefined on input line 633.
-
-
-LaTeX Warning: Reference `q:Naive Bayes vs Logistic Regression' on page 58 unde
-fined on input line 633.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 633--635
+Underfull \hbox (badness 10000) in paragraph at lines 648--650
 
  []
 
@@ -3151,43 +2602,28 @@ Package minitoc(hints) Warning: W0024
 \openout9 = `InterviewQuestionBank.toc'.
 
 
-(C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_build\InterviewQues
-tionBank.aux)
-
-LaTeX Warning: There were undefined references.
-
+(C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\InterviewQuestionBan
+k\_build\InterviewQuestionBank.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `InterviewQuestionBank.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `InterviewQuestionBank.out':
-(rerunfilecheck)             Before: 5D6AF6C19DA3CDE28D23CE3DF0C43FE1;1149
-(rerunfilecheck)             After:  E5B8ECA05DE9F8CF56179B8FFE8491DE;4119.
+Package rerunfilecheck Info: File `InterviewQuestionBank.out' has not changed.
+(rerunfilecheck)             Checksum: 79E5D49587906D2389357F004BF7D445;3647.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 16 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 34027 strings out of 479618
- 670498 string characters out of 2874902
- 1086488 words of memory out of 3000000
- 50041 multiletter control sequences out of 15000+200000
+ 34079 strings out of 479618
+ 672427 string characters out of 2874902
+ 1090087 words of memory out of 3000000
+ 50091 multiletter control sequences out of 15000+200000
  419947 words of font info for 96 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,14n,105p,734b,774s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 102i,14n,105p,734b,660s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{0} has been referenced but does not
  exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.3.5} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.3.4} has been referenced but does not exi
-st, replaced by a fixed one
 
  <C:\Users\XiMTa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
 00.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
@@ -3206,10 +2642,10 @@ ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public
 /amsfonts/symbols/msbm10.pfb>
-Output written on C:\Users\XiMTa\Desktop\Write\理工\InterviewQuestionBank\_bu
-ild\InterviewQuestionBank.pdf (58 pages, 401607 bytes).
+Output written on C:\Users\XiMTa\Dropbox\Writings\tan19.github.io\Interview\Int
+erviewQuestionBank\_build\InterviewQuestionBank.pdf (58 pages, 425895 bytes).
 PDF statistics:
- 940 PDF objects out of 1000 (max. 8388607)
- 241 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1123 PDF objects out of 1200 (max. 8388607)
+ 238 named destinations out of 1000 (max. 500000)
+ 485 words of extra memory for PDF output out of 10000 (max. 10000000)
 

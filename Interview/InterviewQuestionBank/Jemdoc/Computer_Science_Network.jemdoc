@@ -1,0 +1,39 @@
+# jemdoc: menu{MENU_Interview}{Computer_Science_Network.html}
+= Network (3 Problems)
+
+- DNS (1 Problems)
+- TCP (2 Problems)
+== DNS
+
+~~~
+*Question \#1: *
+Explain DNS.
+
+\n\n*Title: *DNS\n*FileName: *4302.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Network\/DNS\n*Tags: *Network; DNS\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+== TCP
+
+~~~
+*Question \#2: *
+Compare TCP and UDP.
+
+\n\n*Title: *TCP vs UDP\n*FileName: *4301.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Network\/TCP\n*Tags: *Network; TCP\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#3: *
+Explain three-way handshake and four-way handshake, and why not two-way?
+
+\n\n*Title: *Three-way Handshake and Four-way Handshake\n*FileName: *4303.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Network\/TCP\n*Tags: *Network; TCP\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+

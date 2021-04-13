@@ -1,0 +1,119 @@
+# jemdoc: menu{MENU_Interview}{Mathematics_Linear_Algebra.html}
+= Linear Algebra (4 Problems)
+
+- Determinant (1 Problems)
+- Matrix Decomposition (1 Problems)
+- Positive Definiteness and Covariance Matrices (1 Problems)
+- Trace (1 Problems)
+== Determinant
+
+~~~
+*Question \#1: *
+Prove the Sherman-Morrison formula: $(I + uv^T)^{-1} = I - \frac{uv^T}{1 + uv^T}$ and the Matrix Determinant Lemma: $\det(I + uv^T) = 1+v^Tu.$
+
+\n\n*Title: *Sherman-Morrison Formula\n*FileName: *2203.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Linear Algebra\/Determinant\n*Tags: *Calculus; Sherman-Morrison Formula\n*Source: *World Quant\n
+~~~
+
+*Answer: *
+We guess the inverse has the similar form $(I + uv^T)^{-1} = I + \alpha v^Tu$, thus
+\(
+\begin{align}
+(I + uv^T)(I + \alpha uv^T) &= I + auv^T + uv^T + auv^Tuv^T = I + u(a+1+av^Tu)v^T \\
+&\implies a = -\frac{uv^T}{1+u^Tv}
+\end{align}
+\)
+
+and hence $(I + uv^T)^{-1} = I - \frac{uv^T}{1 + u^Tv}.$
+
+If we look at the eigenvalues,
+\(
+\begin{align}
+    (I + uv^T)u = u + uv^Tu = (1 + v^Tu)u
+\end{align}
+\)
+
+We see that $u$ is an eigenvector and $1 + v^Tu$ is its eigenvalue. Moreover, there are $n-1$ orthogonal vectors (suppose $I$ is of dimension $n$) $b$ such that $v^T b = 0$, and for each of them we have $(I + uv^T)b = b$, which suggests that $1$ is the other eigenvalue with multiplicity $n-1$. Therefore, the determinant of $I + uv^T$ is the product of its eigenvalues, which is $1 + u^Tv$. That is
+\(
+\begin{align}
+    \det(I + uv^T) = 1 + u^Tv
+\end{align}
+\)
+
+This proves the Matrix Determinant Lemma.
+
+== Matrix Decomposition
+
+~~~
+*Question \#2: *
+How do you use QR decomposition in linear regression?
+
+\n\n*Title: *QR Decomposition\n*FileName: *2204.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Linear Algebra\/Matrix Decomposition\n*Tags: *Trace; QR Decomposition\n*Source: *NA\n
+~~~
+
+*Answer: *
+Recall that the normal equation 
+\(
+\begin{align}
+    \beta = (X^TX)^{-1} X^T y
+\end{align}
+\)
+
+involves the inverse of $X^TX$, which is numerically unstable when the matrix is near singular and ill-conditioned, i.e., the condition number $\kappa(A) = \frac{\sigma_{\max}(A)}{\sigma_{\min}(A)} = ||A^{-1}| \cdot |||A||$ is large. Now, suppose we have a thin QR factorization of the design matrix (usually $n \ge p$) $X_{n \times p} = QR = [Q_1, Q_2]\begin{pmatrix}R_1\\ 0\end{pmatrix} = Q_1R_1,$ where $Q_1, Q_2$ both have orthonormal columns but with sizes $n \times p$ and $n \times (n-p)$, respectively. $R_1$ is an upper triangular matrix with size $p \times p$.  Then since orthogonal matrices preserve the 2-norm, we have:
+\(
+\begin{align}
+    &\min_\beta \frac12||X\beta - y||_2^2 \\
+    \implies & \min_\beta \frac12||Q_1R_1\beta - y||_2^2\\
+    \implies & \min_\beta \frac12||Q_1^T(Q_1R_1\beta - y)||_2^2\\
+    \implies & \min_\beta \frac12||R_1\beta - Q_1^Ty||_2^2\\		
+\end{align}
+\)
+
+Since $R_1$ is upper triangular, we only need one backward sweep and one forward sweep to solve $\beta$.
+
+
+== Positive Definiteness and Covariance Matrices
+
+~~~
+*Question \#3: *
+How to check if a matrix is positive definite? How about positive semi-definite?
+
+\n\n*Title: *How to check positive definiteness of a matrix?\n*FileName: *2201.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Linear Algebra\/Positive Definiteness and Covariance Matrices\n*Tags: *Math, Matrix, Linear Algebra, Positive Definite\n*Source: *NA\n
+~~~
+
+*Answer: *
+Need to check if the matrix is square first.
+
+== Trace
+
+~~~
+*Question \#4: *
+Given a $3 \times 3$ matrix $M$, what is $\mbox{tr}\left(\sum_{k=0}^\infty M^k\right)$?
+
+\n\n*Title: *Trace of Matrix Sum\n*FileName: *2202.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Linear Algebra\/Trace\n*Tags: *Trace; Eigenvector; Eigenvalue;\n*Source: *NA\n
+~~~
+
+*Answer: *
+The answer is
+\(
+\begin{align}
+\mbox{tr}\left(\sum_{k=0}^\infty M^k\right) = \sum_{i=1}^3 \frac{1}{1 - \lambda_i}
+\end{align}
+\)
+
+where $\lambda_i$ are the eigenvalues of $M$. The key is that trace is the sum of all eigenvalues, and if $\lambda$ is an eigenvalue of $M$ then $\lambda^k$ is an eigenvalue of $M^k$. This is easily seen by noticing that
+\(
+\begin{align}
+	Mx = \lambda x \implies M^2x = \lambda(Mx) = \lambda^2 x
+\end{align}
+\)
+
+Now, 
+\(
+\begin{align}
+\mbox{tr}\left(\sum_{k=0}^\infty M^k\right) = \sum_{k=0}^\infty \mbox{tr}(M^k) = \sum_{k=0}^\infty \sum_{i=1}^n \lambda_i^k = \sum_{i=1}^n \sum_{k=0}^\infty \lambda_i^k = \sum_{i=1}^n \frac{1}{1 - \lambda_i}
+\end{align}
+\)
+
+The answer is given by $n = 3$.
+
+
