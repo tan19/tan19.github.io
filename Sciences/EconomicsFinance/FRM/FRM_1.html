@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>1.1 Risk Management: A Helicopter View</title>
+<!-- Customized Scripts -->
+<link rel="stylesheet" href="http://tan19.github.io/bin/jemdoc.css", type="text/css">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End Customized Scripts -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Xi Tan</div>
+<div class="menu-item"><a href="../../index.html">About</a></div>
+<div class="menu-category">FRM</div>
+<div class="menu-item"><a href="index.html">Homepage</a></div>
+<div class="menu-item"><a href="good_readings.html">Good&nbsp;Readings</a></div>
+<div class="menu-item"><a href="glossary.html">Glossary</a></div>
+<div class="menu-item"><a href="FAQ.html">FAQ</a></div>
+<div class="menu-category">1. Foundations of Risk Management (FRM, 20%)</div>
+<div class="menu-item"><a href="FRM.html">FRM&nbsp;Overview</a></div>
+<div class="menu-item"><a href="FRM_1.html" class="current">*1.1&nbsp;Risk&nbsp;Management</a></div>
+<div class="menu-item"><a href="FRM_2.html">1.2&nbsp;Corporate&nbsp;Risk&nbsp;Management</a></div>
+<div class="menu-item"><a href="FRM_3.html">1.3&nbsp;Corporate&nbsp;Governance&nbsp;and&nbsp;Risk&nbsp;Management</a></div>
+<div class="menu-item"><a href="FRM_4.html">1.4&nbsp;What&nbsp;is&nbsp;ERM?</a></div>
+<div class="menu-item"><a href="FRM_5.html">1.5&nbsp;Risk&nbsp;in&nbsp;Banks</a></div>
+<div class="menu-item"><a href="FRM_6.html">1.6&nbsp;Financial&nbsp;Disasters</a></div>
+<div class="menu-item"><a href="FRM_7.html">1.7&nbsp;Liquidity&nbsp;and&nbsp;Credit&nbsp;Crunch&nbsp;2007-2008</a></div>
+<div class="menu-item"><a href="FRM_8.html">1.8&nbsp;Getting&nbsp;Up&nbsp;to&nbsp;Speed&nbsp;on&nbsp;the&nbsp;Financial&nbsp;Crisis</a></div>
+<div class="menu-item"><a href="FRM_9.html">1.9&nbsp;Risk&nbsp;Management&nbsp;Failures</a></div>
+<div class="menu-item"><a href="FRM_10.html">1.10&nbsp;The&nbsp;Standard&nbsp;Capital&nbsp;Asset&nbsp;Pricing&nbsp;Moel</a></div>
+<div class="menu-item"><a href="FRM_11.html">1.11&nbsp;Applying&nbsp;the&nbsp;CAPM&nbsp;toe&nbsp;Performance&nbsp;Measurement</a></div>
+<div class="menu-item"><a href="FRM_12.html">1.12&nbsp;Arbitrage&nbsp;Pricing&nbsp;and&nbsp;Models&nbsp;of&nbsp;Risk&nbsp;and&nbsp;Return</a></div>
+<div class="menu-item"><a href="FRM_13.html">1.13&nbsp;Risk&nbsp;Data&nbsp;Aggregation&nbsp;and&nbsp;Risk&nbsp;Reporting</a></div>
+<div class="menu-item"><a href="FRM_14.html">1.14&nbsp;GARP&nbsp;Code&nbsp;of&nbsp;Conduct</a></div>
+<div class="menu-category">2. Quantitative Analysis (QA, 20%)</div>
+<div class="menu-item"><a href="QA.html">QA&nbsp;Overview</a></div>
+<div class="menu-item"><a href="QA_1.html">2.1&nbsp;Probabilities</a></div>
+<div class="menu-item"><a href="QA_2.html">2.2&nbsp;Basic&nbsp;Statistics</a></div>
+<div class="menu-item"><a href="QA_3.html">2.3&nbsp;Distributions</a></div>
+<div class="menu-item"><a href="QA_4.html">2.4&nbsp;Bayesian&nbsp;Analysis</a></div>
+<div class="menu-item"><a href="QA_5.html">2.5&nbsp;Hypothesis&nbsp;Testing&nbsp;and&nbsp;Confidence&nbsp;Intervals&nbsp;(1/2)</a></div>
+<div class="menu-item"><a href="QA_6.html">2.6&nbsp;Linear&nbsp;Regression&nbsp;with&nbsp;One&nbsp;Regressor</a></div>
+<div class="menu-item"><a href="QA_7.html">2.7&nbsp;Regression&nbsp;with&nbsp;a&nbsp;Single&nbsp;Regressor</a></div>
+<div class="menu-item"><a href="QA_8.html">2.8&nbsp;Linear&nbsp;Regression&nbsp;with&nbsp;Multiple&nbsp;Regressors</a></div>
+<div class="menu-item"><a href="QA_9.html">2.9&nbsp;Hypothesis&nbsp;Tests&nbsp;and&nbsp;Confidence&nbsp;Intervals&nbsp;(2/2)</a></div>
+<div class="menu-item"><a href="QA_10.html">2.10&nbsp;Modeling&nbsp;and&nbsp;Forecasting&nbsp;Trend</a></div>
+<div class="menu-item"><a href="QA_11.html">2.11&nbsp;Modeling&nbsp;and&nbsp;Forecasting&nbsp;Seasonality</a></div>
+<div class="menu-item"><a href="QA_12.html">2.12&nbsp;Characterizing&nbsp;Cycles</a></div>
+<div class="menu-item"><a href="QA_13.html">2.13&nbsp;Modeling&nbsp;Cycles:&nbsp;MA,&nbsp;AR,&nbsp;and&nbsp;ARMA&nbsp;Models</a></div>
+<div class="menu-item"><a href="QA_14.html">2.14&nbsp;Volatility</a></div>
+<div class="menu-item"><a href="QA_15.html">2.15&nbsp;Correlations&nbsp;and&nbsp;Copulas</a></div>
+<div class="menu-item"><a href="QA_16.html">2.16&nbsp;Simulation&nbsp;Methods</a></div>
+<div class="menu-category">3. Financial Markets and Products (FMP, 30%)</div>
+<div class="menu-item"><a href="FMP.html">FMP&nbsp;Overview</a></div>
+<div class="menu-item"><a href="FMP_1.html">3.1&nbsp;Banks</a></div>
+<div class="menu-item"><a href="FMP_2.html">3.2&nbsp;Insurance&nbsp;Companies&nbsp;and&nbsp;Pension&nbsp;Plans</a></div>
+<div class="menu-item"><a href="FMP_3.html">3.3&nbsp;Mutual&nbsp;Funds&nbsp;and&nbsp;Hedge&nbsp;Funds</a></div>
+<div class="menu-item"><a href="FMP_4.html">3.4&nbsp;Options,&nbsp;Futures,&nbsp;and&nbsp;Other&nbsp;Derivatives</a></div>
+<div class="menu-item"><a href="FMP_5.html">3.5&nbsp;Futures&nbsp;Markets&nbsp;and&nbsp;Central&nbsp;Couterparties</a></div>
+<div class="menu-item"><a href="FMP_6.html">3.6&nbsp;Hedging&nbsp;Strategies&nbsp;Using&nbsp;Futures</a></div>
+<div class="menu-item"><a href="FMP_7.html">3.7&nbsp;Interest&nbsp;Rates</a></div>
+<div class="menu-item"><a href="FMP_8.html">3.8&nbsp;Determination&nbsp;of&nbsp;Forward&nbsp;and&nbsp;Futures&nbsp;Prices</a></div>
+<div class="menu-item"><a href="FMP_9.html">3.9&nbsp;Interest&nbsp;Rate&nbsp;Futures</a></div>
+<div class="menu-item"><a href="FMP_10.html">3.10&nbsp;Swaps</a></div>
+<div class="menu-item"><a href="FMP_11.html">3.11&nbsp;Mechanics&nbsp;of&nbsp;Options&nbsp;Markets</a></div>
+<div class="menu-item"><a href="FMP_12.html">3.12&nbsp;Properties&nbsp;of&nbsp;Stock&nbsp;Options</a></div>
+<div class="menu-item"><a href="FMP_13.html">3.13&nbsp;Trading&nbsp;Strategies&nbsp;Involving&nbsp;Options</a></div>
+<div class="menu-item"><a href="FMP_14.html">3.14&nbsp;Exotic&nbsp;Options</a></div>
+<div class="menu-item"><a href="FMP_15.html">3.15&nbsp;Commodity&nbsp;Forwards&nbsp;and&nbsp;Futures</a></div>
+<div class="menu-item"><a href="FMP_16.html">3.16&nbsp;Exchanges,&nbsp;OTC&nbsp;Derivatives,&nbsp;DPCs&nbsp;and&nbsp;SPVs</a></div>
+<div class="menu-item"><a href="FMP_17.html">3.17&nbsp;Basic&nbsp;Principles&nbsp;of&nbsp;Central&nbsp;Clearing</a></div>
+<div class="menu-item"><a href="FMP_18.html">3.18&nbsp;Risks&nbsp;Caused&nbsp;by&nbsp;CCPs</a></div>
+<div class="menu-item"><a href="FMP_19.html">3.19&nbsp;Foreign&nbsp;Exchange&nbsp;Risk</a></div>
+<div class="menu-item"><a href="FMP_20.html">3.20&nbsp;Corporate&nbsp;Bonds</a></div>
+<div class="menu-item"><a href="FMP_21.html">3.21&nbsp;Mortgages&nbsp;and&nbsp;Mortgage-Backed&nbsp;Securities</a></div>
+<div class="menu-category">4. Valuation and Risk Models (VRM, 30%)</div>
+<div class="menu-item"><a href="VRM.html">VRM&nbsp;Overview</a></div>
+<div class="menu-item"><a href="VRM_1.html">4.1&nbsp;Quantifying&nbsp;Volatility&nbsp;in&nbsp;VaR&nbsp;Models</a></div>
+<div class="menu-item"><a href="VRM_2.html">4.2&nbsp;Putting&nbsp;VaR&nbsp;to&nbsp;Work</a></div>
+<div class="menu-item"><a href="VRM_3.html">4.3&nbsp;Measures&nbsp;of&nbsp;Financial&nbsp;Risk</a></div>
+<div class="menu-item"><a href="VRM_4.html">4.4&nbsp;Binomial&nbsp;Trees</a></div>
+<div class="menu-item"><a href="VRM_5.html">4.5&nbsp;The&nbsp;Black-Scholes-Merton&nbsp;Model</a></div>
+<div class="menu-item"><a href="VRM_6.html">4.6&nbsp;The&nbsp;Greek&nbsp;Letters</a></div>
+<div class="menu-item"><a href="VRM_7.html">4.7&nbsp;Prices,&nbsp;Discount&nbsp;Factors,&nbsp;and&nbsp;Arbitrage</a></div>
+<div class="menu-item"><a href="VRM_8.html">4.8&nbsp;Spot,&nbsp;Forward,&nbsp;and&nbsp;Par&nbsp;Rates</a></div>
+<div class="menu-item"><a href="VRM_9.html">4.9&nbsp;Returns,&nbsp;Spreads,&nbsp;and&nbsp;Yields</a></div>
+<div class="menu-item"><a href="VRM_10.html">4.10&nbsp;One-Factor&nbsp;Risk&nbsp;Metrics&nbsp;and&nbsp;Hedges</a></div>
+<div class="menu-item"><a href="VRM_11.html">4.11&nbsp;Multi-Factor&nbsp;Risk&nbsp;Metrics&nbsp;and&nbsp;Hedges</a></div>
+<div class="menu-item"><a href="VRM_12.html">4.12&nbsp;Country&nbsp;Risk</a></div>
+<div class="menu-item"><a href="VRM_13.html">4.13&nbsp;External&nbsp;and&nbsp;Internal&nbsp;Ratings</a></div>
+<div class="menu-item"><a href="VRM_14.html">4.14&nbsp;Capital&nbsp;Structure&nbsp;in&nbsp;Banks</a></div>
+<div class="menu-item"><a href="VRM_15.html">4.15&nbsp;Operational&nbsp;Risk</a></div>
+<div class="menu-item"><a href="VRM_16.html">4.16&nbsp;Governance&nbsp;Over&nbsp;Stress&nbsp;Testing</a></div>
+<div class="menu-item"><a href="VRM_17.html">4.17&nbsp;Stress&nbsp;Testing&nbsp;and&nbsp;Other&nbsp;Risk&nbsp;Management&nbsp;Tools</a></div>
+<div class="menu-item"><a href="VRM_18.html">4.18&nbsp;Sound&nbsp;Stress&nbsp;Testing&nbsp;Practices&nbsp;and&nbsp;Supervision</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>1.1 Risk Management: A Helicopter View</h1>
+</div>
+<div class="infoblock">
+<div class="blockcontent">
+<h2>Learning Objectives</h2>
+<p>After completing this reading you should be able to:</p>
+<ul>
+<li><p>Explain the concept of risk and compare risk management with risk taking.</p>
+</li>
+<li><p>Describe the risk management process and identify problems and challenges that can arise in the risk
+management process.</p>
+</li>
+<li><p>Evaluate and apply tools and procedures used to measure and manage risk, including quantitative measures,
+qualitative assessment, and enterprise risk management.</p>
+</li>
+<li><p>Distinguish between expected loss and unexpected loss, and provide examples of each.</p>
+</li>
+<li><p>Interpret the relationship between risk and reward and explain how conflicts of interest can impact
+risk management.</p>
+</li>
+<li><p>Describe and differentiate between the key classes of risks, explain how each type of risk can arise, and assess the
+potential impact of each type of risk on an organization.</p>
+</li>
+</ul>
+</div></div>
+<h2>LO 1.1: Explain the concept of risk and compare risk management with risk taking.</h2>
+<ul>
+<li><p><b>Risk</b> arises from the uncertainty regarding an entity's future losses <i>as well as future gains</i>.</p>
+</li>
+<li><p><b>Risk management</b> aims to reduce <i>expected</i> and <i>unexpected</i> loss.</p>
+</li>
+<li><p><b>Risk taking</b> refers to incremental risk for incremental gains.</p>
+</li>
+</ul>
+<h2>LO 1.2: Describe the risk management process and identify problems and challenges that can arise in the risk management process.</h2>
+<ul>
+<li><p>Risk must be sufficiently dispersed among willing and able participants in the economy.</p>
+</li>
+<li><p>Risk management can be thought of as a <i>zero-sum game</i> because it only involves risk transferring by one party and risk assumption by another party.</p>
+</li>
+</ul>
+<h2>LO 1.3: Evaluate and apply tools and procedures used to measure and manage risk, including quantitative measures, qualitative assessment, and enterprise risk management.</h2>
+<ul>
+<li><p><b>Value at risk (VaR)</b> states a certain loss amount and its probability of occurring. A VaR statement looks like: the involved entity having a minimum loss of $xxx during a xxx days is xxx%. </p>
+</li>
+<li><p><b>Economic capital</b> refers to holding sufficient liquid reserves to cover a potential loss.</p>
+</li>
+<li><p><b>Scenario analysis</b> takes into account potential risk factors with uncertainties that are often non-quantifiable: adverse scenario or worst-case scenario.</p>
+</li>
+<li><p><b>Stress testing</b> is <i>a form of scenario analysis</i> that examines a financial outcome based on a given &ldquo;stress&rdquo; on the entity.
+<br /><br /></p>
+</li>
+</ul>
+<p><font color=red size=+0.5><b>Notes:</b></font> Scenario testing is akin to saying what if war break out in the Saudi Arabia ( for example ) how will variables change and it affect the model/portfolio. Stress testing is just moving the price of oil to various extremes to see the effect on the model/portfolio.
+<br /><br /></p>
+<ul>
+<li><p><b>Enterprise Risk Management (ERM)</b> takes an integrative approach to risk management within an entire entity, dispensing of the traditional approach of independently managing risk within each department or division of an entity.</p>
+</li>
+</ul>
+<h2>LO 1.4: Distinguish between expected loss and unexpected loss, and provide examples of each.</h2>
+<ul>
+<li><p><b>Expected loss</b> considers how much an entity expects to lose in the normal course of business.</p>
+</li>
+<li><p><b>Unexpected loss</b> considers how much an entity could lose outside of the normal course of business.</p>
+</li>
+<li><p><b>Correlation risk</b>, when unfavorable events happen together, drives up the potential losses to unexpected levels.</p>
+</li>
+</ul>
+<h2>LO 1.5: Interpret the relationship between risk and reward and explain how conflicts of interest can impact risk management.</h2>
+<ul>
+<li><p>The greater the risk taken, the greater the potential reward.</p>
+</li>
+<li><p>The portion of the variability that is measurable as a probability function could be thought of as <i>risk</i> whereas the portion that is not measurable could be thought of as <i>uncertainty</i>.</p>
+</li>
+</ul>
+<h2>LO 1.6: Describe and differentiate between the key classes of risks, explain how each type of risk can arise, and assess the potential impact of each type of risk on an organization.</h2>
+<p>There are <i><b>eight</b></i> key classes of risk: (1) market risk, (2) credit risk, (3) liquidity risk, (4) operational risk, (5) legal and regulatory risk, (6) business risk, (7) strategic risk, and (8) reputation risk.<br /><br /></p>
+<ul>
+<li><p><b>Market risk</b> considers how changes in market prices and rates will result in investment losses. There are four subtypes of market risk:</p>
+<ul>
+<li><p>Interest rate risk</p>
+</li>
+<li><p>Equity price risk (general market risk + specific risk)</p>
+</li>
+<li><p>Foreign exchange risk</p>
+</li>
+<li><p>Commodity price risk</p>
+</li></ul>
+</li>
+<li><p><b>Credit risk</b> refers to a party whereby the counterparty fails to meet its financial obligations to the party under the contract. There are four subtypes of credit risk:</p>
+<ul>
+<li><p>Default risk (recovery value + loss given default, or LGD)</p>
+</li>
+<li><p>Bankruptcy risk</p>
+</li>
+<li><p>Downgrade risk</p>
+</li>
+<li><p>Settlement risk (<font color=red size=+0.5><b>Notes:</b></font> Settlement risk is usually associated with derivatives contracts.)</p>
+</li></ul>
+</li>
+<li><p><b>Liquidity risk</b> is subdivided into two parts:</p>
+<ul>
+<li><p>Funding liquidity risk</p>
+</li>
+<li><p>Trading liquidity risk</p>
+</li></ul>
+</li>
+<li><p><b>Operational risk</b> considers a wide range of &ldquo;non-financial&rdquo; problems such as inadequate computer systems (technology risk), insufficient internal controls, incompetent management, fraud, human error, and natural disasters.</p>
+</li>
+<li><p><b>Legal and regulatory risk</b></p>
+</li>
+<li><p><b>Business risk</b></p>
+</li>
+<li><p><b>Strategic risk</b></p>
+</li>
+<li><p><b>Reputation risk</b> consists of two parts:</p>
+<ul>
+<li><p>The general perceived trustworthiness of an entity.</p>
+</li>
+<li><p>The general perception that the entity engages in fair dealing and conducts business in an ethical manner.</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<h2>Time Stamps</h2>
+<ul>
+<li><p>2018.7.1 (first pass; notes + after-session problems).</p>
+</li>
+</ul>
+</div></div>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-04-13 18:29:28 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

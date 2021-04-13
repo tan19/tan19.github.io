@@ -7,7 +7,7 @@ subprocess.run(["python", f], shell = True, cwd=os.path.dirname(f))
 
 files = []
 for root, subdirs, f in os.walk("./"):
-    if f:        
+    if f:              
         files += [root + "\\" + x for x in f if ".jemdoc" in x]
 
 def gen(f):

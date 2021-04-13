@@ -1,4 +1,4 @@
-# jemdoc: menu{Sciences/ML/MENU_ML}{MC.html}
+# jemdoc: menu{MENU_ML}{MC.html}
 = Monte Carlo Methods
 
 === Inverse Transform Sampling

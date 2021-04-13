@@ -1,4 +1,4 @@
-# jemdoc: menu{Work/StatisticsMachineLearning/Statistics/MENU_STATISTICS}{time_series.html}
+# jemdoc: menu{MENU_STATISTICS}{time_series.html}
 == Time Series
 
 ARMA/ARIMA/ARCH/GARCH

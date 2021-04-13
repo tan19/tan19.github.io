@@ -1,4 +1,4 @@
-# jemdoc: menu{Sciences/ML/PRML/MENU_PRML}{index.html}
+# jemdoc: menu{MENU_PRML}{index.html}
 = PRML
 
 - The main focus of this book is Bayesian Machine Learning (chapters 5, 6, and 7 can be skipped).

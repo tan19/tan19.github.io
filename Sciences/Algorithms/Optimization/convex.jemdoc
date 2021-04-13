@@ -1,4 +1,4 @@
-# jemdoc: menu{Sciences/Optimization/MENU_OPTIMIZATION}{convex.html}
+# jemdoc: menu{MENU_OPTIMIZATION}{convex.html}
 = Convex Optimization
 
 == Chapter 1. Basic Concepts of Convex Analysis

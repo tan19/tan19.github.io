@@ -1,4 +1,4 @@
-# jemdoc: menu{Sciences/Statistics/MENU_STATISTICS}{FAQ.html}
+# jemdoc: menu{MENU_STATISTICS}{FAQ.html}
 == FAQ
 
 - Q: How do you prove the existence of a stochastic process, e.g., Brownian motion, Gaussian processes?

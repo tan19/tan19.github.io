@@ -1,0 +1,13 @@
+# jemdoc: menu{MENU_FRM}{QA.html}
+= Quantitative Analysis (20\%)
+
+This area tests a candidate’s knowledge of basic probability and statistics, regression and time series analysis, and various quantitative techniques useful in risk management such as:
+- Discrete and continuous probability distributions - Estimating the parameters of distributions
+- Population and sample statistics
+- Bayesian analysis
+- Statistical inference and hypothesis testing
+- Estimating correlation and volatility using EWMA and GARCH models
+- Volatility term structures
+- Correlations and copulas
+- Linear regression with single and multiple regressors - Time series analysis and forecasting
+- Simulation methods
