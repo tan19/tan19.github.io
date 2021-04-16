@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Combinatorics and Probability (11 Problems)</title>
+<!-- Customized Scripts -->
+<link rel="stylesheet" href="http://tan19.github.io/bin/jemdoc.css", type="text/css">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End Customized Scripts -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Homepage</div>
+<div class="menu-item"><a href="../../index.html">Go&nbsp;Up</a></div>
+<div class="menu-item"><a href="http://tan19.github.io">Homepage</a></div>
+<div class="menu-category">Brainteaser</div>
+<div class="menu-item"><a href="Brainteaser_Logic_Brainteaser.html">Logic&nbsp;Brainteaser</a></div>
+<div class="menu-item"><a href="Brainteaser_Math_Brainteaser.html">Math&nbsp;Brainteaser</a></div>
+<div class="menu-category">Math</div>
+<div class="menu-item"><a href="Mathematics_Combinatorics_and_Probability.html" class="current">Combinatorics&nbsp;&amp;&nbsp;Probability</a></div>
+<div class="menu-item"><a href="Mathematics_Linear_Algebra.html">Linear&nbsp;Algebra</a></div>
+<div class="menu-item"><a href="Mathematics_Calculus.html">Calculus</a></div>
+<div class="menu-item"><a href="Mathematics_Differential_Equations.html">Differential&nbsp;Equations</a></div>
+<div class="menu-category">Finance</div>
+<div class="menu-item"><a href="Finance_Stochastic_Calculus.html">Stochastic&nbsp;Calculus</a></div>
+<div class="menu-item"><a href="*">Options&nbsp;Trading&nbsp;Strategies</a></div>
+<div class="menu-item"><a href="*">Implied&nbsp;Vol&nbsp;Surface&nbsp;Fitting</a></div>
+<div class="menu-item"><a href="*">Equity&nbsp;Derivatives&nbsp;Pricing</a></div>
+<div class="menu-category">Computer Science</div>
+<div class="menu-item"><a href="Computer_Science_Programming_Languages.html">Programming&nbsp;Languages</a></div>
+<div class="menu-item"><a href="Computer_Science_Compiler.html">Compiler</a></div>
+<div class="menu-item"><a href="Computer_Science_Database.html">Database</a></div>
+<div class="menu-item"><a href="Computer_Science_Operating_System.html">Operating&nbsp;System</a></div>
+<div class="menu-item"><a href="Computer_Science_Network.html">Network</a></div>
+<div class="menu-item"><a href="Computer_Science_Design.html">Design</a></div>
+<div class="menu-category">Algorithms and Optimization</div>
+<div class="menu-item"><a href="Algorithm_Data_Structures.html">Data&nbsp;Structures</a></div>
+<div class="menu-item"><a href="Algorithm_Algorithms.html">Algorithms</a></div>
+<div class="menu-item"><a href="Algorithm_Unconstrained_Optimization.html">Unconstrained&nbsp;Optimization</a></div>
+<div class="menu-item"><a href="Algorithm_Constrained_Optimization.html">Constrained&nbsp;Optimization</a></div>
+<div class="menu-category">Data Science</div>
+<div class="menu-item"><a href="Data_Science_Models.html">Models</a></div>
+<div class="menu-category">Projects</div>
+<div class="menu-item"><a href="*">LeetCode</a></div>
+<div class="menu-item"><a href="*">Kaggle</a></div>
+<div class="menu-item"><a href="*">Github</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Combinatorics and Probability (11 Problems)</h1>
+<div id="subtitle"></div>
+</div>
+<ul>
+<li><p>Coin Games (1 Problems)</p>
+</li>
+<li><p>Conditional Probability (1 Problems)</p>
+</li>
+<li><p>Deterministic Games (4 Problems)</p>
+</li>
+<li><p>Expectation (4 Problems)</p>
+</li>
+<li><p>Uniform Random Variables (1 Problems)</p>
+</li>
+</ul>
+<h2>Coin Games</h2>
+<p></p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #1: </b>
+You and I each flip 3 fair coins, if we got same heads I pay you $2, if different you pay me $1. Will you play this game?
+
+<br /><br /><b>Title: </b>Coin Game<br /><b>FileName: </b>2111.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Coin Games<br /><b>Tags: </b>Coin Games<br /><b>Source: </b>SIG<br /></p>
+</div></div>
+<p><b>Answer: </b>
+Naive Way:</p>
+<p style="text-align:center">
+\[
+\begin{align}
+	P(A=B=0) &amp;= \left[\binom{3}{0} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}\\
+	P(A=B=1) &amp;= \left[\binom{3}{1} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
+	P(A=B=2) &amp;= \left[\binom{3}{2} \left(\frac{1}{2}\right)^3\right]^2 = \frac{9}{64}\\
+	P(A=B=3) &amp;= \left[\binom{3}{3} \left(\frac{1}{2}\right)^3\right]^2 = \frac{1}{64}	
+\end{align}
+\]
+</p><p>
+So</p>
+<p style="text-align:center">
+\[
+\begin{align}
+	P(A=B) &amp;= \frac{1}{64} + \frac{9}{64} + \frac{9}{64} + \frac{1}{64} = \frac{5}{16}
+\end{align}
+\]
+</p><p>
+Don't forget the case when both had no head (A=B=0).
+
+Clever Way: Let both do their tossing and then let B turn over each of her coins. Then the event you are looking for is that exactly three out of six coins show heads. Since B's &ldquo;trick&rdquo; doesn't destroy any randomness or independency, the answer is</p>
+<p style="text-align:center">
+\[
+\begin{align}
+	P(A=B) &amp;= \binom{6}{3} \left(\frac{1}{2}\right)^3 = \frac{5}{16}
+\end{align}
+\]
+</p><p>
+
+</p>
+<h2>Conditional Probability</h2>
+<p></p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #2: </b>
+In a hospital there were 3 boys and some girls. A woman gave birth to a child in the hospital. A nurse picked up a child at random and was a boy. What is the probability that that woman gave birth to a boy?
+
+<br /><br /><b>Title: </b>Bayesian Child<br /><b>FileName: </b>2103.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Conditional Probability<br /><b>Tags: </b>Bayes Theorem; Conditional Probability<br /><b>Source: </b>SIG<br /></p>
+</div></div>
+<p><b>Answer: </b></p>
+<p style="text-align:center">
+\[
+\begin{align}
+	P(\text{Boy} &nbsp;|&nbsp; \text{Picked a Boy}) &amp;= \frac{P(\text{Picked a Boy} &nbsp;|&nbsp; \text{Boy})P(\text{Boy})}{P(\text{Picked a Boy})}\\
+	 &amp;= \frac{P(\text{Picked a Boy} &nbsp;|&nbsp; \text{Boy})P(\text{Boy})}{P(\text{Picked a Boy} &nbsp;|&nbsp; \text{Boy})P(\text{Boy}) + P(\text{Picked a Boy} &nbsp;|&nbsp; \text{Girl})P(\text{Girl})}\\
+	 &amp;= \frac{\frac{4}{3+N+1} \cdot \frac{1}{2}}{\frac{4}{3+N+1} \cdot \frac{1}{2} + \frac{3}{3+N+1} \cdot \frac{1}{2}}\\
+	 &amp;= \frac{4}{4+3} = \frac{4}{7}
+\end{align}
+\]
+</p><p>
+</p>
+<h2>Deterministic Games</h2>
+<p></p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #3: </b>
+In a room there are half H and half T. A robot comes into the room and flips the Hs and tosses the Ts, repeatedly. What is the stationary distribution of the Hs and Ts in the room?
+
+<br /><br /><b>Title: </b>Robot Flipping Coins<br /><b>FileName: </b>2114.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Deterministic Games<br /><b>Tags: </b>Deterministic Games; Markov Chain<br /><b>Source: </b>Optiver<br /></p>
+</div></div>
+<p><b>Answer: </b>
+The answer is 1<i>3 for H and 2</i>3 for T. We model this as a Markov Chain, which has a transition matrix</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    M = 
+    \begin{pmatrix}
+        0 &amp; 1\\
+        0.5 &amp; 0.5
+    \end{pmatrix}	
+\end{align}
+\]
+</p><p>
+Suppose in equilibrium, the probability of H is \(p\) and the probability of T is \(1-p\), then</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    (p, 1-p) 
+    \begin{pmatrix}
+        0 &amp; 1\\
+        0.5 &amp; 0.5
+    \end{pmatrix}
+    =
+    (p, 1-p)
+\end{align}
+\]
+</p><p>
+This gives us \(p = 1/3\). Alternatively, using eigendecomposition (\(M = Q \Lambda Q^{-1}\)), we find:</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    M = 
+    \begin{pmatrix}
+    1 &amp; 1\\
+    1 &amp; -1/2\\		
+    \end{pmatrix}
+    \begin{pmatrix}
+    1 &amp; 0\\
+    0 &amp; -0.5\\		
+    \end{pmatrix}
+    \begin{pmatrix}
+    1/3 &amp; 2/3\\
+    2/3 &amp; -2/3\\		
+    \end{pmatrix}
+\end{align}
+\]
+</p><p>
+and </p>
+<p style="text-align:center">
+\[
+\begin{align}
+    M^\infty = 
+    \begin{pmatrix}
+    1 &amp; 1\\
+    1 &amp; -1/2\\		
+    \end{pmatrix}
+    \begin{pmatrix}
+    1 &amp; 0\\
+    0 &amp; 0\\		
+    \end{pmatrix}
+    \begin{pmatrix}
+    1/3 &amp; 2/3\\
+    2/3 &amp; -2/3\\		
+    \end{pmatrix}
+\end{align}
+\]
+</p><p>
+This gives us the same result: \((0.5, 0.5) M^\infty = (1/3, 2/3)\).
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #4: </b>
+Expected number of die rolls until all numbers are rolled? If I have already made \(N\) rolls, what is the expected number of distinctive numbers?
+
+<br /><br /><b>Title: </b>Coupon Collection<br /><b>FileName: </b>2115.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Deterministic Games<br /><b>Tags: </b>Dice Games; Deterministic Games<br /><b>Source: </b>Green Book; Black Book; Jump;<br /></p>
+</div></div>
+<p><b>Answer: </b>
+This is the famous &lsquo;&lsquo;Coupon Collection&rsquo;&rsquo; problem. Define a set of variables \(X_1, \dots, X_6\) where \(X_i\) denotes the number of additional rolls need to obtain the \(i^{th}\) new number, then the answer reduces to computing \(E[\sum_{i=1}^6 X_i]\). However, each \(X_i\) follows a Geometric distribution where \(p_i = (6 - (i-1)) / 6\) and \(E[X_i] = 6 / (6 - (i-1))\). Therefore,</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    E\left[\sum_{i=1}^6 X_i\right] = \sum_{i=1}^6 \frac{6}{6- (i-1)} = 6(1/6 + 1/5 + 1/4 + 1/3 + 1/2 + 1) = 14.7
+\end{align}
+\]
+</p><p>
+In general, the answer for the coupon collection problem is:</p>
+<p style="text-align:center">
+\[
+\begin{align}
+E = N\sum_{i=1}^N \frac{1}{i}
+\end{align}
+\]
+</p><p>
+
+For the second part, introduce the indicator variables \(Y_i\) to denote that if number \(i\) is in the rolls already made. Then</p>
+<p style="text-align:center">
+\[
+\begin{align}
+E\left[\sum_{i=1}^6 Y_i \right] = \sum_{i=1}^6 E[Y_i] = \sum_{i=1}^6 Pr(Y_i = 1) = \sum_{i=1}^6 1 - \left(\frac56\right)^N = 6\left[1 - \left(\frac56\right)^N\right]
+\end{align}
+\]
+</p><p>
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #5: </b>
+The expected number of flips to see two heads from a series of fair coin tosses.
+
+<br /><br /><b>Title: </b>Two Heads<br /><b>FileName: </b>2116.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Deterministic Games<br /><b>Tags: </b>Think Backwards; Symmetry; Coin Games<br /><b>Source: </b>NA<br /></p>
+</div></div>
+<p><b>Answer: </b>
+Answer is 4 for to see two heads, and 6 to see two consecutive heads. Expected # of flips to gets 1 H is just, \(E[X] = 1 + (1-p)(E[X])\), where \(p\) is prob. of getting H, in the case of a fair coin this is 0.5, therefore rearranging you get \(E[X] = 1/p\), meaning expected number of flips for 1 head is \(1/p\), for fair coin this is equal to 2. Since coin flipping is memoryless, expected number of flips to get \(k\) heads is just \(1/p + 1/p + &hellip; = k/p\). Therefore 2/0.4 = 4, when \(k = 2\).
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #6: </b>
+A tosses a fair coin \(n+1\) times; B tosses a fair coin \(n\) times. What is the probability that A has strictly more heads than B?
+
+<br /><br /><b>Title: </b>One More Coin<br /><b>FileName: </b>2117.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Deterministic Games<br /><b>Tags: </b>Think Backwards; Symmetry; Coin Games<br /><b>Source: </b>Green Book; Blue Book; HRT;<br /></p>
+</div></div>
+<p><b>Answer: </b>
+The answer is 1/2. First observe that if A were to toss only \(n\) times, then there are only three events:</p>
+<ul>
+<li><p>With probability \(P_1\), A has more heads than B does.</p>
+</li>
+<li><p>With Probability \(P_2\), A has the same number of heads compared to B.</p>
+</li>
+<li><p>With probability \(P_3\), A has fewer heads than B does.
+
+By symmetry, \(P_1 = P_3\) and \(P_1 + P_2 + P_3 = 1 \implies 2P_1 + P_2 = 1\). The additional coin toss A has increases the probability of A having more heads by just \(0.5P_3\), hence the probability in question is \(P_1 + 0.5P_2 = 0.5\).
+</p>
+</li>
+</ul>
+<h2>Expectation</h2>
+<p></p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #7: </b>
+What is the expected number of tosses you need to see all six sides of a die?
+
+<br /><br /><b>Title: </b>All Six Sides of A Die<br /><b>FileName: </b>2101.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Expectation<br /><b>Tags: </b>Expectation<br /><b>Source: </b>NA<br /></p>
+</div></div>
+<p><b>Answer: </b>
+The answer is \(6 \cdot \sum_{i=1}^6 \frac{1}{i}\). Let \(X_i\) denote the random variable that tells us the number of trials it takes for us to see the i-th distinct side on a die. Obviously, \(X_1\) is always 1, since the first roll gives us the first observed side. \(X_2\) follows a geometric distribution with success p = 5/6. Similarly \(X_i\) follows a geometric distribution with success \(p = (7-i)/6\). So, the total expected number of rolls is \(E[X_1 + &hellip; + X_6] = E[X_1] + &hellip; E[X_6] = 6 \times (1 + 1/2 + &hellip; + 1/6)\).
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #8: </b>
+You turn over a card one by one from a deck of 52 cards. What is the expected number of cards that you need to flip before you see the first ace?
+
+<br /><br /><b>Title: </b>First Ace<br /><b>FileName: </b>2102.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Expectation<br /><b>Tags: </b>Expectation<br /><b>Source: </b>Green Book, page 95<br /></p>
+</div></div>
+<p><b>Answer: </b>
+The answer is 10.6. Setup an indicator function \(X_i = \mbox{all aces are behind card } i\). Then total number of draws is \(N = 1 + \sum_{i=1}^48 X_i\), where \(p(X_i) = 1/5\). The 1<i>5 comes from the fact that each non-ace card has a probability of 1</i>5 being appear before all aces.
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #9: </b>
+There are \(x\) people from country A and y people from country B. They sit around a table and shake hands with people on their left and right, but they only shake hands if they're from the same country. We want to know the expected number of handshake made.
+
+<br /><br /><b>Title: </b>Hand Shakes<br /><b>FileName: </b>2112.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Expectation<br /><b>Tags: </b>Indicator Variables; Linearity of Expectations<br /><b>Source: </b>NA<br /></p>
+</div></div>
+<p><b>Answer: </b>
+For each seat, the probability the person sitting there shakes the hand to the left is</p>
+<p style="text-align:center">
+\[
+\begin{align}
+\frac{x}{x+y} \cdot \frac{x-1}{x+y-1} + \frac{y}{x+y} \cdot \frac{y-1}{x+y-1} = \frac{x(x-1) + y(y-1)}{(x+y)(x+y-1)}
+\end{align}
+\]
+</p><p>
+Hence</p>
+<p style="text-align:center">
+\[
+\begin{align}
+E\left(\sum_i Z_i\right) = \sum_i Z_i = (x+y) \cdot \frac{x(x-1) + y(y-1)}{(x+y)(x+y-1)} = \frac{x(x-1) + y(y-1)}{x+y-1}
+\end{align}
+\]
+</p><p>
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #10: </b>
+There are 10 hunters and 10 ducks flying over. Each hunter aims at one duck and there is a probability of 0.5 that a hunter kills the duck he aims at. What is the expected number of ducks that have survived?
+
+<br /><br /><b>Title: </b>Hunters and Ducks<br /><b>FileName: </b>2113.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Expectation<br /><b>Tags: </b>Indicator Variables; Linearity of Expectations<br /><b>Source: </b>Morgan Stanley<br /></p>
+</div></div>
+<p><b>Answer: </b>
+The answer is 6 (but mine is 5?). Define a set of indicator variables:</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    Z_i = \begin{cases} 
+    0, &nbsp;&nbsp; \mbox{if the ith duck has survived}\\
+    1, &nbsp;&nbsp; \mbox{if the ith duck has died}		
+    \end{cases}
+\end{align}
+\]
+</p><p>
+where \(i = 1, \dots, 10\). Additionally, we define \(Pr(Y_j = i)\) to be the probability that the jth hunter aims at the ith duck. Now,</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    E\left[\sum_{i=1}^{10} Z_i\right] &amp;= \sum_{i=1}^{10} E[Z_i] = \sum_{i=1}^{10} Pr(Z_i=1)\\
+    &amp;= \sum_{i=1}^{10} \sum_{j=1}^{10} Pr(Z_i=1|Y_j = i) Pr(Y_j = i)\\
+    &amp;= \sum_{i=1}^{10} \sum_{j=1}^{10} (1/2)(1/10)\\
+    &amp;= 5		
+\end{align}
+\]
+</p><p>
+</p>
+<h2>Uniform Random Variables</h2>
+<p></p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #11: </b>
+\(X, Y, Z\) are i.i.d. \(U[0,1]\). What is the distribution of \((XY)^Z\)?
+
+<br /><br /><b>Title: </b>Uniform Random Variables<br /><b>FileName: </b>2104.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Uniform Random Variables<br /><b>Tags: </b>Uniform Random Variables<br /><b>Source: </b>NA<br /></p>
+</div></div>
+<p><b>Answer: </b>
+
+</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-04-15 17:11:13 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

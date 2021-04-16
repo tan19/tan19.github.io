@@ -1,190 +1,0 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Stochastic Calculus (4 Problems)</title>
-<!-- Customized Scripts -->
-<link rel="stylesheet" href="http://tan19.github.io/bin/jemdoc.css", type="text/css">
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-	  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-<!-- End Customized Scripts -->
-</head>
-<body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Homepage</div>
-<div class="menu-item"><a href="../../index.html">Go&nbsp;Up</a></div>
-<div class="menu-item"><a href="http://tan19.github.io">Homepage</a></div>
-<div class="menu-category">Brainteaser</div>
-<div class="menu-item"><a href="Brainteaser_Logic_Brainteaser.html">Logic&nbsp;Brainteaser</a></div>
-<div class="menu-item"><a href="Brainteaser_Math_Brainteaser.html">Math&nbsp;Brainteaser</a></div>
-<div class="menu-category">Math</div>
-<div class="menu-item"><a href="Mathematics_Combinatorics_and_Probability.html">Combinatorics&nbsp;&amp;&nbsp;Probability</a></div>
-<div class="menu-item"><a href="Mathematics_Linear_Algebra.html">Linear&nbsp;Algebra</a></div>
-<div class="menu-item"><a href="Mathematics_Calculus.html">Calculus</a></div>
-<div class="menu-item"><a href="Mathematics_Differential_Equations.html">Differential&nbsp;Equations</a></div>
-<div class="menu-category">Finance</div>
-<div class="menu-item"><a href="Finance_Stochastic_Calculus.html" class="current">Stochastic&nbsp;Calculus</a></div>
-<div class="menu-item"><a href="*">Options&nbsp;Trading&nbsp;Strategies</a></div>
-<div class="menu-item"><a href="*">Implied&nbsp;Vol&nbsp;Surface&nbsp;Fitting</a></div>
-<div class="menu-item"><a href="*">Equity&nbsp;Derivatives&nbsp;Pricing</a></div>
-<div class="menu-category">Computer Science</div>
-<div class="menu-item"><a href="Computer_Science_Programming_Languages.html">Programming&nbsp;Languages</a></div>
-<div class="menu-item"><a href="Computer_Science_Compiler.html">Compiler</a></div>
-<div class="menu-item"><a href="Computer_Science_Database.html">Database</a></div>
-<div class="menu-item"><a href="Computer_Science_Operating_System.html">Operating&nbsp;System</a></div>
-<div class="menu-item"><a href="Computer_Science_Network.html">Network</a></div>
-<div class="menu-item"><a href="Computer_Science_Design.html">Design</a></div>
-<div class="menu-category">Algorithms and Optimization</div>
-<div class="menu-item"><a href="Algorithm_Data_Structures.html">Data&nbsp;Structures</a></div>
-<div class="menu-item"><a href="Algorithm_Algorithms.html">Algorithms</a></div>
-<div class="menu-item"><a href="Algorithm_Unconstrained_Optimization.html">Unconstrained&nbsp;Optimization</a></div>
-<div class="menu-item"><a href="Algorithm_Constrained_Optimization.html">Constrained&nbsp;Optimization</a></div>
-<div class="menu-category">Data Science</div>
-<div class="menu-item"><a href="Data_Science_Models.html">Models</a></div>
-<div class="menu-category">Projects</div>
-<div class="menu-item"><a href="*">LeetCode</a></div>
-<div class="menu-item"><a href="*">Kaggle</a></div>
-<div class="menu-item"><a href="*">Github</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Stochastic Calculus (4 Problems)</h1>
-<div id="subtitle"></div>
-</div>
-<ul>
-<li><p>Brownian Motion (4 Problems)</p>
-</li>
-</ul>
-<h2>Brownian Motion</h2>
-<p></p>
-<div class="infoblock">
-<div class="blockcontent">
-<p><b>Question #1: </b>
-Prove that \(E[B_t^{2k}] = \frac{(2k)!}{2^k\dot k!} t^k\), where \(B_t\) is a Brownian motion.
-
-<br /><br /><b>Title: </b>Brownian Motion I<br /><b>FileName: </b>3001.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Finance/Stochastic Calculus/Brownian Motion<br /><b>Tags: </b>Stochastic Calculus; Brownian Motion; Moments of Brownian Motion; Moments of Gaussian Random Variable<br /><b>Source: </b>Black Book, page 42<br /></p>
-</div></div>
-<p><b>Answer: </b>
-Recall that the \(n^{th}\) centralized moment of a standard normal random variable is</p>
-<p style="text-align:center">
-\[
-\begin{align}
-    E[Z^n] = (n-1)!!
-\end{align}
-\]
-</p><p>
-Therefore,</p>
-<p style="text-align:center">
-\[
-\begin{align}
-    E[B_t^{2k}] = t^k (2k-1)!! = \frac{(2k)!}{2^k k!} t^k
-\end{align}
-\]
-</p><p>
-
-</p>
-<div class="infoblock">
-<div class="blockcontent">
-<p><b>Question #2: </b>
-What are the distributions, respectively, of the minimum and maximum of a Brownian motion in a given time frame \([0,t]\)?
-
-<br /><br /><b>Title: </b>Min and Max of Brownian Motion<br /><b>FileName: </b>3002.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Finance/Stochastic Calculus/Brownian Motion<br /><b>Tags: </b>Stochastic Calculus; Brownian Motion; Min and Max of Normal; Min and Max of Brownian Motion<br /><b>Source: </b>Green Book, page 132<br /></p>
-</div></div>
-<p><b>Answer: </b>
-Use passage time density of a Brownian motion.
-
-This is related to the question about min and max of two normal random variables.
-
-</p>
-<div class="infoblock">
-<div class="blockcontent">
-<p><b>Question #3: </b>
-What is the mean of the stopping time \(T\) for a Brownian motion to reach either the upper level \(U\) or the below level \(-B\)?
-
-Follow-up question: One man at 17 meter of a 100-meter-long bridge. He has 50% going one meter forward or backward. What is the probability he makes it to the end of the end of the bridge (the 100-meter end) before he reaches the other end (the 0-meter end)? What is the expected number of steps he takes to reach either end?
-
-<br /><br /><b>Title: </b>Brownian Motion Stopping Time I<br /><b>FileName: </b>3003.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Finance/Stochastic Calculus/Brownian Motion<br /><b>Tags: </b>Stochastic Calculus; Brownian Motion; Brownian Motion Stopping Time<br /><b>Source: </b>Green Book<br /></p>
-</div></div>
-<p><b>Answer: </b>
-The answer is \(E[T] = UB\). Define:</p>
-<p style="text-align:center">
-\[
-\begin{align}
-    T = \min\{t : W_t = U \mbox{ or } W_t = -B\}
-\end{align}
-\]
-</p><p>
-Since a martingale stopped at a stopping time is a martingale, </p>
-<p style="text-align:center">
-\[
-\begin{align}
-    0 &amp;= E[W_T] \\
-    &amp;= -B P(W_T = -B) + U P(W_T = U)\\
-    &amp;= -B P(W_T = -B) + U (1 - P(W_T = -B))\\
-    &amp;= U - (U+B)P(W_T = -B)\\
-    &amp;\implies P(W_T = -B) = \frac{U}{U+B}\\
-    &amp;\implies P(W_T = U) = \frac{B}{U+B}
-\end{align}
-\]
-</p><p>
-Now, since \(W_T - T\) is also a martingale, we see that</p>
-<p style="text-align:center">
-\[
-\begin{align}
-    0 &amp; = E[W_T^2 - T] = E[W_T^2] - T = B^2 P(W_T = -B) + U^2 P(W_T = U) - E[T]\\
-    &amp; = \frac{B^2U}{U+B} - \frac{U^2B}{U+B} - E[T] = UB - E[T]\\	
-    &amp;\implies E[T] = UB
-\end{align}
-\]
-</p><p>
-For the follow-up question, the answer is obvious: the probability of reaching the end of the bridge is 17/100, and the expected number of steps to reach either end is \(17 \times 83 = 1411\).
-
-</p>
-<div class="infoblock">
-<div class="blockcontent">
-<p><b>Question #4: </b>
-What is \(P(W_1W_{1+t} \ge 0)\), where \(W_1\) is a standard Brownian motion?
-
-<br /><br /><b>Title: </b>Brownian Motion II<br /><b>FileName: </b>3004.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Finance/Stochastic Calculus/Brownian Motion<br /><b>Tags: </b>Stochastic Calculus; Brownian Motion<br /><b>Source: </b>Credit Suisse<br /></p>
-</div></div>
-<p><b>Answer: </b>
-Decompose \(W_{1+t}\) into \(W_1 + B_t\) where \(B_t\) is an incremental Brownian motion independent from \(W_1\), then:</p>
-<p style="text-align:center">
-\[
-\begin{align}
-    P(W_1W_{1+t} \ge 0) &amp;= P(W_1(W_1 + B_t) \ge 0)\\
-    &amp;= P(W_1 \ge 0, W_1 + B_t \ge 0) + P(W_1 \le 0, W_1 + B_t \le 0) \\
-    &amp;= 2P(W_1 \ge 0, W_1 + B_t \ge 0)\\
-    &amp;= 2P\left(W_1 \ge 0, Z \equiv \frac{B_t}{\sqrt{t}} \ge -\frac{W_1}{\sqrt{t}}\right)
-\end{align}
-\]
-</p><p>
-Now, draw a coordinate system with \(W_1\) and \(Z\), which are i.i.d. standard normal. The final answer is (need to check):</p>
-<p style="text-align:center">
-\[
-\begin{align}
-    2\left(\frac14 + \frac{\arctan(1/\sqrt{t})}{2\pi}\right)
-\end{align}
-\]
-</p><p>
-
-</p>
-<div id="footer">
-<div id="footer-text">
-Page generated 2021-04-13 18:29:27 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
-</div>
-</div>
-</td>
-</tr>
-</table>
-</body>
-</html>
