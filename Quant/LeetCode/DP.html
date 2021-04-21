@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+<!-- Customized Scripts -->
+<link rel="stylesheet" href="http://tan19.github.io/bin/jemdoc.css", type="text/css">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End Customized Scripts -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Quant</div>
+<div class="menu-item"><a href="../index.html">Go&nbsp;Up</a></div>
+<div class="menu-item"><a href="http://tan19.github.io">Homepage</a></div>
+<div class="menu-category">Pre-Processing</div>
+<div class="menu-item"><a href="Sort.html">Sort</a></div>
+<div class="menu-item"><a href="PreSum.html">PreSum</a></div>
+<div class="menu-category">Data Structures</div>
+<div class="menu-item"><a href="Bit.html">Bit</a></div>
+<div class="menu-item"><a href="Array.html">Array</a></div>
+<div class="menu-item"><a href="String.html">String</a></div>
+<div class="menu-item"><a href="LinkedList.html">Linked&nbsp;List</a></div>
+<div class="menu-item"><a href="Heap.html">Heap</a></div>
+<div class="menu-item"><a href="Stack.html">Stack</a></div>
+<div class="menu-item"><a href="Queue.html">Queue</a></div>
+<div class="menu-item"><a href="Hash.html">Hash</a></div>
+<div class="menu-item"><a href="Trie.html">Trie</a></div>
+<div class="menu-item"><a href="Tree.html">Tree</a></div>
+<div class="menu-item"><a href="Graph.html">Graph</a></div>
+<div class="menu-category">Algorithms</div>
+<div class="menu-item"><a href="BinarySearch.html">Binary&nbsp;Search</a></div>
+<div class="menu-item"><a href="TwoPointers.html">Two&nbsp;Pointers</a></div>
+<div class="menu-item"><a href="BFS.html">BFS</a></div>
+<div class="menu-item"><a href="DFS.html">DFS</a></div>
+<div class="menu-item"><a href="UnionFind.html">Union&nbsp;Find</a></div>
+<div class="menu-item"><a href="SweepLine.html">Sweep&nbsp;Line</a></div>
+<div class="menu-item"><a href="TreeMap.html">Tree&nbsp;Map</a></div>
+<div class="menu-item"><a href="DP.html" class="current">Dynamic&nbsp;Programming</a></div>
+</td>
+<td id="layout-content">
+<p></p>
+<h1>Dynamic Programming</h1>
+<p>题号	题目链接	讲解链接	说明
+一维			
+70	Climbing Stairs	视频讲解	
+62	Unique Paths	视频讲解	
+63	Unique Paths II	视频讲解	
+120	Triangle	视频讲解	很少考
+279	Perfect Squares	视频讲解	
+139	Word Break	视频讲解	
+375	Guess Number Higher or Lower II	视频讲解	
+312	Burst Balloons	视频讲解	
+322	Coin Change	视频讲解	
+二维			
+256	Paint House	视频讲解	
+265	Paint House II	视频讲解	
+64	Minimum Path Sum	视频讲解	
+72	Edit Distance	视频讲解	
+97	Interleaving String	视频讲解	
+174	Dungeon Game	视频讲解	
+221	Maximal Square	视频讲解	
+85	Maximal Rectangle	视频讲解	
+363	Max Sum of Rectangle No Larger Than K	视频讲解	TreeSet
+化简			
+198	House Robber	视频讲解	
+213	House Robber II	视频讲解	
+276	Paint Fence	视频讲解	
+91	Decode Ways	视频讲解	
+10	Regular Expression Matching	视频讲解	
+44	Wildcard Matching	视频讲解	
+
+
+
+基础知识：这里指的是用for循环方式的动态规划，非Memoization Search方式。DP可以在多项式时间复杂度内解决DFS需要指数级别的问题。常见的题目包括找最大最小，找可行性，找总方案数等，一般结果是一个Integer或者Boolean。
+常见题目：</p>
+<ul>
+<li><p>LeetCode 674 Longest Continuous Increasing Subsequence</p>
+</li>
+<li><p>LeetCode 62 Unique Paths II</p>
+</li>
+<li><p>LeetCode 70 Climbing Stairs</p>
+</li>
+<li><p>LeetCode 64 Minimum Path Sum</p>
+</li>
+<li><p>LeetCode 368 Largest Divisible Subset</p>
+</li>
+<li><p>LeetCode 300 Longest Increasing Subsequence</p>
+</li>
+<li><p>LeetCode 354 Russian Doll Envelopes</p>
+</li>
+<li><p>LeetCode 256 Paint House</p>
+</li>
+<li><p>LeetCode 121 Best Time to Buy and Sell Stock</p>
+</li>
+<li><p>LeetCode 55 Jump Game</p>
+</li>
+<li><p>LeetCode 45 Jump Game II</p>
+</li>
+<li><p>LeetCode 403 Frog Jump</p>
+</li>
+<li><p>LeetCode 132 Palindrome Partitioning II</p>
+</li>
+<li><p>LeetCode 312 Burst Balloons</p>
+</li>
+<li><p>LeetCode 1143 Longest Common Subsequence</p>
+</li>
+<li><p>LeetCode 115 Distinct Subsequences</p>
+</li>
+<li><p>LeetCode 72 Edit Distance</p>
+</li>
+<li><p>LeetCode 91 Decode Ways</p>
+</li>
+<li><p>LeetCode 639 Decode Ways II</p>
+</li>
+<li><p>LeetCode 712 Minimum ASCII Delete Sum for Two Strings</p>
+</li>
+<li><p>LeetCode 221 Maximal Square</p>
+</li>
+<li><p>LeetCode 198 House Robber</p>
+</li>
+<li><p>LeetCode 213 House Robber II</p>
+</li>
+<li><p>LeetCode 87 Scramble String</p>
+</li>
+<li><p>LeetCode 1062 Longest Repeating Substring</p>
+</li>
+<li><p>LeetCode 1140 Stone Game II</p>
+</li>
+<li><p>LeetCode 322 Coin Change</p>
+</li>
+<li><p>LeetCode 518 Coin Change II</p>
+</li>
+<li><p>LeetCode 97 Interleaving String
+
+
+题目分类	题目编号
+数组中的动态规划	509、70、338、45、55、198、213、650、91、639、552、123、188、309、32、264、313、403
+子数组、子序列中的动态规划	689、413、446、368、416、279
+背包问题	322、518、474、494、377
+矩阵中的动态规划	62、63、64、120、576、688、221、629、174、96、329
+动态规划与字符串匹配	583、72、97、115、516、132、131、139、140、514、10、44
+状态压缩动态规划	464、691、698、638、473
+区间中的动态规划	486、664、375、312、546
+树形dp	337、124
+数位dp	233、600
+</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-04-21 14:15:25 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

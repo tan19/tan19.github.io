@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title></title>
+<!-- Customized Scripts -->
+<link rel="stylesheet" href="http://tan19.github.io/bin/jemdoc.css", type="text/css">
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End Customized Scripts -->
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Quant</div>
+<div class="menu-item"><a href="../index.html">Go&nbsp;Up</a></div>
+<div class="menu-item"><a href="http://tan19.github.io">Homepage</a></div>
+<div class="menu-category">Pre-Processing</div>
+<div class="menu-item"><a href="Sort.html">Sort</a></div>
+<div class="menu-item"><a href="PreSum.html">PreSum</a></div>
+<div class="menu-category">Data Structures</div>
+<div class="menu-item"><a href="Bit.html">Bit</a></div>
+<div class="menu-item"><a href="Array.html">Array</a></div>
+<div class="menu-item"><a href="String.html">String</a></div>
+<div class="menu-item"><a href="LinkedList.html">Linked&nbsp;List</a></div>
+<div class="menu-item"><a href="Heap.html">Heap</a></div>
+<div class="menu-item"><a href="Stack.html">Stack</a></div>
+<div class="menu-item"><a href="Queue.html">Queue</a></div>
+<div class="menu-item"><a href="Hash.html">Hash</a></div>
+<div class="menu-item"><a href="Trie.html">Trie</a></div>
+<div class="menu-item"><a href="Tree.html">Tree</a></div>
+<div class="menu-item"><a href="Graph.html">Graph</a></div>
+<div class="menu-category">Algorithms</div>
+<div class="menu-item"><a href="BinarySearch.html">Binary&nbsp;Search</a></div>
+<div class="menu-item"><a href="TwoPointers.html">Two&nbsp;Pointers</a></div>
+<div class="menu-item"><a href="BFS.html">BFS</a></div>
+<div class="menu-item"><a href="DFS.html" class="current">DFS</a></div>
+<div class="menu-item"><a href="UnionFind.html">Union&nbsp;Find</a></div>
+<div class="menu-item"><a href="SweepLine.html">Sweep&nbsp;Line</a></div>
+<div class="menu-item"><a href="TreeMap.html">Tree&nbsp;Map</a></div>
+<div class="menu-item"><a href="DP.html">Dynamic&nbsp;Programming</a></div>
+</td>
+<td id="layout-content">
+<p></p>
+<h2>基础知识：</h2>
+<p>常见的DFS用来解决什么问题？(1) 图中（有向无向皆可）的符合某种特征（比如最长）的路径以及长度（2）排列组合（3） 遍历一个图（或者树）（4）找出图或者树中符合题目要求的全部方案
+DFS基本模板（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
+除了遍历之外多数情况下时间复杂度是指数级别，一般是O(方案数×找到每个方案的时间复杂度)
+递归题目都可以用非递归迭代的方法写，但一般实现起来非常麻烦
+</p>
+<h2>基于树的DFS：需要记住递归写前序中序后序遍历二叉树的模板</h2>
+<ul>
+<li><p>LeetCode 543 Diameter of Binary Tree</p>
+</li>
+<li><p>LeetCode 226 Invert Binary Tree</p>
+</li>
+<li><p>LeetCode 124 Binary Tree Maximum Path Sum</p>
+</li>
+<li><p>LeetCode 236 Lowest Common Ancestor of a Binary Tree</p>
+</li>
+<li><p>LeetCode 101 Symmetric Tree</p>
+</li>
+<li><p>LeetCode 105 Construct Binary Tree from Preorder and Inorder Traversal</p>
+</li>
+<li><p>LeetCode 104 Maximum Depth of Binary Tree</p>
+</li>
+<li><p>LeetCode 951 Flip Equivalent Binary Trees</p>
+</li>
+<li><p>LeetCode 987 Vertical Order Traversal of a Binary Tree</p>
+</li>
+<li><p>LeetCode 1485 Clone Binary Tree With Random Pointer</p>
+</li>
+<li><p>LeetCode 572 Subtree of Another Tree</p>
+</li>
+<li><p>LeetCode 863 All Nodes Distance K in Binary Tree
+</p>
+</li>
+</ul>
+<h2>二叉搜索树（BST）：BST特征：中序遍历为单调递增的二叉树，换句话说，根节点的值比左子树任意节点值都大，比右子树任意节点值都小，增删查改均为O（h）复杂度，h为数的高度；注意不是所有的BST题目都需要递归，有的题目只需要while循环即可</h2>
+<ul>
+<li><p>LeetCode 230 Kth Smallest element in a BST</p>
+</li>
+<li><p>LeetCode 98 Validate Binary Search Tree</p>
+</li>
+<li><p>LeetCode 270 Cloest Binary Search Tree Value</p>
+</li>
+<li><p>LeetCode 235 Lowest Common Ancestor of a Binary Search Tree</p>
+</li>
+<li><p>LeetCode 669 Trim a Binary Search Tree</p>
+</li>
+<li><p>LeetCode 700 Search Range in Binary Search Tree</p>
+</li>
+<li><p>LeetCode 108 Convert Sorted Array to Binary Search Tree</p>
+</li>
+<li><p>LeetCode 333 Largest BST Subtree</p>
+</li>
+<li><p>LeetCode 510 Inorder Successor in BST II
+</p>
+</li>
+</ul>
+<h2>基于图的DFS: 和BFS一样一般需要一个set来记录访问过的节点，避免重复访问造成死循环</h2>
+<ul>
+<li><p>LeetCode 341 Flatten Nested List Iterator</p>
+</li>
+<li><p>LeetCode 394 Decode String</p>
+</li>
+<li><p>LeetCode 51 N-Queens</p>
+</li>
+<li><p>LeetCode 291 Word Pattern II (I为简单的Hashmap题)</p>
+</li>
+<li><p>LeetCode 126 Word Ladder II （I为BFS题目）</p>
+</li>
+<li><p>LeetCode 1110 Delete Nodes And Return Forest</p>
+</li>
+<li><p>LeetCode 93 Restore IP Addresses</p>
+</li>
+<li><p>LeetCode 22 Generate Parentheses</p>
+</li>
+<li><p>LeetCode 37 Sodoku Solver</p>
+</li>
+<li><p>LeetCode 301 Remove Invalid Parentheses</p>
+</li>
+<li><p>LeetCode 212 Word Search II （I, II）</p>
+</li>
+<li><p>LeetCode 1087 Brace Expansion</p>
+</li>
+<li><p>LeetCode 399 Evaluate Division</p>
+</li>
+<li><p>LeetCode 1274 Number of Ships in a Rectangle</p>
+</li>
+<li><p>LeetCode 1376 Time Needed to Inform All Employees</p>
+</li>
+<li><p>LeetCode 694 Number of Distinct Islands</p>
+</li>
+<li><p>LeetCode 586 Score of Parentheses
+</p>
+</li>
+</ul>
+<h2>基于排列组合的DFS: 其实与图类DFS方法一致，但是排列组合的特征更明显</h2>
+<ul>
+<li><p>LeetCode 17 Letter Combinations of a Phone Number</p>
+</li>
+<li><p>LeetCode 39 Combination Sum （I, II, III, IV）</p>
+</li>
+<li><p>LeetCode 90 Subsets II （重点在于如何去重）</p>
+</li>
+<li><p>LeetCode 47 Permutation II</p>
+</li>
+<li><p>LeetCode 77 Combinations</p>
+</li>
+<li><p>LeetCode 526 Beautiful Arrangement
+</p>
+</li>
+</ul>
+<h2>记忆化搜索（DFS + Memoization Search）：算是动态规划的一种，递归每次返回时同时记录下已访问过的节点特征，避免重复访问同一个节点，可以有效的把指数级别的DFS时间复杂度降为多项式级别</h2>
+<ul>
+<li><p>LeetCode 139 Word Break II</p>
+</li>
+<li><p>LeetCode 131 Palindrome Partitioning</p>
+</li>
+<li><p>LeetCode 72 Edit Distance</p>
+</li>
+<li><p>LeetCode 377 Combination Sum IV</p>
+</li>
+<li><p>LeetCode 1335 Minimum Difficulty of a Job Schedule</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2021-04-21 14:15:25 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

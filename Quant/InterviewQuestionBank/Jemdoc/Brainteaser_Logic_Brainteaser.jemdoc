@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU_Interview}{Brainteaser_Logic_Brainteaser.html}
-= Logic Brainteaser (1 Problems)
+= Logic Brainteaser (2 Problems)
 
-- Games (1 Problems)
+- Games (2 Problems)
 == Games
 
 ~~~
@@ -9,6 +9,16 @@
 Two people play a deck of 52 cards. Each person in turn draws 1 to 4 cards and compare the number. What is your strategy if you are to draw first?
 
 \n\n*Title: *Poker Game\n*FileName: *1002.md\n*Difficulty: *Easy\n*Category: *Brainteaser\/Logic Brainteaser\/Games\n*Tags: *Brainteaser, Logic Brainteaser\n*Source: *Baidu\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#2: *
+A gunman and a shieldman are sitting still in a square room and the gunman wants to kill the shieldman. Suppose the bullet is bounced back with a reflection angle if hit on a wall. Is there a strategy that the shildman can save his life by placing a bullet-proof plate in the room regardless where the gunman shoots?
+
+\n\n*Title: *Gunman and Shieldman\n*FileName: *1003.md\n*Difficulty: *Easy\n*Category: *Brainteaser\/Logic Brainteaser\/Games\n*Tags: *Brainteaser, Logic Brainteaser\n*Source: *Egret Asset\n
 ~~~
 
 *Answer: *

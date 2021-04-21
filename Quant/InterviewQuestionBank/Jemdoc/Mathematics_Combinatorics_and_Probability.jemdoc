@@ -1,9 +1,9 @@
 # jemdoc: menu{MENU_Interview}{Mathematics_Combinatorics_and_Probability.html}
-= Combinatorics and Probability (11 Problems)
+= Combinatorics and Probability (13 Problems)
 
 - Coin Games (1 Problems)
 - Conditional Probability (1 Problems)
-- Deterministic Games (4 Problems)
+- Deterministic Games (6 Problems)
 - Expectation (4 Problems)
 - Uniform Random Variables (1 Problems)
 == Coin Games
@@ -194,10 +194,30 @@ The answer is 1/2. First observe that if A were to toss only $n$ times, then the
 
 By symmetry, $P_1 = P_3$ and $P_1 + P_2 + P_3 = 1 \implies 2P_1 + P_2 = 1$. The additional coin toss A has increases the probability of A having more heads by just $0.5P_3$, hence the probability in question is $P_1 + 0.5P_2 = 0.5$.
 
+~~~
+*Question \#7: *
+Toss a die 10 times. What is the probability that the sum of the 10 numbers you get can be divided by 7? How about the probability of tossing a die with $F$ sides and the sum of $m$ numbers you get can be divided by $N$ with remainder $k$?
+
+\n\n*Title: *Sum of Dice\n*FileName: *2118.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Deterministic Games\n*Tags: *Think Backwards; Symmetry; Die Games\n*Source: *Egret Asset\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#8: *
+A and B play table tennis. A has the probability of 1/3 to win a round. Suppose A wins the game if he can win 5 rounds but B wins the game only if he can win 11 rounds. What is the probability of A winning the game? What if, when the game is 10:4, one side has to win two more points to win the game (say, 12:4 or 10:6), what is the probability of A winning the game?
+
+\n\n*Title: *Table Tennis\n*FileName: *2119.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Deterministic Games\n*Tags: *Probability\n*Source: *Egret Asset\n
+~~~
+
+*Answer: *
+
+
 == Expectation
 
 ~~~
-*Question \#7: *
+*Question \#9: *
 What is the expected number of tosses you need to see all six sides of a die?
 
 \n\n*Title: *All Six Sides of A Die\n*FileName: *2101.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Expectation\n*Source: *NA\n
@@ -207,7 +227,7 @@ What is the expected number of tosses you need to see all six sides of a die?
 The answer is $6 \cdot \sum_{i=1}^6 \frac{1}{i}$. Let $X_i$ denote the random variable that tells us the number of trials it takes for us to see the i-th distinct side on a die. Obviously, $X_1$ is always 1, since the first roll gives us the first observed side. $X_2$ follows a geometric distribution with success p = 5/6. Similarly $X_i$ follows a geometric distribution with success $p = (7-i)/6$. So, the total expected number of rolls is $E[X_1 + ... + X_6] = E[X_1] + ... E[X_6] = 6 \times (1 + 1/2 + ... + 1/6)$.
 
 ~~~
-*Question \#8: *
+*Question \#10: *
 You turn over a card one by one from a deck of 52 cards. What is the expected number of cards that you need to flip before you see the first ace?
 
 \n\n*Title: *First Ace\n*FileName: *2102.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Expectation\n*Source: *Green Book, page 95\n
@@ -217,7 +237,7 @@ You turn over a card one by one from a deck of 52 cards. What is the expected nu
 The answer is 10.6. Setup an indicator function $X_i = \mbox{all aces are behind card } i$. Then total number of draws is $N = 1 + \sum_{i=1}^48 X_i$, where $p(X_i) = 1/5$. The 1/5 comes from the fact that each non-ace card has a probability of 1/5 being appear before all aces.
 
 ~~~
-*Question \#9: *
+*Question \#11: *
 There are $x$ people from country A and y people from country B. They sit around a table and shake hands with people on their left and right, but they only shake hands if they're from the same country. We want to know the expected number of handshake made.
 
 \n\n*Title: *Hand Shakes\n*FileName: *2112.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Indicator Variables; Linearity of Expectations\n*Source: *NA\n
@@ -240,7 +260,7 @@ E\left(\sum_i Z_i\right) = \sum_i Z_i = (x+y) \cdot \frac{x(x-1) + y(y-1)}{(x+y)
 
 
 ~~~
-*Question \#10: *
+*Question \#12: *
 There are 10 hunters and 10 ducks flying over. Each hunter aims at one duck and there is a probability of 0.5 that a hunter kills the duck he aims at. What is the expected number of ducks that have survived?
 
 \n\n*Title: *Hunters and Ducks\n*FileName: *2113.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Indicator Variables; Linearity of Expectations\n*Source: *Morgan Stanley\n
@@ -271,7 +291,7 @@ where $i = 1, \dots, 10$. Additionally, we define $Pr(Y_j = i)$ to be the probab
 == Uniform Random Variables
 
 ~~~
-*Question \#11: *
+*Question \#13: *
 $X, Y, Z$ are i.i.d. $U[0,1]$. What is the distribution of $(XY)^Z$?
 
 \n\n*Title: *Uniform Random Variables\n*FileName: *2104.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Uniform Random Variables\n*Tags: *Uniform Random Variables\n*Source: *NA\n

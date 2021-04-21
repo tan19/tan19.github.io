@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Stochastic Calculus (4 Problems)</title>
+<title>Stochastic Calculus (6 Problems)</title>
 <!-- Customized Scripts -->
 <link rel="stylesheet" href="http://tan19.github.io/bin/jemdoc.css", type="text/css">
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
@@ -20,23 +20,27 @@ MathJax.Hub.Config({
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
-<div class="menu-category">Homepage</div>
-<div class="menu-item"><a href="../../index.html">Go&nbsp;Up</a></div>
+<div class="menu-category">Quant</div>
+<div class="menu-item"><a href="../index.html">Go&nbsp;Up</a></div>
 <div class="menu-item"><a href="http://tan19.github.io">Homepage</a></div>
 <div class="menu-category">Brainteaser</div>
+<div class="menu-item"><a href="../../Brainteaser.html">Introduction</a></div>
 <div class="menu-item"><a href="Brainteaser_Logic_Brainteaser.html">Logic&nbsp;Brainteaser</a></div>
 <div class="menu-item"><a href="Brainteaser_Math_Brainteaser.html">Math&nbsp;Brainteaser</a></div>
 <div class="menu-category">Math</div>
+<div class="menu-item"><a href="../../Math.html">Introduction</a></div>
 <div class="menu-item"><a href="Mathematics_Combinatorics_and_Probability.html">Combinatorics&nbsp;&amp;&nbsp;Probability</a></div>
 <div class="menu-item"><a href="Mathematics_Linear_Algebra.html">Linear&nbsp;Algebra</a></div>
 <div class="menu-item"><a href="Mathematics_Calculus.html">Calculus</a></div>
 <div class="menu-item"><a href="Mathematics_Differential_Equations.html">Differential&nbsp;Equations</a></div>
 <div class="menu-category">Finance</div>
+<div class="menu-item"><a href="../../Finance.html">Introduction</a></div>
 <div class="menu-item"><a href="Finance_Stochastic_Calculus.html" class="current">Stochastic&nbsp;Calculus</a></div>
 <div class="menu-item"><a href="*">Options&nbsp;Trading&nbsp;Strategies</a></div>
 <div class="menu-item"><a href="*">Implied&nbsp;Vol&nbsp;Surface&nbsp;Fitting</a></div>
 <div class="menu-item"><a href="*">Equity&nbsp;Derivatives&nbsp;Pricing</a></div>
 <div class="menu-category">Computer Science</div>
+<div class="menu-item"><a href="../../CS.html">Introduction</a></div>
 <div class="menu-item"><a href="Computer_Science_Programming_Languages.html">Programming&nbsp;Languages</a></div>
 <div class="menu-item"><a href="Computer_Science_Compiler.html">Compiler</a></div>
 <div class="menu-item"><a href="Computer_Science_Database.html">Database</a></div>
@@ -44,24 +48,34 @@ MathJax.Hub.Config({
 <div class="menu-item"><a href="Computer_Science_Network.html">Network</a></div>
 <div class="menu-item"><a href="Computer_Science_Design.html">Design</a></div>
 <div class="menu-category">Algorithms and Optimization</div>
+<div class="menu-item"><a href="../../Algorithm.html">Introduction</a></div>
 <div class="menu-item"><a href="Algorithm_Data_Structures.html">Data&nbsp;Structures</a></div>
 <div class="menu-item"><a href="Algorithm_Algorithms.html">Algorithms</a></div>
 <div class="menu-item"><a href="Algorithm_Unconstrained_Optimization.html">Unconstrained&nbsp;Optimization</a></div>
 <div class="menu-item"><a href="Algorithm_Constrained_Optimization.html">Constrained&nbsp;Optimization</a></div>
-<div class="menu-category">Data Science</div>
-<div class="menu-item"><a href="Data_Science_Models.html">Models</a></div>
+<div class="menu-category">Machine Learning</div>
+<div class="menu-item"><a href="../../ML.html">Introduction</a></div>
+<div class="menu-item"><a href="*">Mathematical&nbsp;Statistics</a></div>
+<div class="menu-item"><a href="*">Linear&nbsp;Regression</a></div>
+<div class="menu-item"><a href="*">Non-Linear&nbsp;Regression</a></div>
+<div class="menu-item"><a href="*">Linear&nbsp;Classification</a></div>
+<div class="menu-item"><a href="*">Non-Linear&nbsp;Classification</a></div>
+<div class="menu-item"><a href="*">Deep&nbsp;Learning</a></div>
+<div class="menu-item"><a href="Machine_Learning_Models.html">Models</a></div>
 <div class="menu-category">Projects</div>
-<div class="menu-item"><a href="*">LeetCode</a></div>
+<div class="menu-item"><a href="../../LeetCode/index.html">LeetCode</a></div>
 <div class="menu-item"><a href="*">Kaggle</a></div>
 <div class="menu-item"><a href="*">Github</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Stochastic Calculus (4 Problems)</h1>
+<h1>Stochastic Calculus (6 Problems)</h1>
 <div id="subtitle"></div>
 </div>
 <ul>
-<li><p>Brownian Motion (4 Problems)</p>
+<li><p>Brownian Motion (5 Problems)</p>
+</li>
+<li><p>Martingale (1 Problems)</p>
 </li>
 </ul>
 <h2>Brownian Motion</h2>
@@ -178,9 +192,94 @@ Now, draw a coordinate system with \(W_1\) and \(Z\), which are i.i.d. standard 
 </p><p>
 
 </p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #5: </b>
+A petal drops from a 1m tree and moves as a Brownian motion with \(\sigma^2 = 4cm^2/s\) and an average vertical drift speed \(5cm/s\). Compute:</p>
+<ul>
+<li><p>Average time that the petal drops to the ground \(E[T]\).</p>
+</li>
+<li><p>\(E[T^n]\).</p>
+</li>
+<li><p>Distribution of \(T\).
+
+<br /><br /><b>Title: </b>Brownian Motion III<br /><b>FileName: </b>3006.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Finance/Stochastic Calculus/Brownian Motion<br /><b>Tags: </b>Stochastic Calculus; Brownian Motion<br /><b>Source: </b>Egret Asset<br /></p>
+</li>
+</ul>
+</div></div>
+<p><b>Answer: </b>
+The Brownian motion can be written as:</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    dX(t) = \mu dt + \sigma dW(t)
+\end{align}
+\]
+</p><p>
+where</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    E\left[e^{\theta B_T - (\theta \mu + \frac{\theta^2 \sigma^2}{2})T}\right] = 1
+\end{align}
+\]
+</p><p>
+Compute the derivative w.r.t. \(\theta\), we obtain</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    0 = \frac{d}{d\theta} E\left[ e^{\theta B_T - (\theta \mu + \frac{\theta^2 \sigma^2}{2})T} \right] = E\left[(B_T - (\mu + \sigma \sigma^2)T) e^{\theta B_T - (\theta \mu + \frac{\theta^2 \sigma^2}{2})T} \right] = E[B_T - \mu T]
+\end{align}
+\]
+</p><p>
+In the last equation we have used \(\theta = 0\). Thus we have \(E[T] = \frac{E[B_T]}{\mu}\), and</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    E[B_T^2] = \sigma^2 E[T] + \mu^2 E[T^2]\\
+    E[T^2] = \frac{E[B_T^2] - \sigma^2E[T]}{\mu^2}
+\end{align}
+\]
+</p><p>
+
+</p>
+<h2>Martingale</h2>
+<p></p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #6: </b>
+\({S_n}\) is a random walk on integers, where</p>
+<p style="text-align:center">
+\[
+    P(S_{n+1} = k + 1 | S_n = k) = \frac12 - \frac{1}{4k}\\
+    P(S_{n+1} = k - 1 | S_n = k) = \frac12 + \frac{1}{4k}\\
+    P(S_{n+1} = 0 | S_n = 0) = 1
+\]
+</p><p>What is the probability that the random walk will end up with 100 before hitting 0 given that it starts at 50?
+
+<br /><br /><b>Title: </b>Martingale<br /><b>FileName: </b>3005.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Finance/Stochastic Calculus/Martingale<br /><b>Tags: </b>Stochastic Calculus; Martingale<br /><b>Source: </b>Egret Asset<br /></p>
+</div></div>
+<p><b>Answer: </b>
+The answer is \(\frac14\). We first show that \({S_n^2}\) is a martingale:</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    E(S_n^2 | S_{n-1}^2 = k^2) = (k+1)^2 \left(\frac12 - \frac{1}{4k}\right) + (k-1)^2 \left(\frac12 + \frac{1}{4k}\right) = k^2
+\end{align}
+\]
+</p><p>
+Thus, by the Optional Sampling Theorem</p>
+<p style="text-align:center">
+\[
+\begin{align}
+    E(S_N^2 = 100 | S_0^2 = {50}^2) = {100}^2 P(S_N = 100 | S_0 = 50) = E(S_0^2 = {50}^2) = {50}^2 \implies P(S_N = 100 | S_0 = 50) = \frac14
+\end{align}
+\]
+</p><p>
+</p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-04-15 17:11:13 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2021-04-21 14:15:24 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>

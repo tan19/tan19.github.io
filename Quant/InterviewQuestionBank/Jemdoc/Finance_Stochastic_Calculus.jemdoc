@@ -1,7 +1,8 @@
 # jemdoc: menu{MENU_Interview}{Finance_Stochastic_Calculus.html}
-= Stochastic Calculus (4 Problems)
+= Stochastic Calculus (6 Problems)
 
-- Brownian Motion (4 Problems)
+- Brownian Motion (5 Problems)
+- Martingale (1 Problems)
 == Brownian Motion
 
 ~~~
@@ -107,5 +108,78 @@ Now, draw a coordinate system with $W_1$ and $Z$, which are i.i.d. standard norm
 \end{align}
 \)
 
+
+
+~~~
+*Question \#5: *
+A petal drops from a 1m tree and moves as a Brownian motion with $\sigma^2 = 4cm^2/s$ and an average vertical drift speed $5cm/s$. Compute:
+- Average time that the petal drops to the ground $E[T]$.
+- $E[T^n]$.
+- Distribution of $T$.
+
+\n\n*Title: *Brownian Motion III\n*FileName: *3006.md\n*Difficulty: *Easy\n*Category: *Finance\/Stochastic Calculus\/Brownian Motion\n*Tags: *Stochastic Calculus; Brownian Motion\n*Source: *Egret Asset\n
+~~~
+
+*Answer: *
+The Brownian motion can be written as:
+\(
+\begin{align}
+    dX(t) = \mu dt + \sigma dW(t)
+\end{align}
+\)
+
+where
+\(
+\begin{align}
+    E\left[e^{\theta B_T - (\theta \mu + \frac{\theta^2 \sigma^2}{2})T}\right] = 1
+\end{align}
+\)
+
+Compute the derivative w.r.t. $\theta$, we obtain
+\(
+\begin{align}
+    0 = \frac{d}{d\theta} E\left[ e^{\theta B_T - (\theta \mu + \frac{\theta^2 \sigma^2}{2})T} \right] = E\left[(B_T - (\mu + \sigma \sigma^2)T) e^{\theta B_T - (\theta \mu + \frac{\theta^2 \sigma^2}{2})T} \right] = E[B_T - \mu T]
+\end{align}
+\)
+
+In the last equation we have used $\theta = 0$. Thus we have $E[T] = \frac{E[B_T]}{\mu}$, and
+\(
+\begin{align}
+    E[B_T^2] = \sigma^2 E[T] + \mu^2 E[T^2]\\
+    E[T^2] = \frac{E[B_T^2] - \sigma^2E[T]}{\mu^2}
+\end{align}
+\)
+
+
+
+== Martingale
+
+~~~
+*Question \#6: *
+${S_n}$ is a random walk on integers, where
+\(
+    P(S_{n+1} = k + 1 | S_n = k) = \frac12 - \frac{1}{4k}\\
+    P(S_{n+1} = k - 1 | S_n = k) = \frac12 + \frac{1}{4k}\\
+    P(S_{n+1} = 0 | S_n = 0) = 1
+\)
+What is the probability that the random walk will end up with 100 before hitting 0 given that it starts at 50?
+
+\n\n*Title: *Martingale\n*FileName: *3005.md\n*Difficulty: *Easy\n*Category: *Finance\/Stochastic Calculus\/Martingale\n*Tags: *Stochastic Calculus; Martingale\n*Source: *Egret Asset\n
+~~~
+
+*Answer: *
+The answer is $\frac14$. We first show that ${S_n^2}$ is a martingale:
+\(
+\begin{align}
+    E(S_n^2 | S_{n-1}^2 = k^2) = (k+1)^2 \left(\frac12 - \frac{1}{4k}\right) + (k-1)^2 \left(\frac12 + \frac{1}{4k}\right) = k^2
+\end{align}
+\)
+
+Thus, by the Optional Sampling Theorem
+\(
+\begin{align}
+    E(S_N^2 = 100 | S_0^2 = {50}^2) = {100}^2 P(S_N = 100 | S_0 = 50) = E(S_0^2 = {50}^2) = {50}^2 \implies P(S_N = 100 | S_0 = 50) = \frac14
+\end{align}
+\)
 
 

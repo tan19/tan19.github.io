@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Combinatorics and Probability (11 Problems)</title>
+<title>Combinatorics and Probability (13 Problems)</title>
 <!-- Customized Scripts -->
 <link rel="stylesheet" href="http://tan19.github.io/bin/jemdoc.css", type="text/css">
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
@@ -20,23 +20,27 @@ MathJax.Hub.Config({
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
-<div class="menu-category">Homepage</div>
-<div class="menu-item"><a href="../../index.html">Go&nbsp;Up</a></div>
+<div class="menu-category">Quant</div>
+<div class="menu-item"><a href="../index.html">Go&nbsp;Up</a></div>
 <div class="menu-item"><a href="http://tan19.github.io">Homepage</a></div>
 <div class="menu-category">Brainteaser</div>
+<div class="menu-item"><a href="../../Brainteaser.html">Introduction</a></div>
 <div class="menu-item"><a href="Brainteaser_Logic_Brainteaser.html">Logic&nbsp;Brainteaser</a></div>
 <div class="menu-item"><a href="Brainteaser_Math_Brainteaser.html">Math&nbsp;Brainteaser</a></div>
 <div class="menu-category">Math</div>
+<div class="menu-item"><a href="../../Math.html">Introduction</a></div>
 <div class="menu-item"><a href="Mathematics_Combinatorics_and_Probability.html" class="current">Combinatorics&nbsp;&amp;&nbsp;Probability</a></div>
 <div class="menu-item"><a href="Mathematics_Linear_Algebra.html">Linear&nbsp;Algebra</a></div>
 <div class="menu-item"><a href="Mathematics_Calculus.html">Calculus</a></div>
 <div class="menu-item"><a href="Mathematics_Differential_Equations.html">Differential&nbsp;Equations</a></div>
 <div class="menu-category">Finance</div>
+<div class="menu-item"><a href="../../Finance.html">Introduction</a></div>
 <div class="menu-item"><a href="Finance_Stochastic_Calculus.html">Stochastic&nbsp;Calculus</a></div>
 <div class="menu-item"><a href="*">Options&nbsp;Trading&nbsp;Strategies</a></div>
 <div class="menu-item"><a href="*">Implied&nbsp;Vol&nbsp;Surface&nbsp;Fitting</a></div>
 <div class="menu-item"><a href="*">Equity&nbsp;Derivatives&nbsp;Pricing</a></div>
 <div class="menu-category">Computer Science</div>
+<div class="menu-item"><a href="../../CS.html">Introduction</a></div>
 <div class="menu-item"><a href="Computer_Science_Programming_Languages.html">Programming&nbsp;Languages</a></div>
 <div class="menu-item"><a href="Computer_Science_Compiler.html">Compiler</a></div>
 <div class="menu-item"><a href="Computer_Science_Database.html">Database</a></div>
@@ -44,20 +48,28 @@ MathJax.Hub.Config({
 <div class="menu-item"><a href="Computer_Science_Network.html">Network</a></div>
 <div class="menu-item"><a href="Computer_Science_Design.html">Design</a></div>
 <div class="menu-category">Algorithms and Optimization</div>
+<div class="menu-item"><a href="../../Algorithm.html">Introduction</a></div>
 <div class="menu-item"><a href="Algorithm_Data_Structures.html">Data&nbsp;Structures</a></div>
 <div class="menu-item"><a href="Algorithm_Algorithms.html">Algorithms</a></div>
 <div class="menu-item"><a href="Algorithm_Unconstrained_Optimization.html">Unconstrained&nbsp;Optimization</a></div>
 <div class="menu-item"><a href="Algorithm_Constrained_Optimization.html">Constrained&nbsp;Optimization</a></div>
-<div class="menu-category">Data Science</div>
-<div class="menu-item"><a href="Data_Science_Models.html">Models</a></div>
+<div class="menu-category">Machine Learning</div>
+<div class="menu-item"><a href="../../ML.html">Introduction</a></div>
+<div class="menu-item"><a href="*">Mathematical&nbsp;Statistics</a></div>
+<div class="menu-item"><a href="*">Linear&nbsp;Regression</a></div>
+<div class="menu-item"><a href="*">Non-Linear&nbsp;Regression</a></div>
+<div class="menu-item"><a href="*">Linear&nbsp;Classification</a></div>
+<div class="menu-item"><a href="*">Non-Linear&nbsp;Classification</a></div>
+<div class="menu-item"><a href="*">Deep&nbsp;Learning</a></div>
+<div class="menu-item"><a href="Machine_Learning_Models.html">Models</a></div>
 <div class="menu-category">Projects</div>
-<div class="menu-item"><a href="*">LeetCode</a></div>
+<div class="menu-item"><a href="../../LeetCode/index.html">LeetCode</a></div>
 <div class="menu-item"><a href="*">Kaggle</a></div>
 <div class="menu-item"><a href="*">Github</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Combinatorics and Probability (11 Problems)</h1>
+<h1>Combinatorics and Probability (13 Problems)</h1>
 <div id="subtitle"></div>
 </div>
 <ul>
@@ -65,7 +77,7 @@ MathJax.Hub.Config({
 </li>
 <li><p>Conditional Probability (1 Problems)</p>
 </li>
-<li><p>Deterministic Games (4 Problems)</p>
+<li><p>Deterministic Games (6 Problems)</p>
 </li>
 <li><p>Expectation (4 Problems)</p>
 </li>
@@ -276,11 +288,31 @@ By symmetry, \(P_1 = P_3\) and \(P_1 + P_2 + P_3 = 1 \implies 2P_1 + P_2 = 1\). 
 </p>
 </li>
 </ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #7: </b>
+Toss a die 10 times. What is the probability that the sum of the 10 numbers you get can be divided by 7? How about the probability of tossing a die with \(F\) sides and the sum of \(m\) numbers you get can be divided by \(N\) with remainder \(k\)?
+
+<br /><br /><b>Title: </b>Sum of Dice<br /><b>FileName: </b>2118.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Deterministic Games<br /><b>Tags: </b>Think Backwards; Symmetry; Die Games<br /><b>Source: </b>Egret Asset<br /></p>
+</div></div>
+<p><b>Answer: </b>
+
+</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><b>Question #8: </b>
+A and B play table tennis. A has the probability of 1/3 to win a round. Suppose A wins the game if he can win 5 rounds but B wins the game only if he can win 11 rounds. What is the probability of A winning the game? What if, when the game is 10:4, one side has to win two more points to win the game (say, 12:4 or 10:6), what is the probability of A winning the game?
+
+<br /><br /><b>Title: </b>Table Tennis<br /><b>FileName: </b>2119.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Deterministic Games<br /><b>Tags: </b>Probability<br /><b>Source: </b>Egret Asset<br /></p>
+</div></div>
+<p><b>Answer: </b>
+
+</p>
 <h2>Expectation</h2>
 <p></p>
 <div class="infoblock">
 <div class="blockcontent">
-<p><b>Question #7: </b>
+<p><b>Question #9: </b>
 What is the expected number of tosses you need to see all six sides of a die?
 
 <br /><br /><b>Title: </b>All Six Sides of A Die<br /><b>FileName: </b>2101.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Expectation<br /><b>Tags: </b>Expectation<br /><b>Source: </b>NA<br /></p>
@@ -290,7 +322,7 @@ The answer is \(6 \cdot \sum_{i=1}^6 \frac{1}{i}\). Let \(X_i\) denote the rando
 </p>
 <div class="infoblock">
 <div class="blockcontent">
-<p><b>Question #8: </b>
+<p><b>Question #10: </b>
 You turn over a card one by one from a deck of 52 cards. What is the expected number of cards that you need to flip before you see the first ace?
 
 <br /><br /><b>Title: </b>First Ace<br /><b>FileName: </b>2102.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Expectation<br /><b>Tags: </b>Expectation<br /><b>Source: </b>Green Book, page 95<br /></p>
@@ -300,7 +332,7 @@ The answer is 10.6. Setup an indicator function \(X_i = \mbox{all aces are behin
 </p>
 <div class="infoblock">
 <div class="blockcontent">
-<p><b>Question #9: </b>
+<p><b>Question #11: </b>
 There are \(x\) people from country A and y people from country B. They sit around a table and shake hands with people on their left and right, but they only shake hands if they're from the same country. We want to know the expected number of handshake made.
 
 <br /><br /><b>Title: </b>Hand Shakes<br /><b>FileName: </b>2112.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Expectation<br /><b>Tags: </b>Indicator Variables; Linearity of Expectations<br /><b>Source: </b>NA<br /></p>
@@ -325,7 +357,7 @@ E\left(\sum_i Z_i\right) = \sum_i Z_i = (x+y) \cdot \frac{x(x-1) + y(y-1)}{(x+y)
 </p>
 <div class="infoblock">
 <div class="blockcontent">
-<p><b>Question #10: </b>
+<p><b>Question #12: </b>
 There are 10 hunters and 10 ducks flying over. Each hunter aims at one duck and there is a probability of 0.5 that a hunter kills the duck he aims at. What is the expected number of ducks that have survived?
 
 <br /><br /><b>Title: </b>Hunters and Ducks<br /><b>FileName: </b>2113.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Expectation<br /><b>Tags: </b>Indicator Variables; Linearity of Expectations<br /><b>Source: </b>Morgan Stanley<br /></p>
@@ -358,7 +390,7 @@ where \(i = 1, \dots, 10\). Additionally, we define \(Pr(Y_j = i)\) to be the pr
 <p></p>
 <div class="infoblock">
 <div class="blockcontent">
-<p><b>Question #11: </b>
+<p><b>Question #13: </b>
 \(X, Y, Z\) are i.i.d. \(U[0,1]\). What is the distribution of \((XY)^Z\)?
 
 <br /><br /><b>Title: </b>Uniform Random Variables<br /><b>FileName: </b>2104.md<br /><b>Difficulty: </b>Easy<br /><b>Category: </b>Mathematics/Combinatorics and Probability/Uniform Random Variables<br /><b>Tags: </b>Uniform Random Variables<br /><b>Source: </b>NA<br /></p>
@@ -368,7 +400,7 @@ where \(i = 1, \dots, 10\). Additionally, we define \(Pr(Y_j = i)\) to be the pr
 </p>
 <div id="footer">
 <div id="footer-text">
-Page generated 2021-04-15 17:11:13 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+Page generated 2021-04-21 14:15:25 Eastern Daylight Time, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
 </div>
 </div>
 </td>

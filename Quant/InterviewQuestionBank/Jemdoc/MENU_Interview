@@ -1,41 +1,53 @@
-Homepage
-    Go Up                           [../../index.html]    
-    Homepage                        [http://tan19.github.io]
+Quant
+    Go Up                           [../index.html]    
+    Homepage                        [http://tan19.github.io]    
     
 Brainteaser
+    Introduction                        [../../Brainteaser.html]
     Logic Brainteaser               [Brainteaser_Logic_Brainteaser.html]
     Math Brainteaser                [Brainteaser_Math_Brainteaser.html]
     
 Math    
+    Introduction                        [../../Math.html]
     Combinatorics & Probability     [Mathematics_Combinatorics_and_Probability.html]
     Linear Algebra                  [Mathematics_Linear_Algebra.html]
     Calculus                        [Mathematics_Calculus.html]
     Differential Equations          [Mathematics_Differential_Equations.html]
     
 Finance
+    Introduction                        [../../Finance.html]
     Stochastic Calculus             [Finance_Stochastic_Calculus.html]
     Options Trading Strategies      [*]
     Implied Vol Surface Fitting     [*]
-    Equity Derivatives Pricing      [*]
+    Equity Derivatives Pricing      [*]    
 
 Computer Science
+    Introduction                        [../../CS.html]
     Programming Languages           [Computer_Science_Programming_Languages.html]
     Compiler                        [Computer_Science_Compiler.html]
     Database                        [Computer_Science_Database.html]
     Operating System                [Computer_Science_Operating_System.html]
     Network                         [Computer_Science_Network.html]
-    Design                          [Computer_Science_Design.html]
+    Design                          [Computer_Science_Design.html]    
 
 Algorithms and Optimization
+    Introduction                        [../../Algorithm.html]
     Data Structures                 [Algorithm_Data_Structures.html]
     Algorithms                      [Algorithm_Algorithms.html]
     Unconstrained Optimization      [Algorithm_Unconstrained_Optimization.html]
     Constrained Optimization        [Algorithm_Constrained_Optimization.html]
 
-Data Science
-    Models                          [Data_Science_Models.html]
+Machine Learning
+    Introduction                        [../../ML.html]
+    Mathematical Statistics         [*]
+    Linear Regression               [*]
+    Non-Linear Regression           [*]
+    Linear Classification           [*]
+    Non-Linear Classification       [*]
+    Deep Learning                   [*]
+    Models                          [Machine_Learning_Models.html]
 
 Projects
-    LeetCode                        [*]
+    LeetCode                        [../../LeetCode/index.html]
     Kaggle                          [*]
     Github                          [*]

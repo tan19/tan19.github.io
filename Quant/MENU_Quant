@@ -1,25 +1,29 @@
-Homepage
+Quant
     Go Up                           [../index.html]    
-    Homepage                        [http://tan19.github.io]
+    Homepage                        [http://tan19.github.io]    
     
 Brainteaser
+    Introduction                        [Brainteaser.html]
     Logic Brainteaser               [InterviewQuestionBank/Jemdoc/Brainteaser_Logic_Brainteaser.html]
     Math Brainteaser                [InterviewQuestionBank/Jemdoc/Brainteaser_Math_Brainteaser.html]
     
 Math    
+    Introduction                        [Math.html]
     Combinatorics & Probability     [InterviewQuestionBank/Jemdoc/Mathematics_Combinatorics_and_Probability.html]
     Linear Algebra                  [InterviewQuestionBank/Jemdoc/Mathematics_Linear_Algebra.html]
     Calculus                        [InterviewQuestionBank/Jemdoc/Mathematics_Calculus.html]
     Differential Equations          [InterviewQuestionBank/Jemdoc/Mathematics_Differential_Equations.html]
     
 Finance
+    Introduction                        [Finance.html]
     Stochastic Calculus             [InterviewQuestionBank/Jemdoc/Finance_Stochastic_Calculus.html]
     Options Trading Strategies      [*]
     Implied Vol Surface Fitting     [*]
-    Equity Derivatives Pricing      [*]
+    Equity Derivatives Pricing      [*]    
 
 Computer Science
-    Programming Lanauges            [InterviewQuestionBank/Jemdoc/Computer_Science_Programming_Languages.html]
+    Introduction                        [CS.html]
+    Programming Languages           [InterviewQuestionBank/Jemdoc/Computer_Science_Programming_Languages.html]
     Compiler                        [InterviewQuestionBank/Jemdoc/Computer_Science_Compiler.html]
     Database                        [InterviewQuestionBank/Jemdoc/Computer_Science_Database.html]
     Operating System                [InterviewQuestionBank/Jemdoc/Computer_Science_Operating_System.html]
@@ -27,18 +31,23 @@ Computer Science
     Design                          [InterviewQuestionBank/Jemdoc/Computer_Science_Design.html]    
 
 Algorithms and Optimization
+    Introduction                        [Algorithm.html]
     Data Structures                 [InterviewQuestionBank/Jemdoc/Algorithm_Data_Structures.html]
     Algorithms                      [InterviewQuestionBank/Jemdoc/Algorithm_Algorithms.html]
     Unconstrained Optimization      [InterviewQuestionBank/Jemdoc/Algorithm_Unconstrained_Optimization.html]
     Constrained Optimization        [InterviewQuestionBank/Jemdoc/Algorithm_Constrained_Optimization.html]
 
-Data Science
-    Models                          [InterviewQuestionBank/Jemdoc/Data_Science_Models.html]
-
-Strategies
-    Options                         [*]
+Machine Learning
+    Introduction                        [ML.html]
+    Mathematical Statistics         [*]
+    Linear Regression               [*]
+    Non-Linear Regression           [*]
+    Linear Classification           [*]
+    Non-Linear Classification       [*]
+    Deep Learning                   [*]
+    Models                          [InterviewQuestionBank/Jemdoc/Machine_Learning_Models.html]
 
 Projects
-    LeetCode                        [*]
+    LeetCode                        [LeetCode/index.html]
     Kaggle                          [*]
     Github                          [*]

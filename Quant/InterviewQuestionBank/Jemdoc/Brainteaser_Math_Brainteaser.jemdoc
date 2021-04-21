@@ -1,7 +1,8 @@
 # jemdoc: menu{MENU_Interview}{Brainteaser_Math_Brainteaser.html}
-= Math Brainteaser (2 Problems)
+= Math Brainteaser (4 Problems)
 
-- Games (2 Problems)
+- Games (3 Problems)
+- Mental Math (1 Problems)
 == Games
 
 ~~~
@@ -19,6 +20,31 @@ You have two strings. Each string takes exactly one hour to burn. The rate at wh
 Two people take 1-5 coins in turn from a pile of 100 coins. Is there a strategy to guarantee that the first person to pick always get the last coin?
 
 \n\n*Title: *Coin Game\n*FileName: *1102.md\n*Difficulty: *Easy\n*Category: *Brainteaser\/Math Brainteaser\/Games\n*Tags: *Brainteaser, Math Brainteaser\n*Source: *Baidu\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#3: *
+A and B have 100 miles in between. There are 1000L gasoline stored at A. Suppose your truck can load 200L gasoline at maximum and the truck itself uses 1L per mile. What is the maximum gasoline you can deliver from A to B, and how? How about the distance is 100 miles? How about 200 miles?
+
+\n\n*Title: *Truck and Gasoline\n*FileName: *1103.md\n*Difficulty: *Easy\n*Category: *Brainteaser\/Math Brainteaser\/Games\n*Tags: *Brainteaser, Math Brainteaser\n*Source: *Egret Asset\n
+~~~
+
+*Answer: *
+
+
+== Mental Math
+
+~~~
+*Question \#4: *
+What is $a_1$ if
+\(
+    a_i = \sum_{j=1\\j \ne i}^{100} a_j - i
+\)
+
+\n\n*Title: *Calculation\n*FileName: *1104.md\n*Difficulty: *Easy\n*Category: *Brainteaser\/Math Brainteaser\/Mental Math\n*Tags: *Brainteaser, Math Brainteaser\n*Source: *Egret Asset\n
 ~~~
 
 *Answer: *

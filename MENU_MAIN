@@ -1,7 +1,6 @@
 Homepage
     About                           [index.html]    
-    Wiki & Blog                     [wiki/index.html]
-    Quant Prep Guide                [Quant/index.html]	
+    Wiki & Blog                     [wiki/index.html]    
     
 World    
     History, Politics & Geography   [World/History/index.html]        
@@ -14,6 +13,7 @@ Sciences
     Statistics & Machine Learning   [Sciences/StatisticsMachineLearning/index.html]    
     Algorithms & Optimization       [Sciences/AlgorithmsOptimization/index.html]    
     CS & EE                         [Sciences/CSEE/index.html]
+    Quant Prep Guide                [Quant/index.html]
 
 Arts       
     Performing Arts                 [Arts/PerformingArts/index.html]
