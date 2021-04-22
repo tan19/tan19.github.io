@@ -1,18 +1,6 @@
 # jemdoc: menu{MENU_Quant}{index.html}
 
 = Quant Prep Guide
-- [https://github.com/imarvinle/interview-1 C/C++面试知识总结]
-- [https://github.com/CyC2018/CS-Notes 技术面试必备基础知识]
-- [https://mp.weixin.qq.com/s/7xANFCFUd528Lch3lqcbRg 万字长文 | 这可能是东半球最保姆级的后台服务器开发学习路线]
-- [https://github.com/microsoft/ai-edu AI education materials]
-
-== 侯捷
-- [https://www.bilibili.com/video/BV1Lb4y1R7fs?spm_id_from=333.788.b_636f6d6d656e74.4 C++面向对象高级编程(上)-基于对象＆面向对象]
-- [https://www.bilibili.com/video/BV1ZX4y157Bu?spm_id_from=333.788.b_636f6d6d656e74.5 C++面向对象高级编程(下)-兼谈对象模型（完结）]
-- [https://www.bilibili.com/video/BV1BX4y1G7bX?spm_id_from=333.788.b_636f6d6d656e74.6 C++标准库(STL)与泛型编程]
-- [https://www.bilibili.com/video/BV1Rp4y1n7fb?spm_id_from=333.788.b_636f6d6d656e74.7 C++新标准-C++11/14]
-- [https://www.bilibili.com/video/BV1Er4y1A7Xy?spm_id_from=333.788.b_636f6d6d656e74.8 C++内存管理机制-从平地到万丈高楼（完结）]
-- [https://www.bilibili.com/video/BV17N41197DV?spm_id_from=333.788.b_636f6d6d656e74.9 C++Startup揭秘：C++程序的生前死后]
 
 == Novels
 - [https://www.amazon.com/Market-Wizards-Updated-Interviews-Traders/dp/1118273052 Market Wizards]

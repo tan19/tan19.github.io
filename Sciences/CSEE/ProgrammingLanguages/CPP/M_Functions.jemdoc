@@ -1,8 +1,0 @@
-# jemdoc: menu{MENU_CPP}{M_Variables.html}
-= C/C\+\+ Member Functions
-
-== Overview
-There are three types of member functions in C++:
-- static member functions
-- non-static member functions
-- virtual member functions

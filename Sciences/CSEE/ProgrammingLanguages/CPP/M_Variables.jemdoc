@@ -1,7 +1,0 @@
-# jemdoc: menu{MENU_CPP}{M_Variables.html}
-= C/C\+\+ Member Variables
-
-== Overview
-There are two types of member variables in C\+\+:
-- static member variables
-- non-static member variables

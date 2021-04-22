@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU_Interview}{Computer_Science_Programming_Languages.html}
-= Programming Languages (18 Problems)
+= Programming Languages (19 Problems)
 
-- C\+\+ (17 Problems)
+- C\+\+ (18 Problems)
 - Python (1 Problems)
 == C\+\+
 
@@ -182,9 +182,21 @@ What is the difference between **map** and **set**?
 
 ~~~
 *Question \#17: *
+Why are class member functions inlined?
+
+\n\n*Title: *Why are class member functions inlined?\n*FileName: *4018.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Member Function\n*Source: *NA\n
+~~~
+
+*Answer: *
+[https://stackoverflow.com/questions/9734175/why-are-class-member-functions-inlined StackOverflow]
+
+
+
+~~~
+*Question \#18: *
 When to use a virtual destructor?
 
-\n\n*Title: *When to use a virtual destructor?\n*FileName: *4018.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Virtual Destructor\n*Source: *Ubiquant\n
+\n\n*Title: *When to use a virtual destructor?\n*FileName: *4019.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/C\+\+\n*Tags: *Virtual Destructor\n*Source: *Ubiquant\n
 ~~~
 
 *Answer: *
@@ -195,7 +207,7 @@ Need to check if the matrix is square first.
 == Python
 
 ~~~
-*Question \#18: *
+*Question \#19: *
 Explain "if \_\_name\_\_ == \_\_main\_\_".
 
 \n\n*Title: *Python\n*FileName: *4019.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/Python\n*Tags: *C++, Debug\n*Source: *NA\n
