@@ -1,7 +1,14 @@
 Homepage
     About                           [index.html]    
-    Wiki & Blog                     [wiki/index.html]    
+    Wiki & Blog                     [wiki/index.html] 
     
+Current
+    Software Engineering            [Sciences/SoftwareEngineering/index.html]
+    Algorithms & Optimization       [Sciences/AlgorithmsOptimization/index.html]
+    Finance & Trading               [Sciences/EconomicsFinance/index.html]    
+    Statistics & Machine Learning   [Sciences/StatisticsMachineLearning/index.html]
+    Interview                       [Quant/index.html]
+
 World    
     History, Politics & Geography   [World/History/index.html]        
     Classics                        [World/Classics/index.html]
@@ -11,9 +18,8 @@ Sciences
     Economics & Finance             [Sciences/EconomicsFinance/index.html]    
     Mathematics & Physics           [Sciences/MathPhysics/index.html]    
     Statistics & Machine Learning   [Sciences/StatisticsMachineLearning/index.html]    
-    Algorithms & Optimization       [Sciences/AlgorithmsOptimization/index.html]    
-    CS & EE                         [Quant/CS.html]
-    Quant Prep Guide                [Quant/index.html]
+    Algorithms & Optimization       [Sciences/AlgorithmsOptimization/index.html]
+    CS & EE                         [Quant/CS.html]    
 
 Arts       
     Performing Arts                 [Arts/PerformingArts/index.html]

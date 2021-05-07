@@ -2,18 +2,6 @@
 
 = Computer Science
 
-
-[http://www.liaoxuefeng.com Tutorials]
-[http://cs.lmu.edu/~ray/classes/pl/ Programming Languages]
-
-C/CPP ([http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882 1], [http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880 2]), [https://mitpress.mit.edu/sicp/full-text/book/book.html SICP]
-
-- Bash trakcs ([http://stackoverflow.com/questions/68372/what-is-your-single-most-favorite-command-line-trick-using-bash?page=1&tab=votes#tab-top 1], [http://www.quora.com/Computer-Programming/What-are-some-cool-bit-manipulation-tricks-hacks 2], [http://www.quora.com/Linux/What-are-some-time-saving-tips-that-every-Linux-user-should-know 3])
-
-*Tools*
-
-[http://math.ecnu.edu.cn/~latex/ Latex(in Chinese)]
-
 Cool Stuff: Bash, vi([http://www.viemu.com/a-why-vi-vim.html 0],[http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/ 1]), GDB/Valgrind
 
 
@@ -26,13 +14,6 @@ Cool Stuff: Bash, vi([http://www.viemu.com/a-why-vi-vim.html 0],[http://yannespo
                    |-- Multicore               : [http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/lecture-notes-and-video/ MIT]
 
 
-= Good Readings
-
-- [https://github.com/imarvinle/interview-1 C/C\+\+面试知识总结]
-- [https://github.com/CyC2018/CS-Notes 技术面试必备基础知识]
-- [https://mp.weixin.qq.com/s/7xANFCFUd528Lch3lqcbRg 万字长文 | 这可能是东半球最保姆级的后台服务器开发学习路线]
-- [https://github.com/microsoft/ai-edu AI education materials]
-
 == Operating System
 - Operating System Concepts, by Abraham Silberschatz, Peter B. Galvin, Greg Gagne
 
@@ -40,95 +21,6 @@ Cool Stuff: Bash, vi([http://www.viemu.com/a-why-vi-vim.html 0],[http://yannespo
 - Computer Networking: A Top-Down Approach, by James F. Kurose and Keith W. Ross
 - UNIX Network Programming (Vol 1 & 2), by W. Richard Stevens
 
-== Programming
-=== Programming Languages
-  - Pierce, Benjamin. [http://www.amazon.com/Types-Programming-Languages-Benjamin-Pierce/dp/0262162091 Types and programming languages]. The MIT Press, 2002.
-  - Pierce, Benjamin & etc. [http://www.cis.upenn.edu/~bcpierce/sf/current/index.html Software Foundations]. Online Book, 2014.
-
-=== C
-  - The C Programming Language
-  - Pointers on C
-  - C Traps and Pitfalls
-  - Expert C Programming
-
-=== C\+\+
-  - C\+\+ Primer, Accelerated C\+\+, The C\+\+ Programming Language  
-  - C\+\+ Templates
-  - Effective C\+\+, More Effective C\+\+, Exceptional C\+\+, More Exceptional C\+\+, Effective STL  
-  - C\+\+ Coding Standards, Exceptional C\+\+ Style
-  - Inside the C++ Object Model
-
-{{
-<img src="fig/CPPP5.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/accelerated.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/exceptional.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/effective.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/exceptional2.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/effective2.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/codingStandards.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/template.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/CPP_Object.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<p style="clear: both;">
-}}
-
-
-[https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list The Definitive C\+\+ Book Guide and List]
-
-
-[http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf C\+\+ Standard 2017]
-
-[http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882]
-
-[http://www.cppreference.com/]
-
-[http://www.cpp4u.com/]
-
-=== Java
-
-{{
-<img src="fig/CoreJava.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<img src="fig/EffectiveJava.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<p style="clear: both;">
-}}
-
-=== JavaScript
-{{
-<img src="fig/EJ.jpg" style="float: left; height: 5cm; width: 3.8cm; margin-right: 1%; margin-bottom: 0.5em;">
-<p style="clear: both;">
-}}
-
-=== Python
-- Python: Python + Ipython (廖雪峰，Learning Python, Python源码剖析)
-- Data Science: NumPy + SciPy + Pandas + Matplotlib (Python for Data Analysis)
-- Machine Learning: Scikit-learn
-- Deep Learning: Tensorflow + NLTK
-- [https://see.stanford.edu/Course/CS107 Progamming Paradigms]
-- [https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X CSAPP]
-
-~~
-- Learning Python
-- Python Cookbook
-- Effective Python
-- Fluent Python
-~~
-
-[http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000 Python教程]
-
-- Include this in the first line of the python code: \#\! \/usr\/bin\/env python
-- Every file of Python source code whose name ends in a /.py/ extension is a /module/.
-- An /attribute/ is simply a variable name that is attached to a specific object (like a module).
-- The build-in /dir/ function can be used to list all the names available inside a module.
-- Everything in Python is an object, and almost everything has attributes and methods.
-
-- Six main build-in data types: numbers, strings, lists, dictionaries, tuples, and sets.
-- /Literals/ are the expressions that generate objects, e.g., 'spam' is a literal that generates a string object.
-- Both lists and dictionaries may be nested, can grow and shrink on demand, and may contain objects of any type.
-- Difference between lists and tuples: lists are /mutable/ while tuples are /immutable/.
-- Python is /dynamically/ and /strongly/ typed: dynamic typing is a model that tracks the type automatically instead of requiring declaration code, and strongly typed is a constraint that you can perform only the operations that are valid for its type.
-
-- Reference acts like pointers.
-
-- math, random,
 
 == Data Structures and Algorithms
 - Steven S Skiena. [https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693 The Algorithm Design Manual].
