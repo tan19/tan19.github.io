@@ -1,9 +1,11 @@
 # jemdoc: menu{MENU_Interview}{Finance_Trading.html}
-= Trading (3 Problems)
+= Trading (5 Problems)
 
 - Assets (1 Problems)
 - EMA (1 Problems)
 - Option PnL (1 Problems)
+- Options (1 Problems)
+- Options Strategies (1 Problems)
 == Assets
 
 ~~~
@@ -40,4 +42,27 @@ Explain option PnL.
 
 *Answer: *
 If you long a call, you pay theta to long gamma. Theta is time, money, the ticket price to play the game. Gamma is the uncertainty, the risk, the possible excessive return you are betting.
+
+== Options
+
+~~~
+*Question \#4: *
+Why do we use OTM options to calibrate implied vol surface?
+
+\n\n*Title: *OTM Options\n*FileName: *3104.md\n*Difficulty: *Easy\n*Category: *Finance\/Trading\/Options\n*Tags: *Options\n*Source: *Morgan Stanley\n
+~~~
+
+*Answer: *
+Generally, the quotes for the OTM options will be more narrow than the ITM options because market participants try to access vega/leverage by paying the smallest possible premium.
+
+== Options Strategies
+
+~~~
+*Question \#5: *
+How can I make a options trade that pays me \$1 at maturity regardless of the underlying price (within a range, say \$90 - \$100)?
+\n\n*Title: *Box Trade\n*FileName: *3105.md\n*Difficulty: *Easy\n*Category: *Finance\/Trading\/Options Strategies\n*Tags: *Options Strategies\n*Source: *Morgan Stanley\n
+~~~
+
+*Answer: *
+This is the so-called "Box Trade", which consists of long and short two straddles at different strikes.
 
