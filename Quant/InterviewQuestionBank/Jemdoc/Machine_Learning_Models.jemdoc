@@ -1,7 +1,7 @@
 # jemdoc: menu{MENU_Interview}{Machine_Learning_Models.html}
-= Models (3 Problems)
+= Models (4 Problems)
 
-- Machine Learning (3 Problems)
+- Machine Learning (4 Problems)
 == Machine Learning
 
 ~~~
@@ -41,4 +41,14 @@ Compare **Naive Bayes** and **Logistic Regression**.
 NB has high bias as it focuses on a smaller set of models, converges faster but error rate may be high if assumptions are incorrect. Logistic Regression has lower bias as it allows a larger model space, converges to solutions slower but error rate can be lower due to low bias. Logistic Regression tends to be used a LOT more in industry but if your prior information is accurate (data is generated from a well known process), NB may be a better choice.
 
 NB assumes that the input features are conditional  independent. NB also requires a prior distribution. Simple LR cannot do nonlinear classification.
+
+~~~
+*Question \#4: *
+Explain **Fisher information**, **Cramer-Rao bound**, and **Jeffreys prior".
+
+\n\n*Title: *Fisher information, Cramér–Rao Bound, and Jeffreys Prior\n*FileName: *6004.md\n*Difficulty: *Easy\n*Category: *Machine Learning\/Models\/Machine Learning\n*Tags: *Machine Learning\n*Source: *NA\n
+~~~
+
+*Answer: *
+
 
