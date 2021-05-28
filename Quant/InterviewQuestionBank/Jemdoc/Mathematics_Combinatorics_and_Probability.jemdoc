@@ -1,11 +1,13 @@
 # jemdoc: menu{MENU_Interview}{Mathematics_Combinatorics_and_Probability.html}
-= Combinatorics and Probability (13 Problems)
+= Combinatorics and Probability (17 Problems)
 
 - Coin Games (1 Problems)
+- Combinatorics (1 Problems)
 - Conditional Probability (1 Problems)
 - Deterministic Games (6 Problems)
 - Expectation (4 Problems)
-- Uniform Random Variables (1 Problems)
+- Probability (2 Problems)
+- Uniform Random Variables (2 Problems)
 == Coin Games
 
 ~~~
@@ -44,10 +46,22 @@ Clever Way: Let both do their tossing and then let B turn over each of her coins
 
 
 
-== Conditional Probability
+== Combinatorics
 
 ~~~
 *Question \#2: *
+How many ways to allocate $m$ balls into $n$ buckets? Follow-up: how about every bucket has to have at least $k$ balls?
+
+\n\n*Title: *Allocate $m$ balls into $n$ buckets.\n*FileName: *2121.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Combinatorics\n*Tags: *Combinatorics\n*Source: *Citadel Securities\n
+~~~
+
+*Answer: *
+
+
+== Conditional Probability
+
+~~~
+*Question \#3: *
 In a hospital there were 3 boys and some girls. A woman gave birth to a child in the hospital. A nurse picked up a child at random and was a boy. What is the probability that that woman gave birth to a boy?
 
 \n\n*Title: *Bayesian Child\n*FileName: *2103.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Conditional Probability\n*Tags: *Bayes Theorem; Conditional Probability\n*Source: *SIG\n
@@ -67,7 +81,7 @@ In a hospital there were 3 boys and some girls. A woman gave birth to a child in
 == Deterministic Games
 
 ~~~
-*Question \#3: *
+*Question \#4: *
 In a room there are half H and half T. A robot comes into the room and flips the Hs and tosses the Ts, repeatedly. What is the stationary distribution of the Hs and Ts in the room?
 
 \n\n*Title: *Robot Flipping Coins\n*FileName: *2114.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Deterministic Games\n*Tags: *Deterministic Games; Markov Chain\n*Source: *Optiver\n
@@ -139,7 +153,7 @@ and
 This gives us the same result: $(0.5, 0.5) M^\infty = (1/3, 2/3)$.
 
 ~~~
-*Question \#4: *
+*Question \#5: *
 Expected number of die rolls until all numbers are rolled? If I have already made $N$ rolls, what is the expected number of distinctive numbers?
 
 \n\n*Title: *Coupon Collection\n*FileName: *2115.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Deterministic Games\n*Tags: *Dice Games; Deterministic Games\n*Source: *Green Book; Black Book; Jump;\n
@@ -170,7 +184,7 @@ E\left[\sum_{i=1}^6 Y_i \right] = \sum_{i=1}^6 E[Y_i] = \sum_{i=1}^6 Pr(Y_i = 1)
 
 
 ~~~
-*Question \#5: *
+*Question \#6: *
 The expected number of flips to see two heads from a series of fair coin tosses.
 
 \n\n*Title: *Two Heads\n*FileName: *2116.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Deterministic Games\n*Tags: *Think Backwards; Symmetry; Coin Games\n*Source: *NA\n
@@ -180,7 +194,7 @@ The expected number of flips to see two heads from a series of fair coin tosses.
 Answer is 4 for to see two heads, and 6 to see two consecutive heads. Expected \# of flips to gets 1 H is just, $E[X] = 1 + (1-p)(E[X])$, where $p$ is prob. of getting H, in the case of a fair coin this is 0.5, therefore rearranging you get $E[X] = 1/p$, meaning expected number of flips for 1 head is $1/p$, for fair coin this is equal to 2. Since coin flipping is memoryless, expected number of flips to get $k$ heads is just $1/p + 1/p + ... = k/p$. Therefore 2/0.4 = 4, when $k = 2$.
 
 ~~~
-*Question \#6: *
+*Question \#7: *
 A tosses a fair coin $n+1$ times; B tosses a fair coin $n$ times. What is the probability that A has strictly more heads than B?
 
 \n\n*Title: *One More Coin\n*FileName: *2117.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Deterministic Games\n*Tags: *Think Backwards; Symmetry; Coin Games\n*Source: *Green Book; Blue Book; HRT;\n
@@ -195,7 +209,7 @@ The answer is 1/2. First observe that if A were to toss only $n$ times, then the
 By symmetry, $P_1 = P_3$ and $P_1 + P_2 + P_3 = 1 \implies 2P_1 + P_2 = 1$. The additional coin toss A has increases the probability of A having more heads by just $0.5P_3$, hence the probability in question is $P_1 + 0.5P_2 = 0.5$.
 
 ~~~
-*Question \#7: *
+*Question \#8: *
 Toss a die 10 times. What is the probability that the sum of the 10 numbers you get can be divided by 7? How about the probability of tossing a die with $F$ sides and the sum of $m$ numbers you get can be divided by $N$ with remainder $k$?
 
 \n\n*Title: *Sum of Dice\n*FileName: *2118.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Deterministic Games\n*Tags: *Think Backwards; Symmetry; Die Games\n*Source: *Egret Asset\n
@@ -205,7 +219,7 @@ Toss a die 10 times. What is the probability that the sum of the 10 numbers you 
 
 
 ~~~
-*Question \#8: *
+*Question \#9: *
 A and B play table tennis. A has the probability of 1/3 to win a round. Suppose A wins the game if he can win 5 rounds but B wins the game only if he can win 11 rounds. What is the probability of A winning the game? What if, when the game is 10:4, one side has to win two more points to win the game (say, 12:4 or 10:6), what is the probability of A winning the game?
 
 \n\n*Title: *Table Tennis\n*FileName: *2119.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Deterministic Games\n*Tags: *Probability\n*Source: *Egret Asset\n
@@ -217,7 +231,7 @@ A and B play table tennis. A has the probability of 1/3 to win a round. Suppose 
 == Expectation
 
 ~~~
-*Question \#9: *
+*Question \#10: *
 What is the expected number of tosses you need to see all six sides of a die?
 
 \n\n*Title: *All Six Sides of A Die\n*FileName: *2101.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Expectation\n*Source: *NA\n
@@ -227,7 +241,7 @@ What is the expected number of tosses you need to see all six sides of a die?
 The answer is $6 \cdot \sum_{i=1}^6 \frac{1}{i}$. Let $X_i$ denote the random variable that tells us the number of trials it takes for us to see the i-th distinct side on a die. Obviously, $X_1$ is always 1, since the first roll gives us the first observed side. $X_2$ follows a geometric distribution with success p = 5/6. Similarly $X_i$ follows a geometric distribution with success $p = (7-i)/6$. So, the total expected number of rolls is $E[X_1 + ... + X_6] = E[X_1] + ... E[X_6] = 6 \times (1 + 1/2 + ... + 1/6)$.
 
 ~~~
-*Question \#10: *
+*Question \#11: *
 You turn over a card one by one from a deck of 52 cards. What is the expected number of cards that you need to flip before you see the first ace?
 
 \n\n*Title: *First Ace\n*FileName: *2102.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Expectation\n*Source: *Green Book, page 95\n
@@ -237,7 +251,7 @@ You turn over a card one by one from a deck of 52 cards. What is the expected nu
 The answer is 10.6. Setup an indicator function $X_i = \mbox{all aces are behind card } i$. Then total number of draws is $N = 1 + \sum_{i=1}^48 X_i$, where $p(X_i) = 1/5$. The 1/5 comes from the fact that each non-ace card has a probability of 1/5 being appear before all aces.
 
 ~~~
-*Question \#11: *
+*Question \#12: *
 There are $x$ people from country A and y people from country B. They sit around a table and shake hands with people on their left and right, but they only shake hands if they're from the same country. We want to know the expected number of handshake made.
 
 \n\n*Title: *Hand Shakes\n*FileName: *2112.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Indicator Variables; Linearity of Expectations\n*Source: *NA\n
@@ -260,7 +274,7 @@ E\left(\sum_i Z_i\right) = \sum_i Z_i = (x+y) \cdot \frac{x(x-1) + y(y-1)}{(x+y)
 
 
 ~~~
-*Question \#12: *
+*Question \#13: *
 There are 10 hunters and 10 ducks flying over. Each hunter aims at one duck and there is a probability of 0.5 that a hunter kills the duck he aims at. What is the expected number of ducks that have survived?
 
 \n\n*Title: *Hunters and Ducks\n*FileName: *2113.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Indicator Variables; Linearity of Expectations\n*Source: *Morgan Stanley\n
@@ -288,13 +302,46 @@ where $i = 1, \dots, 10$. Additionally, we define $Pr(Y_j = i)$ to be the probab
 \)
 
 
+== Probability
+
+~~~
+*Question \#14: *
+A infinite series of numbers from a Uniform(0, k), $k > 0$, distribution. You can stop after you have collected $m$ numbers. How to maximize the sum of your $m$ numbers?
+
+\n\n*Title: *Maximize Sum\n*FileName: *2122.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Probability\n*Tags: *Probability\n*Source: *Citadel Securities\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#15: *
+Given an array of probabilities $P = [p_0, \dots, p_n]$. How to design a generator of random numbers that has probability $P$, using a uniform random number generator $U(0,1)$?
+
+\n\n*Title: *Probability Distribution\n*FileName: *2123.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Probability\n*Tags: *Probability\n*Source: *Citadel Securities\n
+~~~
+
+*Answer: *
+
+
+
 == Uniform Random Variables
 
 ~~~
-*Question \#13: *
+*Question \#16: *
 $X, Y, Z$ are i.i.d. $U[0,1]$. What is the distribution of $(XY)^Z$?
 
 \n\n*Title: *Uniform Random Variables\n*FileName: *2104.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Uniform Random Variables\n*Tags: *Uniform Random Variables\n*Source: *NA\n
+~~~
+
+*Answer: *
+
+
+~~~
+*Question \#17: *
+How to sample uniformly from the surface of an n-dimensional sphere?
+
+\n\n*Title: *Uniform Sample on Surface of n-Dimensional Sphere\n*FileName: *2120.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Uniform Random Variables\n*Tags: *Uniform Probability\n*Source: *Citadel Securities\n
 ~~~
 
 *Answer: *

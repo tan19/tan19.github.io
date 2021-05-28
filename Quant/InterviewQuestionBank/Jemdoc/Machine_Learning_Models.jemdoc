@@ -1,7 +1,8 @@
 # jemdoc: menu{MENU_Interview}{Machine_Learning_Models.html}
-= Models (4 Problems)
+= Models (5 Problems)
 
 - Machine Learning (4 Problems)
+- Neural Network (1 Problems)
 == Machine Learning
 
 ~~~
@@ -50,5 +51,18 @@ Explain **Fisher information**, **Cramer-Rao bound**, and **Jeffreys prior".
 ~~~
 
 *Answer: *
+
+
+== Neural Network
+
+~~~
+*Question \#5: *
+If your neural network is not recurrent, how do you implement forward pass?
+
+\n\n*Title: *Neural Network\n*FileName: *6005.md\n*Difficulty: *Easy\n*Category: *Machine Learning\/Models\/Neural Network\n*Tags: *Machine Learning\n*Source: *Citadel Securities\n
+~~~
+
+*Answer: *
+Topological sort.
 
 

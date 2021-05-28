@@ -6,7 +6,7 @@
 \counterwithin*{chapter}{book}
 
 \title{Quant Interview Guide}
-\author{emc57721@gmail.com}
+%\author{emc57721@gmail.com}
 
 \makeindex[options= -s LaTeX/index_style.ist]
 

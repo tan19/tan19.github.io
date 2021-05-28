@@ -106,17 +106,17 @@ def Generate_TeX_Source_File(pList) -> str():
             body += "\\newpage\section{Chapter Answers}"
             body += "".join([v for k, v in A[Part][Chapter].items()])
     
-    pre  = open("LaTex/pre.txt", "r").read()
-    post = open("LaTex/post.txt", "r").read()    
+    pre  = open("../LaTex/pre.txt", "r").read()
+    post = open("../LaTex/post.txt", "r").read()    
     tex  = pre + body + post
 
     return tex
 
 def Write_pdf_File(tex):
-    f = open("LaTeX/InterviewQuestionBank.tex", "w")
+    f = open("../LaTeX/InterviewQuestionBank.tex", "w")
     f.write(tex)
     f.close()
     
-    subprocess.run(["pdflatex", "-output-directory=_build", "LaTeX/InterviewQuestionBank.tex"], shell = True)
+    subprocess.run(["pdflatex", "-output-directory=_build", "../LaTeX/InterviewQuestionBank.tex"], shell = True)
 
 Generate_Jemdoc_Source_file(Read_Problems())
