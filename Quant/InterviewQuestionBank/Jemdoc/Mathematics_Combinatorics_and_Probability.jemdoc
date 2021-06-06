@@ -1,11 +1,11 @@
 # jemdoc: menu{MENU_Interview}{Mathematics_Combinatorics_and_Probability.html}
-= Combinatorics and Probability (17 Problems)
+= Combinatorics and Probability (15 Problems)
 
 - Coin Games (1 Problems)
 - Combinatorics (1 Problems)
 - Conditional Probability (1 Problems)
 - Deterministic Games (6 Problems)
-- Expectation (4 Problems)
+- Expectation (2 Problems)
 - Probability (2 Problems)
 - Uniform Random Variables (2 Problems)
 == Coin Games
@@ -232,26 +232,6 @@ A and B play table tennis. A has the probability of 1/3 to win a round. Suppose 
 
 ~~~
 *Question \#10: *
-What is the expected number of tosses you need to see all six sides of a die?
-
-\n\n*Title: *All Six Sides of A Die\n*FileName: *2101.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Expectation\n*Source: *NA\n
-~~~
-
-*Answer: *
-The answer is $6 \cdot \sum_{i=1}^6 \frac{1}{i}$. Let $X_i$ denote the random variable that tells us the number of trials it takes for us to see the i-th distinct side on a die. Obviously, $X_1$ is always 1, since the first roll gives us the first observed side. $X_2$ follows a geometric distribution with success p = 5/6. Similarly $X_i$ follows a geometric distribution with success $p = (7-i)/6$. So, the total expected number of rolls is $E[X_1 + ... + X_6] = E[X_1] + ... E[X_6] = 6 \times (1 + 1/2 + ... + 1/6)$.
-
-~~~
-*Question \#11: *
-You turn over a card one by one from a deck of 52 cards. What is the expected number of cards that you need to flip before you see the first ace?
-
-\n\n*Title: *First Ace\n*FileName: *2102.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Expectation\n*Source: *Green Book, page 95\n
-~~~
-
-*Answer: *
-The answer is 10.6. Setup an indicator function $X_i = \mbox{all aces are behind card } i$. Then total number of draws is $N = 1 + \sum_{i=1}^48 X_i$, where $p(X_i) = 1/5$. The 1/5 comes from the fact that each non-ace card has a probability of 1/5 being appear before all aces.
-
-~~~
-*Question \#12: *
 There are $x$ people from country A and y people from country B. They sit around a table and shake hands with people on their left and right, but they only shake hands if they're from the same country. We want to know the expected number of handshake made.
 
 \n\n*Title: *Hand Shakes\n*FileName: *2112.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Indicator Variables; Linearity of Expectations\n*Source: *NA\n
@@ -274,7 +254,7 @@ E\left(\sum_i Z_i\right) = \sum_i Z_i = (x+y) \cdot \frac{x(x-1) + y(y-1)}{(x+y)
 
 
 ~~~
-*Question \#13: *
+*Question \#11: *
 There are 10 hunters and 10 ducks flying over. Each hunter aims at one duck and there is a probability of 0.5 that a hunter kills the duck he aims at. What is the expected number of ducks that have survived?
 
 \n\n*Title: *Hunters and Ducks\n*FileName: *2113.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Expectation\n*Tags: *Indicator Variables; Linearity of Expectations\n*Source: *Morgan Stanley\n
@@ -305,7 +285,7 @@ where $i = 1, \dots, 10$. Additionally, we define $Pr(Y_j = i)$ to be the probab
 == Probability
 
 ~~~
-*Question \#14: *
+*Question \#12: *
 A infinite series of numbers from a Uniform(0, k), $k > 0$, distribution. You can stop after you have collected $m$ numbers. How to maximize the sum of your $m$ numbers?
 
 \n\n*Title: *Maximize Sum\n*FileName: *2122.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Probability\n*Tags: *Probability\n*Source: *Citadel Securities\n
@@ -315,7 +295,7 @@ A infinite series of numbers from a Uniform(0, k), $k > 0$, distribution. You ca
 
 
 ~~~
-*Question \#15: *
+*Question \#13: *
 Given an array of probabilities $P = [p_0, \dots, p_n]$. How to design a generator of random numbers that has probability $P$, using a uniform random number generator $U(0,1)$?
 
 \n\n*Title: *Probability Distribution\n*FileName: *2123.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Probability\n*Tags: *Probability\n*Source: *Citadel Securities\n
@@ -328,7 +308,7 @@ Given an array of probabilities $P = [p_0, \dots, p_n]$. How to design a generat
 == Uniform Random Variables
 
 ~~~
-*Question \#16: *
+*Question \#14: *
 $X, Y, Z$ are i.i.d. $U[0,1]$. What is the distribution of $(XY)^Z$?
 
 \n\n*Title: *Uniform Random Variables\n*FileName: *2104.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Uniform Random Variables\n*Tags: *Uniform Random Variables\n*Source: *NA\n
@@ -338,7 +318,7 @@ $X, Y, Z$ are i.i.d. $U[0,1]$. What is the distribution of $(XY)^Z$?
 
 
 ~~~
-*Question \#17: *
+*Question \#15: *
 How to sample uniformly from the surface of an n-dimensional sphere?
 
 \n\n*Title: *Uniform Sample on Surface of n-Dimensional Sphere\n*FileName: *2120.md\n*Difficulty: *Easy\n*Category: *Mathematics\/Combinatorics and Probability\/Uniform Random Variables\n*Tags: *Uniform Probability\n*Source: *Citadel Securities\n

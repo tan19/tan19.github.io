@@ -1,40 +1,13 @@
 # jemdoc: menu{MENU_Interview}{Finance_Trading.html}
-= Trading (5 Problems)
+= Trading (3 Problems)
 
-- Assets (1 Problems)
-- EMA (1 Problems)
 - Option PnL (1 Problems)
 - Options (1 Problems)
 - Options Strategies (1 Problems)
-== Assets
-
-~~~
-*Question \#1: *
-What is Principle Protected Note (PPN)?
-
-\n\n*Title: *Principle Protected Note\n*FileName: *3101.md\n*Difficulty: *Easy\n*Category: *Finance\/Trading\/Assets\n*Tags: *Principle Protected Note\n*Source: *NA\n
-~~~
-
-*Answer: *
-A Principle Protected Note (PPN) is a type of structured products, an investment contract with a guaranteed rate of return of at least the amount invested, and a possible gain. A possible such note is a stock plus a call.
-
-
-== EMA
-
-~~~
-*Question \#2: *
-Explain EMA.
-
-\n\n*Title: *EMA\n*FileName: *3102.md\n*Difficulty: *Easy\n*Category: *Finance\/Trading\/EMA\n*Tags: *EMA\n*Source: *NA\n
-~~~
-
-*Answer: *
-
-
 == Option PnL
 
 ~~~
-*Question \#3: *
+*Question \#1: *
 Explain option PnL.
 
 \n\n*Title: *Option PnL\n*FileName: *3103.md\n*Difficulty: *Easy\n*Category: *Finance\/Trading\/Option PnL\n*Tags: *Option PnL\n*Source: *Morgan Stanley\n
@@ -46,7 +19,7 @@ If you long a call, you pay theta to long gamma. Theta is time, money, the ticke
 == Options
 
 ~~~
-*Question \#4: *
+*Question \#2: *
 Why do we use OTM options to calibrate implied vol surface?
 
 \n\n*Title: *OTM Options\n*FileName: *3104.md\n*Difficulty: *Easy\n*Category: *Finance\/Trading\/Options\n*Tags: *Options\n*Source: *Morgan Stanley\n
@@ -58,7 +31,7 @@ Generally, the quotes for the OTM options will be more narrow than the ITM optio
 == Options Strategies
 
 ~~~
-*Question \#5: *
+*Question \#3: *
 How can I make a options trade that pays me \$1 at maturity regardless of the underlying price (within a range, say \$90 - \$100)?
 \n\n*Title: *Box Trade\n*FileName: *3105.md\n*Difficulty: *Easy\n*Category: *Finance\/Trading\/Options Strategies\n*Tags: *Options Strategies\n*Source: *Morgan Stanley\n
 ~~~

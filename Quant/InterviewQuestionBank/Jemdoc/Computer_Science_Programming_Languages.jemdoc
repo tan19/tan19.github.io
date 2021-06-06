@@ -1,8 +1,7 @@
 # jemdoc: menu{MENU_Interview}{Computer_Science_Programming_Languages.html}
-= Programming Languages (19 Problems)
+= Programming Languages (18 Problems)
 
 - C\+\+ (18 Problems)
-- Python (1 Problems)
 == C\+\+
 
 ~~~
@@ -203,16 +202,4 @@ When to use a virtual destructor?
 Need to check if the matrix is square first.
 
 
-
-== Python
-
-~~~
-*Question \#19: *
-Explain "if \_\_name\_\_ == \_\_main\_\_".
-
-\n\n*Title: *Python\n*FileName: *4019.md\n*Difficulty: *Easy\n*Category: *Computer Science\/Programming Languages\/Python\n*Tags: *C++, Debug\n*Source: *NA\n
-~~~
-
-*Answer: *
-Checking if the current module (== file) contains a main function, and is not imported.
 
